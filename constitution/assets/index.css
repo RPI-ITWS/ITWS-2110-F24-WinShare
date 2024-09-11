@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: URL("./photos/WoodenBackground.jpg");
+    width: 100%;
+    max-width: 100%;
+  }
