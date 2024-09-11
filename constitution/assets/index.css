@@ -21,20 +21,25 @@ body {
 }
 
 
-#papers{
-    border: 2px solid rgb(187, 137, 71);
+#stack{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 90%;
     align-items: center;
 }
 
-#Preamble{
+.page{
+    border: 2px solid rgb(187, 137, 71);
     background-color:tan;
     display: flex;
     flex-direction: column;
     color: rgb(54, 39, 19);
     width: 100%;
+}
+
+.space{
+    height: 25px;
 }
 
 .PageTopper{
@@ -62,9 +67,25 @@ body {
 
 }
 
-#PreambleText{
-    display: block;
+.text{
+    display:none;
     text-align: center;
     font-size: 18px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 15px 15px 15px;
+}
+
+#PreambleText{
+    display: block;
+}
+
+#PreambleAnalysis{
+    display: none;
+}
+
+#Article1Text{
+    display: block;
+}
+
+#Article1Analysis{
+    display: none;
 }
