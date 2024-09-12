@@ -53,7 +53,6 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
     align-items: center; /* Ensure the title and buttons stay aligned */
-
 }
 
 .section{
@@ -65,6 +64,8 @@ body {
     border: none;
     font-size: 16px;
     background-color: transparent;
+    width: 250px;
+    font-weight: normal;
 }
 
 .buttons.right{
