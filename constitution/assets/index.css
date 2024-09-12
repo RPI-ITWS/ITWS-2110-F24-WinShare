@@ -10,8 +10,10 @@ body {
   }
 
 #Title{
+    padding-top: 15px;
     color: white;
     border-bottom: 1px solid red;
+    font-size: 40px;
 }
 
 #Title:hover{
@@ -36,6 +38,7 @@ body {
     flex-direction: column;
     color: rgb(54, 39, 19);
     width: 100%;
+    font-size: 24px;
 }
 
 .space{
@@ -75,7 +78,7 @@ body {
 }
 
 #PreambleText{
-    display: block;
+    display: none;
 }
 
 #PreambleAnalysis{
@@ -83,9 +86,65 @@ body {
 }
 
 #Article1Text{
-    display: block;
+    display: none;
 }
 
 #Article1Analysis{
+    display: none;
+}
+
+#Article2Text{
+    display: none;
+}
+
+#Article2Analysis{
+    display: none;
+}
+
+#Article3Text{
+    display: none;
+}
+
+#Article3Analysis{
+    display: none;
+}
+
+#Article4Text{
+    display: none;
+}
+
+#Article4Analysis{
+    display: none;
+}
+
+#Article5Text{
+    display: none;
+}
+
+#Article5Analysis{
+    display: none;
+}
+
+#Article6Text{
+    display: none;
+}
+
+#Article6Analysis{
+    display: none;
+}
+
+#Article7Text{
+    display: none;
+}
+
+#Article7Analysis{
+    display: none;
+}
+
+#AmendmentsText{
+    display: none;
+}
+
+#AmendmentsAnalysis{
     display: none;
 }
