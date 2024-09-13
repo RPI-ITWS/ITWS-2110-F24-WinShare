@@ -3,6 +3,34 @@ function GodBlessAmerica(){
     soundeffect.play()
 }
 
+let HistoryCounter = 0;
+
+function DisplayHistory(button) {
+    const analysis = document.getElementById('HistoricalAnalysis');
+    const action = button.getAttribute('data-action');
+
+    const showElement = (elementToShow) => {
+        elementToShow.style.display = 'block'; 
+        setTimeout(() => elementToShow.classList.add('show'), 10);
+    };
+
+    const hideElement = (elementToHide) => {
+        elementToHide.classList.remove('show');
+        setTimeout(() => elementToHide.style.display = 'none', 300);
+    };
+    
+    if (action === "different") {
+        if (HistoryCounter === 2) {
+            hideElement(analysis);
+            HistoryCounter = 0;
+        } else {
+            showElement(analysis);
+            HistoryCounter = 2;
+        }
+    }
+}
+
+
 let PreambleCounter = 0;
 
 function DisplayPreamble(button) {
