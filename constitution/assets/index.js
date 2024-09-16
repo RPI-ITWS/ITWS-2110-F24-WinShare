@@ -11,7 +11,7 @@ function DisplayHistory(button) {
 
     const hideElement = (elementToHide) => {
         elementToHide.classList.remove('show');
-        setTimeout(() => elementToHide.style.display = 'none', 300);
+        setTimeout(() => elementToHide.style.display = 'none', 500);
     };
     
     if (action === "different") {
@@ -314,4 +314,3 @@ function DisplayAmendments(button) {
         }
     }
 }
-
