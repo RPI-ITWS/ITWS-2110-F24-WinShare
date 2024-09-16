@@ -1,8 +1,3 @@
-function GodBlessAmerica(){
-    const soundeffect = new Audio('./assets/sounds/eagle-screech.mp3')
-    soundeffect.play()
-}
-
 let HistoryCounter = 0;
 
 function DisplayHistory(button) {
