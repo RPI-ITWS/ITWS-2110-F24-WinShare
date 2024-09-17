@@ -2,9 +2,9 @@ Pranay Sharma:
 
 I altered the style sheet and customized the interface more.
 
-The original background was a wooden one from "https://www.myfreetextures.com/seamless-wood-texture/". But was decided to be changed.
+The original background was a wooden one from "https://www.myfreetextures.com/seamless-wood-texture/". But was decided to be maybe changed.
 
-The new background is that of crumpled paper from "https://pikbest.com/backgrounds/crumpled-paper-vintage-wallpaper-aged-texture-in-brown_9938291.html".
+The 2nd considered background is that of crumpled paper from "https://pikbest.com/backgrounds/crumpled-paper-vintage-wallpaper-aged-texture-in-brown_9938291.html".
 
 I then darkened it and converted it to a jpeg.
 
