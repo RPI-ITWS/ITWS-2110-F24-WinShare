@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: URL("./photos/WoodenBackground.jpg");
+    background-image: URL("./photos/CrumpledPaperBackground.jpeg");
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -9,11 +9,12 @@ body {
     align-items: center;
   }
 
-#Title{
+#Title {
     padding-top: 15px;
     color: white;
     border-bottom: 1px solid red;
     font-size: 40px;
+    font-family: "gothicus-roman", serif;
 }
 
 #Title:hover{
@@ -31,9 +32,9 @@ body {
     align-items: center;
 }
 
-.page{
+.page {
     border: 2px solid rgb(187, 137, 71);
-    background-color:tan;
+    background-color: tan;
     display: flex;
     flex-direction: column;
     color: rgb(54, 39, 19);
@@ -45,13 +46,14 @@ body {
     height: 30px;
 }
 
-.PageTopper{
+.PageTopper {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     padding-left: 2rem;
     padding-right: 2rem;
     align-items: center;
+    font-family: "gothicus-roman", serif;
 }
 
 .section{
