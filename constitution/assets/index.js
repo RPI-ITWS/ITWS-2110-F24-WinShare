@@ -1,8 +1,3 @@
-function GodBlessAmerica(){
-    const soundeffect = new Audio('./assets/sounds/eagle-screech.mp3')
-    soundeffect.play()
-}
-
 let HistoryCounter = 0;
 
 function DisplayHistory(button) {
@@ -16,7 +11,7 @@ function DisplayHistory(button) {
 
     const hideElement = (elementToHide) => {
         elementToHide.classList.remove('show');
-        setTimeout(() => elementToHide.style.display = 'none', 300);
+        setTimeout(() => elementToHide.style.display = 'none', 500);
     };
     
     if (action === "different") {
@@ -319,4 +314,3 @@ function DisplayAmendments(button) {
         }
     }
 }
-
