@@ -1,0 +1,585 @@
+WEBVTT
+
+1 "Collins, Joshua" (2734173952)
+00:00:00.000 --> 00:00:03.831
+Okay, I'm recording.
+
+2 "Hung, Louis" (3464415488)
+00:00:03.831 --> 00:00:06.026
+Are people coming in though?
+
+3 "Collins, Joshua" (2734173952)
+00:00:06.026 --> 00:00:10.890
+Yeah, more should come in. Let me check.
+
+4 "Hung, Louis" (3464415488)
+00:00:10.890 --> 00:00:13.747
+Yeah real quick.
+
+5 "Collins, Joshua" (2734173952)
+00:00:13.747 --> 00:00:18.200
+Let's see, we said he.
+
+6 "Hung, Louis" (3464415488)
+00:00:18.200 --> 00:00:26.870
+And Andy? Yeah.
+
+7 "Collins, Joshua" (2734173952)
+00:00:26.870 --> 00:00:33.708
+Yeah, Isaac and Prenee are the other two are waiting on.
+
+8 "Hung, Louis" (3464415488)
+00:00:33.708 --> 00:00:36.789
+Okay cool.
+
+9 "Collins, Joshua" (2734173952)
+00:00:36.789 --> 00:00:56.720
+Yeah, let me take this time to pull up the github on a separate tab, did you see my latest pull request?
+
+10 "Collins, Joshua" (2734173952)
+00:00:56.720 --> 00:00:58.089
+Okay.
+
+11 "Hung, Louis" (3464415488)
+00:00:58.089 --> 00:01:03.211
+An after, is that it?
+
+12 "Collins, Joshua" (2734173952)
+00:01:03.211 --> 00:01:11.989
+Yes, I basically added a navigation bar to the top of our main webpage as like an idea of what it should look like.
+
+13 "Hung, Louis" (3464415488)
+00:01:11.989 --> 00:01:14.730
+Ah, ok, interesting.
+
+14 "Collins, Joshua" (2734173952)
+00:01:14.730 --> 00:01:29.006
+Yeah, it just basically is the home button statistics predictions, and then a triple bar for a dropdown menu where it'd be like login, it would be like account login slash.
+
+15 "Hung, Louis" (3464415488)
+00:01:29.006 --> 00:01:35.008
+Sorry, shouldn't login be like on the right hand side on the top?
+
+16 "Collins, Joshua" (2734173952)
+00:01:35.008 --> 00:01:40.988
+It can't we, we, yeah, we can fit that in if we want to up there.
+
+17 "Hung, Louis" (3464415488)
+00:01:40.988 --> 00:02:01.409
+Well it's it could be later yep it's just I think I'll draw like a general picture of what I think navigation should look like or like at least the web page should look like over the weekend and like maybe we can talk about that later some sometimes. Yeah.
+
+18 "Collins, Joshua" (2734173952)
+00:02:01.409 --> 00:02:10.050
+Of course, in the in the thing, we do have our sprint MP four recording.
+
+19 "Hung, Louis" (3464415488)
+00:02:10.050 --> 00:02:15.070
+Yeah, I saw that. Yeah, yeah.
+
+20 "Collins, Joshua" (2734173952)
+00:02:15.070 --> 00:02:22.765
+Yeah, in that one we did draw like a very quick idea, but we were always free to move that about since we're so early on.
+
+21 "Hung, Louis" (3464415488)
+00:02:22.765 --> 00:02:27.606
+Yeah, I can I can work, I can work, I can work on that, but then push it to you like later.
+
+22 "Collins, Joshua" (2734173952)
+00:02:27.606 --> 00:02:29.526
+We're. Yep.
+
+23 "Hung, Louis" (3464415488)
+00:02:29.526 --> 00:02:46.668
+So it should be fine. Yeah, of course, where are the other people?
+
+24 "Collins, Joshua" (2734173952)
+00:02:46.668 --> 00:02:53.502
+Unfortunately, it seems like you, me, and Shebu are the only three that really use discord.
+
+25 "Hung, Louis" (3464415488)
+00:02:53.502 --> 00:02:55.626
+Oh, really? Oh.
+
+26 "Collins, Joshua" (2734173952)
+00:02:55.626 --> 00:03:02.666
+So the other two teams tend to like go on periods where you can't hear them or won't they won't respond.
+
+27 "Hung, Louis" (3464415488)
+00:03:02.666 --> 00:03:08.909
+Oh, I'm like almost always on this code, but I just turned notification off sometimes so.
+
+28 "Collins, Joshua" (2734173952)
+00:03:08.909 --> 00:03:18.148
+Yeah, I need to get the notifications to start working on this one because I have it on for another class that's working, but this one's pretty silent.
+
+29 "Hung, Louis" (3464415488)
+00:03:18.148 --> 00:03:30.947
+Oh, I should turn it on to like only at will like, yeah. I should turn to all. I'll turn it to all.
+
+30 "Collins, Joshua" (2734173952)
+00:03:30.947 --> 00:03:46.587
+Yeah. So I think for this one, for this one I was gonna start, well, I, I wanted to add like that dropdown menu just to make it like, at least kind of like add a little bit more functionality to the front page.
+
+31 "Hung, Louis" (3464415488)
+00:03:46.587 --> 00:04:01.249
+So somehow, so if you open, ok, let's search e.g.. If you open the unsplash, the homepage.
+
+32 "Collins, Joshua" (2734173952)
+00:04:01.249 --> 00:04:03.261
+Unsplash.
+
+33 "Hung, Louis" (3464415488)
+00:04:03.261 --> 00:04:13.507
+Wait, I'll go to a special page. Just want to see e.g., do you do you want to do something like on the top right corner, right next to the profile pick?
+
+34 "Collins, Joshua" (2734173952)
+00:04:13.507 --> 00:04:18.404
+Yeah, like that except, right under that bar, it would just dropdown.
+
+35 "Hung, Louis" (3464415488)
+00:04:18.404 --> 00:04:21.085
+So, and then if you click again again.
+
+36 "Collins, Joshua" (2734173952)
+00:04:21.085 --> 00:04:22.625
+They would just scroll back up.
+
+37 "Hung, Louis" (3464415488)
+00:04:22.625 --> 00:04:37.397
+Okay, but like my question here is do we need that much tabs that like for us that to need a dropdown list? Do we have that many web pages to fit like the whole dropdown list?
+
+38 "Collins, Joshua" (2734173952)
+00:04:37.397 --> 00:04:49.727
+Probably not, we could probably do like a dropdown for like account, we could probably change that icon to like, a person outline, like account.
+
+39 "Hung, Louis" (3464415488)
+00:04:49.727 --> 00:05:05.623
+Click it drops down it could be like settings, what not. Yeah. Okay, so just as you like click on your own profile pick on unsplash.com, it's just like view profile stats, log out, login, account settings, something like that.
+
+40 "Collins, Joshua" (2734173952)
+00:05:05.623 --> 00:05:09.023
+Yeah. Okay, sounds.
+
+41 "Hung, Louis" (3464415488)
+00:05:09.023 --> 00:05:35.602
+Yeah, that sounds cool. Sounds sounds cool to me. It's just like four like cause the menus, all we have now, it's just the vetting page, the leaders, the leaderboard page and like the prediction page, so I was like not too sure about how much tabs or how much like HTML files do we actually need to be to full, to fill the entire dropdown list.
+
+42 "Collins, Joshua" (2734173952)
+00:05:35.602 --> 00:05:43.903
+Yeah, it was only gonna be like two or three more options like maybe like an about us page or like a logout button.
+
+43 "Hung, Louis" (3464415488)
+00:05:43.903 --> 00:05:46.482
+Yeah, that makes sense.
+
+44 "Collins, Joshua" (2734173952)
+00:05:46.482 --> 00:05:56.062
+Yeah, like buttons that would add, like, niche functionality that don't need to be visible at the, at the very start.
+
+45 "Hung, Louis" (3464415488)
+00:05:56.062 --> 00:05:58.355
+Like that's cool. That's cool for me.
+
+46 "Collins, Joshua" (2734173952)
+00:05:58.355 --> 00:06:04.699
+Yeah. Because the good news about that is at least we can we can copy and paste that basically every single web.
+
+47 "Hung, Louis" (3464415488)
+00:06:04.699 --> 00:06:16.663
+Yeah or we can just like do it for the profile pick 1st and then like once we have the basic code for the profile pick, we can just change the CSS update if we want to fit it onto our navigation bars.
+
+48 "Collins, Joshua" (2734173952)
+00:06:16.663 --> 00:06:18.423
+Yeah.
+
+49 "Hung, Louis" (3464415488)
+00:06:18.423 --> 00:06:20.084
+Yeah, that sounds like a plan.
+
+50 "Collins, Joshua" (2734173952)
+00:06:20.084 --> 00:06:28.023
+Yeah, I just went with the 3 bar right now cause that's like the most standard button I've seen at least for like click for more.
+
+51 "Hung, Louis" (3464415488)
+00:06:28.023 --> 00:06:41.562
+Oh yeah. I mean the standard buttons are good, at least they're consistent, and they don't make a big mess on the page, but if you want to be more fancy, I guess we can do the dropdown list.
+
+52 "Collins, Joshua" (2734173952)
+00:06:41.562 --> 00:06:56.542
+Yes. Yeah, and that's like a simple CSS of like, actually let me push what I currently have as well, I basically just have some borders set up for, like, three parts.
+
+53 "Hung, Louis" (3464415488)
+00:06:56.542 --> 00:07:00.543
+Oh yeah, the hot bars yep.
+
+54 "Collins, Joshua" (2734173952)
+00:07:00.543 --> 00:07:02.583
+Oh.
+
+55 "Hung, Louis" (3464415488)
+00:07:02.583 --> 00:07:05.423
+Yeah, it's a simple setup I can see here.
+
+56 "Collins, Joshua" (2734173952)
+00:07:05.423 --> 00:07:11.740
+Yeah, it, it will, that, but also, I have like a red border in the middle of the screen.
+
+57 "Hung, Louis" (3464415488)
+00:07:11.740 --> 00:07:14.621
+To make column, right? Column left column?
+
+58 "Collins, Joshua" (2734173952)
+00:07:14.621 --> 00:07:40.099
+Yeah, basically it's gonna follow like a 20 4020 kind of layout where like on the left side, we can put something as simple as top, top ten on the leaderboard. I mean, we can do it by like point like like points scored. Ah, ok. Number one would be person one and it would cut off if it's too long. Person two, person three, person.
+
+59 "Collins, Joshua" (2734173952)
+00:07:40.099 --> 00:07:49.962
+For person five, then the right side can be sponsors, and that's when the dropdown menu can like block that part if, we want to.
+
+60 "Hung, Louis" (3464415488)
+00:07:49.962 --> 00:07:56.699
+Or just include the ad on the side and be like, hey, go buy merchants from the store.
+
+61 "Collins, Joshua" (2734173952)
+00:07:56.699 --> 00:08:02.499
+Yeah, yeah. Like ball is live sponsored by the nbn.
+
+62 "Hung, Louis" (3464415488)
+00:08:02.499 --> 00:08:04.541
+Yeah, yeah, something like that.
+
+63 "Collins, Joshua" (2734173952)
+00:08:04.541 --> 00:08:23.802
+And then in the middle one it was just gonna be like our logo at the top, a quote from us, maybe then like three or four like recent games or like noteworthy games from this season or like some kind of statistics and say want more question mark, join today.
+
+64 "Hung, Louis" (3464415488)
+00:08:23.802 --> 00:08:26.786
+At the Interesting.
+
+65 "Collins, Joshua" (2734173952)
+00:08:26.786 --> 00:08:38.924
+Want to make a prediction, click here. Like the main page should just be like quick, like a quick, starting point to navigate to others, other parts of the site.
+
+66 "Hung, Louis" (3464415488)
+00:08:38.924 --> 00:08:39.841
+Mm.
+
+67 "Collins, Joshua" (2734173952)
+00:08:39.841 --> 00:08:42.663
+It doesn't It doesn't have to be crazy.
+
+68 "Hung, Louis" (3464415488)
+00:08:42.663 --> 00:09:04.319
+I was thinking about for the main page, like, cause you know a lot of websites, they don't put anything on the main page. They just put like slogans or like big pub big pictures or things like that on the main page. And you have to like click in for more.
+
+69 "Hung, Louis" (3464415488)
+00:09:04.319 --> 00:09:28.910
+In order to go to different sections. Yeah, you know, do you know what I mean? Yes. I think it's not Right like apple, like Apple's website, it's basically just like only their phones on the very front and there's not much information and I kind of want to just do that cause.
+
+70 "Collins, Joshua" (2734173952)
+00:09:28.910 --> 00:09:31.671
+Yeah, that makes it seems cool.
+
+71 "Hung, Louis" (3464415488)
+00:09:31.671 --> 00:09:49.077
+Or what's the middle? Oh yeah. I want I don't know if we could do this but like there's those animation like animation websites where you like scroll down and the entire thing change. Do you get what I mean?
+
+72 "Collins, Joshua" (2734173952)
+00:09:49.077 --> 00:09:51.529
+Can you say that again? Like.
+
+73 "Hung, Louis" (3464415488)
+00:09:51.529 --> 00:10:06.447
+Because for some websites, like when you just scroll down, there's gonna be animations according to how much you scroll down. I think there's one team that did it in my intro class last year and I think they got like a really high point on out of doing that, so.
+
+74 "Collins, Joshua" (2734173952)
+00:10:06.447 --> 00:10:15.851
+I believe it. That could be very possible like if they, so you said basically if they scroll like a certain speed at a certain speed?
+
+75 "Hung, Louis" (3464415488)
+00:10:15.851 --> 00:10:19.370
+Like the animation goes along destroying.
+
+76 "Collins, Joshua" (2734173952)
+00:10:19.370 --> 00:10:26.832
+Okay. Yeah, we can kind of figure something out like that. Do you know how they did it roughly?
+
+77 "Hung, Louis" (3464415488)
+00:10:26.832 --> 00:10:42.986
+I have NO idea. I mean I I mean one of us can just work on the Jacobry part and I don't know, maybe you can get something out. If you can't then just throw the idea.
+
+78 "Collins, Joshua" (2734173952)
+00:10:42.986 --> 00:10:59.510
+I think that's a good idea that we can, we could talk, we could definitely consider. Yeah, Yeah, because basically this is how it's set up right now, at least on with the homepage if you see my, if you see the whiteboard.
+
+79 "Hung, Louis" (3464415488)
+00:10:59.510 --> 00:11:12.849
+Okay, let me open my desktop real quick, I'll launch it locally and check if I can see anything. So branch again, adding webpage? Oh wait, NO, that's not it.
+
+80 "Collins, Joshua" (2734173952)
+00:11:12.849 --> 00:11:18.090
+I think it's, wait, did I, did I make a pull request?
+
+81 "Hung, Louis" (3464415488)
+00:11:18.090 --> 00:11:23.726
+You did, but I want to like check on my, like, github desktop.
+
+82 "Collins, Joshua" (2734173952)
+00:11:23.726 --> 00:11:27.691
+Yeah, yeah, yeah.
+
+83 "Hung, Louis" (3464415488)
+00:11:27.691 --> 00:11:34.665
+And class fetch, NO, that's not it. Do you go to the branch name, add napbar.
+
+84 "Collins, Joshua" (2734173952)
+00:11:34.665 --> 00:11:42.133
+The branch name I called it, reorganized layout, I think.
+
+85 "Hung, Louis" (3464415488)
+00:11:42.133 --> 00:11:48.232
+Reorganize the ok. Oh I forgot to pull up version, my bad.
+
+86 "Collins, Joshua" (2734173952)
+00:11:48.232 --> 00:11:49.431
+Yeah, NO worries.
+
+87 "Hung, Louis" (3464415488)
+00:11:49.431 --> 00:12:13.217
+Oh, I didn't see shit, what, just check on. So.
+
+88 "Collins, Joshua" (2734173952)
+00:12:13.217 --> 00:12:22.557
+Oh, give me 1 s. Okay let me check the github website.
+
+89 "Hung, Louis" (3464415488)
+00:12:22.557 --> 00:12:26.270
+Can you quickly share on Webex?
+
+90 "Collins, Joshua" (2734173952)
+00:12:26.270 --> 00:12:31.259
+Oh yes, I'll put the share. Okay.
+
+91 "Collins, Joshua" (2734173952)
+00:12:31.259 --> 00:12:48.792
+32I have the nav bar one.
+
+92 "Hung, Louis" (3464415488)
+00:12:48.792 --> 00:12:49.914
+Yeah, just.
+
+93 "Collins, Joshua" (2734173952)
+00:12:49.914 --> 00:12:57.412
+Oh yeah yeah yeah this this one, this one has three commits, this is all my commits.
+
+94 "Hung, Louis" (3464415488)
+00:12:57.412 --> 00:13:07.784
+In class fetch. Oh, it is called in class fetch. Okay, so I'm right. Yeah, yeah, ok. Check.
+
+95 "Collins, Joshua" (2734173952)
+00:13:07.784 --> 00:13:16.323
+Oh, it, oh, I must have, I think I renamed it on my desktop. That's must be.
+
+96 "Hung, Louis" (3464415488)
+00:13:16.323 --> 00:13:22.141
+Why I renamed the bridge on my desktop.
+
+97 "Hung, Louis" (3464415488)
+00:13:22.141 --> 00:13:27.065
+Yeah. Oh, I see. Oh I see, ok. Yeah.
+
+98 "Collins, Joshua" (2734173952)
+00:13:27.065 --> 00:13:37.712
+Yeah, that's what I have right now. I also added in our web. I also I use gimp real quick. I was able to get the, the wind share logo with NO back.
+
+99 "Hung, Louis" (3464415488)
+00:13:37.712 --> 00:13:41.072
+Around. Oh, oh wait, I did that ready.
+
+100 "Collins, Joshua" (2734173952)
+00:13:41.072 --> 00:13:43.947
+Well, yeah, yeah, but I, I guess.
+
+101 "Hung, Louis" (3464415488)
+00:13:43.947 --> 00:13:53.268
+Yeah, yeah, I forgot to update it too I forgot to update it to you guys because one of the wire frames I had to manually just remove the background.
+
+102 "Collins, Joshua" (2734173952)
+00:13:53.268 --> 00:13:57.048
+You know, but NO worries. We, we got that all sorted out now.
+
+103 "Hung, Louis" (3464415488)
+00:13:57.048 --> 00:14:07.469
+And do you want the version without like the white space on the back? Because you know there's still white space in the middle of the circle, right? I room I remove all of the white white spaces.
+
+104 "Collins, Joshua" (2734173952)
+00:14:07.469 --> 00:14:13.489
+Yeah, either way is fine. It I don't I don't think it will hurt if we add it later.
+
+105 "Hung, Louis" (3464415488)
+00:14:13.489 --> 00:14:17.708
+Yeah, I mean, I can just update it anytime, so doesn't really matter.
+
+106 "Collins, Joshua" (2734173952)
+00:14:17.708 --> 00:14:18.829
+Yeah.
+
+107 "Hung, Louis" (3464415488)
+00:14:18.829 --> 00:14:26.804
+Yeah, I just want to tell you guys that like there's this option that I already created that picture. So if you want to use it, just use it.
+
+108 "Collins, Joshua" (2734173952)
+00:14:26.804 --> 00:14:33.389
+Sounds good. And it might be something where we just get rid of that circle and just keep that logo cause that logo is pretty good on its own.
+
+109 "Hung, Louis" (3464415488)
+00:14:33.389 --> 00:14:41.051
+That works. I can do that. Yeah, it's a really quick fix, so I can do that.
+
+110 "Collins, Joshua" (2734173952)
+00:14:41.051 --> 00:14:45.552
+Yeah, let, let's have that be your the sprint work you did today.
+
+111 "Hung, Louis" (3464415488)
+00:14:45.552 --> 00:14:48.630
+Sure, I'll open up Photoshop right now.
+
+112 "Collins, Joshua" (2734173952)
+00:14:48.630 --> 00:14:52.948
+Because I mean, I, I doubt the other.
+
+113 "Hung, Louis" (3464415488)
+00:14:52.948 --> 00:15:00.860
+Spend others cause I almost have to go.
+
+114 "Collins, Joshua" (2734173952)
+00:15:00.860 --> 00:15:05.784
+Yeah, I also just reviewed the, the push.
+
+115 "Hung, Louis" (3464415488)
+00:15:05.784 --> 00:15:08.923
+And then we, and then we could get somebody else.
+
+116 "Collins, Joshua" (2734173952)
+00:15:08.923 --> 00:15:15.424
+It's review it well.
+
+117 "Hung, Louis" (3464415488)
+00:15:15.424 --> 00:15:46.299
+I'm gonna write a. Okay.
+
+118 "Hung, Louis" (3464415488)
+00:15:46.299 --> 00:15:56.882
+Okay, done with the review, approval.
+
+119 "Collins, Joshua" (2734173952)
+00:15:56.882 --> 00:15:57.783
+Are there.
+
+120 "Hung, Louis" (3464415488)
+00:15:57.783 --> 00:16:35.923
+Thank you, now, ok, wireframe.
+
+121 "Collins, Joshua" (2734173952)
+00:16:35.923 --> 00:16:55.119
+I want to call. Okay.
+
+122 "Hung, Louis" (3464415488)
+00:16:55.119 --> 00:17:15.318
+Okay, Hey.
+
+123 "Collins, Joshua" (2734173952)
+00:17:15.318 --> 00:17:17.504
+I login?
+
+124 "Hung, Louis" (3464415488)
+00:17:17.504 --> 00:17:23.100
+Yep, I'm just saving it as another file so I can upload it later.
+
+125 "Collins, Joshua" (2734173952)
+00:17:23.100 --> 00:17:24.603
+Sounds good.
+
+126 "Hung, Louis" (3464415488)
+00:17:24.603 --> 00:17:42.139
+Assets photos, I'll just save it as well PSD when share the resolutions might be a little bit concerning though because.
+
+127 "Collins, Joshua" (2734173952)
+00:17:42.139 --> 00:17:42.716
+Yeah.
+
+128 "Hung, Louis" (3464415488)
+00:17:42.716 --> 00:17:45.399
+What is? The resolutions.
+
+129 "Collins, Joshua" (2734173952)
+00:17:45.399 --> 00:17:56.474
+Of the other logo? Yeah. Okay. We could, do you want to try and develop a more high resolution logo?
+
+130 "Hung, Louis" (3464415488)
+00:17:56.474 --> 00:18:02.815
+I mean we can just sure, but or Yeah sure.
+
+131 "Collins, Joshua" (2734173952)
+00:18:02.815 --> 00:18:06.998
+I bet there's something we could throw a throat into just to.
+
+132 "Hung, Louis" (3464415488)
+00:18:06.998 --> 00:18:14.077
+It should be a quick window, so NO worries. And we can probably just throw it into.
+
+133 "Collins, Joshua" (2734173952)
+00:18:14.077 --> 00:18:23.774
+Yeah, you can find. Yeah, this, this free, like instant up scale, like.
+
+134 "Hung, Louis" (3464415488)
+00:18:23.774 --> 00:18:28.439
+Of scaling. Yeah, yeah, yeah, yeah, yeah. Yeah.
+
+135 "Collins, Joshua" (2734173952)
+00:18:28.439 --> 00:18:39.137
+Yeah. And if you go to the whiteboard, I also added like a simple login page idea for the login page. It would just be like.
+
+136 "Hung, Louis" (3464415488)
+00:18:39.137 --> 00:18:52.219
+Oh yeah, I I have whiteboard on my small menu, so I can see. Simple login page. That sounds looks looks right to me, but.
+
+137 "Collins, Joshua" (2734173952)
+00:18:52.219 --> 00:18:54.815
+I think we just have I mean let's.
+
+138 "Hung, Louis" (3464415488)
+00:18:54.815 --> 00:18:56.436
+It's just a login page so.
+
+139 "Collins, Joshua" (2734173952)
+00:18:56.436 --> 00:19:11.078
+Yeah, also, I, I'm think I With the logo at least, that, it had a really good color palette. I think that we can use that for the, the website itself.
+
+140 "Hung, Louis" (3464415488)
+00:19:11.078 --> 00:19:14.398
+The logo? Oh, ok. Oh you mean the general color, right?
+
+141 "Collins, Joshua" (2734173952)
+00:19:14.398 --> 00:19:20.756
+That likes the whites, the science, and then the the gray are a good three colored combination.
+
+142 "Hung, Louis" (3464415488)
+00:19:20.756 --> 00:19:23.479
+Right.
+
+143 "Collins, Joshua" (2734173952)
+00:19:23.479 --> 00:19:45.919
+We could we can use another color later on, but I mean like as 1st starting point that's not a bad that's not a, that's not a bad combination of colors and we could use that for our websites layout or like at least like palette. Yeah. So the resolution.
+
+144 "Hung, Louis" (3464415488)
+00:19:45.919 --> 00:19:52.545
+I'm gonna try to run it through like another resolution of created something online later.
+
+145 "Hung, Louis" (3464415488)
+00:19:53.056 --> 00:19:58.338
+Sounds good. Yep. Okay, I'm gonna go. I have another call waiting.
+
+146 "Hung, Louis" (3464415488)
+00:19:58.338 --> 00:20:02.220
+No worries, see you. Yeah, ok, see ya.
