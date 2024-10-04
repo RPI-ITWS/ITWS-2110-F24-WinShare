@@ -18,7 +18,7 @@ body{
 }
 
 #buffer{
-    height:50px;
+    height:49px;
 }
 
 .tab{
@@ -92,7 +92,6 @@ body{
 }
 
 #RightColumn{
-    border: solid red;
     width: 20%;
     height: 1046px;
 }
@@ -103,6 +102,7 @@ body{
 
 #DropdownBar{
     display: none;   
+    height: 500px;
 }
 
 #DDBcontent{

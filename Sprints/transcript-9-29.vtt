@@ -1,0 +1,597 @@
+WEBVTT
+
+1 "Shimu Pan" (987643904)
+00:00:00.000 --> 00:00:04.453
+Okay.
+
+2 "Collins, Joshua" (1416096256)
+00:00:04.453 --> 00:00:05.898
+Oh.
+
+3 "Shimu Pan" (987643904)
+00:00:05.898 --> 00:00:11.964
+Hello? Can you hear me?
+
+4 "Sharma, Pranay" (2648001792)
+00:00:11.964 --> 00:00:13.617
+Yeah, I hear you.
+
+5 "Collins, Joshua" (1416096256)
+00:00:13.617 --> 00:00:32.120
+Yeah, this is good to get three of us this time. This, this is good yeah because just remember that we need to do two of these a week and this is the 2nd one from technically last week, so we can Yeah, are you guys open on Wednesdays at all?
+
+6 "Sharma, Pranay" (2648001792)
+00:00:32.120 --> 00:00:36.397
+I am. Wednesdays not this Wednesday I have a interview.
+
+7 "Collins, Joshua" (1416096256)
+00:00:36.397 --> 00:00:47.017
+Okay usually, yeah. Okay, so probably not next week but but not this upcoming week but the week after we could probably start something where we do a meeting on Wednesdays.
+
+8 "Shimu Pan" (987643904)
+00:00:47.017 --> 00:00:49.573
+Yeah, that sounds good. Yeah.
+
+9 "Collins, Joshua" (1416096256)
+00:00:49.573 --> 00:00:55.496
+You want like on Friday or Saturday or something.
+
+10 "Shimu Pan" (987643904)
+00:00:55.496 --> 00:01:00.662
+Oh yeah cause, someone, someone said they're not available on weekends, right?
+
+11 "Collins, Joshua" (1416096256)
+00:01:00.662 --> 00:01:27.218
+Yeah, I think it was Lewis. It was Louis. Yeah, I think Lewis said he couldn't do that. So it's just kind of finding finding a way that at least like three of us can be on a call. Cause I feel I don't feel good with only like you or me or or or two of us on a call in a group of five, because I just don't know how Professor call ahead is gonna, approve of that.
+
+12 "Shimu Pan" (987643904)
+00:01:27.218 --> 00:01:30.695
+Yeah, I get I get that. Yeah. That's me.
+
+13 "Collins, Joshua" (1416096256)
+00:01:30.695 --> 00:01:55.237
+Yeah, we'll just need to try and be better about attendance. I don't know where Azik is, but that's fine. We we we can get we can get talk like we can get working. We're, were you able to, work on the website at all?
+
+14 "Shimu Pan" (987643904)
+00:01:55.237 --> 00:02:09.138
+I was starting to work on yesterday, but I had something to do at the middle at the end of the day and I just realized that I went down went to work on that 1st But I did get started working on the, the middle of the page. Okay.
+
+15 "Collins, Joshua" (1416096256)
+00:02:09.138 --> 00:02:30.405
+Cause I just made a merge request today of like the very beginning design of that dropdown I got it to dropdown and oh, here we go, here's the Zeek, hey Z, can you hear us?
+
+16 "Izik" (2601724160)
+00:02:30.405 --> 00:02:34.142
+Yeah, what's on? Not too much. This is usar.
+
+17 "Collins, Joshua" (1416096256)
+00:02:34.142 --> 00:02:35.901
+I could sprint for this past week.
+
+18 "Izik" (2601724160)
+00:02:35.901 --> 00:02:38.844
+Yeah, talk about.
+
+19 "Collins, Joshua" (1416096256)
+00:02:38.844 --> 00:02:48.903
+Would you mind working on the JavaScript for that dropdown bar? I just, I I have a merge request and I need one more person to approve it.
+
+20 "Izik" (2601724160)
+00:02:48.903 --> 00:02:53.183
+I'll go take a I'll go take a look at the right.
+
+21 "Collins, Joshua" (1416096256)
+00:02:53.183 --> 00:03:01.650
+Yeah, it's basically just, a dropdown bar on the side that basically allows us to do login about us settings and like.
+
+22 "Collins, Joshua" (1416096256)
+00:03:01.650 --> 00:03:16.710
+I'm new, I'm new to windshare. Just kind of like a, that way we don't make our navigation bar the top super densed.
+
+23 "Collins, Joshua" (1416096256)
+00:03:16.710 --> 00:03:32.313
+And we could always move around stuff on the navigation bar, but primarily we just need to get some a working product 1st.
+
+24 "Shimu Pan" (987643904)
+00:03:32.313 --> 00:03:36.935
+Are we gonna use PHP at all for now or NO?
+
+25 "Collins, Joshua" (1416096256)
+00:03:36.935 --> 00:03:46.375
+I think we have to use a little bit of PHP when it comes to statistics cause isn't that, isn't PHP the main way you get stuff from SQL to your website?
+
+26 "Shimu Pan" (987643904)
+00:03:46.375 --> 00:03:48.415
+Yeah yeah that's the main way.
+
+27 "Collins, Joshua" (1416096256)
+00:03:48.415 --> 00:03:50.476
+Yeah.
+
+28 "Shimu Pan" (987643904)
+00:03:50.476 --> 00:03:57.835
+So I would like to use jquery. Does anyone know how to set that up Cause I completely forgot.
+
+29 "Collins, Joshua" (1416096256)
+00:03:57.835 --> 00:04:00.934
+Ah J query, let me do a quick google search.
+
+30 "Izik" (2601724160)
+00:04:00.934 --> 00:04:08.636
+I know you had to like include something but yeah download it or something and then you include it at the top in the header.
+
+31 "Shimu Pan" (987643904)
+00:04:08.636 --> 00:04:12.256
+But yeah, would you guys want to use jquery? Yeah.
+
+32 "Collins, Joshua" (1416096256)
+00:04:12.256 --> 00:04:18.599
+We can, yeah, we can use that if it if it that if it streamlines the development process.
+
+33 "Shimu Pan" (987643904)
+00:04:18.599 --> 00:04:26.082
+Yeah, I'll make interacting with the back end a lot easier. I was using Fetch to do lab three and it was a pain in the ass for all.
+
+34 "Izik" (2601724160)
+00:04:26.082 --> 00:04:27.615
+No.
+
+35 "Collins, Joshua" (1416096256)
+00:04:27.615 --> 00:04:35.647
+Yeah, yeah, that's why I was using fetch for lab too, and then I was I was like, dude, how am I gonna get a PHP to do that for me?
+
+36 "Shimu Pan" (987643904)
+00:04:35.647 --> 00:04:39.430
+Yeah, it's such a pain. Yeah.
+
+37 "Collins, Joshua" (1416096256)
+00:04:39.430 --> 00:04:42.927
+And there's NO way to test it until like you push it, right?
+
+38 "Shimu Pan" (987643904)
+00:04:42.927 --> 00:04:46.287
+Oh, you could be download examp.
+
+39 "Collins, Joshua" (1416096256)
+00:04:46.287 --> 00:04:47.046
+X amp.
+
+40 "Izik" (2601724160)
+00:04:47.046 --> 00:04:49.509
+Oh yeah, use XM for that.
+
+41 "Collins, Joshua" (1416096256)
+00:04:49.509 --> 00:04:53.249
+Is that it's like, it's like a virtual machine that runs on your.
+
+42 "Shimu Pan" (987643904)
+00:04:53.249 --> 00:05:03.471
+Computer, and you could put, like, your, you could just download your repository into xamp and then it will like, it will run the server for you.
+
+43 "Collins, Joshua" (1416096256)
+00:05:03.471 --> 00:05:06.462
+Okay, let me see if VS Code has anything, anything like that.
+
+44 "Izik" (2601724160)
+00:05:06.462 --> 00:05:07.729
+I don't think it did.
+
+45 "Shimu Pan" (987643904)
+00:05:07.729 --> 00:05:16.971
+So I could drop a link for exams in the chat if you guys want. Because I was doing the the pushing thing every time I wanted to check for change.
+
+46 "Izik" (2601724160)
+00:05:16.971 --> 00:05:19.847
+Yeah, do you have it working right now?
+
+47 "Shimu Pan" (987643904)
+00:05:19.847 --> 00:05:35.249
+Yeah, it's working right now. That's good. Also exam shows you PHP errors. What I mean by that is that if you push, so here's the issue I was having, right? My SQL string had like an error in it.
+
+48 "Shimu Pan" (987643904)
+00:05:35.249 --> 00:05:55.249
+So I, it couldn't it it didn't work when I did, when I called the SQL string, right? When I pushed it to the virtual machine, the VM, the RTLBS VM, it, it never told me what was wrong, like why my site was crashing. So I was like wasting, I wasted literally 3 h trying to figure out why my code wasn't working, but.
+
+49 "Shimu Pan" (987643904)
+00:05:55.249 --> 00:06:07.971
+On XM, when I loaded my, my code under xamp, it immediately told me the the error issue. It was like error in error parsing this SQL string. It's like, I wasted 3 h of my life.
+
+50 "Collins, Joshua" (1416096256)
+00:06:07.971 --> 00:06:13.823
+Oh, there is a extension called PHP server that might be useful.
+
+51 "Izik" (2601724160)
+00:06:13.823 --> 00:06:15.690
+All they have done?
+
+52 "Collins, Joshua" (1416096256)
+00:06:15.690 --> 00:06:26.289
+Yeah, I typed in PHP and there's, I think it's like six or seven of them down, but there's claims to be, there's one that claims to basically do all of that for you.
+
+53 "Shimu Pan" (987643904)
+00:06:26.289 --> 00:06:46.150
+Oh, I mean if it's, you could try it out. If it's good, let me know, but I think, because I use exam in an intro to host my server, to, to work to develop my own project, and I felt I felt it was pretty good.
+
+54 "Collins, Joshua" (1416096256)
+00:06:46.150 --> 00:06:49.285
+I I believe you.
+
+55 "Sharma, Pranay" (2648001792)
+00:06:49.285 --> 00:06:52.587
+So what exact, what exactly does XM do?
+
+56 "Shimu Pan" (987643904)
+00:06:52.587 --> 00:07:07.690
+Yeah, so you know how you can't like really test your PHP scripts like on your computer? So xamp makes like a virtual machine of a VM for you that runs a PHP.
+
+57 "Sharma, Pranay" (2648001792)
+00:07:07.690 --> 00:07:12.207
+Ah, so like while, so like while you're coding your PHP, like real.
+
+58 "Shimu Pan" (987643904)
+00:07:12.207 --> 00:07:17.509
+Yeah, it's like, do you, Yeah, do you use a live server on VS codecs?
+
+59 "Sharma, Pranay" (2648001792)
+00:07:17.509 --> 00:07:19.850
+Yeah, yeah. Yeah, it's like.
+
+60 "Shimu Pan" (987643904)
+00:07:19.850 --> 00:07:26.887
+It's basically live server but with PHP support. Because live server doesn't work with PHP right now.
+
+61 "Collins, Joshua" (1416096256)
+00:07:26.887 --> 00:07:32.108
+That's such a that's such an oversight. Yeah.
+
+62 "Shimu Pan" (987643904)
+00:07:32.108 --> 00:07:55.632
+Right Live server is like the goal, but when I found out it doesn't work with PHP, it's kinda, kind of sad.
+
+63 "Izik" (2601724160)
+00:07:55.632 --> 00:07:58.790
+Oh, is there a new lab?
+
+64 "Shimu Pan" (987643904)
+00:07:58.790 --> 00:08:02.148
+Yeah. Were you in class on Friday?
+
+65 "Izik" (2601724160)
+00:08:02.148 --> 00:08:05.889
+I wasn't I had an interview on Friday.
+
+66 "Shimu Pan" (987643904)
+00:08:05.889 --> 00:08:11.467
+Yeah, yeah, we had a lab lab three was assigned on Friday.
+
+67 "Izik" (2601724160)
+00:08:11.467 --> 00:08:13.608
+Is a group or is it individual?
+
+68 "Collins, Joshua" (1416096256)
+00:08:13.608 --> 00:08:38.219
+Yeah, it's basically, lab two, but you have to use PHP and PHP by admin to have it basically, basically every time your API has, you go fetch API for your information, you throw it into a SQL table and then have your PHP pull it from the table. Let's see.
+
+69 "Collins, Joshua" (1416096256)
+00:08:38.219 --> 00:08:55.859
+Yeah, so it's it's very needlessly complicated but it's it's useful if you ever wanted your like users to want to be able to go and, and change stuff.
+
+70 "Collins, Joshua" (1416096256)
+00:08:55.859 --> 00:09:15.569
+But we're currently working through it. So, what tasks should we focus on this week for the website at least for wind share? Cause I know you guys are busy, I'm.
+
+71 "Sharma, Pranay" (2648001792)
+00:09:15.569 --> 00:09:22.530
+I was thinking about designing a new logo for windshire. I can do that.
+
+72 "Collins, Joshua" (1416096256)
+00:09:22.530 --> 00:09:37.842
+Oh, is there anything else you can do like maybe towards I I'm not disagreeing with you, it's just that I think we need to focus more on like getting the the web, the web page operational. Yeah.
+
+73 "Sharma, Pranay" (2648001792)
+00:09:37.842 --> 00:09:47.664
+Yeah, I mean if you guys are doing PHP and, if you guys are doing PP, I'm pretty bad at PHP. I'm still trying to figure out this next lab, but.
+
+74 "Izik" (2601724160)
+00:09:47.664 --> 00:09:58.802
+I can try to work on every like a lot, just cause I haven't been doing anything. I've been like pretty busy with other work, but I'm like kind of free this week.
+
+75 "Collins, Joshua" (1416096256)
+00:09:58.802 --> 00:10:01.103
+Okay.
+
+76 "Izik" (2601724160)
+00:10:01.103 --> 00:10:07.345
+So if there's anything, that, like, you really need to work on, I can do it.
+
+77 "Collins, Joshua" (1416096256)
+00:10:07.345 --> 00:10:14.900
+Okay, I, I guess, do you wanna kind of just start building the web pages for like logging in and signing up for right now?
+
+78 "Izik" (2601724160)
+00:10:14.900 --> 00:10:17.943
+Yeah, cause.
+
+79 "Collins, Joshua" (1416096256)
+00:10:17.943 --> 00:10:30.803
+Those pages should be relatively quick cause it's just gonna be like a little box, username password, submit, and then, yeah, just the usual.
+
+80 "Izik" (2601724160)
+00:10:30.803 --> 00:10:32.662
+Gotcha.
+
+81 "Sharma, Pranay" (2648001792)
+00:10:32.662 --> 00:10:45.964
+I can make the style sheets consistent so that all the pages have a consistent style sheet and looks nice. I'm really good at, the CSS stuff, so. Okay, that's something small I know, but it's also just let me.
+
+82 "Collins, Joshua" (1416096256)
+00:10:45.964 --> 00:11:09.584
+Well, yeah, if we can get you to standardize it and make it look pretty, as we progress, we can just keep everything consistent because a lot of what, Right now I'm mainly concerned about functionality, but a lot of our grade will later on will come from how it looks, so that is an important aspect.
+
+83 "Sharma, Pranay" (2648001792)
+00:11:09.584 --> 00:11:24.100
+Yeah, in terms of functionality with the PHP and the statistics and all that, I'm sure you guys are better than at that than I am. Like last time I did that was intro for me, which was also like two years ago, so I trusted you guys with that.
+
+84 "Collins, Joshua" (1416096256)
+00:11:24.100 --> 00:11:32.979
+How, yeah, you can definitely do the CSS. Could you search, could you try to find us a MBA API that's an HTTPS?
+
+85 "Sharma, Pranay" (2648001792)
+00:11:32.979 --> 00:11:35.503
+Yeah, for sure.
+
+86 "Collins, Joshua" (1416096256)
+00:11:35.503 --> 00:11:47.280
+If we could find one that gives us some statistics I think that's a good point to be like, ok, we have our tool that we're gonna use and then we can start actually building off of it.
+
+87 "Sharma, Pranay" (2648001792)
+00:11:47.280 --> 00:11:50.063
+Yeah, yeah.
+
+88 "Collins, Joshua" (1416096256)
+00:11:50.063 --> 00:11:53.639
+So, I'll look into maybe a like a.
+
+89 "Sharma, Pranay" (2648001792)
+00:11:53.639 --> 00:11:57.701
+Free NBA apis that are also HTTPS.
+
+90 "Collins, Joshua" (1416096256)
+00:11:57.701 --> 00:12:00.988
+Just remember we cannot pay for anything.
+
+91 "Sharma, Pranay" (2648001792)
+00:12:00.988 --> 00:12:02.950
+If.
+
+92 "Collins, Joshua" (1416096256)
+00:12:02.950 --> 00:12:07.587
+If it requires you to put a credit card info credit card info in, we can't use it.
+
+93 "Sharma, Pranay" (2648001792)
+00:12:07.587 --> 00:12:11.105
+Yeah, gotcha. Yeah, everything has to be free.
+
+94 "Collins, Joshua" (1416096256)
+00:12:11.105 --> 00:12:24.868
+Yeah, and then we should also probably all learn a little bit more about like bootstrap or whatever cause I I heard it's a great way to make stuff easy, make stuff more easy on the eyes at least CSS wise.
+
+95 "Izik" (2601724160)
+00:12:24.868 --> 00:12:28.091
+Yeah, it's it's a lot easier.
+
+96 "Collins, Joshua" (1416096256)
+00:12:28.091 --> 00:12:38.850
+That's good. Yeah and Shemo and I will start, we'll finish up the main page hopefully this week.
+
+97 "Sharma, Pranay" (2648001792)
+00:12:38.850 --> 00:12:39.926
+Oh, it's.
+
+98 "Collins, Joshua" (1416096256)
+00:12:39.926 --> 00:12:53.825
+It's just annoying because I have Callihan for another class and this other class basically just like an on slot of homework and I also have my prodline test this weekend or this week.
+
+99 "Izik" (2601724160)
+00:12:53.825 --> 00:12:56.611
+Oh damn.
+
+100 "Collins, Joshua" (1416096256)
+00:12:56.611 --> 00:13:05.730
+What? There you go 1st. Oh, I have, I have caller hand in modern binary exploitation.
+
+101 "Sharma, Pranay" (2648001792)
+00:13:05.730 --> 00:13:07.689
+Yeah.
+
+102 "Collins, Joshua" (1416096256)
+00:13:07.689 --> 00:13:11.814
+Yeah, it's a hacking class and it's a pain in the ass.
+
+103 "Sharma, Pranay" (2648001792)
+00:13:11.814 --> 00:13:13.310
+It's really annoying.
+
+104 "Collins, Joshua" (1416096256)
+00:13:13.310 --> 00:13:14.469
+Yeah.
+
+105 "Izik" (2601724160)
+00:13:14.469 --> 00:13:17.766
+Yeah, two of my friends are in that class and they said it's brutal.
+
+106 "Collins, Joshua" (1416096256)
+00:13:17.766 --> 00:13:52.067
+Yeah, it's it's brutal because it's just like you can't solve any of the actual like like difficult questions unless you spend like two days working on it. Yeah. So right now i'm sitting with let's see, 2468. I'm sitting with a 10 % in the class. I know. Yeah. But that's out of maybe. Yeah, I'm about, I have about half the available points that you can have right now, so not bad, not great.
+
+107 "Izik" (2601724160)
+00:13:52.067 --> 00:13:55.848
+No, yeah.
+
+108 "Collins, Joshua" (1416096256)
+00:13:55.848 --> 00:14:14.683
+But I mean, as long as we get them, I would really like within the next week or two we get the main page knocked out and start implementing that API, because if we could start working on that before the semester starts to really, really ramp up, we should be good.
+
+109 "Sharma, Pranay" (2648001792)
+00:14:14.683 --> 00:14:17.047
+Yeah, I would really hate.
+
+110 "Collins, Joshua" (1416096256)
+00:14:17.047 --> 00:14:45.769
+For us to have nothing and then go into like the last five weeks, four or five weeks of school and have to like do everything. So and with that said, does everybody know what they need to work on for the next week or so?
+
+111 "Izik" (2601724160)
+00:14:45.769 --> 00:14:58.807
+You said for me to do the log page, right? The login page? Yes. I Do you have like a, do you have like a, like an image you wanna or.
+
+112 "Collins, Joshua" (1416096256)
+00:14:58.807 --> 00:15:04.871
+We I don't really have anything at this moment cause I don't think we've ever really got that far in depth.
+
+113 "Izik" (2601724160)
+00:15:04.871 --> 00:15:11.129
+Okay, I'll just make something up then and then. Yeah, NO worries. I guess we'll see how it looks.
+
+114 "Collins, Joshua" (1416096256)
+00:15:11.129 --> 00:15:18.329
+Yeah, good news is we can always change up the looks of things later. We just gotta get the base functionality down now.
+
+115 "Shimu Pan" (987643904)
+00:15:18.329 --> 00:15:21.544
+Yeah. Oh.
+
+116 "Collins, Joshua" (1416096256)
+00:15:21.544 --> 00:15:28.346
+Do you have, is PHP my admin already set up on the.
+
+117 "Shimu Pan" (987643904)
+00:15:28.346 --> 00:15:31.908
+Oh P m. Not yet, NO. Okay.
+
+118 "Collins, Joshua" (1416096256)
+00:15:31.908 --> 00:16:01.289
+Oh, I'll actually get to that right now. Okay, we, yeah, if you can get that done right now, we can, we could throw that into the, into the transcript and then that would be good. Yeah, just right now focus on, well, create, create two users, create like an admin user that has the ability to make like databases and tables and everything, and then we can later on make a user for just selecting stuff.
+
+119 "Shimu Pan" (987643904)
+00:16:01.289 --> 00:16:11.588
+Yeah, that's fine. One problem though, I don't remember the, the code to make the users.
+
+120 "Collins, Joshua" (1416096256)
+00:16:11.588 --> 00:16:12.970
+What do you mean?
+
+121 "Shimu Pan" (987643904)
+00:16:12.970 --> 00:16:17.590
+Like, what's the, what is the, the coat had to do?
+
+122 "Collins, Joshua" (1416096256)
+00:16:17.590 --> 00:16:22.867
+Uhh, I'll look it up right now. I'll then I'll send it a discord.
+
+123 "Shimu Pan" (987643904)
+00:16:22.867 --> 00:16:34.767
+Yeah yeah Cause I I know how to install mysql. Yeah.
+
+124 "Collins, Joshua" (1416096256)
+00:16:34.767 --> 00:16:36.582
+Yeah.
+
+125 "Shimu Pan" (987643904)
+00:16:36.582 --> 00:16:39.991
+Let's see. I should probably give you guys the admin password, right?
+
+126 "Collins, Joshua" (1416096256)
+00:16:39.991 --> 00:17:06.119
+Yes, just so that when we go into it, we should be able to just quickly log in. Yeah, yeah.
+
+127 "Collins, Joshua" (1416096256)
+00:17:06.119 --> 00:17:26.147
+Okay, uh.
+
+128 "Sharma, Pranay" (2648001792)
+00:17:26.147 --> 00:17:31.032
+Yeah.
+
+129 "Shimu Pan" (987643904)
+00:17:31.032 --> 00:17:43.291
+Sure, like it used to be a half day, right? Yeah.
+
+130 "Sharma, Pranay" (2648001792)
+00:17:43.291 --> 00:17:53.590
+Okay, I I have to, can you guess your.
+
+131 "Collins, Joshua" (1416096256)
+00:17:53.590 --> 00:17:59.445
+What did you say? I said I have to go but I will get you a, I'll send in the team one.
+
+132 "Sharma, Pranay" (2648001792)
+00:17:59.445 --> 00:18:02.293
+The NBA API once I find one.
+
+133 "Collins, Joshua" (1416096256)
+00:18:02.293 --> 00:18:04.632
+Okay, NO worries, take care.
+
+134 "Sharma, Pranay" (2648001792)
+00:18:04.632 --> 00:18:06.552
+Yep, thank you guys. See you guys bye.
+
+135 "Shimu Pan" (987643904)
+00:18:06.552 --> 00:18:22.611
+No worries. Yeah, here we go. Yeah.
+
+136 "Collins, Joshua" (1416096256)
+00:18:22.611 --> 00:18:46.812
+Here you go. It should be this command to create the user, here's the privileges command, but that that grants all privileges, so you should be really careful about who you give that one to.
+
+137 "Shimu Pan" (987643904)
+00:18:46.812 --> 00:18:52.091
+And then.
+
+138 "Collins, Joshua" (1416096256)
+00:18:52.091 --> 00:18:55.932
+Yeah, then flush privileges.
+
+139 "Shimu Pan" (987643904)
+00:18:55.932 --> 00:19:00.291
+So click user.
+
+140 "Collins, Joshua" (1416096256)
+00:19:00.291 --> 00:19:11.550
+Oh yeah oh yeah sorry and it's even good to be able to do all do all that you have to do some my sQL-u root-P.
+
+141 "Shimu Pan" (987643904)
+00:19:11.550 --> 00:19:19.287
+Yeah, yeah, I got it. Yeah, so I'll I'll call the user admin, I'll make the password like.
+
+142 "Collins, Joshua" (1416096256)
+00:19:19.287 --> 00:19:24.469
+Don't, don't make it admit, make it something else and just throw it into the, the discord.
+
+143 "Shimu Pan" (987643904)
+00:19:24.469 --> 00:19:27.728
+I'll I'll make it the same pattern as the VM, is that fine?
+
+144 "Collins, Joshua" (1416096256)
+00:19:27.728 --> 00:19:31.614
+Yeah, I forgot what that is.
+
+145 "Shimu Pan" (987643904)
+00:19:31.614 --> 00:19:34.273
+It's a wind share 123 at?
+
+146 "Collins, Joshua" (1416096256)
+00:19:34.273 --> 00:19:51.353
+Okay, good. Alright, and we should be good. With that said, I think we've had a good sprint today and I'll see you guys on Tuesday.
+
+147 "Shimu Pan" (987643904)
+00:19:51.353 --> 00:19:54.589
+Yeah. Sounds good.
+
+148 "Collins, Joshua" (1416096256)
+00:19:54.589 --> 00:19:55.351
+See how.
+
+149 "Izik" (2601724160)
+00:19:55.351 --> 00:20:00.672
+See you guys.
