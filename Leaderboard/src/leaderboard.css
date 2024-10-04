@@ -1,0 +1,117 @@
+#leaderboardTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#leaderboardTable th, #leaderboardTable td {
+    border: 1px solid #7DD8BA;
+    padding: 10px;
+    text-align: center;
+}
+
+#leaderboardTable th {
+    background-color: #696D73;
+    color: #7DD8BA;
+}
+
+#leaderboardTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#leaderboardTable tr:hover {
+    background-color: #e6e6e6;
+}
+
+#MiddleColumn h1 {
+    color: #696D73;
+    text-align: center;
+    margin-top: 20px;
+}
+#leaderBoardTitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#LeftCol{
+    /*border: solid red;*/
+    width: 20%;
+    height: 1046px;
+}
+
+#MiddleCol{
+    width: 70%;
+    height: 1046px;
+}
+
+#leaderBoardTitle {
+    color: #696D73;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#leaderboardTable {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    table-layout: fixed; /* This ensures our column widths are respected */
+}
+
+#leaderboardTable th, #leaderboardTable td {
+    border: 1px solid #7DD8BA;
+    padding: 12px;
+    text-align: center;
+    overflow: hidden; /* This prevents content from overflowing */
+    text-overflow: ellipsis; /* This adds an ellipsis for overflowing text */
+    white-space: nowrap; /* This keeps content on a single line */
+}
+
+#leaderboardTable th {
+    background-color: #696D73;
+    color: #7DD8BA;
+    font-weight: bold;
+}
+
+#leaderboardTable tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+#leaderboardTable tr:hover {
+    background-color: #e8e8e8;
+}
+
+#leaderboardTable td:first-child {
+    font-weight: bold;
+    color: #696D73;
+}
+
+#leaderboardTable #rankings {
+    width: 20%; /* Reduced from 20% */
+    text-align: center;
+}
+
+#leaderboardTable #player {
+    width: 40%;
+}
+
+#leaderboardTable .player-name {
+    vertical-align: middle;
+}
+
+#leaderboardTable #score {
+    width: 40%;
+    text-align: center;
+}
+
+/* New style for profile picture */
+#leaderboardTable .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 10px;
+}
