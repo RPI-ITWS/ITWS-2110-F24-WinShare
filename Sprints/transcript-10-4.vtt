@@ -1,0 +1,621 @@
+WEBVTT
+
+1 "" (0)
+00:00:00.000 --> 00:00:00.949
+Okay.
+
+2 "Collins, Joshua" (413696)
+00:00:00.949 --> 00:00:11.954
+You're gonna have to log on to you're gonna have to log on to Webex on the web page itself to get the recording.
+
+3 "Hung, Louis" (1577873152)
+00:00:11.954 --> 00:00:16.155
+Right, NO, I started the recording right already so. Okay.
+
+4 "Mandloi, Priyanka" (1114105088)
+00:00:16.155 --> 00:00:25.532
+Okay, so, the 1st question was, what you liked in this sprint?
+
+5 "Hung, Louis" (1577873152)
+00:00:25.532 --> 00:00:28.372
+Did we want? Sorry. I didn't catch that.
+
+6 "Mandloi, Priyanka" (1114105088)
+00:00:28.372 --> 00:00:34.078
+This sprint. I will post from the group.
+
+7 "Collins, Joshua" (413696)
+00:00:34.078 --> 00:00:48.675
+And for this sprint, we developed a rough draft for our our main page and the login page.
+
+8 "Hung, Louis" (1577873152)
+00:00:48.675 --> 00:01:10.229
+So basically we give, like, we give a general outlook of what our index.HTML would look like and me personally, I worked on the leaderboard page and a little bit of JavaScript behind the rankings of the leaderboard and I implemented a few links onto the index.HTML page. Yes.
+
+9 "Collins, Joshua" (413696)
+00:01:10.229 --> 00:01:15.636
+Could you share your screen real quick to, so we can show what we're talking about?
+
+10 "Hung, Louis" (1577873152)
+00:01:15.636 --> 00:01:17.177
+Yeah, sure.
+
+11 "Mandloi, Priyanka" (1114105088)
+00:01:17.177 --> 00:01:35.450
+So guys just you know add to add something over here. When you, when we say like what you liked about the sprint or you can say, you know, your collaboration went well or you had a property coordination or if anyone has done very good things so you can give them a shout out as well.
+
+12 "Mandloi, Priyanka" (1114105088)
+00:01:35.450 --> 00:01:54.454
+It's not just, showcasing your work, it's like show I mean, I think you guys have met multiple times, you know, right, to achieve this 1st sprint. So whatever you liked in that process, you have to, you have to answer that as a part of this question.
+
+13 "Collins, Joshua" (413696)
+00:01:54.454 --> 00:01:55.670
+So.
+
+14 "Mandloi, Priyanka" (1114105088)
+00:01:55.670 --> 00:02:29.590
+Yeah, right. So the thing is whenever we have a retro actually this is answers but questions, but usually we discuss three, three things in the retro like what went well and then what what was the impediments and how could went well and how, what are the actions or the steps we should have been taken to you know so that what whatever the things didn't went well so that we don't we don't have those issues again in the future. These are the three kind of things we discussed, so it is similar to that like what you liked.
+
+15 "Mandloi, Priyanka" (1114105088)
+00:02:29.590 --> 00:03:00.410
+This print like what went well like you have created your product backlog, your user stories are proper and your task is properly refined and distributed among yourself, all those things you can say about this answer. Like, let's just say if you have targeted or you know overall product you have a hundred percent. Let's us say you have targeted 25 % in this print. So, you can say like numerical device like almost we have we were able to achieve almost whatever.
+
+16 "Mandloi, Priyanka" (1114105088)
+00:03:00.410 --> 00:03:08.176
+We have decided or whatever we fixed our target is. So all those things can be your answers. Okay.
+
+17 "Collins, Joshua" (413696)
+00:03:08.176 --> 00:03:27.050
+I'll I'll go 1st. I, I liked the progress we made personally. The only thing we weren't able to get done that we were initially set on doing was a sign up page, but that's also due to the fact that all of our members were incredibly busy this past month and we, that was just some, that was one thing we.
+
+18 "Collins, Joshua" (413696)
+00:03:27.050 --> 00:03:31.056
+He ended up not being able to finish. Okay.
+
+19 "Mandloi, Priyanka" (1114105088)
+00:03:31.056 --> 00:03:40.192
+Yeah, have to answer like what did what did you like about the sprint?
+
+20 "Collins, Joshua" (413696)
+00:03:40.192 --> 00:03:49.256
+I I liked everyone's I well I personally I liked the Zeek's boot bootstrap on his login page. Okay.
+
+21 "Mandloi, Priyanka" (1114105088)
+00:03:49.256 --> 00:03:58.857
+Good. Who want to go next? Luis? Sure ok so.
+
+22 "Hung, Louis" (1577873152)
+00:03:58.857 --> 00:04:22.710
+So personally, I think what we actually struggled on, it's how we like actually split up the work because I think I think that like our work distribution is not extremely equal across our group members, like especially like when we're working on different times and we have like different testing periods cause we were basically from a lot of different grades and.
+
+23 "Hung, Louis" (1577873152)
+00:04:22.710 --> 00:04:49.702
+I think we we might want to have like a more sustainable daily scrum period like located in each week because now we're just like booking time from booking time from time to time from week to week and like I think a more steady period of time of meetings per week would give us a better, maybe a better understanding of what each other's doing and what can we collaborate better.
+
+24 "Hung, Louis" (1577873152)
+00:04:49.702 --> 00:04:58.979
+And what I like about our progress is that we have a very solid general outlook of the index page and the leaderboard page.
+
+25 "Hung, Louis" (1577873152)
+00:04:58.979 --> 00:05:16.485
+Well, personal experience, but, that's basically like we have like the big framework, but we just have to work on the detailed CSS and maybe just a little bit of PHP and API synchronization to make the project actually works. Okay.
+
+26 "Mandloi, Priyanka" (1114105088)
+00:05:16.485 --> 00:05:21.924
+Ben, you want to go next?
+
+27 "Collins, Joshua" (413696)
+00:05:21.924 --> 00:05:24.862
+I'm sorry my bad.
+
+28 "Shimu Pan" (282182656)
+00:05:24.862 --> 00:05:38.568
+Yes. Yeah, so, I think we did it in this sprint specifically. Joshua mentioned that we were all very busy this past week and the past month.
+
+29 "Mandloi, Priyanka" (1114105088)
+00:05:38.568 --> 00:05:40.786
+But I still like how we got.
+
+30 "Shimu Pan" (282182656)
+00:05:40.786 --> 00:06:04.499
+But, you know, together to meet twice a week at least, just to, you know, keep up with our sprints and stay on schedule. And I just want to you know thank I think he's Joshua for that. He would, you know, basically try to get everyone to meet on a specific day and like Louis said in the future, we're gonna try to centralize on the time.
+
+31 "Shimu Pan" (282182656)
+00:06:04.499 --> 00:06:21.929
+Where the scrum meetings are gonna be more consistent, so every week we'll probably be like Wednesday or Saturday, something like that instead of meeting, you know, randomly on Monday Tuesdays, and I think this will make our, make us more productive as a team.
+
+32 "Shimu Pan" (282182656)
+00:06:21.929 --> 00:06:25.584
+Okay.
+
+33 "Mandloi, Priyanka" (1114105088)
+00:06:25.584 --> 00:06:31.427
+Okay, now you want to go next?
+
+34 "Izik" (1572746240)
+00:06:31.427 --> 00:06:47.428
+Yeah, sorry. I was in I've been trying to connect on my computer and my phone multiple times. It just would not work, but I think I'm good now on my phone. So you need one good thing and one bad thing that went well and what can I improve, right?
+
+35 "Mandloi, Priyanka" (1114105088)
+00:06:47.428 --> 00:06:52.789
+No I know actually for now we are just discussing what went well.
+
+36 "Izik" (1572746240)
+00:06:52.789 --> 00:07:06.059
+Yeah, what went well? I think we, I think we have, I think every person knows what they wanna do in their plan and general outlook and what our site includes.
+
+37 "Mandloi, Priyanka" (1114105088)
+00:07:06.059 --> 00:07:08.262
+And that's what we.
+
+38 "Izik" (1572746240)
+00:07:08.262 --> 00:07:10.385
+As well.
+
+39 "Mandloi, Priyanka" (1114105088)
+00:07:10.385 --> 00:07:21.704
+All right. So next question what you learned in this sprint. I have posted in the chat. Okay.
+
+40 "Izik" (1572746240)
+00:07:21.704 --> 00:07:24.162
+I'm sorry, re repeat that, I didn't.
+
+41 "Mandloi, Priyanka" (1114105088)
+00:07:24.162 --> 00:07:30.885
+The next question is what you learned in this sprint?
+
+42 "Izik" (1572746240)
+00:07:30.885 --> 00:07:33.487
+And my computer.
+
+43 "Mandloi, Priyanka" (1114105088)
+00:07:33.487 --> 00:07:45.922
+Now you can read the chat if you want if I'm not able to understand what I'm saying. What did you learn this sprint? Okay. Yeah, right. What were your learnings in this sprint?
+
+44 "Collins, Joshua" (413696)
+00:07:45.922 --> 00:08:17.706
+Yeah, I I would say what I learned this sprint is more so we need to have better communication about when we're busy and when we're free, because, and also better, we need to do a better job of like schedule like said scheduling our, meetings to be more consistent. Well, we, we need to be more consistent with scheduling our meetings and communicating to others when we're free and when we're busy.
+
+45 "Mandloi, Priyanka" (1114105088)
+00:08:17.706 --> 00:08:38.444
+These are kind of, you know, impediments kind of a thing like what didn't went well but are you so what did you learn in this sprint? Like have you learned any new technologies or any process or anything? Yeah, I think I can actually answer that.
+
+46 "Izik" (1572746240)
+00:08:38.444 --> 00:08:48.280
+I definitely did not know how to use Bootstrap before I started and even this class, and so just digging through and trying to find a good nav bar.
+
+47 "Mandloi, Priyanka" (1114105088)
+00:08:48.280 --> 00:08:51.723
+Section, using boot.
+
+48 "Izik" (1572746240)
+00:08:51.723 --> 00:09:02.319
+I think I learned more about it and I learned how to do it and now I'm gonna work on the login page and the sign up page using bootstrap. Okay.
+
+49 "Mandloi, Priyanka" (1114105088)
+00:09:02.319 --> 00:09:06.804
+Right. Anyone else want to go?
+
+50 "Collins, Joshua" (413696)
+00:09:06.804 --> 00:09:16.362
+I would definitely say I have a better understanding of JavaScript, personally between this previous sprint and the constitution live we had to do. I went from.
+
+51 "Mandloi, Priyanka" (1114105088)
+00:09:16.362 --> 00:09:19.822
+Not knowing a lot about how to implement.
+
+52 "Collins, Joshua" (413696)
+00:09:19.822 --> 00:09:29.703
+Javascript's past what we learned in intro, and overall, I just have a much better understanding of how to how to properly implement it into the website.
+
+53 "Mandloi, Priyanka" (1114105088)
+00:09:29.703 --> 00:09:33.011
+Okay, that's great.
+
+54 "Hung, Louis" (1577873152)
+00:09:33.011 --> 00:09:37.717
+If for me, like, oh, are we still doing this point?
+
+55 "Mandloi, Priyanka" (1114105088)
+00:09:37.717 --> 00:09:42.826
+Yeah, yeah, we can do, yeah. If everyone has something to say, let's do it.
+
+56 "Hung, Louis" (1577873152)
+00:09:42.826 --> 00:10:03.449
+So I just want to say like, this, this sprint like it's just a much better like more like a warm up than comparing to the constitution lab because I basically, I took intro like a year ago, so I basically forgot everything about HTML and CSS before.
+
+57 "Hung, Louis" (1577873152)
+00:10:03.449 --> 00:10:20.738
+Like before I even start the false semester, so I think like the 1st one really just give us like a, I don't know, give us an introduction or or like a reintroduction into HTML CSS and JS and yeah.
+
+58 "Collins, Joshua" (413696)
+00:10:20.738 --> 00:10:24.258
+Okay.
+
+59 "Mandloi, Priyanka" (1114105088)
+00:10:24.258 --> 00:10:38.653
+Okay, so the next question that we have is, what you left during this sprint, so this is where you say what you what didn't went well kind of thing.
+
+60 "Collins, Joshua" (413696)
+00:10:38.653 --> 00:11:00.895
+I'll, I really liked I really liked the bootstrap when it came to his login page. I think it's a good, it's a step in the right direction to make our, at least our CSS and start share of our website more professional.
+
+61 "Mandloi, Priyanka" (1114105088)
+00:11:00.895 --> 00:11:20.714
+Okay, it's one of the impediments that, you know, what didn't went well, one of the example you all mentioned like your coordination for the scrum meeting is not happening, like you need more, I think catch up session with each other for proper working, right? In the future.
+
+62 "Collins, Joshua" (413696)
+00:11:20.714 --> 00:11:24.093
+Oh my bad. I I thought you said liked I didn't mean I didn't realize.
+
+63 "Mandloi, Priyanka" (1114105088)
+00:11:24.093 --> 00:11:30.973
+No, what do you like during this sprint, so like kind of what didn't went well, so that was the question.
+
+64 "Mandloi, Priyanka" (1114105088)
+00:11:30.973 --> 00:11:39.977
+So one of the examples I guess you all have already mentioned in the 1st of the questions was any anything else that didn't went well in this sprint?
+
+65 "Izik" (1572746240)
+00:11:39.977 --> 00:11:53.054
+Oh, I can I can answer that, I guess for me personally, I kind of wasn't really pulling my weight. I was bombarded with work and I kind of forgot how college works the past few weeks.
+
+66 "Mandloi, Priyanka" (1114105088)
+00:11:53.054 --> 00:11:55.193
+Yeah, I forgot we have a project on our hands.
+
+67 "Izik" (1572746240)
+00:11:55.193 --> 00:12:08.630
+So, that's something I really need to work on, and I'm I will start doing that, I start pulling my weight at actually working on the project as well as my labs all of my other homeworks.
+
+68 "Mandloi, Priyanka" (1114105088)
+00:12:08.630 --> 00:12:15.071
+Yeah, same thing I'm also struggling to balance everything. Yeah.
+
+69 "Shimu Pan" (282182656)
+00:12:15.071 --> 00:12:16.089
+Yeah.
+
+70 "Mandloi, Priyanka" (1114105088)
+00:12:16.089 --> 00:12:19.151
+Anyone else wants to go next?
+
+71 "Shimu Pan" (282182656)
+00:12:19.151 --> 00:12:23.353
+I'll go next. Oh, sorry Joshua, do you wanna go?
+
+72 "Collins, Joshua" (413696)
+00:12:23.353 --> 00:12:26.771
+No, NO, you go, you got it. Okay.
+
+73 "Shimu Pan" (282182656)
+00:12:26.771 --> 00:12:33.269
+So, what I think we lacked during the sprint was doing more research into.
+
+74 "Shimu Pan" (282182656)
+00:12:33.269 --> 00:12:49.349
+What sort of apis we're gonna use in the future for this project? Because while I designed the mock up, I realized where we lacked a lot of data to actually make the data realistic that we're trying to display on a page. So right now we just have some pictures in place of.
+
+75 "Shimu Pan" (282182656)
+00:12:49.349 --> 00:13:15.450
+The data we're gonna put on the site. I think we were talking about like researching about maybe any MBA apis. I'm not sure if, any of you guys do any research, maybe Pranav, but he's not here. And to my knowledge I think we should in the future try to get this API thing figured out so we could actually start displaying some data.
+
+76 "Mandloi, Priyanka" (1114105088)
+00:13:15.450 --> 00:13:39.539
+Okay for that I will give you a suggestion. So what happened is, you know, you can build a mock data using JSON that will replicate your API responses for now because you are currently you all are focusing on the front end part of your application, right? So what you can do is you can define like usually what happens in any of the IT industry, you don't.
+
+77 "Mandloi, Priyanka" (1114105088)
+00:13:39.539 --> 00:13:59.539
+You work parallelly with multiple developers, you don't have always API or the backend ready when you are developing the front end. So instead of that, what we do is usually they define the contract of an API, which is, you know, between your application layer and front end layer, what are the data that you're going to pass it? So you will.
+
+78 "Mandloi, Priyanka" (1114105088)
+00:13:59.539 --> 00:14:19.539
+You find like you are if let's just say if you have a customer API, the what kind of information that will be returning, you will define the mock JSON of that. You will keep the JSON in your application only where your JS files are there. You will read the data from there, display it to your HTML, and once you have the API integrated, you will.
+
+79 "Mandloi, Priyanka" (1114105088)
+00:14:19.539 --> 00:14:39.539
+Please the response because you already have created the JSON objects and everything, right? So this time you only have to, once you have the response, you need to have this one variable, assign that variable your response and everything else will keep working onto that. Like you don't have you don't have to touch base front end once you have the API ready.
+
+80 "Mandloi, Priyanka" (1114105088)
+00:14:39.539 --> 00:14:43.544
+So this is what I will suggest you do it.
+
+81 "Hung, Louis" (1577873152)
+00:14:43.544 --> 00:14:48.028
+Yeah, I totally agree on that because, oh, sorry.
+
+82 "Mandloi, Priyanka" (1114105088)
+00:14:48.028 --> 00:14:53.127
+I hope you'll received what I'm trying to say.
+
+83 "Hung, Louis" (1577873152)
+00:14:53.127 --> 00:15:13.365
+Yeah cause like one when I'm working on the leaderboard part cause I realized that we actually need like user datas to actually implement a leaderboard. So I just created a dummy data for in the JSON file in order to make the JavaScript actually work. So I do agree that we should probably try to create more JSON datas.
+
+84 "Mandloi, Priyanka" (1114105088)
+00:15:13.365 --> 00:15:29.219
+But try to do one thing, you know, you know, you, let's just say whoever are working on the two, on the similar functionalities, you agree upon on the dummy data. I mean try to make dummy data as realistic as possible.
+
+85 "Mandloi, Priyanka" (1114105088)
+00:15:29.219 --> 00:15:49.219
+Okay, so that it will help you in future. Otherwise what will happen once you have your backend or API ready, you will keep changing your front end also lot of changes in the front end side. So try to have, you know, you try to make your dummy data as realistic as possible. Have all the necessary field that you will be needing from the API. Think about.
+
+86 "Mandloi, Priyanka" (1114105088)
+00:15:49.219 --> 00:16:09.759
+With all the possible data that you will be needing from API and try to make your dummy data as, you know, as, you, you will be, going to return from the API, ok. Is there anything else you want to highlight?
+
+87 "Collins, Joshua" (413696)
+00:16:09.759 --> 00:16:33.286
+Yeah, it's mostly just our, in my in my eyes the only thing we really like to just time management. That's just the biggest draw that we've identified so far.
+
+88 "Hung, Louis" (1577873152)
+00:16:33.286 --> 00:16:35.426
+Okay.
+
+89 "Collins, Joshua" (413696)
+00:16:35.426 --> 00:16:41.945
+Okay.
+
+90 "Mandloi, Priyanka" (1114105088)
+00:16:41.945 --> 00:16:59.391
+I will add the next question on the chat. You all can discuss that and then we can do a quick review of your, you know, software progress that you guys have made, ok? I have already added the question in the group.
+
+91 "Collins, Joshua" (413696)
+00:16:59.391 --> 00:17:32.457
+Okay, so I was just gonna say for this sprint, we were aiming for our, at least a rough outline of what our login page was gonna look like or sorry, our, our main page with a leaderboard on the left side games in the middle, and then some other kind of, information on the right, and then we have our nav bar that drops down on more tabs if you want. And then we also wanted to implement a login and sign up page.
+
+92 "Mandloi, Priyanka" (1114105088)
+00:17:32.457 --> 00:17:52.489
+Okay, so I would suggest one thing over here, you don't do the proper assignment of tasks and the planning because the thing is, you only have two months, right? And you might have to build more pages and you might have to work on backend as well. So, just keep in mind about the timeline.
+
+93 "Mandloi, Priyanka" (1114105088)
+00:17:52.489 --> 00:18:22.679
+Things you have other subjects assignments as well. So try to plan at least product backlog and all the tasks as you know of like like right now or as soon as you can do it so that what will happen, you will have a lot of things to work and let's just say, otherwise what will happen if you don't do a proper planning, you will have a lot of things to work at the very end of your sprint and it will become so burdened and.
+
+94 "Mandloi, Priyanka" (1114105088)
+00:18:22.679 --> 00:18:42.679
+Burden for you guys like so, I would suggest have complete application like all the features that you want to develop in mind and do a proper you know timeline like from this to this week you are going to at least complete this one, this particular page and, like this have some rough.
+
+95 "Mandloi, Priyanka" (1114105088)
+00:18:42.679 --> 00:18:55.776
+Draft I'm not asking you to, you know, exactly follow that, but have rough draft and try to, you know, be in sync with those timelines.
+
+96 "Collins, Joshua" (413696)
+00:18:55.776 --> 00:18:57.261
+Okay. Yeah.
+
+97 "Mandloi, Priyanka" (1114105088)
+00:18:57.261 --> 00:19:16.939
+I mean that will help you, otherwise you will have lot of things to do in the last sprint that so you can avoid that. I mean you still have two sprints so, try avoiding that because currently you just have targeted two app pages, right? I think you have more pages in your application, right?
+
+98 "Collins, Joshua" (413696)
+00:19:16.939 --> 00:19:23.177
+Yeah, we currently have two on the main page and we have a 3rd one in development.
+
+99 "Mandloi, Priyanka" (1114105088)
+00:19:23.177 --> 00:19:32.235
+Okay, alright then then this could sounds good then you have only three pages.
+
+100 "Collins, Joshua" (413696)
+00:19:32.235 --> 00:19:34.217
+Thank you for your time.
+
+101 "Mandloi, Priyanka" (1114105088)
+00:19:34.217 --> 00:19:52.920
+Actually, we can do a quick sprint review as well. Okay. Yeah. So you can show me, all the things that you have developed and how we are doing it. So that if even dr. Kalahan says that this recording or so he might know all those things.
+
+102 "Collins, Joshua" (413696)
+00:19:52.920 --> 00:19:55.279
+So do you want me to share, like, what.
+
+103 "Mandloi, Priyanka" (1114105088)
+00:19:55.279 --> 00:20:02.830
+Yeah for now. Right. Okay I'll do a quick share then. Okay.
+
+104 "Izik" (1572746240)
+00:20:02.830 --> 00:20:06.996
+So my login page is still in progress.
+
+105 "Mandloi, Priyanka" (1114105088)
+00:20:06.996 --> 00:20:12.836
+You can show in your local how much you have met, just that not and that's not an issue.
+
+106 "Izik" (1572746240)
+00:20:12.836 --> 00:20:14.098
+Okay, it's just in my.
+
+107 "Mandloi, Priyanka" (1114105088)
+00:20:14.098 --> 00:20:46.539
+Maybe just to see like how much progress you have made. So the sprint review is more of a demo thing, like your demo the pro I mean let's just say whatever application you have built so far are the features in the application, you demo it. So what will happen if you will go work for any company, you will give this a sprint review with the business people. So what happens there is if they don't like feature, they have option like right now to go back and change or if they don't like anything in the review.
+
+108 "Mandloi, Priyanka" (1114105088)
+00:20:46.539 --> 00:20:52.276
+So that is what the actual purpose of the sprint review is.
+
+109 "Izik" (1572746240)
+00:20:52.276 --> 00:20:55.961
+Okay.
+
+110 "Hung, Louis" (1577873152)
+00:20:55.961 --> 00:20:58.843
+I started sharing my screen. Can you guys see the screen?
+
+111 "Mandloi, Priyanka" (1114105088)
+00:20:58.843 --> 00:21:00.325
+Yes. Yes.
+
+112 "Hung, Louis" (1577873152)
+00:21:00.325 --> 00:21:26.009
+Okay, so this is the index that we had currently. So, in the middle here it's supposed to be having game data that's gonna come out during like the next few days, but due to the fact that we don't have any dummy data stored, they're represented by pictures only for now. And on the left side here, it's a small, it's a shrinked version of the leaderboard.
+
+113 "Hung, Louis" (1577873152)
+00:21:26.009 --> 00:21:46.009
+So we have dummy data for each, for members or for like users of our websites right now and they are ranked dynamically according to their points change based on JavaScript. And you were thinking about having other like maybe sponsor ads on the right side over here.
+
+114 "Hung, Louis" (1577873152)
+00:21:46.009 --> 00:21:51.299
+But that was not implemented during the sprints.
+
+115 "Hung, Louis" (1577873152)
+00:21:51.299 --> 00:22:08.519
+And if we, ok, that, these are, this is a simple nav bar that we created just like for the sake of having it and we will update it for later when we are more familiar with bootstrap and maybe make it looks better or make it looks more professional.
+
+116 "Hung, Louis" (1577873152)
+00:22:08.519 --> 00:22:30.079
+And when we click into, this is the page that I implemented, it's the leaderboard page. It's just, it's a bigger version of what's shown on the 1st page and currently there's only two, three datas over here, rank, player and score, but as as we want to go along and progress with the project, we map.
+
+117 "Hung, Louis" (1577873152)
+00:22:30.079 --> 00:22:48.765
+I want to add a few more data such as like prediction, correct, corrective percentage or like accuracy or like maintain stuff stuff like that that we showed on our, what's it called again? Wireframe? Yes. Wireframe. Okay. And.
+
+118 "Mandloi, Priyanka" (1114105088)
+00:22:48.765 --> 00:22:49.869
+Egg.
+
+119 "Hung, Louis" (1577873152)
+00:22:49.869 --> 00:22:53.925
+I believe this is all on all of that we have on main right now.
+
+120 "Mandloi, Priyanka" (1114105088)
+00:22:53.925 --> 00:23:03.242
+Okay, so that's good. Have you built your uploaded backlog as we discussed in the morning?
+
+121 "Hung, Louis" (1577873152)
+00:23:03.242 --> 00:23:09.861
+I don't know, does anyone put the product backlog yet?
+
+122 "Collins, Joshua" (413696)
+00:23:09.861 --> 00:23:14.881
+Is that the thing that we were working on in today's class where it was down.
+
+123 "Mandloi, Priyanka" (1114105088)
+00:23:14.881 --> 00:23:19.301
+The project Creating tasks on your project, yeah.
+
+124 "Collins, Joshua" (413696)
+00:23:19.301 --> 00:23:21.283
+Yes, we, we do.
+
+125 "Hung, Louis" (1577873152)
+00:23:21.283 --> 00:23:24.486
+Yeah I'll stop sharing then.
+
+126 "Collins, Joshua" (413696)
+00:23:24.486 --> 00:23:33.444
+It's Oh, my bad I'm in the wrong repository, give me 1 s.
+
+127 "Mandloi, Priyanka" (1114105088)
+00:23:33.444 --> 00:23:35.880
+Okay.
+
+128 "Collins, Joshua" (413696)
+00:23:35.880 --> 00:23:40.949
+So when we were talking about our.
+
+129 "Collins, Joshua" (413696)
+00:23:40.949 --> 00:23:58.559
+Oh, ok, there we go. So we've done three tasks. We redesigned the logo. It did not make it onto the current main page, but we do have it on Pranay's local drive.
+
+130 "Collins, Joshua" (413696)
+00:23:58.559 --> 00:24:18.559
+We have the homepage content with HTML and CSS and JavaScript, and then we also have the navigation bar for all the pages currently. The only Oh, we've got we've had currently in progress is the login page because it's not currently finished.
+
+131 "Mandloi, Priyanka" (1114105088)
+00:24:19.199 --> 00:24:22.561
+I'm not able to see your screen if you are presenting it.
+
+132 "Collins, Joshua" (413696)
+00:24:22.561 --> 00:24:31.386
+Oh my bad, let me share real quick. Yeah, in my computer.
+
+133 "Hung, Louis" (1577873152)
+00:24:31.386 --> 00:24:50.359
+Okay, uh.
+
+134 "Collins, Joshua" (3092880384)
+00:24:50.359 --> 00:24:52.524
+Can, can you hear me?
+
+135 "Mandloi, Priyanka" (1114105088)
+00:24:52.524 --> 00:24:55.819
+Yes, we can hear you. He got moved.
+
+136 "Collins, Joshua" (3092880384)
+00:24:55.819 --> 00:24:59.178
+To my phone to my computer, so I'm glad it works now.
+
+137 "Mandloi, Priyanka" (1114105088)
+00:24:59.178 --> 00:25:01.327
+Yeah, it's this allowed.
+
+138 "Collins, Joshua" (3092880384)
+00:25:01.327 --> 00:25:14.126
+Oh yes, so our three tasks that we've done so far is basically the navigation bar for all the pages that we currently have set up. The home page itself with HTML and CSS and.
+
+139 "Mandloi, Priyanka" (1114105088)
+00:25:14.126 --> 00:25:15.585
+Office.
+
+140 "Collins, Joshua" (3092880384)
+00:25:15.585 --> 00:25:20.363
+And then Renee has the, the, the redesigned logo.
+
+141 "Mandloi, Priyanka" (1114105088)
+00:25:20.363 --> 00:25:33.569
+Okay, so I guess you can assign tickets among yourself. So those who have worked on those pages, just, you know, assign those ticket on your name, I guess. I'm not seeing.
+
+142 "Mandloi, Priyanka" (1114105088)
+00:25:33.569 --> 00:25:49.139
+Oh, can you click on the three dots or NO? On the on ticket actually, not here.
+
+143 "Mandloi, Priyanka" (1114105088)
+00:25:49.139 --> 00:26:04.357
+Yeah, we don't have not, so when you create an item or do you have any place to assign to anyone?
+
+144 "Collins, Joshua" (3092880384)
+00:26:04.357 --> 00:26:12.098
+No, we can Not that I can see, I guess we could just add our names to the, the title.
+
+145 "Mandloi, Priyanka" (1114105088)
+00:26:12.098 --> 00:26:35.135
+All righty, yeah, you can do that, yeah. And I would suggest, you know, at least have a task ready in the to do list. Dr. Kalhan reviews it anytime, ok? Okay. Yeah, and keep making changes on this Kanban board as well as you progress.
+
+146 "Collins, Joshua" (3092880384)
+00:26:35.135 --> 00:26:37.157
+Thank you. Yeah.
+
+147 "Mandloi, Priyanka" (1114105088)
+00:26:37.157 --> 00:26:46.117
+Alright, ok, then we can wind up this call, yeah.
+
+148 "izik" (647307776)
+00:26:46.117 --> 00:26:53.012
+Perfect. Thank you so much. Thank you so much for insight and thank you.
+
+149 "Collins, Joshua" (3092880384)
+00:26:53.012 --> 00:26:56.058
+Thank you for taking time out of your evening for us.
+
+150 "Mandloi, Priyanka" (1114105088)
+00:26:56.058 --> 00:26:58.931
+Yeah, NO worries.
+
+151 "Shimu Pan" (282182656)
+00:26:58.931 --> 00:27:01.496
+Have a good rest of the day, guys. Thank you. Do we.
+
+152 "Collins, Joshua" (3092880384)
+00:27:01.496 --> 00:27:04.316
+Send this to Professor Callhan or do we.
+
+153 "Mandloi, Priyanka" (1114105088)
+00:27:04.316 --> 00:27:24.791
+You added on your github repository and ping him in the group like we have done retro retro call and the review call with me and, whatever you feel like give one or two pointer as a meeting of minutes to him that these are the things that we discussed and we will be keep progressing or something, whatever you want to add in the message.
+
+154 "Collins, Joshua" (3092880384)
+00:27:24.791 --> 00:27:44.058
+Sounds good. Oh yeah Lewis, once we hang up the call, can you put the recording and the transcript into the repo and then of course I'll look into it. Yeah, if you need help, just let me know. Okay, ok, gotcha. Have a nice evening. Alright, thank you so much.
+
+155 "Shimu Pan" (282182656)
+00:27:44.058 --> 00:27:47.916
+Okay.
