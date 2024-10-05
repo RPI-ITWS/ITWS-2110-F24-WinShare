@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Constitution</title>
+    <title>WinShare</title>
     <link rel="stylesheet" href="./assets/MainPage.css">
+    <link rel="stylesheet" href="./assets/miniLeaderboard.css">
     <script src="./assets/MainPage.js" defer></script>
+    <script src="./assets/miniLeaderboard.js" defer></script>
 </head>
 <body>
     <ul id="Hotbar">
@@ -29,13 +31,14 @@
     </ul>
     <div id="buffer"></div>
     <div id = "Page">
-        <div id="LeftColumn">
-            <h3>Recommended Articles</h3>
-            <ul>
-                <li><a href="#">Article 1</a></li>
-                <li><a href="#">Article 2</a></li>
-                <li><a href="#">Article 3</a></li>
-            </ul>
+
+        <div id = "LeftColumn">
+            <h3><a href="./Leaderboard/leaderboard.html">Top Players Leaderboard</a></h3>
+            <table id="miniLeaderboard">
+                <tbody>
+                <!-- Mini leaderboard entries will be inserted here dynamically -->
+                </tbody>
+            </table>
         </div>
         <div id="MiddleColumn">
             <h3>Upcoming Events</h3>
