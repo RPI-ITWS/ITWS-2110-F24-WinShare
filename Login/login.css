@@ -1,4 +1,88 @@
-.form-container {
-    width: 100%;
-    max-width: 400px; 
+body{
+    margin: 0px;
 }
+
+#Hotbar{
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 5px solid #7DD8BA;
+    background-color: #696D73;
+    position: absolute;
+}
+
+.navbar {
+    background-color: #696D73;
+    border-bottom: 5px solid #7DD8BA;
+}
+
+.navbar-brand, .nav-link {
+    color: #7DD8BA !important;
+    font-family: Arial, sans-serif;
+}
+
+.nav-link:hover {
+    background-color: #7DD8BA;
+    color: #696D73 !important;
+}
+
+.navbar .dropdown-menu {
+    background-color: #696D73;
+}
+
+.navbar .dropdown-item {
+    color: #7DD8BA;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #7DD8BA;
+    color: #696D73;
+}
+
+#buffer {
+    height: 50px;
+}
+
+.tab {
+    display: flex;
+    width: 25%;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab a {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #7DD8BA;
+    font-size: larger;
+}
+
+.tab a:hover {
+    background-color: #7DD8BA;
+    color: #696D73;
+}
+
+#MoreOptions {
+    width: 100%;
+    height: 45px;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: xx-large;
+    color: #7DD8BA;
+} 
+
+#MoreOptions:hover {
+    background-color: #7DD8BA;
+    color: #696D73;
+} 
