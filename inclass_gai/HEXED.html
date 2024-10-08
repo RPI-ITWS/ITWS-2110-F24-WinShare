@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEXED Survival</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      color: #e94560;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #game-container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .color-boxes {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .color-box-container {
+      text-align: center;
+    }
+
+    .color-box {
+      width: 150px;
+      height: 150px;
+      margin: 10px auto;
+      border: 2px solid #e94560;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(233, 69, 96, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .color-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(233, 69, 96, 0.8);
+    }
+
+    .color-box-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .rgb-value {
+      font-size: 0.9em;
+      height: 20px;
+      margin-top: 5px;
+    }
+
+    .slider-container {
+      margin: 15px 0;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 10px;
+      border-radius: 5px;
+      outline: none;
+      opacity: 0.7;
+      transition: opacity .2s;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    input[type="range"]:hover {
+      opacity: 1;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: #e94560;
+      box-shadow: 0 0 5px rgba(233, 69, 96, 0.8);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: #e94560;
+      box-shadow: 0 0 5px rgba(233, 69, 96, 0.8);
+    }
+
+    #red::-webkit-slider-thumb { background: #ff4136; }
+    #green::-webkit-slider-thumb { background: #2ecc40; }
+    #blue::-webkit-slider-thumb { background: #0074d9; }
+
+    #red::-moz-range-thumb { background: #ff4136; }
+    #green::-moz-range-thumb { background: #2ecc40; }
+    #blue::-moz-range-thumb { background: #0074d9; }
+
+    #start-btn, #break-link {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2em;
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #e94560;
+      color: #1a1a2e;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      margin: 10px 0;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    #start-btn:hover, #break-link:hover {
+      background: #ff6b6b;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(233, 69, 96, 0.5);
+    }
+
+    #health-container {
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    #health-label {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    #health-bar-container {
+      width: 100%;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #health-bar {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #ff4136, #ff6b6b);
+      transition: width 0.5s ease-in-out;
+    }
+
+    #health-value {
+      font-size: 1em;
+      margin-top: 5px;
+    }
+
+    #timer, #score, #game-number, #highest-score {
+      font-size: 1.2em;
+      margin: 10px 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px #e94560; }
+      50% { box-shadow: 0 0 20px #e94560, 0 0 30px #e94560; }
+      100% { box-shadow: 0 0 5px #e94560; }
+    }
+
+    .glow {
+      animation: glow 2s infinite;
+    }
+  </style>
+</head>
+<body>
+<div id="game-container">
+  <h1>HEXED Survival</h1>
+  <button id="start-btn">Start</button>
+  <div id="health-container">
+    <div id="health-label">Health:</div>
+    <div id="health-bar-container">
+      <div id="health-bar"></div>
+    </div>
+    <div id="health-value">100</div>
+  </div>
+  <div class="color-boxes">
+    <div class="color-box-container">
+      <div class="color-box-title">Goal Color</div>
+      <div id="color-display" class="color-box"></div>
+      <div id="goal-rgb" class="rgb-value"></div>
+    </div>
+    <div class="color-box-container">
+      <div class="color-box-title">Your Color</div>
+      <div id="player-color" class="color-box"></div>
+      <div id="player-rgb" class="rgb-value"></div>
+    </div>
+  </div>
+  <div class="slider-container">
+    <label for="red">Red:</label>
+    <input type="range" id="red" min="0" max="255" value="0" disabled>
+  </div>
+  <div class="slider-container">
+    <label for="green">Green:</label>
+    <input type="range" id="green" min="0" max="255" value="0" disabled>
+  </div>
+  <div class="slider-container">
+    <label for="blue">Blue:</label>
+    <input type="range" id="blue" min="0" max="255" value="0" disabled>
+  </div>
+  <div id="timer"></div>
+  <div id="score"></div>
+  <div id="game-number">Game: 1</div>
+  <div id="highest-score">Highest Score: 0</div>
+</div>
+
+<script>
+  const startBtn = document.getElementById('start-btn');
+  const colorDisplay = document.getElementById('color-display');
+  const playerColor = document.getElementById('player-color');
+  const redSlider = document.getElementById('red');
+  const greenSlider = document.getElementById('green');
+  const blueSlider = document.getElementById('blue');
+  const timerDisplay = document.getElementById('timer');
+  const scoreDisplay = document.getElementById('score');
+  const gameNumberDisplay = document.getElementById('game-number');
+  const highestScoreDisplay = document.getElementById('highest-score');
+  const goalRgbDisplay = document.getElementById('goal-rgb');
+  const playerRgbDisplay = document.getElementById('player-rgb');
+  const healthBar = document.getElementById('health-bar');
+  const healthValue = document.getElementById('health-value');
+
+  let targetColor = {};
+  let timeLeft = 10;
+  let timerInterval;
+  let highestScore = 0;
+  let health = 100;
+  let gameNumber = 1;
+  let gameActive = false;
+
+  startBtn.addEventListener('click', startSurvivalMode);
+  redSlider.addEventListener('input', updatePlayerColor);
+  greenSlider.addEventListener('input', updatePlayerColor);
+  blueSlider.addEventListener('input', updatePlayerColor);
+
+  function startSurvivalMode() {
+    startBtn.style.display = 'none';
+    health = 100;
+    gameNumber = 1;
+    updateHealthBar();
+    startGame();
+  }
+
+  function startGame() {
+    if (health <= 0) {
+      endSurvivalMode();
+      return;
+    }
+
+    gameActive = true;
+    scoreDisplay.textContent = '';
+    goalRgbDisplay.textContent = '';
+    playerRgbDisplay.textContent = '';
+    gameNumberDisplay.textContent = `Game: ${gameNumber}`;
+    timeLeft = 10;
+    targetColor = generateRandomColor();
+    colorDisplay.style.backgroundColor = `rgb(${targetColor.r}, ${targetColor.g}, ${targetColor.b})`;
+    timerInterval = setInterval(updateTimer, 1000);
+    updateSliders();
+    updatePlayerColor();
+    enableSliders();
+  }
+
+  function generateRandomColor() {
+    return {
+      r: Math.floor(Math.random() * 256),
+      g: Math.floor(Math.random() * 256),
+      b: Math.floor(Math.random() * 256)
+    };
+  }
+
+  function updateTimer() {
+    timeLeft--;
+    timerDisplay.textContent = `Time left: ${timeLeft}s`;
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      endGame();
+    }
+  }
+
+  function updateSliders() {
+    redSlider.value = 0;
+    greenSlider.value = 0;
+    blueSlider.value = 0;
+  }
+
+  function updatePlayerColor() {
+    const r = redSlider.value;
+    const g = greenSlider.value;
+    const b = blueSlider.value;
+    playerColor.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  }
+
+  function endGame() {
+    gameActive = false;
+    const userColor = {
+      r: parseInt(redSlider.value),
+      g: parseInt(greenSlider.value),
+      b: parseInt(blueSlider.value)
+    };
+    const score = calculateScore(targetColor, userColor);
+    scoreDisplay.textContent = `Score: ${score}`;
+    displayColorValues(targetColor, userColor);
+    disableSliders();
+    updateHealth(score);
+    gameNumber++;
+    updateHighestScore(gameNumber - 1);
+    setTimeout(startGame, 3000);
+  }
+
+  function calculateScore(target, user) {
+    const maxDiff = Math.sqrt(3 * 255 * 255);
+    const actualDiff = Math.sqrt(
+            Math.pow(target.r - user.r, 2) +
+            Math.pow(target.g - user.g, 2) +
+            Math.pow(target.b - user.b, 2)
+    );
+    const score = Math.round((1 - actualDiff / maxDiff) * 100);
+    return Math.max(0, score);
+  }
+
+  function displayColorValues(target, user) {
+    goalRgbDisplay.textContent = `RGB(${target.r}, ${target.g}, ${target.b})`;
+    playerRgbDisplay.textContent = `RGB(${user.r}, ${user.g}, ${user.b})`;
+  }
+
+  function enableSliders() {
+    redSlider.disabled = false;
+    greenSlider.disabled = false;
+    blueSlider.disabled = false;
+  }
+
+  function disableSliders() {
+    redSlider.disabled = true;
+    greenSlider.disabled = true;
+    blueSlider.disabled = true;
+  }
+
+  function updateHealth(score) {
+    if (score < 85) {
+      health -= (85 - score);
+    } else {
+      health += (score - 85);
+    }
+    health = Math.min(Math.max(health, 0), 100);
+    updateHealthBar();
+  }
+
+  function updateHealthBar() {
+    healthBar.style.width = `${health}%`;
+    healthValue.textContent = Math.round(health);
+  }
+
+  function updateHighestScore(score) {
+    if (score > highestScore) {
+      highestScore = score;
+      highestScoreDisplay.textContent = `Highest Score: ${highestScore}`;
+    }
+  }
+
+  function endSurvivalMode() {
+    gameActive = false;
+    startBtn.style.display = 'inline-block';
+    startBtn.textContent = 'Play Again';
+    scoreDisplay.textContent = `Game Over! You survived ${gameNumber - 1} rounds!`;
+
+    // Add the "Take a Break" link
+    const breakLink = document.createElement('a');
+    breakLink.href = 'https://www.youtube.com/watch?v=8ybW48rKBME';
+    breakLink.textContent = 'Take a Break';
+    breakLink.id = 'break-link';
+    breakLink.target = '_blank';  // Opens the link in a new tab
+    startBtn.parentNode.insertBefore(breakLink, startBtn.nextSibling);
+
+    // Add glow effect to the game over message
+    scoreDisplay.classList.add('glow');
+  }
+
+</script>
+</body>
+</html>
