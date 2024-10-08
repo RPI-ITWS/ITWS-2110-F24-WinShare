@@ -18,7 +18,7 @@ body{
 }
 
 #buffer{
-    height:50px;
+    height:49px;
 }
 
 .tab{
@@ -72,26 +72,140 @@ body{
 #MoreOptions:hover{
     background-color: #7DD8BA;
     color: #696D73;
+    cursor: pointer;
 } 
 
 #Page{
     display: flex;
 }
 
-#LeftColumn{
-    border: solid red;
+#LeftColumn {
     width: 20%;
-    height: 1046px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-#MiddleColumn{
+#LeftColumn h3 {
+    margin-top: 0;
+}
+
+#LeftColumn ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#LeftColumn ul li {
+    margin-bottom: 10px;
+}
+
+#LeftColumn ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#LeftColumn ul li a:hover {
+    text-decoration: underline;
+}
+
+#MiddleColumn {
     border: solid red;
     width: 60%;
     height: 1046px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+    max-height: 100vh;
 }
 
 #RightColumn{
-    border: solid red;
     width: 20%;
     height: 1046px;
+}
+
+#Sponsors{
+    display: block;
+}
+
+#DropdownBar{
+    display: none;   
+    height: 500px;
+}
+
+#DDBcontent{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 270px;
+    background-color: #7DD8BA;
+    text-align: center;
+    margin: 0;
+}
+
+.tab2{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    color: #696D73;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.tab2:hover{
+    cursor: pointer;
+    background-color: #696D73;
+    color: #7DD8BA;
+}
+
+#MiddleColumn {
+    border: solid red;
+    width: 60%;
+    height: 1046px;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.thumbnail {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail p {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
 }

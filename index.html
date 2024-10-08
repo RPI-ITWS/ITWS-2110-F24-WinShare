@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winshare</title>
+    <title>WinShare</title>
     <link rel="stylesheet" href="./assets/MainPage.css">
+    <link rel="stylesheet" href="./assets/miniLeaderboard.css">
     <script src="./assets/MainPage.js" defer></script>
+    <script src="./assets/miniLeaderboard.js" defer></script>
 </head>
 <body>
     <ul id="Hotbar">
@@ -22,26 +24,71 @@
             <a href="Login/login.html">Login</a>
         </li>
         <li id = "More">
-            <a id="MoreOptions" href="">
+            <div id="MoreOptions" onclick="displayMore(this)">
                 ≡
-            </a>
+            </div>
         </li>
     </ul>
     <div id="buffer"></div>
     <div id = "Page">
+
         <div id = "LeftColumn">
-
+            <h3><a href="./Leaderboard/leaderboard.html">Top Players Leaderboard</a></h3>
+            <table id="miniLeaderboard">
+                <tbody>
+                <!-- Mini leaderboard entries will be inserted here dynamically -->
+                </tbody>
+            </table>
         </div>
-        <div id = "MiddleColumn">
-
+        <div id="MiddleColumn">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Event 1: Lorem ipsum dolor sit amet.</li>
+                <li>Event 2: Nullam scelerisque leo nec urna fermentum.</li>
+                <li>Event 3: Integer nec odio nec nulla cursus tincidunt.</li>
+            </ul>
+            <div id="Thumbnails">
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 1">
+                    <p>Game 1</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 2">
+                    <p>Game 2</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 3">
+                    <p>Game 2</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 4">
+                    <p>Game 2</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 5">
+                    <p>Game 2</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 6">
+                    <p>Game 2</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 7">
+                    <p>Game 2</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="assets/Photos/images.jfif" alt="Thumbnail 8">
+                    <p>Game 2</p>
+                </div>
+            </div>
         </div>
-        <div id = "RightColumn">
-            <div id = "Sponsors">
-
-            </div>
-            <div id = "DropdownBar">
-                
-            </div>
+        <div id="LeftColumn">
+            <h3>Recommended Articles</h3>
+            <ul>
+                <li><a href="#">Article 1</a></li>
+                <li><a href="#">Article 2</a></li>
+                <li><a href="#">Article 3</a></li>
+            </ul>
         </div>
     </div>
 </body>

@@ -1,0 +1,521 @@
+WEBVTT
+
+1 "Collins, Joshua" (2991350528)
+00:00:00.000 --> 00:00:17.303
+Recording, yeah, we have to set up a meeting with Calluhan to basically discuss like what we've done so far. So that's why I was kind of like, that's why I sent you the text earlier, like, make sure you push all your stuff because when we have a meeting with Calluhan and he just sees like what we.
+
+2 "Hung, Louis" (2056720128)
+00:00:17.303 --> 00:00:21.430
+Currently have, I don't know how happy he will be.
+
+3 "Collins, Joshua" (2991350528)
+00:00:21.430 --> 00:00:24.731
+Like you guys.
+
+4 "izik" (376830720)
+00:00:24.731 --> 00:00:27.027
+Wait can you guys repeat that? I'm sorry.
+
+5 "Hung, Louis" (2056720128)
+00:00:27.027 --> 00:00:30.490
+Yeah. Yeah, yeah.
+
+6 "Collins, Joshua" (2991350528)
+00:00:30.490 --> 00:00:37.629
+Could not be going to be happy. Yeah, it's just, so is the.
+
+7 "izik" (376830720)
+00:00:37.629 --> 00:00:52.529
+Where are you currently on the login page? Have you started? Yeah, I have. I literally like I just started like during the meeting. I have the bootstrap done. I'm just trying to implement the nav bar to keep it the same.
+
+8 "Collins, Joshua" (2991350528)
+00:00:52.529 --> 00:01:03.810
+Sort of style, NO worries, you can change the, change the CSS on the nav barge and make it or like in the layout to make it work, but if if it just follows that general.
+
+9 "izik" (376830720)
+00:01:03.810 --> 00:01:19.668
+The idea of we can even copy it over to other web pages. Yeah, yeah, yeah, yeah, yeah. I can't get it to stay in front and like or on top and then like lay it out cause like the bootstrap is just gonna kinda weird. I'm having to figure that one out, but.
+
+10 "Collins, Joshua" (2991350528)
+00:01:19.668 --> 00:01:25.303
+But now I have that. It's in my branch if you want to take a look at it, but. Yeah, I'll take a look later. I just need to finish up the.
+
+11 "izik" (376830720)
+00:01:25.303 --> 00:01:32.938
+Last my refresh button on my lab and yeah I mentioned to the lab, the mitre. My MITRE thing is killing me.
+
+12 "Collins, Joshua" (2991350528)
+00:01:32.938 --> 00:01:42.374
+So I have so much to do this week. It's crazy. No worries bro. It's just, I'll send him a message to.
+
+13 "Hung, Louis" (2056720128)
+00:01:42.374 --> 00:01:46.695
+How do you think we should message him about the, the meeting? I'm pretty sure he can.
+
+14 "Collins, Joshua" (2991350528)
+00:01:46.695 --> 00:01:48.453
+We can meet with the tas.
+
+15 "izik" (376830720)
+00:01:48.453 --> 00:01:51.479
+Yeah, I'll I'll.
+
+16 "Collins, Joshua" (2991350528)
+00:01:51.479 --> 00:02:10.033
+That's the TA. We can ask them in our. Oh yeah yeah I'll send a message to them after this call so we can figure that out. Cause I Yeah, ideally we just need to find a time that works for most of us so we can talk about it. And we need Pranay to get his updated logo into the website as well somewhere.
+
+17 "Hung, Louis" (2056720128)
+00:02:10.033 --> 00:02:12.935
+When do you want to do it?
+
+18 "Collins, Joshua" (2991350528)
+00:02:12.935 --> 00:02:19.273
+I said he wasn't available during this week. I know, but we just have to get a request in.
+
+19 "Hung, Louis" (2056720128)
+00:02:19.273 --> 00:02:27.151
+By the end of this week. It doesn't have to be this week, but yeah cause I remember he said something about like free on Saturdays or Sundays.
+
+20 "Collins, Joshua" (2991350528)
+00:02:27.151 --> 00:02:33.814
+I don't know if that's a good idea though. I I'm I'm I'm not available this Sunday.
+
+21 "Hung, Louis" (2056720128)
+00:02:33.814 --> 00:02:36.791
+Because my mom's coming up because Monday's my day.
+
+22 "Collins, Joshua" (2991350528)
+00:02:36.791 --> 00:02:39.307
+Oh, nice. Oh wow.
+
+23 "izik" (376830720)
+00:02:39.307 --> 00:02:46.334
+Yeah, I got by hand guns and liquor. What are your 09:19 1821.
+
+24 "Collins, Joshua" (2991350528)
+00:02:46.334 --> 00:02:49.013
+Oh, so air 24? Oh.
+
+25 "izik" (376830720)
+00:02:49.013 --> 00:02:51.065
+Okay, I i'm almo i'm almost.
+
+26 "Collins, Joshua" (2991350528)
+00:02:51.065 --> 00:02:57.008
+Class. Yeah, you're all three. I'm almost all three. Yeah. Respect.
+
+27 "Hung, Louis" (2056720128)
+00:02:57.008 --> 00:02:59.529
+Oh, Lewis is in the impa.
+
+28 "izik" (376830720)
+00:02:59.529 --> 00:03:01.966
+I am O five.
+
+29 "Collins, Joshua" (2991350528)
+00:03:01.966 --> 00:03:03.936
+It's.
+
+30 "izik" (376830720)
+00:03:03.936 --> 00:03:07.213
+Yeah, but.
+
+31 "Collins, Joshua" (2991350528)
+00:03:07.213 --> 00:03:39.030
+Are you in college shortly? Yeah, so you're still working on the, the login and sign up pages. I'm gonna start working on I'll start getting the layoff of the statistics websit, the statistics webpage this week and next week. So my my idea is just, you know, get HTML and CSS set up. We can then set up the databases and the API statistic. Well, set up databases and set up API and start to understand what the API needs from us and what we can get from it.
+
+32 "Collins, Joshua" (2991350528)
+00:03:39.030 --> 00:03:54.788
+And then after that we can then start implementing the API with like going into databases and doing certain things, like, then we can kind of expand from there, get some base functionality and then once we get done with that, we can then start adding cool features.
+
+33 "izik" (376830720)
+00:03:54.788 --> 00:03:57.630
+Okay.
+
+34 "izik" (376830720)
+00:03:57.630 --> 00:04:15.360
+Okay. Yeah, I I can share my screen of what it looks like right now. Okay. And I'll show you guys my issue. Let me just do that. I'll do it. Let me do this, how do I do this? I'm just gonna do the entire screen. Yeah, you're you're good.
+
+35 "izik" (376830720)
+00:04:15.360 --> 00:04:36.530
+Okay wait. Oh, there you go. Alright, good? Yeah, we can see you. Yep. So, yeah, it's just it's such a simple bootstrap, but yeah, I'm trying to get this in. So if I include, if I include that in, which is the other, the, the main pace CSS.
+
+36 "izik" (376830720)
+00:04:36.530 --> 00:04:49.631
+It's just, it it yeah it it doesn't even I don't even know what to say about this. So I'm gonna have to figure that out, but I moved, I moved the.
+
+37 "Collins, Joshua" (2991350528)
+00:04:49.631 --> 00:04:50.970
+Login page.
+
+38 "izik" (376830720)
+00:04:50.970 --> 00:04:58.265
+More the login stuff into a separate folder. Oh yeah, That's what we have as our site map.
+
+39 "Hung, Louis" (2056720128)
+00:04:58.265 --> 00:05:05.793
+So that's fine. Yeah, it's literally just basic. Yeah, but this is right here. I mean, there shouldn't be a problem with the main navigation.
+
+40 "izik" (376830720)
+00:05:05.793 --> 00:05:07.706
+Bar and, and your code, right.
+
+41 "Hung, Louis" (2056720128)
+00:05:07.706 --> 00:05:10.330
+Hey, I mean it's doing the.
+
+42 "Collins, Joshua" (2991350528)
+00:05:10.330 --> 00:05:20.106
+All right, so I don't know. It might be like one of your classes or like overlapping names. It might be a display for a flex box being displayed as like a co a.
+
+43 "izik" (376830720)
+00:05:20.106 --> 00:05:31.875
+Column instead of a row, and what? And in this and make CSS. Oh in main CSS.
+
+44 "Collins, Joshua" (2991350528)
+00:05:31.875 --> 00:05:34.311
+I don't know I didn't change it. I just I added a new.
+
+45 "izik" (376830720)
+00:05:34.311 --> 00:05:36.511
+Okay.
+
+46 "Collins, Joshua" (2991350528)
+00:05:36.511 --> 00:05:53.790
+Yeah, I mean, that's all I did. Okay. Yeah, yeah, we we definitely play around with that and just kind of find, here's a good thing, at least everything else is looking good. We can we can fix that. We we can change the way that that nav bar works so that it's, it works on your page.
+
+47 "izik" (376830720)
+00:05:53.790 --> 00:05:56.514
+We can copy over to other pages.
+
+48 "Collins, Joshua" (2991350528)
+00:05:56.514 --> 00:06:04.146
+Yeah, yeah. Cause let's be honest with you having a solid understanding of bootstrap, you're probably gonna be the.
+
+49 "izik" (376830720)
+00:06:04.146 --> 00:06:10.654
+CS CSS CSS God. I mean, look, I I just.
+
+50 "Collins, Joshua" (2991350528)
+00:06:10.654 --> 00:06:16.134
+Figured out how to use bootstrap like an hour ago. Right, but I mean it's not that bad.
+
+51 "izik" (376830720)
+00:06:16.134 --> 00:06:21.694
+Literally just copy and paste everything. Yeah.
+
+52 "izik" (376830720)
+00:06:21.694 --> 00:06:35.164
+I don't know. We'll, we'll just see how it goes, I mean, I mean, I think all it is, all it is is literally, you add these two things right here, in the header and then you copy and paste.
+
+53 "Collins, Joshua" (2991350528)
+00:06:35.164 --> 00:06:36.550
+There is.
+
+54 "izik" (376830720)
+00:06:36.550 --> 00:06:43.150
+HTML, this, this is the entire HTML right here. Yeah, and that's it. All I did to add, to make it centered and I.
+
+55 "Hung, Louis" (2056720128)
+00:06:43.150 --> 00:06:53.830
+Add the container and then add it this Would it be possible of like what's conflicting the navigation bar on your.
+
+56 "izik" (376830720)
+00:06:53.830 --> 00:07:11.599
+Login pages, the bootstrap import. That that's my concern, which is gonna be really, really annoying for me to fix, but we can possibly change it so that we can use.
+
+57 "izik" (376830720)
+00:07:11.599 --> 00:07:17.710
+It's a nav bar from bootstrap. I think I can, there should be.
+
+58 "Collins, Joshua" (2991350528)
+00:07:17.710 --> 00:07:20.652
+E navors in.
+
+59 "izik" (376830720)
+00:07:20.652 --> 00:07:32.807
+Yeah, and it can look something if we can find something that is useful NO, I mean.
+
+60 "Hung, Louis" (2056720128)
+00:07:32.807 --> 00:07:43.971
+We can change this out. Yeah, of course, but we can find something maybe. We can just style that around but like if we really want to like keep everything in the uniform situation, then we can.
+
+61 "izik" (376830720)
+00:07:43.971 --> 00:07:48.545
+Like we might as well use bootstrap nat bars. Yeah, are we allowed.
+
+62 "Collins, Joshua" (2991350528)
+00:07:48.545 --> 00:08:03.329
+We're allowed to use it, right? Yeah. If we want to keep things working, just use it. Yeah, I think we're better off using it because it, it bootstrap bootstraps are are made by professional front end developers, so.
+
+63 "izik" (376830720)
+00:08:03.329 --> 00:08:19.528
+By taking advantage of that, it's just gonna make our website look more clean. This looks so much nicer, yeah. You can all see my 97 tabs that I have open wild for a minor. Yeah, this is a preview of what you guys are gonna, if you're a PM.
+
+64 "Hung, Louis" (2056720128)
+00:08:19.528 --> 00:08:20.928
+This is a quick.
+
+65 "izik" (376830720)
+00:08:20.928 --> 00:08:28.063
+Preview of what you guys have to do. Wow. Young. It's, it's yeah it's pretty bad.
+
+66 "Collins, Joshua" (2991350528)
+00:08:28.063 --> 00:08:32.675
+That's if you're a project manager, but yeah, anyways, I'm not.
+
+67 "izik" (376830720)
+00:08:32.675 --> 00:08:49.079
+It's gonna be a project manager. I don't have the time to do that. It it NO it's honestly not that bad like all you do for right now is you just work on this is, this is very tedious. This sucks because you have to click on every single like you have to make 70 to a hundred tasks.
+
+68 "izik" (376830720)
+00:08:49.079 --> 00:09:07.289
+So we have to add a few more. We have to click on everyone, go into settings advanced, and then you have to click fixed duration and uncheck that. And that's every single one. That is the most annoying fucking part. I hated it so much and they go through and change all the hours, but. Okay.
+
+69 "izik" (376830720)
+00:09:07.289 --> 00:09:22.084
+It's it's just so tedious and like NO one follows this. It it's usually just done on Excel or like a flow chart, and it's like, it takes like a day to do it. I don't know why we're for Like I guess some.
+
+70 "Collins, Joshua" (2991350528)
+00:09:22.084 --> 00:09:39.364
+Older companies use Gantter but whatever yeah but yeah I I think we're in a good spot. We should definitely focus on including Renee and on what our plans are. I think Lewis are.
+
+71 "Hung, Louis" (2056720128)
+00:09:39.364 --> 00:09:44.435
+I forgot what were you supposed to do for the main page? I I'm doing.
+
+72 "Collins, Joshua" (2991350528)
+00:09:44.435 --> 00:09:49.985
+Here on the left side, like the leaderboard part? Oh yeah. Oh Yeah CSS.
+
+73 "Hung, Louis" (2056720128)
+00:09:49.985 --> 00:09:57.883
+Yeah, do you have time to work on that tomorrow by by any chance? I mean, possibly cause right now I'm focusing on my.
+
+74 "Collins, Joshua" (2991350528)
+00:09:57.883 --> 00:10:00.236
+My lab. So like once I finish my lab.
+
+75 "izik" (376830720)
+00:10:00.236 --> 00:10:02.081
+I'll just have to work on that. Yeah.
+
+76 "Collins, Joshua" (2991350528)
+00:10:02.081 --> 00:10:19.100
+Focus on your. Yeah, I can just tell you guys, it's basically just a shit ton of PHP. Like you're gonna turn your main, you had to turn your main page into an index or into a PHP, and then it's, the way I'm using a bunch of.
+
+77 "izik" (376830720)
+00:10:19.100 --> 00:10:23.703
+Host calls, which basically means like if I have a s if I.
+
+78 "Collins, Joshua" (2991350528)
+00:10:23.703 --> 00:10:49.980
+I have the Yeah, it took me so just I I did my lab for 2 h like two days ago, and my issue came from the fact that I had an exit call in one of the PHP files I included and I didn't see it. So when it was like half done, so none of the none of the HTML loaded, so I I just got fucked and I was like, what's going on? And there's like.
+
+79 "Hung, Louis" (2056720128)
+00:10:49.980 --> 00:10:52.385
+This little exit code at the bottom of.
+
+80 "izik" (376830720)
+00:10:52.385 --> 00:10:58.201
+Like fuck. Wow. Yeah, I'm actually I'm not even using.
+
+81 "Collins, Joshua" (2991350528)
+00:10:58.201 --> 00:11:09.242
+Oh, really? I don't think I have it once. Yeah, well right now my index of PHP is 220 lines. API updates 55 lines.
+
+82 "izik" (376830720)
+00:11:09.242 --> 00:11:11.964
+API fetches 55 lines.
+
+83 "Collins, Joshua" (2991350528)
+00:11:11.964 --> 00:11:15.040
+Yeah, NO, it's it's.
+
+84 "izik" (376830720)
+00:11:15.040 --> 00:11:25.500
+It's also 55 lines. I have a separate display PHP. Well I'm only doing one API right now, I'm only doing the weather one for.
+
+85 "Collins, Joshua" (2991350528)
+00:11:25.500 --> 00:11:30.292
+Yeah, the, my other one's gonna take seven years, but I have a display one.
+
+86 "izik" (376830720)
+00:11:30.292 --> 00:11:34.612
+I thought we just had to do it. I thought we just had to do it for the weather.
+
+87 "Collins, Joshua" (2991350528)
+00:11:34.612 --> 00:11:38.973
+Just the weather? Well I don't know. I was not I think it's both, it's both.
+
+88 "izik" (376830720)
+00:11:38.973 --> 00:11:42.932
+Really? Yeah, it's both. From each from each.
+
+89 "Hung, Louis" (2056720128)
+00:11:42.932 --> 00:11:45.570
+Each API. Yeah.
+
+90 "izik" (376830720)
+00:11:45.570 --> 00:11:55.332
+Take whatever you did from lab to and make a button that allows you to fetch a JSON object from each API and put it into the JSON object into a mysql database.
+
+91 "Collins, Joshua" (2991350528)
+00:11:55.332 --> 00:11:57.092
+Then use.
+
+92 "izik" (376830720)
+00:11:57.092 --> 00:12:08.930
+Yeah, dude, this, it's so bad. Like I'm I'm barely into it. I just got my mysql done.
+
+93 "Collins, Joshua" (2991350528)
+00:12:08.930 --> 00:12:18.870
+And like some page we should talk again. Well, I now have to do the 2nd page or the 2nd one.
+
+94 "izik" (376830720)
+00:12:18.870 --> 00:12:22.007
+Yeah.
+
+95 "Collins, Joshua" (2991350528)
+00:12:22.007 --> 00:12:24.189
+Oh, it's pretty bad. Yeah.
+
+96 "izik" (376830720)
+00:12:24.189 --> 00:12:28.932
+Yeah, this is so time consuming. Yeah.
+
+97 "Collins, Joshua" (2991350528)
+00:12:28.932 --> 00:12:30.110
+No, it does take forever.
+
+98 "izik" (376830720)
+00:12:30.110 --> 00:12:33.692
+That means that.
+
+99 "Collins, Joshua" (2991350528)
+00:12:33.692 --> 00:12:37.893
+So what do we, when's our next meeting? When do you want to schedule that?
+
+100 "izik" (376830720)
+00:12:37.893 --> 00:12:45.691
+That works for you guys the following the next few days. Do you want to do it Sunday?
+
+101 "Collins, Joshua" (2991350528)
+00:12:45.691 --> 00:12:50.230
+Cause that's that's given enough time, what time was that.
+
+102 "izik" (376830720)
+00:12:50.230 --> 00:12:52.133
+Okay.
+
+103 "Hung, Louis" (2056720128)
+00:12:52.133 --> 00:12:56.292
+Now I have a chapter at twelve to 02:30.
+
+104 "izik" (376830720)
+00:12:56.292 --> 00:12:58.049
+Less than times in a like more.
+
+105 "Hung, Louis" (2056720128)
+00:12:58.049 --> 00:13:00.930
+Thing. I can't do more.
+
+106 "izik" (376830720)
+00:13:00.930 --> 00:13:03.989
+Owner. Okay then like just sometime later at night I.
+
+107 "Collins, Joshua" (2991350528)
+00:13:03.989 --> 00:13:11.890
+Yes, like, you just want to do 888 as like the like the time for everyone? Eight eight, like, can we try 08:30?
+
+108 "izik" (376830720)
+00:13:11.890 --> 00:13:15.391
+08:30? Sure. Yeah. Yeah, I mean.
+
+109 "Hung, Louis" (2056720128)
+00:13:15.391 --> 00:13:19.172
+That works with you too. If that works for you, like that works for me cause.
+
+110 "Collins, Joshua" (2991350528)
+00:13:19.172 --> 00:13:22.711
+I don't have anything planned for Sunday right now.
+
+111 "izik" (376830720)
+00:13:22.711 --> 00:13:28.991
+Yeah, absolutely yeah I'll I can do 08:30 p.m.. Yeah, just a week after is gonna.
+
+112 "Hung, Louis" (2056720128)
+00:13:28.991 --> 00:13:40.731
+Be a little different but because we have Monday off, Wait we do, on the 14th. Oh nice, yeah. Columbus Day.
+
+113 "Collins, Joshua" (2991350528)
+00:13:40.731 --> 00:13:47.491
+That's nice. Okay. Yeah, do you think I have to check for my 2nd API ID.
+
+114 "Hung, Louis" (2056720128)
+00:13:47.491 --> 00:13:51.185
+I think I have to have the feature that they can change the stuff?
+
+115 "izik" (376830720)
+00:13:51.185 --> 00:13:59.991
+Yeah, you're required to do both. Fuck. Wait, what? Yeah, from fuck.
+
+116 "Hung, Louis" (2056720128)
+00:13:59.991 --> 00:14:04.412
+Wait, give, give your users a way to change the data they see. Yep.
+
+117 "Collins, Joshua" (2991350528)
+00:14:04.412 --> 00:14:09.918
+You're that even mean? I.
+
+118 "izik" (376830720)
+00:14:09.918 --> 00:14:14.813
+I talked to the, let me share let me share my screen real quick. Is it like.
+
+119 "Collins, Joshua" (2991350528)
+00:14:14.813 --> 00:14:18.169
+Change the address?
+
+120 "Hung, Louis" (2056720128)
+00:14:18.169 --> 00:14:21.268
+No, NO NO. Or something my screen?
+
+121 "izik" (376830720)
+00:14:21.268 --> 00:14:22.532
+Yeah.
+
+122 "Collins, Joshua" (2991350528)
+00:14:22.532 --> 00:14:50.780
+Yeah, so by let me just, ok, so by default this is what it looks like. I haven't touched anything down here, but don't worry about that. But the idea is like if I do like, 1 s, my Webex is in the way, and I hit search, it pulls up that city, and then if I click refresh.
+
+123 "Hung, Louis" (2056720128)
+00:14:50.780 --> 00:15:02.650
+It goes back to troy. No, but I thought what they want you to do is, like, changing like e.g. the air temperature or like.
+
+124 "Collins, Joshua" (2991350528)
+00:15:02.650 --> 00:15:07.531
+Weather forecast. I I talked to the.
+
+125 "Hung, Louis" (2056720128)
+00:15:07.531 --> 00:15:09.050
+It's here.
+
+126 "izik" (376830720)
+00:15:09.050 --> 00:15:17.071
+Hey she said it was fine to do this. Oh, really? Okay, I'm probably gonna ask the chair about it. I'll probably go to like office hours or something.
+
+127 "Hung, Louis" (2056720128)
+00:15:17.071 --> 00:15:26.508
+When is office hours? I believe it's today. Oh fun. Yeah, and there's But call Hen's officers.
+
+128 "izik" (376830720)
+00:15:26.508 --> 00:15:27.347
+Tomorrow so.
+
+129 "Collins, Joshua" (2991350528)
+00:15:27.347 --> 00:15:30.446
+Okay.
+
+130 "Hung, Louis" (2056720128)
+00:15:30.446 --> 00:15:37.584
+Yeah. I'll see you guys I gotta go finish this up. Yeah, same here. I'm asked here how, how did.

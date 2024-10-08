@@ -1,0 +1,44 @@
+{
+  "leaderboard": [
+    {
+      "player": "Player1",
+      "score": 1000
+    },
+    {
+      "player": "Player2",
+      "score": 950
+    },
+    {
+      "player": "Player3",
+      "score": 900
+    },
+    {
+      "player": "Player4",
+      "score": 850
+    },
+    {
+      "player": "Player5",
+      "score": 800
+    },
+    {
+      "player": "Player6",
+      "score": 700
+    },
+    {
+      "player": "Player7",
+      "score": 600
+    },
+    {
+      "player": "Player8",
+      "score": 500
+    },
+    {
+      "player": "Player9",
+      "score": 400
+    },
+    {
+      "player": "Player10",
+      "score": 300
+    }
+  ]
+}
