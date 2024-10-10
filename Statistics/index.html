@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinShare</title>
+    <link rel="stylesheet" href="./assets/stats.css">
+    <script src="./assets/stats.js" defer></script>
+</head>
+<body>
+    <ul id="Hotbar">
+        <li id = "Home" class="tab">
+            <a href="./../index.html">Home</a>
+        </li>
+        <li id = "Statistics" class="tab">
+            <a href="./index.html">Statistics</a>
+        </li>
+        <li id = "Predictions" class="tab">
+            <a href="">Predictions</a>
+        </li>
+        <li id = "Filler">
+
+        </li>
+        <li id = "More">
+            <div id="MoreOptions" onclick="displayMore(this)">
+                ≡
+            </div>
+        </li>
+    </ul>
+    <div id="buffer"></div>
+
+    <div id = "content">
+        <div id = "search">
+            <label for="stat" id="statlabel">Season-wide Statistics:</label>
+            <select id="stat" for="stat">
+                <option value="default">Select an option</option>
+                <option value="statP0">League Rank For Points</option>                
+                <option value="statP1">Player: Mins Played</option>
+                <option value="statP2">Player: Field Goals Made</option>
+                <option value="statP3">Player: Field Goal Percentage</option>
+                <option value="statP4">Player: 3-Pointers Made</option>
+                <option value="statP5">Player: 3-Pointers Percentage</option>
+                <option value="statP6">Player: Free Throws Made</option>
+                <option value="statP7">Player: Free Throw Percentage</option>
+                <option value="statP8">Player: Offensive Rebounds</option>
+                <option value="statP9">Player: Defenseive Rebounds</option>
+                <option value="statP10">Player: Steals</option>
+                <option value="statP11">Player: Blocks</option>
+                <option value="statP12">Player: Fouls</option>
+            </select>
+        <div>
+        <div id = "data">
+
+        </div>
+    </div>
+
+</body>
+</html>
