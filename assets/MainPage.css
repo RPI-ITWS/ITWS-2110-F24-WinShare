@@ -4,68 +4,18 @@ body, html {
     padding: 0;
 }
 
-#Hotbar{
-    width: 100%;
-    height: 45px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    border-bottom: 5px solid #7DD8BA;
-    background-color: #696D73;
-    position: absolute;
-}
-
-#buffer{
-    height:49px;
-}
-
-#Filler{
-    display: flex;
-    width: 18%;
-    height: 45px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#More{
-    display: flex;
-    width: 7%;
-    height: 45px;
-}
-
-#MoreOptions{
-    width: 100%;
-    height: 45px;
-    align-content: center;
-    text-align: center;
-    text-decoration: none;
-    font-size: xx-large;
-    color: #7DD8BA;
-} 
-
-#MoreOptions:hover{
-    background-color: #7DD8BA;
-    color: #696D73;
-    cursor: pointer;
-} 
-
 #Page {
     display: flex;
-    flex-wrap: nowrap; /* Prevents wrapping of columns */
-    justify-content: space-between; /* Distributes columns evenly */
-    width: 100%; /* Ensure it takes the full width of the page */
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    width: 100%; 
     box-sizing: border-box;
 }
 
 #LeftColumn {
-    width: 20%; /* Ensure this is 20% */
+    width: 20%; 
     padding: 20px; 
-    box-sizing: border-box; /* Includes padding in the width calculation */
+    box-sizing: border-box; 
     margin: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -97,7 +47,7 @@ body, html {
 #MiddleColumn {
     width: 60%;
     padding: 20px;
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box; 
     margin: 10px;
     background-color: #f0f0f0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -107,34 +57,13 @@ body, html {
 }
 
 #RightColumn {
-    width: 20%; /* Ensure this is 20% */
+    width: 20%; 
     padding: 20px;
-    box-sizing: border-box; /* Ensures padding doesn't exceed total width */
+    box-sizing: border-box; 
     margin: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-#Sponsors{
-    display: block;
-}
-
-#DropdownBar{
-    display: none;   
-    height: 500px;
-}
-
-#DDBcontent{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 270px;
-    background-color: #7DD8BA;
-    text-align: center;
-    margin: 0;
 }
 
 #MiddleColumn {
@@ -154,7 +83,6 @@ body, html {
 
 #Thumbnails {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 10px;
     justify-content: center; 
     width: 100%; 
