@@ -1,3 +1,17 @@
+<?php
+$servername = "localhost";
+$username = "superuser";
+$password = "superuser"; 
+$dbname = "WinShare";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,44 +28,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg px-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">WinShare</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Statistics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Predictions</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto me-3">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Login
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="Login/login.html">Login</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+    <?php include 'php/header.php'; ?>
 
     <div id="Page">
         <div id="LeftColumn">
-            <h3><a href="./Leaderboard/leaderboard.html">Top Players Leaderboard</a></h3>
+            <h3><a href="./Leaderboard/leaderboard.php">Top Players Leaderboard</a></h3>
             <table id="miniLeaderboard">
                 <tbody>
                 </tbody>
