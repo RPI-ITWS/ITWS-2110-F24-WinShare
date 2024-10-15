@@ -115,3 +115,101 @@
     vertical-align: middle;
     margin-right: 10px;
 }
+
+/*slot machine visualization*/
+.score-container {
+    height: 1.5em;
+    line-height: 1.5em;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(to bottom, #100048 0%, #060019 100%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 100px;
+}
+
+.score-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-wrapper span {
+    display: block;
+    font-family: 'Digital-7', monospace;
+    font-size: 1.5em;
+    color: #7fe1c5;
+    text-shadow: 0 0 5px #56D7B2;
+    text-align: center;
+}
+
+/* Create a glowing effect on hover */
+#leaderboardTable tr:hover .score-container {
+    box-shadow: 0 0 15px #7fe1c5;
+}
+
+/* Hide scrollbar */
+.score-container::-webkit-scrollbar {
+    display: none;
+}
+
+.score-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#sortButtons {
+    margin-bottom: 20px;
+}
+
+#sortButtons .btn {
+    margin-right: 10px;
+}
+
+#sortButtons .btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+#leaderboardTable th, #leaderboardTable td {
+    width: 25%;
+}
+
+.score-container, .winrate-container {
+    height: 2em;
+    line-height: 2em;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(to bottom, #4c4c4c 0%, #2c2c2c 100%);
+    border-radius: 5px;
+    padding: 5px 15px;
+    min-width: 100px;
+}
+
+.score-wrapper, .winrate-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-wrapper span, .winrate-wrapper span {
+    display: inline-block;
+    font-family: 'Digital-7', monospace;
+    font-size: 1.5em;
+    color: #7fe1c5;
+    text-shadow: 0 0 5px #56D7B2;
+    text-align: center;
+    white-space: nowrap;
+}

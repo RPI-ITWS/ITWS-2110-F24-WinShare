@@ -2,43 +2,73 @@
   "leaderboard": [
     {
       "player": "Player1",
-      "score": 1000
+      "score": 1000,
+      "RoundsCorrect": 100,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player2",
-      "score": 950
+      "score": 950,
+      "RoundsCorrect": 90,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player3",
-      "score": 900
+      "score": 900,
+      "RoundsCorrect": 90,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player4",
-      "score": 850
+      "score": 850,
+      "RoundsCorrect": 70,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player5",
-      "score": 800
+      "score": 800,
+      "RoundsCorrect": 60,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player6",
-      "score": 700
+      "score": 700,
+      "RoundsCorrect": 50,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player7",
-      "score": 600
+      "score": 600,
+      "RoundsCorrect": 40,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player8",
-      "score": 500
+      "score": 500,
+      "RoundsCorrect": 30,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player9",
-      "score": 400
+      "score": 400,
+      "RoundsCorrect": 20,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     },
     {
       "player": "Player10",
-      "score": 300
+      "score": 300,
+      "RoundsCorrect": 10,
+      "RoundsWrong": 20,
+      "profilePic": "../assets/Photos/pfp1.png"
     }
   ]
 }
