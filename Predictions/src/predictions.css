@@ -1,0 +1,77 @@
+#frameWords {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainframe {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1800px;
+    height: 80vh;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 10px solid #000000;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+#mainframe > div {
+    width: 100%;
+    min-height: 33.333vh;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: #56d7b2 solid 1px;
+}
+
+#mainframe > div:last-child {
+    margin-bottom: 0;
+}
+
+#mainframe > div img {
+    max-width: 20%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#mainframe > div .content {
+    flex-grow: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mainframe > div .content h2,
+#mainframe > div .content p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+#header1{
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    font-size: 60px;
+    position: absolute;
+    left: 40%;
+    color: #7fe1c5;
+}
