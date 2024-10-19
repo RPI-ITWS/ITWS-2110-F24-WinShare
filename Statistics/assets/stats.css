@@ -91,19 +91,34 @@ body{
 
 
 #search {
-    width: 98%;
+    width: 100%;
+    margin: 0 auto;
     padding: 2%;
-    padding-left: 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: border-bottom 0.3s ease;
+    flex-direction: row;
+    gap: 20px;
 }
 
 #statlabel {
     font-size: 28px;
     color: #7DD8BA;
     transition: color 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-right: 0;
+}
+
+#stat {
+    width: 100%;
+    font-size: 18px;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    background-color: #7DD8BA;
+    outline: none;
+    flex-grow: 1;
 }
 
 #stat:hover {
@@ -111,14 +126,56 @@ body{
     cursor: pointer;
 }
 
-#stat {
-    width: 60%;
-    font-size: 18px;
-    padding: 1%;
-    border: none;
-    border-radius: 5px;
-    background-color: #7DD8BA;
-    outline: none;
+#tabs {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+    top: -1px; 
+    left: -1px; 
+    margin-bottom: 20px;
 }
 
+#StatButton, #PlayerButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #696D73;
+    color: #7DD8BA;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    margin-right: 4px;
+}
 
+#StatButton {
+    border-radius: 16px 4px 0 0;
+    margin-left: 20px; 
+}
+
+#PlayerButton {
+    border-radius: 4px 4px 0 0;
+}
+
+#StatButton:hover, #PlayerButton:hover {
+    background-color: #7a7f86;
+}
+
+#content {
+    padding-top: 20px;
+}
+
+#search {
+    text-align: center;
+    width: 90%; 
+    margin: 0 auto;
+}
+
+#statlabel {
+    margin-right: 20px;
+}
+
+#StatContent {
+    display: none;
+}
