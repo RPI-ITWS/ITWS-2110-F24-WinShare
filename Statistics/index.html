@@ -16,7 +16,7 @@
             <a href="./index.html">Statistics</a>
         </li>
         <li id = "Predictions" class="tab">
-            <a href="../Predictions/Predictions.html">Predictions</a>
+            <a href="">Predictions</a>
         </li>
         <li id = "Filler">
 
@@ -30,26 +30,33 @@
     <div id="buffer"></div>
 
     <div id = "content">
-        <div id = "search">
-            <label for="stat" id="statlabel">Season-wide Statistics:</label>
-            <select id="stat" for="stat">
-                <option value="default">Select an option</option>
-                <option value="statP0">League Rank For Points</option>                
-                <option value="statP1">Player: Mins Played</option>
-                <option value="statP2">Player: Field Goals Made</option>
-                <option value="statP3">Player: Field Goal Percentage</option>
-                <option value="statP4">Player: 3-Pointers Made</option>
-                <option value="statP5">Player: 3-Pointers Percentage</option>
-                <option value="statP6">Player: Free Throws Made</option>
-                <option value="statP7">Player: Free Throw Percentage</option>
-                <option value="statP8">Player: Offensive Rebounds</option>
-                <option value="statP9">Player: Defenseive Rebounds</option>
-                <option value="statP10">Player: Steals</option>
-                <option value="statP11">Player: Blocks</option>
-                <option value="statP12">Player: Fouls</option>
-            </select>
+        <div id = "tabs">
+            <button id="StatButton">Search For Statistic</button>
+            <button id="PlayerButton">Search For Player</button>
         </div>
-        <div id = "data">
+        <div id="PlayerContent">
+            <div id="search">
+                <label for="stat" id="statlabel">Season-wide Statistics:</label>
+                <select id="stat" for="stat">
+                    <option value="default">Select an option</option>
+                    <option value="statP0">Point Rankings</option>                
+                    <option value="statP1">Mins Played</option>
+                    <option value="statP2">Field Goals Made</option>
+                    <option value="statP3">Field Goal Percentage</option>
+                    <option value="statP4">3-Pointers Made</option>
+                    <option value="statP5">3-Pointers Percentage</option>
+                    <option value="statP6">Free Throws Made</option>
+                    <option value="statP7">Free Throw Percentage</option>
+                    <option value="statP8">Offensive Rebounds</option>
+                    <option value="statP9">Defenseive Rebounds</option>
+                    <option value="statP10">Steals</option>
+                    <option value="statP11">Blocks</option>
+                    <option value="statP12">Fouls</option>
+                </select>
+            </div>
+            <div id="data"></div>
+        </div>
+        <div id = "StatContent">
 
         </div>
     </div>
