@@ -8,9 +8,6 @@ document
             method: 'POST',
             body: formData,
          });
-         if (!response.ok) {
-            throw new Error('Network response was not ok');
-         }
          const result = await response.json();
          if (result.message) {
             window.location.href =
@@ -19,7 +16,6 @@ document
             alert(result.error);
          }
       } catch (error) {
-         console.error('There was a problem with the fetch operation:', error);
          alert('An error occurred. Please try again.');
       }
    });

@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "superuser";
 $password = "superuser"; 
@@ -10,6 +12,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +33,13 @@ if ($conn->connect_error) {
 <body>
 
     <?php include 'php/header.php'; ?>
+
+
+    <?php if (isset($_SESSION['user_id'])): ?>
+        <div class="alert alert-success" role="alert">
+            Welcome, <?= $_SESSION['username']; ?>!
+        </div>
+    <?php endif; ?>
 
     <div id="Page">
         <div id="LeftColumn">
