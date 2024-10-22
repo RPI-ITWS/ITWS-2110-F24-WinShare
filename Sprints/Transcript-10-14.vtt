@@ -1,0 +1,477 @@
+WEBVTT
+
+1 "" (0)
+00:00:00.000 --> 00:00:01.261
+So.
+
+2 "Collins, Joshua" (3377417984)
+00:00:01.261 --> 00:00:31.768
+So, currently as it stands, we have a really basic framework for the, yeah, I have a really basic framework for the statistics page. Let me I don't know if you guys have seen it yet, I still have to make some additions to it, but for right now, give me a 2nd VS code's taking a little bit to load up.
+
+3 "Hung, Louis" (558260736)
+00:00:31.768 --> 00:00:38.808
+Isn't mean yet? I think I did. Okay, let me check.
+
+4 "Collins, Joshua" (3377417984)
+00:00:38.808 --> 00:00:43.988
+Well, a little bit further but.
+
+5 "Hung, Louis" (558260736)
+00:00:43.988 --> 00:00:59.970
+Not software.
+
+6 "Hung, Louis" (558260736)
+00:00:59.970 --> 00:01:15.086
+Yeah, Assets, NO. Statistics, ok, I see. Yes.
+
+7 "Collins, Joshua" (3377417984)
+00:01:15.086 --> 00:01:18.992
+S select.
+
+8 "Hung, Louis" (558260736)
+00:01:18.992 --> 00:01:23.286
+Type and opinion.
+
+9 "Collins, Joshua" (3377417984)
+00:01:23.286 --> 00:01:27.861
+Oh, sorry. I meant to put options. I'll fix that. Oh wait.
+
+10 "Hung, Louis" (558260736)
+00:01:27.861 --> 00:01:45.903
+Options never mind options. I read the wrong. I'm not reading. Oh, NO worries. League rank for prep, for points minimum men's split field goals made, field goal percentage, three pointers made. Yeah.
+
+11 "Collins, Joshua" (3377417984)
+00:01:45.903 --> 00:01:53.263
+My idea is let's just do a dropdown kind of instead of, four.
+
+12 "Hung, Louis" (558260736)
+00:01:53.263 --> 00:01:55.925
+Grid. Yeah.
+
+13 "Collins, Joshua" (3377417984)
+00:01:55.925 --> 00:01:58.648
+Oh, I.
+
+14 "Hung, Louis" (558260736)
+00:01:58.648 --> 00:02:15.885
+And Fair enough, but how do you, like, cause I'm pretty sure if like people want to visit the website that they might want to search up as like a player, right? Yeah. This is just a.
+
+15 "Collins, Joshua" (3377417984)
+00:02:15.885 --> 00:02:29.286
+Basic one right now so that we have like desired inputs and desired outputs and we don't have to worry about like S SQL injections. Gotcha. Yeah.
+
+16 "Hung, Louis" (558260736)
+00:02:29.286 --> 00:02:35.670
+Is like from my perspective, if someone wants to look up a clear stats, you want to look at all of.
+
+17 "Hung, Louis" (558260736)
+00:02:35.670 --> 00:02:51.939
+One guy's stats instead of like separated stats or or that can be like a separated thing where your, your stats is ranked from high to low or the like for each player. Yeah, yeah. And.
+
+18 "Collins, Joshua" (3377417984)
+00:02:51.939 --> 00:03:07.682
+Yeah, we, we can definitely implement that fee, we could, we could probably do that where you we could probably have different tabs like ranking an individual, and then if you click on one of the other, it depends on like how we display the information.
+
+19 "Hung, Louis" (558260736)
+00:03:07.682 --> 00:03:09.062
+Yeah.
+
+20 "Collins, Joshua" (3377417984)
+00:03:09.062 --> 00:03:28.046
+It does like if you click comparative or individual, like if you click on comparative, it shows you how that how everybody ranks up in that category and then individual means you go search up a player and then it returns all their stats.
+
+21 "Hung, Louis" (558260736)
+00:03:28.046 --> 00:03:45.420
+Okay. Yeah. I was just like, Yeah, I think that works. And I think for convenience, we don't really need to put the player data up to PHP, you can just do it locally in the JSON. Oh wait, NO, we do API, right?
+
+22 "Hung, Louis" (558260736)
+00:03:45.420 --> 00:03:50.020
+1 s. Oh yeah. Oh yeah, hear me saying he's gonna get.
+
+23 "Collins, Joshua" (3377417984)
+00:03:50.020 --> 00:03:57.228
+The SQL stuff set up this week for us and that would be perfect. What were you saying? Yeah.
+
+24 "Hung, Louis" (558260736)
+00:03:57.228 --> 00:04:21.103
+Because I was thinking about like the player datas, we might cause we can we can put it in the JSON file after we do like API manual API fetches and that will make our day really easy instead of doing like just constantly doing API fetches from the apis. Yeah. Yeah.
+
+25 "Hung, Louis" (558260736)
+00:04:21.103 --> 00:04:38.322
+Yeah cause like we can update it like once per, I don't know, once per day or once per week and then just update the json file instead of updating the entire thing every single time someone refreshed the page. Yeah. Yeah.
+
+26 "Collins, Joshua" (3377417984)
+00:04:38.322 --> 00:04:49.640
+Yeah, and I definitely can work for the homepage because I we do not need to consistently update like upcoming events. Like it could be an example. It doesn't have to be a hundred percent up to date. Yeah.
+
+27 "Hung, Louis" (558260736)
+00:04:49.640 --> 00:05:05.805
+So like the only thing I think we need to put in the database might just be the user, the user info and like the Yeah I think just the user info is fine.
+
+28 "Collins, Joshua" (3377417984)
+00:05:05.805 --> 00:05:24.425
+Put the, the, if we put like a small amount of data into an SQL table, then we can, all we need to do is when a person asks for it rather than it updating every time somebody asks for it, we can have it, oh, you know what we could probably try and do?
+
+29 "Hung, Louis" (558260736)
+00:05:24.425 --> 00:05:25.762
+We can probably.
+
+30 "Collins, Joshua" (3377417984)
+00:05:25.762 --> 00:05:42.021
+Just try and do it so that every time you log in, it updates the information. And then when you go to statistics and predictions, it just fetches that data. Okay.
+
+31 "Hung, Louis" (558260736)
+00:05:42.021 --> 00:05:43.025
+Interesting. Yeah.
+
+32 "Collins, Joshua" (3377417984)
+00:05:43.025 --> 00:05:49.987
+Let me, yeah, let me write that down the team discord real quick.
+
+33 "Hung, Louis" (558260736)
+00:05:49.987 --> 00:05:54.346
+You can do like when the admin logs in, then we update the data. Yeah.
+
+34 "Collins, Joshua" (3377417984)
+00:05:54.346 --> 00:06:09.649
+Okay, uh.
+
+35 "Collins, Joshua" (3377417984)
+00:06:09.649 --> 00:06:39.963
+Yeah, yeah. I mean, that's a good idea cause that that way we're not over not that's why that way we're not overusing how many API calls we're using. Yeah. And.
+
+36 "Hung, Louis" (558260736)
+00:06:39.963 --> 00:06:47.006
+Did we like cause I wasn't here last time, did we decide on which API to use?
+
+37 "Collins, Joshua" (3377417984)
+00:06:47.006 --> 00:07:28.043
+And my it's I don't think we've made a decision quite yet. If if I had, if I had to say anything about it, I would recommend the, the 1II gave you it was what was it called? Hoop data hub, only because it's, it's free, you legitimately make an account and takes 1 min and then you get a key and it gives you I I just don't know how to work the other API that Renee gave us oh yeah it just looks a bit. Yeah, that one is through Rapid aPI.com, and that one just looks kind of funky. Just.
+
+38 "Hung, Louis" (558260736)
+00:07:28.043 --> 00:07:30.763
+It's very rough. Yeah.
+
+39 "Collins, Joshua" (3377417984)
+00:07:30.763 --> 00:07:38.729
+Yeah, it looks like, yeah, it, like we could do a fa yeah. I mean.
+
+40 "Collins, Joshua" (3377417984)
+00:07:38.729 --> 00:07:54.692
+I just know for a fact Hoop data hub works and I know you can get, everything that's currently on the statistics page is something that you can get.
+
+41 "Hung, Louis" (558260736)
+00:07:54.692 --> 00:07:56.243
+Yeah. Yeah.
+
+42 "Hung, Louis" (558260736)
+00:07:56.243 --> 00:08:12.206
+I guess I will try to work with the Hook data hub 1st, because I wasn't sure which one are we actually and I like I played with a bit with the Rapid API.
+
+43 "Hung, Louis" (558260736)
+00:08:12.206 --> 00:08:26.803
+Kind of yeah it's just kind of hard to figure out how to use it. Oh, 1 s. Oh.
+
+44 "Collins, Joshua" (3377417984)
+00:08:26.803 --> 00:08:38.587
+So that's why, oh, my bad. I was looking at the wrong thing, ok. That's why it was weird. I was, he said again about the rapid API? No, NO problem.
+
+45 "Hung, Louis" (558260736)
+00:08:38.587 --> 00:08:43.284
+Just it's just kind of hard to use for rapid API. Yeah, I I just didn't I was.
+
+46 "Collins, Joshua" (3377417984)
+00:08:43.284 --> 00:08:51.808
+Really, I just don't feel safe with that one or not safe, I just don't trust it per se. Yeah.
+
+47 "Hung, Louis" (558260736)
+00:08:51.808 --> 00:09:01.304
+Because it's not a, a website only for MBA data that's for all of the data, so I'm not too confident about it. Yeah.
+
+48 "Collins, Joshua" (3377417984)
+00:09:01.304 --> 00:09:20.190
+At least the one I have, we, we will be able to use that one. I'll I'll talk to Prenee on tuesday Tuesday. I would like for him to, start bringing in some more HTML or at least start I would like for him to try and touch up the homepage. Yeah.
+
+49 "Hung, Louis" (558260736)
+00:09:20.190 --> 00:09:22.042
+And yeah, at least.
+
+50 "Collins, Joshua" (3377417984)
+00:09:22.042 --> 00:09:30.326
+Give give him like a little task to do right now so that he has, something that he's contributed towards. Yeah.
+
+51 "Hung, Louis" (558260736)
+00:09:30.326 --> 00:09:35.509
+Yeah, I don't think he's contributing much.
+
+52 "Collins, Joshua" (3377417984)
+00:09:35.509 --> 00:09:39.507
+Unfortunately, not at the moment. Yeah.
+
+53 "Hung, Louis" (558260736)
+00:09:39.507 --> 00:09:46.204
+Then we need to get him to send the, the log the logo and like the github repo or something. He's still.
+
+54 "Collins, Joshua" (3377417984)
+00:09:46.204 --> 00:09:53.732
+Well yeah, he still hasn't done that. Oh yeah, so we need to get him to do that. Yeah.
+
+55 "Hung, Louis" (558260736)
+00:09:53.732 --> 00:10:00.945
+I'm trying to figure around the API guys, which part do you want me to handle? Like which webpage?
+
+56 "Collins, Joshua" (3377417984)
+00:10:00.945 --> 00:10:05.902
+Oh, you want to Can you say that again? I bet. Like cause I.
+
+57 "Hung, Louis" (558260736)
+00:10:05.902 --> 00:10:30.843
+I currently don't have anything working right now, so like I kind of, I don't know what to work on right now so the Yeah the leadership board, we need to wait for the wait for to finish the, the user apis, the mysql database and I think I might be able to work on the API calls on the stats page maybe. Okay.
+
+58 "Collins, Joshua" (3377417984)
+00:10:30.843 --> 00:10:49.789
+Yeah, if you yeah if you until we get the, mysql set up, do you want me to start with, what's it a Sorry I'm blinking, the HTML for the predictions page cause that should just be basically like.
+
+59 "Collins, Joshua" (3377417984)
+00:10:49.789 --> 00:10:54.322
+Just throw up a quick little framework of what you think might look good.
+
+60 "Hung, Louis" (558260736)
+00:10:54.322 --> 00:10:56.953
+Alright, that works. That should be pretty quick. Give you anything from like.
+
+61 "Collins, Joshua" (3377417984)
+00:10:56.953 --> 00:11:08.924
+A dropdown menu or like cause at least here it says like whatever statisti statistics we fetch, it should be able to be like statistic player prediction or whatever. Yeah.
+
+62 "Hung, Louis" (558260736)
+00:11:08.924 --> 00:11:11.099
+Yeah.
+
+63 "Hung, Louis" (558260736)
+00:11:11.099 --> 00:11:36.105
+Okay, that works. I'll work on that because that should give us a good part of like a good framework of how to manipulate the data later. Yeah. Okay. Yeah, I'll work on that. Probably get it done I don't know. I don't want to say anything because maybe next, before next Friday. Yeah.
+
+64 "Collins, Joshua" (3377417984)
+00:11:36.105 --> 00:11:40.590
+We we can catch up on Wednesday to talk about how it's going. Yeah, ok. I'll try to.
+
+65 "Hung, Louis" (558260736)
+00:11:40.590 --> 00:11:43.916
+Finish it before next meeting then. Yeah.
+
+66 "Collins, Joshua" (3377417984)
+00:11:43.916 --> 00:11:57.089
+And I'm gonna pu I'm gonna push a small thing after this meeting concludes just so that every web page that if you click the statistics button, it actually goes to the statistics page. Oh.
+
+67 "Hung, Louis" (558260736)
+00:11:57.089 --> 00:11:58.945
+With the nav bars? Yeah, cause the nav.
+
+68 "Collins, Joshua" (3377417984)
+00:11:58.945 --> 00:12:00.508
+Bars didn't work before he.
+
+69 "Hung, Louis" (558260736)
+00:12:00.508 --> 00:12:03.807
+Yeah, yeah, I was.
+
+70 "Collins, Joshua" (3377417984)
+00:12:03.807 --> 00:12:06.892
+I was fixing that for us. Yeah, NO problem. It should.
+
+71 "Hung, Louis" (558260736)
+00:12:06.892 --> 00:12:09.725
+It's prefixed. Yeah, and.
+
+72 "Collins, Joshua" (3377417984)
+00:12:09.725 --> 00:12:42.126
+I know, Isaac is gonna work on finishing up the login page and sign up page. He's basically gonna have it so that when you're assigned, well, he's he's researching on sessions how a session works is once you log in, it verifies that you have like an account in the SQL table, it activates a session, and when you move throughout the other pages, it still recognizes you as the person that logged in on this login page. Oh.
+
+73 "Hung, Louis" (558260736)
+00:12:42.126 --> 00:12:48.582
+Oh, ok. Yeah. I mean once that's like more of the that's like at the very end. Once.
+
+74 "Collins, Joshua" (3377417984)
+00:12:48.582 --> 00:13:07.303
+Everything working will then have the session link everything up so that when you make your prediction, it's saved on your SQL table, and then like theoretically you will get reward rewarded, right? Okay.
+
+75 "Hung, Louis" (558260736)
+00:13:07.303 --> 00:13:17.065
+And another also another another problem that I figured out because when you're in the login page, the home buttons didn't work. So. Yeah.
+
+76 "Collins, Joshua" (3377417984)
+00:13:17.065 --> 00:13:18.923
+I just fixed that as well.
+
+77 "Hung, Louis" (558260736)
+00:13:18.923 --> 00:13:21.444
+Okay, ok, nice. Yeah, let me.
+
+78 "Collins, Joshua" (3377417984)
+00:13:21.444 --> 00:14:02.148
+Yeah, so it's dot/../statistics/index.HTML, there we go. So when I log in and then hit statistics, yeah, there we go. So everything should work now. The only thing that Isaac needs to work on right now is just putting the old, the new nav bar onto the statistics page and then he's good there. And I think we're, we're in a room, to be honest, we're in a really good spot, I think, because I think in terms of HTML and CSS, at least the framework of it, we have probably like 75 % of it down.
+
+79 "Hung, Louis" (558260736)
+00:14:02.148 --> 00:14:17.304
+Yeah, the real problem like that concerns me, might just be like how we're handling the data after it's come comes comes in from the API cause that should be a shithole yeah but.
+
+80 "Collins, Joshua" (3377417984)
+00:14:17.304 --> 00:14:52.825
+I think there's a very simple way we can just handle it. All we need to do is just like, well at least like for like the statisti statistics and predictions, all we need to do is like player these five statistics we capture or these twelve statistics we capture, put that in a table so the identifier would be the person's name and then the statistics are the rest of the day table. So when you go in and select a player, it, you can fetch the rest of the it's it's it shouldn't be too bad. Right. And.
+
+81 "Hung, Louis" (558260736)
+00:14:52.825 --> 00:15:05.189
+And also the when probability it's given in the hook data? Yep, so we just have to pull that. Oh, is that.
+
+82 "Collins, Joshua" (3377417984)
+00:15:05.189 --> 00:15:08.621
+Is it, is it given in the free one? I think.
+
+83 "Hung, Louis" (558260736)
+00:15:08.621 --> 00:15:16.389
+Oh wait, NO, there's there's a star on it. Oh NO, that's that means that you have to pay for that one. So ok. Yeah, so.
+
+84 "Collins, Joshua" (3377417984)
+00:15:16.389 --> 00:15:37.469
+So we won't have that feature, but we all have everything else then we can, when we, when we cross that bridge, we can come up with some kind of way to get around that issue of how to create that statistic itself. Gotcha. Yeah. Realistically all we need to do for that one is probably be like.
+
+85 "Collins, Joshua" (3377417984)
+00:15:37.469 --> 00:15:52.589
+We'll have an API fetch saying, like, who are they going up against? And then say like, who's the same, who, who plays the same position like yada yada yada. Oh, this person plays or.
+
+86 "Collins, Joshua" (3377417984)
+00:15:52.589 --> 00:16:12.589
+But something like that, like we'll we'll have like some kind of compare, like we gather one step from one team or player and compare it to the other team or the other team's player and then say like based off of that statistic, what's our estimated win probability? It doesn't have to be a hundred percent accurate, it just has to be like theoretical of like, this is.
+
+87 "Collins, Joshua" (3377417984)
+00:16:12.589 --> 00:16:15.797
+How we would do it if we had an actual product, right?
+
+88 "Hung, Louis" (558260736)
+00:16:15.797 --> 00:16:23.420
+Right, yeah, that shouldn't be that should be a simple algorithm to fix. Yeah, and then.
+
+89 "Collins, Joshua" (3377417984)
+00:16:23.420 --> 00:16:37.372
+The only thing I think we need to just double, we need to seek to do is, is for him just to, when he's doing the login for email and password, he just has to double check to prevent any FQL injections. Yeah.
+
+90 "Hung, Louis" (558260736)
+00:16:37.372 --> 00:16:39.417
+Yeah, but the.
+
+91 "Collins, Joshua" (3377417984)
+00:16:39.417 --> 00:16:43.781
+That's a, that's a very simple fix.
+
+92 "Hung, Louis" (558260736)
+00:16:43.781 --> 00:16:50.598
+Okay, I guess we're good. We're good. We're good for now. Absolutely. Is anything else we need?
+
+93 "Collins, Joshua" (3377417984)
+00:16:50.598 --> 00:17:00.691
+Yeah, she was said that you had some statistics that you mentioned Lewis and that you used in high school? Yeah.
+
+94 "Hung, Louis" (558260736)
+00:17:00.691 --> 00:17:20.669
+Yeah, that was, let me think about it. That was based on like historical data from the team. So, like, I think I used like two seasons of data without, like I used the whole season data for the team and.
+
+95 "Hung, Louis" (558260736)
+00:17:20.669 --> 00:17:39.833
+When, when they play against one of the other teams like if they win their their points goes up and if they lose their their points go down to simple ecosystem, and I don't know if this works for JavaScript though cause I wrote it in R Yeah.
+
+96 "Collins, Joshua" (3377417984)
+00:17:39.833 --> 00:17:59.509
+What I I know what you mean we can we can we can probably do that statically like when before our like before we have to present. Yeah, we, yeah, we, we only need the numbers. We can, we can take those numbers and just say like, oh, this team beat this, the, the team that they're gonna play next week, they've beaten them the last three times.
+
+97 "Collins, Joshua" (3377417984)
+00:17:59.509 --> 00:18:03.451
+And they've been hot this season 80 % chance. Yeah.
+
+98 "Hung, Louis" (558260736)
+00:18:03.451 --> 00:18:05.221
+Let, we.
+
+99 "Collins, Joshua" (3377417984)
+00:18:05.221 --> 00:18:22.074
+We don't have to be, yeah, we, we, we can statically add in those numbers after the fact. We don't have to do any fancy features to come up with those numbers off, off the bat. We can just stat statically go in and say we think this team's gonna win. Yeah.
+
+100 "Hung, Louis" (558260736)
+00:18:22.074 --> 00:18:43.142
+Because the problem with this is because I'm I'm not too sure how data's given and that data hub. And in order for that program to work I need like the entire seasons data to be stored. Yeah.
+
+101 "Collins, Joshua" (3377417984)
+00:18:43.142 --> 00:18:47.152
+Yeah, yeah. You can you can get seasoned long data from the player. No.
+
+102 "Hung, Louis" (558260736)
+00:18:47.152 --> 00:19:12.008
+For not for team for for like a team and like which team they fight against cause it's calculated based on like their the team points difference and like home, if they're like, if they're playing on their own core or not and if I actually forgot like how many play how many audience they have for each team. So that's like very detailed data and I don't know if you all have that but.
+
+103 "Collins, Joshua" (3377417984)
+00:19:12.008 --> 00:19:19.213
+Yeah, oh yeah, actually, the team data gives you win percentage. Okay.
+
+104 "Hung, Louis" (558260736)
+00:19:19.213 --> 00:19:22.986
+Really. Yeah, yeah.
+
+105 "Collins, Joshua" (3377417984)
+00:19:22.986 --> 00:19:36.176
+If you it's under record, it goes wins losses and when percentage. So we could definitely grab that using a, a team, a team link URL fetch, like fetch.
+
+106 "Hung, Louis" (558260736)
+00:19:36.176 --> 00:19:42.028
+Or of course frame loss wind losses, 1 %. Oh alright, ok. Yeah, so we we we can we can.
+
+107 "Collins, Joshua" (3377417984)
+00:19:42.028 --> 00:19:47.896
+Use that to like, heavily stack what our window percentage will be?
+
+108 "Hung, Louis" (558260736)
+00:19:47.896 --> 00:19:50.132
+I think that makes sense. Yeah, cause we can compare.
+
+109 "Collins, Joshua" (3377417984)
+00:19:50.132 --> 00:20:09.049
+Yeah, we can like, we could probably set up a table based off of last season's data and says cavalier is 50 like 58.5 58.5 % wind percentage. If they go against the Lakers and they have a 70 %, you can do some simple math to say, well, seventy's higher.
+
+110 "Collins, Joshua" (3377417984)
+00:20:09.049 --> 00:20:14.660
+And then 58.5, what's what's the delta there?
+
+111 "Hung, Louis" (558260736)
+00:20:14.660 --> 00:20:17.945
+Right, ok. Yeah, we.
+
+112 "Collins, Joshua" (3377417984)
+00:20:17.945 --> 00:20:28.920
+Can you statically add that in and then when we do a quick fetch at the end, we'll be able to come up with some completely BS number that will impress everybody when we do our presentation.
+
+113 "Hung, Louis" (558260736)
+00:20:28.920 --> 00:20:33.389
+Yeah, I mean, the presentations don't actually have to work.
+
+114 "Collins, Joshua" (3377417984)
+00:20:33.389 --> 00:20:39.261
+Likely it just has to look pretty and get people to give you money for it.
+
+115 "Hung, Louis" (558260736)
+00:20:39.261 --> 00:20:41.667
+Fair enough, fair enough. Welcome to the business.
+
+116 "Collins, Joshua" (3377417984)
+00:20:41.667 --> 00:21:20.266
+Well, yeah, so we've been here for 20 min, so yeah, if we just start working on the predictions page I'll I'll I'll try to get some I'll try to clean up the status statistics page this week as well and then I think we're in a good territory to continue working. And then if Shemu does the SQL sets up the SQL stuff, we Can our profile page and whatnot. Yeah, we just and then we could also go in together as a team and fix, add or take away stuff from the SQL if we need to. And then, you know, just set up a base level thing so that we can see if we need more or less and then go from there.
+
+117 "Hung, Louis" (558260736)
+00:21:20.266 --> 00:21:23.788
+Nope. Sounds good. Absolutely.
+
+118 "Collins, Joshua" (3377417984)
+00:21:23.788 --> 00:21:28.326
+I'll see you guys on Tuesday and we'll meet again on Wednesday.
+
+119 "Hung, Louis" (558260736)
+00:21:28.326 --> 00:21:31.212
+All right. So I see you guys.

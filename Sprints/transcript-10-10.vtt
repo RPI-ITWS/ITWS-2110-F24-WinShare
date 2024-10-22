@@ -1,0 +1,485 @@
+WEBVTT
+
+1 "izik" (506109184)
+00:00:00.000 --> 00:00:07.004
+Yeah, also can you both approve my merge request? I, I created a.
+
+2 "Collins, Joshua" (2017090816)
+00:00:07.004 --> 00:00:11.045
+Very basic framework for the statistics page.
+
+3 "izik" (506109184)
+00:00:11.045 --> 00:00:17.779
+I'm gonna add a new item in progress. I'm gonna say Navar.
+
+4 "Collins, Joshua" (2017090816)
+00:00:17.779 --> 00:00:22.884
+Oh. I'm still doing it. You made a new nav bar basically?
+
+5 "izik" (506109184)
+00:00:22.884 --> 00:00:26.424
+Yeah, I showed you in class. Okay, ok. Yeah, once.
+
+6 "Collins, Joshua" (2017090816)
+00:00:26.424 --> 00:00:32.486
+We once you push that, we can move it over to the other web, other, pages.
+
+7 "izik" (506109184)
+00:00:32.486 --> 00:00:35.843
+Yeah, I was gonna show you a.
+
+8 "Collins, Joshua" (2017090816)
+00:00:35.843 --> 00:00:37.248
+Yeah, yeah. Go ahead finish sharing my.
+
+9 "izik" (506109184)
+00:00:37.248 --> 00:00:55.602
+Screen for it, so I'm gonna make a new branch for it because right now what I have, when I put it into the homepage, it like distorts everything. Actually, I'll just show you. Let me just improve your request. What did you do? You did.
+
+10 "Collins, Joshua" (2017090816)
+00:00:55.602 --> 00:00:58.084
+Oh yeah, let me share my screen with you real quick.
+
+11 "izik" (506109184)
+00:00:58.084 --> 00:01:03.862
+Yep, then I'll get mine going to.
+
+12 "Collins, Joshua" (2017090816)
+00:01:03.862 --> 00:01:15.900
+Oh wait, that's the, that's not the one, I don't know why it's.
+
+13 "izik" (506109184)
+00:01:15.900 --> 00:01:26.621
+Okay, so it's broken. Okay, that's really, really annoying. There's a lot of things broken with this.
+
+14 "Collins, Joshua" (2017090816)
+00:01:26.621 --> 00:01:42.843
+Oh, that's not it. It has to be this one then. No, that's not it either. Damn it waiting. Yeah, here we go. Can you see my webpage or, my BS code?
+
+15 "izik" (506109184)
+00:01:42.843 --> 00:01:46.462
+Yeah, so that if you click home it goes to home, if it clicks the.
+
+16 "Collins, Joshua" (2017090816)
+00:01:46.462 --> 00:01:56.790
+Statistics that stays where it's at. But right now I had it do season wide statistics and then you can be like legal rank for points and then right now I have like player based stats and.
+
+17 "Collins, Joshua" (2017090816)
+00:01:56.790 --> 00:02:12.266
+Basically off of that, you can, we can sort the basically when we have the data, we can do a fetch and then select all by whatever this column is, and then it shows the players based off of that, that statistic.
+
+18 "izik" (506109184)
+00:02:12.266 --> 00:02:14.306
+Perfect. I like.
+
+19 "Collins, Joshua" (2017090816)
+00:02:14.306 --> 00:02:46.532
+Yeah, that way we're just, we have the same data every time the only other fee, the only other way I would see it working out is if we say like enter a player or enter a team, but then we have to do a bunch of checks to make sure that what they enter is valid and what the So this way is just a lot simpler I think with how we're gonna, we need to set up the, the table, but overall I think it's a good start.
+
+20 "izik" (506109184)
+00:02:46.532 --> 00:02:49.665
+Yeah. No, I, I agree. I think it was.
+
+21 "Collins, Joshua" (2017090816)
+00:02:49.665 --> 00:03:00.328
+Yeah, yeah, so how are you guys doing at least like time wise? Are you guys busy this week or are you guys a little bit more free?
+
+22 "izik" (506109184)
+00:03:00.328 --> 00:03:04.686
+I'm really free. I'm gonna be working on it.
+
+23 "Collins, Joshua" (2017090816)
+00:03:04.686 --> 00:03:05.412
+Okay.
+
+24 "izik" (506109184)
+00:03:05.412 --> 00:03:11.905
+A lot tomorrow. I have to finish my mitre homework and then I'm and I'm watching the meds game, that's really it. Okay.
+
+25 "Collins, Joshua" (2017090816)
+00:03:11.905 --> 00:03:37.254
+Yeah, yeah, all I have to say for you is just, you know, try try to get that nav bar finished up, resolve any bugs if you can. And then once you're done with that, let us know and we can start throwing it onto the other pages and we can get this cleaned up. And then I guess let me let me show you what that looks like. Yeah, I have the, the login page, is that done?
+
+26 "izik" (506109184)
+00:03:37.254 --> 00:03:41.385
+Is that what like I'll show you. Okay, yeah.
+
+27 "Collins, Joshua" (2017090816)
+00:03:41.385 --> 00:03:46.471
+Oh, let me stop sharing. Yeah.
+
+28 "izik" (506109184)
+00:03:46.471 --> 00:03:47.587
+Yeah, you can see.
+
+29 "Collins, Joshua" (2017090816)
+00:03:47.587 --> 00:03:48.851
+My screen here? Yes.
+
+30 "izik" (506109184)
+00:03:48.851 --> 00:04:11.849
+So this is the homepage, right? And I try to put this on there, but you can, as you can see, it moved everything around and I'm trying to work with it and how that works. This is really annoying. I've, I've tried to move padding around. I've tried to move the margin around like I I've been using inspect element and then just clicking on.
+
+31 "Collins, Joshua" (2017090816)
+00:04:11.849 --> 00:04:13.486
+Why?
+
+32 "izik" (506109184)
+00:04:13.486 --> 00:04:19.465
+This move? Is it, is it up? If it's what?
+
+33 "Collins, Joshua" (2017090816)
+00:04:19.465 --> 00:04:22.053
+This is a div called buffer.
+
+34 "izik" (506109184)
+00:04:22.053 --> 00:04:25.964
+That could be it.
+
+35 "Collins, Joshua" (2017090816)
+00:04:25.964 --> 00:04:38.848
+Okay so my guess is whatever it is, is it might basically just be based off the, well, I think it might be a sizing issue.
+
+36 "izik" (506109184)
+00:04:38.848 --> 00:04:47.368
+Yeah, I think I just found it as well. If I can change, I can't change this on the spot, I can't.
+
+37 "Collins, Joshua" (2017090816)
+00:04:47.368 --> 00:04:58.885
+Yeah, let me open a licenser real quick. That's weird, it doesn't cause that issue on mine. I know that something.
+
+38 "izik" (506109184)
+00:04:58.885 --> 00:05:11.805
+Oh, I got them. So now why isn't this there? Because I just got this to move in with it, but then.
+
+39 "Collins, Joshua" (2017090816)
+00:05:11.805 --> 00:05:41.639
+Yeah, that's weird because the way that that works is the three columns are in a div called like content. And then you have left column middle of column and right column, and the way that that's set up is that content is a hundred percent the width, and then flex box and it displays everything in a flex, where you have I'm gonna make it up like 20 % for left and right and then 80 % for the middle, so I don't know why it's deciding to move.
+
+40 "Collins, Joshua" (2017090816)
+00:05:41.639 --> 00:05:44.226
+That sounds for you.
+
+41 "izik" (506109184)
+00:05:44.226 --> 00:05:48.986
+Oh. Oh, ok, I just, I just did it.
+
+42 "Collins, Joshua" (2017090816)
+00:05:48.986 --> 00:05:51.159
+Ah.
+
+43 "izik" (506109184)
+00:05:51.159 --> 00:05:56.560
+Okay, I gotta figure out how I did it. I just started unclicking buttons.
+
+44 "Collins, Joshua" (2017090816)
+00:05:56.560 --> 00:06:02.000
+Well, yeah, just copy all of that and move it into the code.
+
+45 "izik" (506109184)
+00:06:02.000 --> 00:06:04.238
+What's wrap?
+
+46 "Collins, Joshua" (2017090816)
+00:06:04.238 --> 00:06:22.669
+Oh, yeah, yeah, yeah, yeah. Yeah, basically if it's not, if there's not enough space, it'll move whatever's on the right side down and get rid of flex wrap, think that or we'll just alter the flex wrap setting.
+
+47 "Collins, Joshua" (2017090816)
+00:06:22.669 --> 00:06:28.023
+Like commented, I got rid of auto as well on.
+
+48 "izik" (506109184)
+00:06:28.023 --> 00:06:36.762
+Somewhere, yeah. I got rid of it here. It could be overflowed too. I'm gonna try both.
+
+49 "Collins, Joshua" (2017090816)
+00:06:36.762 --> 00:06:42.386
+Yeah, yeah, yeah.
+
+50 "izik" (506109184)
+00:06:42.386 --> 00:06:49.681
+Okay, well what the fuck? Shit is out.
+
+51 "Collins, Joshua" (2017090816)
+00:06:49.681 --> 00:06:58.207
+Okay, try overflow.
+
+52 "izik" (506109184)
+00:06:58.207 --> 00:07:09.077
+Okay, ok. That worked and then it didn't work. Okay.
+
+53 "8455****02" (4076966400)
+00:07:09.077 --> 00:07:16.372
+I don't mean to interrupt. Have you guys found any free MBA apis?
+
+54 "Collins, Joshua" (2017090816)
+00:07:16.372 --> 00:07:21.275
+On a free API. You were in class so I, I wasn't able to tell you.
+
+55 "8455****02" (4076966400)
+00:07:21.275 --> 00:07:24.473
+It's called data hub.
+
+56 "Collins, Joshua" (2017090816)
+00:07:24.473 --> 00:07:24.991
+So.
+
+57 "8455****02" (4076966400)
+00:07:24.991 --> 00:07:28.092
+If you get the if you sign up to get the, the rookie memb.
+
+58 "Collins, Joshua" (2017090816)
+00:07:28.092 --> 00:07:36.997
+It's free, so you the you're limited to 30 calls per minute and 1000 calls per month.
+
+59 "8455****02" (4076966400)
+00:07:36.997 --> 00:07:48.789
+Oh, interesting. Ok. It's, that that sounds cool. I also sent two in the team one thing I understand it was late I sent it now, but I think those should be free from what I looked up, but.
+
+60 "8455****02" (4076966400)
+00:07:49.590 --> 00:07:52.948
+Yeah, I. I just didn't know how to like work it.
+
+61 "Collins, Joshua" (2017090816)
+00:07:52.948 --> 00:08:10.597
+It looked weird, so I, let me post this one. That's also a good one, API MBA le let me look at this one. Yeah, I I don't know how to the rapid I aPI.com ones are weird or maybe is it.
+
+62 "8455****02" (4076966400)
+00:08:10.597 --> 00:08:14.710
+The rap or the rapid API API ones?
+
+63 "Collins, Joshua" (2017090816)
+00:08:14.710 --> 00:08:20.829
+HTTP.
+
+64 "8455****02" (4076966400)
+00:08:20.829 --> 00:08:25.152
+Are you saying, are you saying like fetching the rapid APL ones are hard?
+
+65 "Collins, Joshua" (2017090816)
+00:08:25.152 --> 00:08:41.560
+Oh wait. Oh wait, NO never mind, oh, I I see it. I have to do it, do it as a oh fetch.
+
+66 "izik" (506109184)
+00:08:41.560 --> 00:08:46.670
+I don't know how I got this to work.
+
+67 "Collins, Joshua" (2017090816)
+00:08:46.670 --> 00:08:52.156
+Okay, give me a 2nd. Let me pull back up Webex.
+
+68 "izik" (506109184)
+00:08:52.156 --> 00:08:55.350
+I don't know how I did it before.
+
+69 "Collins, Joshua" (2017090816)
+00:08:55.350 --> 00:08:58.455
+Don't worry, just continue playing with it tonight and tomorrow.
+
+70 "izik" (506109184)
+00:08:58.455 --> 00:09:02.208
+Yeah, I was gonna show you the other one.
+
+71 "Collins, Joshua" (2017090816)
+00:09:02.208 --> 00:09:04.893
+Yeah.
+
+72 "izik" (506109184)
+00:09:04.893 --> 00:09:24.566
+Don't. The other problems I was having is Yeah I have to fix this. I cannot get into login. I forgot functionality on that. So what I'm gonna do instead is just have a separate login button and then a profile button what that and that will replace it.
+
+73 "Collins, Joshua" (2017090816)
+00:09:24.566 --> 00:09:26.208
+Yeah, yeah.
+
+74 "izik" (506109184)
+00:09:26.208 --> 00:09:28.968
+So I just have profile and then setting logout. Yeah.
+
+75 "Collins, Joshua" (2017090816)
+00:09:28.968 --> 00:09:35.053
+Do that, can you figure out a way to start a session?
+
+76 "izik" (506109184)
+00:09:35.053 --> 00:09:37.087
+Or what?
+
+77 "8455****02" (4076966400)
+00:09:37.087 --> 00:09:44.624
+That's a screenshot of how to use the API, you can like do the target as JavaScript and I.
+
+78 "Collins, Joshua" (2017090816)
+00:09:44.624 --> 00:10:11.133
+Saw that, it's, basically when we log in we have to start what's called either, you either have to enable or basically we when you log in basically you do the Am I a valid user or not? If you're a valid user, you then initiate something called, I think it's either cookies or a session. And basically what that does is it allows the web page to basically remember who you are as you navigate to different pages.
+
+79 "izik" (506109184)
+00:10:11.133 --> 00:10:21.665
+Oh, ok, I see you. Yeah, yeah, I don't know how to do that to be honest with you. I can look it up. I can.
+
+80 "Collins, Joshua" (2017090816)
+00:10:21.665 --> 00:10:28.349
+I don't think it's bad. I think both of them have different purposes. I think W three schools has it.
+
+81 "izik" (506109184)
+00:10:28.349 --> 00:10:29.887
+Gotcha.
+
+82 "Collins, Joshua" (2017090816)
+00:10:29.887 --> 00:10:46.319
+I think you basically just say, like, session start or whatever, in a file and then like if valid session start, and then like if they log out, you say like.
+
+83 "Collins, Joshua" (2017090816)
+00:10:46.319 --> 00:10:53.598
+Yeah, if they log out you cancel the session.
+
+84 "izik" (506109184)
+00:10:53.598 --> 00:11:09.799
+Yeah, Yeah.
+
+85 "izik" (506109184)
+00:11:09.799 --> 00:11:43.129
+Yeah, where was this? Is this like, oh, it's flex wrap right here and that's in thumbnails, this, let's get rid of that.
+
+86 "Collins, Joshua" (2017090816)
+00:11:43.129 --> 00:11:54.657
+Yeah, I think, yeah, I think it's called session storage.
+
+87 "izik" (506109184)
+00:11:54.657 --> 00:12:12.959
+Set some storage. Okay.
+
+88 "izik" (506109184)
+00:12:12.959 --> 00:12:28.919
+Where's thumbnails? Is that being used anywhere? Thumbnails? Yeah. Oh, here.
+
+89 "izik" (506109184)
+00:12:28.919 --> 00:12:33.111
+Oh, it's just the images.
+
+90 "Collins, Joshua" (2017090816)
+00:12:33.111 --> 00:12:36.148
+Yeah, I think this is I think this.
+
+91 "izik" (506109184)
+00:12:36.148 --> 00:12:53.949
+Because they have the text wrap and somehow I did I tried something and it just worked when you saw me do it. Yeah. There you go.
+
+92 "Collins, Joshua" (2017090816)
+00:12:53.949 --> 00:12:59.332
+So where do you turn off? Oh yeah, that's really annoying.
+
+93 "izik" (506109184)
+00:12:59.332 --> 00:13:21.733
+Okay wait. But I tried it, it was text wrapped I tried this and then I got rid of this. Now if I refresh it, it doesn't work, it, I don't know how to explain it. Like I'll I'll go back to.
+
+94 "Collins, Joshua" (2017090816)
+00:13:21.733 --> 00:13:26.152
+So it works on the web page, but not in refresh.
+
+95 "izik" (506109184)
+00:13:26.152 --> 00:13:45.930
+I will inspect, go here, turn off flex wrap, and it just works.
+
+96 "izik" (506109184)
+00:13:45.930 --> 00:13:51.860
+Correct. This doesn't make any sense.
+
+97 "Collins, Joshua" (2017090816)
+00:13:51.860 --> 00:14:05.988
+I, I think I know what's up. I think whatever the width of whatever we're importing the bar or the hot nav bar, for some reason it's slightly shorter than the rest of the body. So as a.
+
+98 "izik" (506109184)
+00:14:05.988 --> 00:14:09.408
+Results. No, I know, I know this.
+
+99 "Collins, Joshua" (2017090816)
+00:14:09.408 --> 00:14:11.811
+Yeah.
+
+100 "izik" (506109184)
+00:14:11.811 --> 00:14:17.769
+But then how do I get the width? Do I just change the width of the.
+
+101 "Collins, Joshua" (2017090816)
+00:14:17.769 --> 00:14:20.876
+Now barry think.
+
+102 "izik" (506109184)
+00:14:20.876 --> 00:14:23.708
+To being like a hundred percent or something.
+
+103 "Collins, Joshua" (2017090816)
+00:14:23.708 --> 00:14:29.693
+Yeah, and then that dropdown just has to get moved over a little bit, I guess.
+
+104 "izik" (506109184)
+00:14:29.693 --> 00:14:41.252
+Width is already a hundred percent. Fuck, what? What is tab?
+
+105 "Collins, Joshua" (2017090816)
+00:14:41.252 --> 00:14:50.479
+I don't know the tabs are the buttons that you click, in the nav bar.
+
+106 "izik" (506109184)
+00:14:50.479 --> 00:14:52.328
+Yeah.
+
+107 "Collins, Joshua" (2017090816)
+00:14:52.328 --> 00:15:06.285
+Yeah, but, yeah, so basically you just, yeah, just play around with it, try to fix that and try to figure out how to do a session, and then I think that's all you need to work on this week cause that's, that's a big task to understand.
+
+108 "izik" (506109184)
+00:15:06.285 --> 00:15:08.863
+And yeah.
+
+109 "Collins, Joshua" (2017090816)
+00:15:08.863 --> 00:15:19.991
+Yeah, Renee, can you help like start designing the, predictions page?
+
+110 "izik" (506109184)
+00:15:19.991 --> 00:15:24.465
+Oh, is he gone?
+
+111 "Collins, Joshua" (2017090816)
+00:15:24.465 --> 00:15:29.646
+He might be gone. Oh, yeah, he, he might have disconnected.
+
+112 "izik" (506109184)
+00:15:29.646 --> 00:15:30.995
+Great?
+
+113 "Collins, Joshua" (2017090816)
+00:15:30.995 --> 00:15:39.343
+Yeah, I'll guess I'll work on that. I'll Yeah I'll work on that, but, I think we're, I think we're in a good spot though.
+
+114 "izik" (506109184)
+00:15:39.343 --> 00:15:44.555
+Yeah, I mean, I'm going home this weekend, I should have a lot of time.
+
+115 "Collins, Joshua" (2017090816)
+00:15:44.555 --> 00:15:49.781
+Yeah, I think we're doing a call on Saturday night?
+
+116 "izik" (506109184)
+00:15:49.781 --> 00:15:53.715
+I don't know if I can make that one.
+
+117 "Collins, Joshua" (2017090816)
+00:15:53.715 --> 00:16:01.645
+Yeah, I'll try to make it. I'm gonna be really busy when I go home. Yeah, but don't worry, you're here for this one and that's what matters.
+
+118 "izik" (506109184)
+00:16:01.645 --> 00:16:04.134
+There.
+
+119 "Collins, Joshua" (2017090816)
+00:16:04.134 --> 00:16:09.553
+Yeah, but, let's see. We've been here for 16 min so we can call it a night.
+
+120 "izik" (506109184)
+00:16:09.553 --> 00:16:11.333
+I am.
+
+121 "Collins, Joshua" (2017090816)
+00:16:11.333 --> 00:16:12.936
+Yep, so, I.
