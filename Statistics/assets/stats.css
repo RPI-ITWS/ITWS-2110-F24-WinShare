@@ -134,6 +134,119 @@ body{
     position: relative;
     top: -1px; 
     left: -1px; 
+}
+
+#StatButton, #PlayerButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #696D73;
+    color: #7DD8BA;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    margin-right: 4px;
+}
+
+#StatButton {
+    border-radius: 16px 4px 0 0;
+    margin-left: 20px; 
+}
+
+#PlayerButton {
+    border-radius: 4px 4px 0 0;
+}
+
+#StatButton:hover, #PlayerButton:hover {
+    background-color: #7a7f86;
+}
+
+#content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#search {
+    text-align: center;
+    width: 90%; 
+    margin: 0 auto;
+}
+
+#statlabel {
+    margin-right: 20px;
+}
+
+#StatContent {
+    display: none;
+}
+
+#PlayerContent{
+    width:100%;
+    display: block;
+    position: relative;
+    bottom: 2%;
+
+}
+
+#content {
+    width: 75%;
+    margin: 5% auto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #696D73;
+    border-radius: 4%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#search {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#statlabel {
+    font-size: 28px;
+    color: #7DD8BA;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-right: 0;
+}
+
+#stat {
+    width: 100%;
+    font-size: 18px;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    background-color: #7DD8BA;
+    outline: none;
+    flex-grow: 1;
+}
+
+#stat:hover {
+    background-color: #87E9C5;
+    cursor: pointer;
+}
+
+#tabs {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+    top: -1px; 
+    left: -1px; 
     margin-bottom: 20px;
 }
 
@@ -178,4 +291,51 @@ body{
 
 #StatContent {
     display: none;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+}
+
+
+#PlayerSearch {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#FindPlayer{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    align-items: center;
+    background-color: rgba(222, 255, 251, 0.841);
+}
+
+#FindPlayer:hover(){
+    cursor: pointer;
+    background-color: rgba(222, 255, 251, 0.841);
+}
+
+#PlayerOptions{
+    border: 1px solid #ccc;
+    width: 68%;
+    background-color: aliceblue;
+}
+
+.player{
+    width:92%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.player:hover{
+    cursor: pointer;
+    background-color: rgba(188, 246, 239, 0.841);
 }
