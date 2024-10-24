@@ -57,18 +57,21 @@ InputtedSearch.addEventListener("input", function() {
         if (players.includes(InputtedSearch.value) || lowerplayers.includes(InputtedSearch.value)) {
             FindPlayer.disabled = false;
             FindPlayer.style.backgroundColor = '#7DD8BA';
-            FindPlayer.addEventListener('mouseover', function() {
-                FindPlayer.style.cursor = 'pointer'; 
-            });
         } else {
             FindPlayer.disabled = true;
             FindPlayer.style.backgroundColor = 'rgba(222, 255, 251, 0.841)';
-            FindPlayer.addEventListener('mouseover', function() {
-                FindPlayer.style.cursor = 'not-allowed'; 
-            });
         }
     }
 
+});
+
+FindPlayer.addEventListener('mouseover', function() {
+    if(FindPlayer.disabled){
+        FindPlayer.style.cursor = 'not-allowed';
+        
+    }else{
+        FindPlayer.style.cursor = 'pointer';
+    }
 });
 
 FindPlayer.addEventListener('mouseout', function() {
@@ -98,32 +101,31 @@ const players = [
     "De'Aaron Fox", "Domantas Sabonis", "Brandon Ingram", "Zach LaVine", "Keldon Johnson",
     "Fred VanVleet", "Julius Randle", "Miles Bridges", "Desmond Bane", "Anfernee Simons",
     "Gary Trent Jr.", "Lonzo Ball", "D'Angelo Russell", "Markelle Fultz", "Patrick Williams",
-    "Keegan Murray", "Cade Cunningham", "Jaden Ivey", "Jabari Smith Jr.", "Tyrese Maxey",
-    "Bennedict Mathurin", "Shaedon Sharpe", "Cam Thomas", "Josh Hart", "Malcolm Brogdon",
-    "Trey Murphy III", "Austin Reaves", "Grayson Allen", "Alperen Şengün", "Davion Mitchell",
-    "Jordan Poole", "Jonathan Kuminga", "Moses Moody", "Kevon Looney", "Andrew Wiggins",
-    "James Wiseman", "Jalen Duren", "Tari Eason", "Kenyon Martin Jr.", "Christian Wood",
-    "Jeremy Sochan", "Walker Kessler", "Brook Lopez", "Bobby Portis", "Chris Duarte",
-    "Jalen Johnson", "Onyeka Okongwu", "Mo Bamba", "Bol Bol", "Isaiah Stewart",
-    "Marvin Bagley III", "Killian Hayes", "Herbert Jones", "Tre Mann", "Ayo Dosunmu",
-    "Cam Reddish", "Dyson Daniels", "Talen Horton-Tucker", "Luguentz Dort", "Josh Richardson",
-    "Aaron Gordon", "Bruce Brown", "Reggie Jackson", "Dennis Schröder", "Monte Morris",
-    "Kelly Oubre Jr.", "PJ Washington", "Malik Beasley", "Malik Monk", "Terance Mann",
-    "Rui Hachimura", "Deni Avdija", "Corey Kispert", "Daniel Gafford", "Saddiq Bey",
-    "De'Andre Hunter", "Bogdan Bogdanović", "Dillon Brooks", "Steven Adams", "Isaac Okoro",
-    "Coby White", "Wendell Carter Jr.", "Cole Anthony", "Mo Wagner", "Naz Reid",
-    "Kyle Anderson", "Patrick Beverley", "Kris Dunn", "Santi Aldama", "Grayson Allen",
-    "Tyus Jones", "Jalen Suggs", "Chris Boucher", "Precious Achiuwa", "Nick Richards",
-    "Cody Martin", "Ziaire Williams", "Usman Garuba", "Jabari Walker", "Chuma Okeke",
-    "Payton Pritchard", "Luke Kennard", "Svi Mykhailiuk", "Isaiah Hartenstein", "Jericho Sims",
-    "Nassir Little", "Drew Eubanks", "Xavier Tillman", "Naz Reid", "Sandro Mamukelashvili",
+    "Keegan Murray", "Cade Cunningham", "Tyrese Maxey", "Bennedict Mathurin", "Shaedon Sharpe",
+    "Cam Thomas", "Josh Hart", "Malcolm Brogdon", "Trey Murphy III", "Austin Reaves",
+    "Grayson Allen", "Alperen Şengün", "Davion Mitchell", "Jordan Poole", "Jonathan Kuminga",
+    "Moses Moody", "Kevon Looney", "Andrew Wiggins", "James Wiseman", "Jalen Duren",
+    "Tari Eason", "Kenyon Martin Jr.", "Christian Wood", "Jeremy Sochan", "Walker Kessler",
+    "Brook Lopez", "Chris Duarte", "Jalen Johnson", "Onyeka Okongwu", "Mo Bamba",
+    "Bol Bol", "Isaiah Stewart", "Marvin Bagley III", "Killian Hayes", "Herbert Jones",
+    "Tre Mann", "Ayo Dosunmu", "Cam Reddish", "Dyson Daniels", "Talen Horton-Tucker",
+    "Luguentz Dort", "Josh Richardson", "Aaron Gordon", "Bruce Brown", "Reggie Jackson",
+    "Dennis Schröder", "Monte Morris", "Kelly Oubre Jr.", "PJ Washington", "Malik Beasley",
+    "Malik Monk", "Terance Mann", "Rui Hachimura", "Deni Avdija", "Corey Kispert",
+    "Daniel Gafford", "Saddiq Bey", "De'Andre Hunter", "Bogdan Bogdanović", "Dillon Brooks",
+    "Steven Adams", "Isaac Okoro", "Coby White", "Wendell Carter Jr.", "Cole Anthony",
+    "Mo Wagner", "Naz Reid", "Kyle Anderson", "Patrick Beverley", "Kris Dunn",
+    "Santi Aldama", "Tyus Jones", "Jalen Suggs", "Chris Boucher", "Precious Achiuwa",
+    "Nick Richards", "Cody Martin", "Ziaire Williams", "Usman Garuba", "Jabari Walker",
+    "Chuma Okeke", "Payton Pritchard", "Luke Kennard", "Svi Mykhailiuk", "Isaiah Hartenstein",
+    "Jericho Sims", "Nassir Little", "Drew Eubanks", "Xavier Tillman", "Sandro Mamukelashvili",
     "Jalen Williams", "Isaiah Jackson", "Justin Holiday", "Gabe Vincent", "Caleb Martin",
     "Max Strus", "Duncan Robinson", "JaVale McGee", "Zeke Nnaji", "Jevon Carter",
     "Ty Jerome", "Thanasis Antetokounmpo", "Delon Wright", "Jordan Clarkson", "Brandon Clarke",
     "Al Horford", "Trent Forrest", "Jaylen Nowell", "David Roddy", "Jock Landale",
-    "Paul Reed", "Peyton Watson", "Aleksej Pokuševski", "Isaiah Joe", "Bol Bol",
-    "Chet Holmgren", "Victor Wembanyama", "Jabari Smith Jr.", "Paolo Banchero", "Walker Kessler"
+    "Paul Reed", "Peyton Watson", "Aleksej Pokuševski", "Isaiah Joe"
 ];
+
 
 const lowerplayers = [
     "nikola jokić", "lebron james", "stephen curry", "shai gilgeous-alexander", "kevin durant",
@@ -141,29 +143,27 @@ const lowerplayers = [
     "de'aaron fox", "domantas sabonis", "brandon ingram", "zach lavine", "keldon johnson",
     "fred vanvleet", "julius randle", "miles bridges", "desmond bane", "anfernee simons",
     "gary trent jr.", "lonzo ball", "d'angelo russell", "markelle fultz", "patrick williams",
-    "keegan murray", "cade cunningham", "jaden ivey", "jabari smith jr.", "tyrese maxey",
-    "bennedict mathurin", "shaedon sharpe", "cam thomas", "josh hart", "malcolm brogdon",
-    "trey murphy iii", "austin reaves", "grayson allen", "alperen şengün", "davion mitchell",
-    "jordan poole", "jonathan kuminga", "moses moody", "kevon looney", "andrew wiggins",
-    "james wiseman", "jalen duren", "tari eason", "kenyon martin jr.", "christian wood",
-    "jeremy sochan", "walker kessler", "brook lopez", "bobby portis", "chris duarte",
-    "jalen johnson", "onyeka okongwu", "mo bamba", "bol bol", "isaiah stewart",
-    "marvin bagley iii", "killian hayes", "herbert jones", "tre mann", "ayo dosunmu",
-    "cam reddish", "dyson daniels", "talen horton-tucker", "luguentz dort", "josh richardson",
-    "aaron gordon", "bruce brown", "reggie jackson", "dennis schröder", "monte morris",
-    "kelly oubre jr.", "pj washington", "malik beasley", "malik monk", "terance mann",
-    "rui hachimura", "deni avdija", "corey kispert", "daniel gafford", "saddiq bey",
-    "de'andre hunter", "bogdan bogdanović", "dillon brooks", "steven adams", "isaac okoro",
-    "coby white", "wendell carter jr.", "cole anthony", "mo wagner", "naz reid",
-    "kyle anderson", "patrick beverley", "kris dunn", "santi aldama", "grayson allen",
-    "tyus jones", "jalen suggs", "chris boucher", "precious achiuwa", "nick richards",
-    "cody martin", "ziaire williams", "usman garuba", "jabari walker", "chuma okeke",
-    "payton pritchard", "luke kennard", "svi mykhailiuk", "isaiah hartenstein", "jericho sims",
-    "nassir little", "drew eubanks", "xavier tillman", "naz reid", "sandro mamukelashvili",
+    "keegan murray", "cade cunningham", "tyrese maxey", "bennedict mathurin", "shaedon sharpe",
+    "cam thomas", "josh hart", "malcolm brogdon", "trey murphy iii", "austin reaves",
+    "grayson allen", "alperen şengün", "davion mitchell", "jordan poole", "jonathan kuminga",
+    "moses moody", "kevon looney", "andrew wiggins", "james wiseman", "jalen duren",
+    "tari eason", "kenyon martin jr.", "christian wood", "jeremy sochan", "walker kessler",
+    "brook lopez", "chris duarte", "jalen johnson", "onyeka okongwu", "mo bamba",
+    "bol bol", "isaiah stewart", "marvin bagley iii", "killian hayes", "herbert jones",
+    "tre mann", "ayo dosunmu", "cam reddish", "dyson daniels", "talen horton-tucker",
+    "luguentz dort", "josh richardson", "aaron gordon", "bruce brown", "reggie jackson",
+    "dennis schröder", "monte morris", "kelly oubre jr.", "pj washington", "malik beasley",
+    "malik monk", "terance mann", "rui hachimura", "deni avdija", "corey kispert",
+    "daniel gafford", "saddiq bey", "de'andre hunter", "bogdan bogdanović", "dillon brooks",
+    "steven adams", "isaac okoro", "coby white", "wendell carter jr.", "cole anthony",
+    "mo wagner", "naz reid", "kyle anderson", "patrick beverley", "kris dunn",
+    "santi aldama", "tyus jones", "jalen suggs", "chris boucher", "precious achiuwa",
+    "nick richards", "cody martin", "ziaire williams", "usman garuba", "jabari walker",
+    "chuma okeke", "payton pritchard", "luke kennard", "svi mykhailiuk", "isaiah hartenstein",
+    "jericho sims", "nassir little", "drew eubanks", "xavier tillman", "sandro mamukelashvili",
     "jalen williams", "isaiah jackson", "justin holiday", "gabe vincent", "caleb martin",
     "max strus", "duncan robinson", "javale mcgee", "zeke nnaji", "jevon carter",
     "ty jerome", "thanasis antetokounmpo", "delon wright", "jordan clarkson", "brandon clarke",
     "al horford", "trent forrest", "jaylen nowell", "david roddy", "jock landale",
-    "paul reed", "peyton watson", "aleksej pokuševski", "isaiah joe", "bol bol",
-    "chet holmgren", "victor wembanyama", "jabari smith jr.", "paolo banchero", "walker kessler"
+    "paul reed", "peyton watson", "aleksej pokuševski", "isaiah joe"
 ];
