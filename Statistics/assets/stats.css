@@ -1,6 +1,8 @@
-body{
-    margin: 0px;
+#body{
+    padding-top: 1px;
+    padding-bottom: 12vh;
     background-color: rgba(222, 255, 251, 0.841);
+    
 }
 
 #Hotbar{
@@ -77,12 +79,13 @@ body{
 } 
 
 #content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
     width: 75%;
     margin: 5% auto;
-    height: 500px;
-    display: flex;
+    height: 800px;
     align-items: center;
-    flex-direction: column;
     background-color: #696D73;
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -162,10 +165,6 @@ body{
     background-color: #7a7f86;
 }
 
-#content {
-    padding-top: 20px;
-}
-
 #search {
     text-align: center;
     width: 90%; 
@@ -178,4 +177,59 @@ body{
 
 #StatContent {
     display: none;
+}
+
+#PlayerContent{
+    width:100%;
+    display: block;
+    position: relative;
+    bottom: 2%;
+
+}
+
+#top {
+    display: flex;
+    align-items: center;
+}
+
+
+#PlayerSearch {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#FindPlayer{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    align-items: center;
+    background-color: rgba(222, 255, 251, 0.841);
+}
+
+#FindPlayer:hover(){
+    cursor: pointer;
+    background-color: rgba(222, 255, 251, 0.841);
+}
+
+#PlayerOptions{
+    border: 1px solid #ccc;
+    width: 68%;
+    background-color: aliceblue;
+}
+
+.player{
+    width:92%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.player:hover{
+    cursor: pointer;
+    background-color: rgba(188, 246, 239, 0.841);
 }
