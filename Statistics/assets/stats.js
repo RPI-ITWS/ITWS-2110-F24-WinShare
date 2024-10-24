@@ -54,7 +54,7 @@ InputtedSearch.addEventListener("input", function() {
     
         SearchList.style.display = filteredPlayers.length ? 'block' : 'none';
     
-        if (players.includes(InputtedSearch.value)) {
+        if (players.includes(InputtedSearch.value) || lowerplayers.includes(InputtedSearch.value)) {
             FindPlayer.disabled = false;
             FindPlayer.style.backgroundColor = '#7DD8BA';
             FindPlayer.addEventListener('mouseover', function() {
@@ -68,7 +68,6 @@ InputtedSearch.addEventListener("input", function() {
             });
         }
     }
-
 
 });
 
@@ -124,4 +123,47 @@ const players = [
     "Al Horford", "Trent Forrest", "Jaylen Nowell", "David Roddy", "Jock Landale",
     "Paul Reed", "Peyton Watson", "Aleksej Pokuševski", "Isaiah Joe", "Bol Bol",
     "Chet Holmgren", "Victor Wembanyama", "Jabari Smith Jr.", "Paolo Banchero", "Walker Kessler"
+];
+
+const lowerplayers = [
+    "nikola jokić", "lebron james", "stephen curry", "shai gilgeous-alexander", "kevin durant",
+    "jayson tatum", "anthony edwards", "joel embiid", "damian lillard", "jimmy butler",
+    "luka dončić", "kawhi leonard", "ja morant", "donovan mitchell", "bam adebayo",
+    "karl-anthony towns", "jaren jackson jr.", "draymond green", "zion williamson", "lamelo ball",
+    "trae young", "chris paul", "bradley beal", "devin booker", "klay thompson",
+    "kyrie irving", "cj mccollum", "demar derozan", "mikal bridges", "jrue holiday",
+    "tyrese haliburton", "nikola vučević", "pascal siakam", "john collins", "michael porter jr.",
+    "darius garland", "jaden ivey", "franz wagner", "bojan bogdanović", "jalen green",
+    "jonas valančiūnas", "collin sexton", "og anunoby", "jaren jackson", "derrick rose",
+    "rudy gobert", "kyle lowry", "tobias harris", "robert williams iii", "bobby portis",
+    "victor wembanyama", "scoot henderson", "chet holmgren", "paolo banchero", "jabari smith jr.",
+    "evan mobley", "scottie barnes", "josh giddey", "tyler herro", "rj barrett",
+    "de'aaron fox", "domantas sabonis", "brandon ingram", "zach lavine", "keldon johnson",
+    "fred vanvleet", "julius randle", "miles bridges", "desmond bane", "anfernee simons",
+    "gary trent jr.", "lonzo ball", "d'angelo russell", "markelle fultz", "patrick williams",
+    "keegan murray", "cade cunningham", "jaden ivey", "jabari smith jr.", "tyrese maxey",
+    "bennedict mathurin", "shaedon sharpe", "cam thomas", "josh hart", "malcolm brogdon",
+    "trey murphy iii", "austin reaves", "grayson allen", "alperen şengün", "davion mitchell",
+    "jordan poole", "jonathan kuminga", "moses moody", "kevon looney", "andrew wiggins",
+    "james wiseman", "jalen duren", "tari eason", "kenyon martin jr.", "christian wood",
+    "jeremy sochan", "walker kessler", "brook lopez", "bobby portis", "chris duarte",
+    "jalen johnson", "onyeka okongwu", "mo bamba", "bol bol", "isaiah stewart",
+    "marvin bagley iii", "killian hayes", "herbert jones", "tre mann", "ayo dosunmu",
+    "cam reddish", "dyson daniels", "talen horton-tucker", "luguentz dort", "josh richardson",
+    "aaron gordon", "bruce brown", "reggie jackson", "dennis schröder", "monte morris",
+    "kelly oubre jr.", "pj washington", "malik beasley", "malik monk", "terance mann",
+    "rui hachimura", "deni avdija", "corey kispert", "daniel gafford", "saddiq bey",
+    "de'andre hunter", "bogdan bogdanović", "dillon brooks", "steven adams", "isaac okoro",
+    "coby white", "wendell carter jr.", "cole anthony", "mo wagner", "naz reid",
+    "kyle anderson", "patrick beverley", "kris dunn", "santi aldama", "grayson allen",
+    "tyus jones", "jalen suggs", "chris boucher", "precious achiuwa", "nick richards",
+    "cody martin", "ziaire williams", "usman garuba", "jabari walker", "chuma okeke",
+    "payton pritchard", "luke kennard", "svi mykhailiuk", "isaiah hartenstein", "jericho sims",
+    "nassir little", "drew eubanks", "xavier tillman", "naz reid", "sandro mamukelashvili",
+    "jalen williams", "isaiah jackson", "justin holiday", "gabe vincent", "caleb martin",
+    "max strus", "duncan robinson", "javale mcgee", "zeke nnaji", "jevon carter",
+    "ty jerome", "thanasis antetokounmpo", "delon wright", "jordan clarkson", "brandon clarke",
+    "al horford", "trent forrest", "jaylen nowell", "david roddy", "jock landale",
+    "paul reed", "peyton watson", "aleksej pokuševski", "isaiah joe", "bol bol",
+    "chet holmgren", "victor wembanyama", "jabari smith jr.", "paolo banchero", "walker kessler"
 ];
