@@ -1,6 +1,7 @@
 const InputtedSearch = document.getElementById("PlayerSearch");
 const SearchList = document.getElementById("PlayerOptions");
 const FindPlayer = document.getElementById("FindPlayer");
+FindPlayer.disabled = true;
 
 document.addEventListener('DOMContentLoaded', function() {
     const statButton = document.getElementById('StatButton');
