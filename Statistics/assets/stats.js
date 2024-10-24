@@ -58,9 +58,15 @@ InputtedSearch.addEventListener("input", function() {
         if (players.includes(InputtedSearch.value) || lowerplayers.includes(InputtedSearch.value)) {
             FindPlayer.disabled = false;
             FindPlayer.style.backgroundColor = '#7DD8BA';
+            FindPlayer.addEventListener('mouseover', function() {
+                FindPlayer.style.cursor = 'pointer';
+            });
         } else {
             FindPlayer.disabled = true;
             FindPlayer.style.backgroundColor = 'rgba(222, 255, 251, 0.841)';
+            FindPlayer.addEventListener('mouseover', function() {
+                FindPlayer.style.cursor = 'not-allowed';
+            });
         }
     }
 
