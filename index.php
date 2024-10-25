@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'php/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,8 +13,8 @@ session_start();
     <link rel="stylesheet" href="./assets/MainPage.css">
     <link rel="stylesheet" href="./assets/navbar.css">
     <link rel="stylesheet" href="./assets/miniLeaderboard.css">
-    <script src="./assets/MainPage.js" defer></script>
-    <script src="./assets/miniLeaderboard.js" defer></script>
+    <script type="module" src="./assets/MainPage.js" defer></script>
+    <script type="module" src="./assets/miniLeaderboard.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
@@ -38,29 +39,13 @@ session_start();
         </div>
         
         <div id="MiddleColumn">
-            <h3>Upcoming Events</h3>
-            <ul>
-                <li>Event 1: Lorem ipsum dolor sit amet.</li>
-                <li>Event 2: Nullam scelerisque leo nec urna fermentum.</li>
-                <li>Event 3: Integer nec odio nec nulla cursus tincidunt.</li>
-            </ul>
-            <div id="Thumbnails">
-                <div class="thumbnail">
-                    <img src="assets/Photos/images.jfif" alt="Thumbnail 1">
-                    <p>Game 1</p>
-                </div>
-                <div class="thumbnail">
-                    <img src="assets/Photos/images.jfif" alt="Thumbnail 2">
-                    <p>Game 2</p>
-                </div>
-                <div class="thumbnail">
-                    <img src="assets/Photos/images.jfif" alt="Thumbnail 3">
-                    <p>Game 3</p>
-                </div>
-                <div class="thumbnail">
-                    <img src="assets/Photos/images.jfif" alt="Thumbnail 4">
-                    <p>Game 4</p>
-                </div>
+            <h3>Matches - <?php echo date('F j, Y'); ?></h3>
+            <div id="Upcoming_Matches">
+                <h4>Upcoming/In Progress Matches</h4>
+            </div>
+            <div class="divider">Played Games</div>
+            <div id="Recent_Results">
+                <h4>Recent Results</h4>
             </div>
         </div>
 
@@ -73,5 +58,11 @@ session_start();
             </ul>
         </div>
     </div>
+
+    <script>
+        function navigateToTeamPage(teamName, teamId) {
+            window.location.href = `Team/Team.php?teamName=${teamName}&id=${teamId}`;
+        }
+    </script>
 </body>
 </html>
