@@ -6,7 +6,7 @@ body {
 
 #signup a {
     font-weight: bold;
-    color: #00aaff;
+    color: #fff;
 }
 
 .form-container {
@@ -22,5 +22,5 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     font-style: italic;
-    color: #00aaff;
+    color: #fff;
 }

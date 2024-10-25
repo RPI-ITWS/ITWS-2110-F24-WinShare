@@ -124,7 +124,7 @@
 }
 
 #stat:hover {
-    background-color: #87e9c5;
+    background-color: #7a7f86;
     cursor: pointer;
 }
 
@@ -207,28 +207,30 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #87e9c5;
+    background-color: #7a7f86;
+    color: black;
 }
 
 #FindPlayer:hover {
     cursor: pointer;
-    background-color: #00aaff;
     color: #000;
 }
 
 #PlayerOptions {
     border: 1px solid #ccc;
     width: 68%;
-    background-color: aliceblue;
 }
 
 .player {
-    width: 92%;
+    width: 100%;
     padding-left: 4%;
     padding-right: 4%;
+    background-color: #1a1a1a;
 }
 
 .player:hover {
+    width:100%;
     cursor: pointer;
-    background-color: rgba(188, 246, 239, 0.841);
+    background-color: #00aaff;
+    color: black;
 }
