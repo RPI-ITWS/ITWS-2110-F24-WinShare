@@ -27,7 +27,7 @@ InputtedSearch.addEventListener("input", function() {
     if (searchTerm === "" || searchTerm.length <= 1) {
         SearchList.style.display = 'none'; 
         FindPlayer.disabled = true;
-        FindPlayer.style.backgroundColor = 'rgba(222, 255, 251, 0.841)';
+        FindPlayer.style.backgroundColor = '#7a7f86';
         return; 
     }else if (searchTerm.length >= 2){
         const filteredPlayers = players.filter(function(player) {
@@ -44,7 +44,7 @@ InputtedSearch.addEventListener("input", function() {
                 InputtedSearch.value = player;
                 SearchList.style.display = 'none';
                 FindPlayer.disabled = false;
-                FindPlayer.style.backgroundColor = '#7DD8BA';
+                FindPlayer.style.backgroundColor = '#00aaff';
                 FindPlayer.addEventListener('mouseover', function() {
                     FindPlayer.style.cursor = 'pointer'; 
                 });
@@ -57,13 +57,15 @@ InputtedSearch.addEventListener("input", function() {
     
         if (players.includes(InputtedSearch.value) || lowerplayers.includes(InputtedSearch.value)) {
             FindPlayer.disabled = false;
-            FindPlayer.style.backgroundColor = '#7DD8BA';
+            FindPlayer.style.backgroundColor = '#00aaff';
+            FindPlayer.style.color = 'black';
             FindPlayer.addEventListener('mouseover', function() {
                 FindPlayer.style.cursor = 'pointer';
             });
         } else {
             FindPlayer.disabled = true;
-            FindPlayer.style.backgroundColor = 'rgba(222, 255, 251, 0.841)';
+            FindPlayer.style.backgroundColor = '#7a7f86';
+            FindPlayer.style.color = 'black';
             FindPlayer.addEventListener('mouseover', function() {
                 FindPlayer.style.cursor = 'not-allowed';
             });
