@@ -4,7 +4,7 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
     session_unset();
     session_destroy();
-    header("Location: /ITWS-2110-F24-winshare/Auth/Login/login.php");
+    header("Location: /ITWS-2110-F24-WinShare/Auth/Login/login.php");
     exit();
 }
 ?>
@@ -17,13 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/ITWS-2110-F24-winshare/index.php">Home</a>
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ITWS-2110-F24-winshare/Statistics/index.html">Statistics</a>
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Statistics/index.html">Statistics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ITWS-2110-F24-winshare/Predictions/Predictions.html">Predictions</a>
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Predictions/Predictions.html">Predictions</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto me-3">
@@ -47,8 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                                 </form>
                             </li>
                         <?php else: ?>
-                            <li><a class="dropdown-item" href="/ITWS-2110-F24-winshare/Auth/Login/login.php">Login</a></li>
-                            <li><a class="dropdown-item" href="/ITWS-2110-F24-winshare/Auth/Signup/signup.php">Signup</a></li>
+                            <li><a class="dropdown-item" href="/ITWS-2110-F24-WinShare/Auth/Login/login.php">Login</a></li>
+                            <li><a class="dropdown-item" href="/ITWS-2110-F24-WinShare/Auth/Signup/signup.php">Signup</a></li>
                         <?php endif; ?>
                     </ul>
                 </li>
