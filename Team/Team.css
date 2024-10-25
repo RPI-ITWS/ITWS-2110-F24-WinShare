@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.team-info h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.team-info a {
+    color: #bbb;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.nav-tabs {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-tabs a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upcoming-matches, .recent-results, .current-roster {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.match, .result, .player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.match img, .result img, .player img {
+    width: 40px;
+}
+
+.player-card, .coach-card {
+   display: inline-block;
+   width: 150px;
+   margin: 10px;
+   text-align: center;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+}
+
+.player-card img, .coach-card img {
+   width: 100%;
+   height: auto;
+}
+
+.player-card p, .coach-card p {
+   margin: 10px 0;
+   font-size: 14px;
+   font-weight: bold;
+}

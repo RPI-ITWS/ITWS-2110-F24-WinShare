@@ -66,21 +66,6 @@ body, html {
     border-radius: 8px;
 }
 
-#MiddleColumn {
-    border: solid red;
-    width: 60%;
-    height: 1046px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: auto;
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #Thumbnails {
     display: flex;
     gap: 10px;
@@ -105,4 +90,67 @@ body, html {
     padding: 10px;
     text-align: center;
     font-size: 14px;
+}
+
+.game-card {
+   border: 1px solid #ccc;
+   padding: 10px;
+   margin: 10px 0;
+   display: flex;
+   flex-direction: column;
+   background-color: #f9f9f9;
+}
+
+.game-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 5px;
+   gap: 10px;
+}
+
+.team {
+   font-weight: bold;
+   flex: 1;
+   text-align: left;
+   cursor: pointer;
+}
+
+.score {
+   font-size: 1em;
+   font-weight: bold;
+   color: #333;
+   text-align: center; 
+   flex: 0 0 400px;
+}
+
+.time {
+   font-size: 0.9em;
+   color: #666;
+   text-align: right;
+   flex: 0 0 100px;
+}
+
+.invisible {
+   visibility: hidden;
+}
+
+.green-text {
+   color: #0bb302;
+}
+
+.divider {
+   text-align: center;
+   margin: 20px 0;
+   font-size: 1.2em;
+   font-weight: bold;
+   color: #333;
+   border-top: 2px solid #ccc;
+   padding-top: 10px;
+}
+
+.small-logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
 }
