@@ -1,28 +1,26 @@
-body{
-    margin: 0px;
-    background-color: #b9bcc2;
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
 }
 
-#signup a{
+#signup a {
     font-weight: bold;
-    color: black;
-}
-
-#signup{
-    margin-top: 1rem;
+    color: #00aaff;
 }
 
 .form-container {
     width: 400px;
     padding: 2rem;
-    border: 1px solid #ddd;
+    border: 2px solid #00aaff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: #1a1a1a;
 }
+
 .form-title {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    font-style: italic;
+    color: #00aaff;
 }

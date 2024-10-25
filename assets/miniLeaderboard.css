@@ -1,33 +1,26 @@
-/* Mini Leaderboard Styles */
 #miniLeaderboard {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     font-size: 0.9em;
+    color: #fff;
 }
 
 #miniLeaderboard td {
-    border: 1px solid #7DD8BA;
+    border: 1px solid #00aaff;
     padding: 8px;
     text-align: left;
 }
 
 #miniLeaderboard tr:nth-child(even) {
-    background-color: #f8f8f8;
+    background-color: #1a1a1a;
 }
 
 #miniLeaderboard tr:hover {
-    background-color: #e8e8e8;
+    background-color: #00aaff;
 }
 
 #miniLeaderboard td:first-child {
     font-weight: bold;
-    color: #696D73;
-    width: 30%;
-}
-
-#LeftColumn h3 {
-    color: #696D73;
-    margin-top: 20px;
-    text-align: center;
+    color: #fff;
 }
