@@ -8,12 +8,12 @@
 }
 
 #mainframe {
-    background-color: rgb(103, 97, 97);
-    border-radius: 15px;
-    padding: 20px;
+    background-color: rgb(39, 36, 36);
+    border-radius: 10px;
+    padding: 10px;
     width: 90%;
     max-width: 1700px;
-    height: 80vh;
+    height: 90vh;
     max-height: 700px;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-    border: #56d7b2 solid 1px;
+    border: #00aaff solid 1px;
 }
 
 #mainframe > div:last-child {
@@ -59,6 +59,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white
 }
 
 #mainframe > div .content h2,
@@ -73,6 +74,6 @@
     font-size: 60px;
     position: absolute;
     left: 35%;
-    color: #7fe1c5;
+    color: #00aaff;
     align-items: center;
 }
