@@ -55,7 +55,7 @@ InputtedSearch.addEventListener("input", function() {
     
         SearchList.style.display = filteredPlayers.length ? 'block' : 'none';
     
-        if (players.includes(InputtedSearch.value) || lowerplayers.includes(InputtedSearch.value)) {
+        if (players.includes(InputtedSearch.value.toLowerCase()) || lowerplayers.includes(InputtedSearch.value.toLowerCase())) {
             FindPlayer.disabled = false;
             FindPlayer.style.backgroundColor = '#00aaff';
             FindPlayer.style.color = 'black';
