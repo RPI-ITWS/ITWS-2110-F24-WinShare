@@ -15,8 +15,13 @@
     color: #000 !important;
 }
 
-.dropdown-menu {
+.navbar .dropdown-menu {
     background-color: #1a1a1a;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    z-index: 1050; 
 }
 
 .dropdown-item {

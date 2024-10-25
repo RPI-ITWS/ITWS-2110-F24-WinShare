@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #000;
+    background-color: #646060;
     color: #fff;
 }
 
@@ -14,8 +14,7 @@ body {
     padding: 2rem;
     border: 2px solid #00aaff;
     border-radius: 8px;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color:rgb(86, 80, 80);;
 }
 
 .form-title {
