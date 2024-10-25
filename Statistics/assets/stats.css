@@ -1,11 +1,11 @@
-#body{
+#body {
     padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: rgba(222, 255, 251, 0.841);
-    
+    background-color: #000;
+    color: #fff;
 }
 
-#Hotbar{
+#Hotbar {
     width: 100%;
     height: 45px;
     margin: 0;
@@ -15,16 +15,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #7DD8BA;
-    background-color: #696D73;
+    border-bottom: 5px solid #00aaff;
+    background-color: #1a1a1a;
     position: absolute;
 }
 
-#buffer{
-    height:49px;
+#buffer {
+    height: 49px;
 }
 
-.tab{
+.tab {
     display: flex;
     width: 25%;
     height: 45px;
@@ -32,49 +32,48 @@
     justify-content: center;
 }
 
-.tab a{
+.tab a {
     width: 100%;
     height: 100%;
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #7DD8BA;
+    color: #00aaff;
     font-size: larger;
+    font-weight: bold;
 }
 
-.tab a:hover{
-    background-color: #7DD8BA;
-    color: #696D73;
+.tab a:hover {
+    background-color: #00aaff;
+    color: #000;
 }
 
-#Filler{
+#Filler {
     display: flex;
     width: 18%;
     height: 45px;
     align-items: center;
     justify-content: center;
-
 }
 
-#More{
+#More {
     display: flex;
     width: 7%;
     height: 45px;
 }
 
-#MoreOptions{
+#MoreOptions {
     width: 100%;
     height: 45px;
-    align-content: center;
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #7DD8BA;
+    color: #00aaff;
 } 
 
-#MoreOptions:hover{
-    background-color: #7DD8BA;
-    color: #696D73;
+#MoreOptions:hover {
+    background-color: #00aaff;
+    color: #000;
     cursor: pointer;
 } 
 
@@ -86,12 +85,11 @@
     margin: 5% auto;
     height: 800px;
     align-items: center;
-    background-color: #696D73;
+    background-color: #1a1a1a;
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 #search {
     width: 100%;
@@ -106,7 +104,7 @@
 
 #statlabel {
     font-size: 28px;
-    color: #7DD8BA;
+    color: #00aaff;
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
@@ -119,13 +117,14 @@
     padding: 1%;
     border: none;
     border-radius: 5px;
-    background-color: #7DD8BA;
+    background-color: #00aaff;
     outline: none;
     flex-grow: 1;
+    color: #000;
 }
 
 #stat:hover {
-    background-color: #87E9C5;
+    background-color: #87e9c5;
     cursor: pointer;
 }
 
@@ -135,26 +134,28 @@
     justify-content: flex-start;
     padding: 0;
     position: relative;
-    top: -1px; 
-    left: -1px; 
+    top: -1px;
+    left: -1px;
     margin-bottom: 20px;
 }
 
 #StatButton, #PlayerButton {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #696D73;
-    color: #7DD8BA;
-    border: none;
+    background-color: #1a1a1a;
+    color: #00aaff;
+    border: 2px solid #00aaff;
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: relative;
     margin-right: 4px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 #StatButton {
     border-radius: 16px 4px 0 0;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 #PlayerButton {
@@ -167,7 +168,7 @@
 
 #search {
     text-align: center;
-    width: 90%; 
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -179,12 +180,11 @@
     display: none;
 }
 
-#PlayerContent{
-    width:100%;
+#PlayerContent {
+    width: 100%;
     display: block;
     position: relative;
     bottom: 2%;
-
 }
 
 #top {
@@ -192,44 +192,43 @@
     align-items: center;
 }
 
-
 #PlayerSearch {
     width: 70%;
     padding: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
 }
 
-#FindPlayer{
+#FindPlayer {
     width: 30%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    align-items: center;
-    background-color: rgba(222, 255, 251, 0.841);
+    background-color: #87e9c5;
 }
 
-#FindPlayer:hover(){
+#FindPlayer:hover {
     cursor: pointer;
-    background-color: rgba(222, 255, 251, 0.841);
+    background-color: #00aaff;
+    color: #000;
 }
 
-#PlayerOptions{
+#PlayerOptions {
     border: 1px solid #ccc;
     width: 68%;
     background-color: aliceblue;
 }
 
-.player{
-    width:92%;
+.player {
+    width: 92%;
     padding-left: 4%;
     padding-right: 4%;
 }
 
-.player:hover{
+.player:hover {
     cursor: pointer;
     background-color: rgba(188, 246, 239, 0.841);
 }

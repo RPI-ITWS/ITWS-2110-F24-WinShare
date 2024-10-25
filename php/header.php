@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
     exit();
 }
 ?>
-<nav class="navbar navbar-expand-lg px-3"> 
+<nav class="navbar navbar-expand-lg px-3">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">WinShare</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                             Profile
                         <?php endif; ?>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                    <ul class="dropdown-menu" style="background-color: #1a1a1a; border-color: #00aaff;">
                         <?php if (isset($_SESSION['user_id'])): ?>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: #00aaff;">Profile</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: #00aaff;">Settings</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <form method="POST" action="" style="display: inline;">
