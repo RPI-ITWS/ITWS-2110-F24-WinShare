@@ -1,0 +1,577 @@
+WEBVTT
+
+1 "Collins, Joshua" (1202586368)
+00:00:00.000 --> 00:00:05.153
+Reminder Shema's gonna remain muted because he's in a crowded spacing.
+
+2 "izik" (2007079424)
+00:00:05.153 --> 00:00:09.436
+Can't talk without interference.
+
+3 "Collins, Joshua" (1202586368)
+00:00:09.436 --> 00:00:14.780
+I forgot, who has the the slides real quick? I just wanted to double check them.
+
+4 "Hung, Louis" (3378887680)
+00:00:14.780 --> 00:00:18.457
+I think it's in the DC I guess. Yeah.
+
+5 "izik" (2007079424)
+00:00:19.563 --> 00:00:25.178
+We basically did our presentation, which is pretty funny.
+
+6 "Collins, Joshua" (1202586368)
+00:00:25.178 --> 00:00:32.103
+Yeah, I also just made a new merge request. Also, thank you Isaac for getting that conflict.
+
+7 "izik" (2007079424)
+00:00:32.103 --> 00:00:34.820
+Resolved. Yeah, yeah. No, it was super quick.
+
+8 "Collins, Joshua" (1202586368)
+00:00:34.820 --> 00:00:49.604
+Yeah, NO, it was funny because it's like, I don't know why it came up because there's like, like fetch from the, the, from the main branch, but it just never like changed the nav button.
+
+9 "izik" (2007079424)
+00:00:49.604 --> 00:00:57.122
+Yeah, that was weird. I I've never seen that before. Like I'm proposing changes for this. Why are you telling me to resolve conflict.
+
+10 "Collins, Joshua" (1202586368)
+00:00:57.122 --> 00:01:05.521
+You know, it was so weird, so, if you have that issue, I recommend just opening opening a new branch moving all the stuff over.
+
+11 "izik" (2007079424)
+00:01:05.521 --> 00:01:07.398
+Yeah, yeah, yeah.
+
+12 "Collins, Joshua" (1202586368)
+00:01:07.398 --> 00:01:11.699
+Yeah, because that's why I didn't fix that issue at least.
+
+13 "izik" (2007079424)
+00:01:11.699 --> 00:01:20.300
+Yeah, I'm gonna run into that same issue again because I have more updates. I'm trying to fix the page.
+
+14 "Collins, Joshua" (1202586368)
+00:01:20.300 --> 00:01:22.599
+Okay, say that again?
+
+15 "izik" (2007079424)
+00:01:22.599 --> 00:01:31.074
+So when you open the dropdown, you just gotten really?
+
+16 "Collins, Joshua" (1202586368)
+00:01:31.074 --> 00:01:34.739
+Oh yeah, you got really laggy for a 2nd.
+
+17 "izik" (2007079424)
+00:01:34.739 --> 00:01:46.379
+Yeah, our Wi-Fi has been really bad. But yeah, when you open the stats page and you open the dropdown, it like you can move the page left to right, which is not great.
+
+18 "Collins, Joshua" (1202586368)
+00:01:46.379 --> 00:01:49.041
+Oh, you can. I'm just trying to get that worked.
+
+19 "izik" (2007079424)
+00:01:49.041 --> 00:01:57.682
+Yeah, it's weird I don't know it doesn't do that on any other site and I try to see if, if maybe there's like an extra div somewhere because that's that was the problem before.
+
+20 "Collins, Joshua" (1202586368)
+00:01:57.682 --> 00:02:18.380
+But yeah, that's weird a problem right now. Oh yeah, let me share my screen real quick Cause this actually let me go live so I can just show you like what I have so far cause I don't know the other two have seen at least what it is so far. 1 s.
+
+21 "izik" (2007079424)
+00:02:18.380 --> 00:02:24.457
+Yeah, I think I also I need to, change all the nav bars to set the index.PHP.
+
+22 "Collins, Joshua" (1202586368)
+00:02:24.457 --> 00:02:41.100
+Yeah, so this is basically somewhat of what I see. So you have to search for statistic and you have search for a player. The idea is like this one's just a simple dropdown that we can see and search for a player, if you do like Lebron, you get like a long dropdown.
+
+23 "izik" (2007079424)
+00:02:41.100 --> 00:02:42.092
+Oh.
+
+24 "Collins, Joshua" (1202586368)
+00:02:42.092 --> 00:02:54.221
+Well, but if you click on the name, you can search it, but you can't search it's it's ****** up the icon when initially it's supposed to be like this, but I'll figure.
+
+25 "Hung, Louis" (3378887680)
+00:02:54.221 --> 00:02:56.934
+Isn't the idea is like if I type in like.
+
+26 "Collins, Joshua" (1202586368)
+00:02:56.934 --> 00:03:18.420
+Lebron all lowercase as well, and at least for the stat page with that dropdown, I think if we limit the stat page it is the top 200 most popular players just to keep that dropdown like short, I think we should be fine.
+
+27 "Hung, Louis" (3378887680)
+00:03:18.420 --> 00:03:20.619
+The dropdown is JR.
+
+28 "Collins, Joshua" (1202586368)
+00:03:20.619 --> 00:03:33.897
+That's great? Yes. So the idea is that I can use the JS to at least filter what goes into the PHP request and then I could also filter the input through PHP as well.
+
+29 "Hung, Louis" (3378887680)
+00:03:33.897 --> 00:03:46.100
+But do we need to put on the PHP Cause our, isn't our idea about like grabbing the data into a JSON file in our like local? Yeah, I guessing it is.
+
+30 "Collins, Joshua" (1202586368)
+00:03:46.100 --> 00:03:54.601
+Yeah, I guess like a fetch it just I don't need to grab it from the table.
+
+31 "Hung, Louis" (3378887680)
+00:03:54.601 --> 00:04:01.614
+Yeah, cause we don't really need like up to date data. Like we don't need an API call every time someone visits a website.
+
+32 "Collins, Joshua" (1202586368)
+00:04:01.614 --> 00:04:08.939
+Yeah, you're right. I'll I'll get something cooked up for that then.
+
+33 "Hung, Louis" (3378887680)
+00:04:08.939 --> 00:04:36.400
+And did you guys check the new API, like, what's it called against What's a lot of looking yet, but I was intending on doing that. Yeah, that one gives you like the exact output and the exact call that you need to get the API. So, and on the other hand, if you want to get like a game ID on the Hook data hub, you need a team, you need a game ID.
+
+34 "Collins, Joshua" (1202586368)
+00:04:36.400 --> 00:04:39.979
+Okay, yeah, so then you were planning on to use that.
+
+35 "Hung, Louis" (3378887680)
+00:04:39.979 --> 00:04:48.559
+That for predictions and you can just call the hoop data hub for the stats for like players. Okay.
+
+36 "izik" (2007079424)
+00:04:48.559 --> 00:05:03.596
+If you, if you hit the, oh, you stopped sharing your screen, but if you if you if you check the stats page and just click the login dropdown, you'll see what I'm talking about. It's, it's super small, but like it's really annoying.
+
+37 "Collins, Joshua" (1202586368)
+00:05:03.596 --> 00:05:10.553
+What do you like I can't click anything, but it Oh, it's it's like a little bit off the screen.
+
+38 "izik" (2007079424)
+00:05:10.553 --> 00:05:17.516
+Yeah, it's off the screen and you can, you can move like horizontally. It's weird.
+
+39 "Hung, Louis" (3378887680)
+00:05:17.516 --> 00:05:19.995
+For prediction space, I'll fix that.
+
+40 "izik" (2007079424)
+00:05:19.995 --> 00:05:38.073
+In the stops page and I just don't know how to fix it because it's the exact same nav bar. I I don't know what's wrong with it. Oh, you mean the like the scroll button? Yeah, there's a scroll at the bottom of the screen and you can just scroll.
+
+41 "Collins, Joshua" (1202586368)
+00:05:38.073 --> 00:05:45.637
+Right. You might need to just see if you can shift that dropdown like over and then down slightly.
+
+42 "Hung, Louis" (3378887680)
+00:05:45.637 --> 00:05:46.639
+It's.
+
+43 "izik" (2007079424)
+00:05:46.639 --> 00:05:53.575
+Problem because some different problems with the prediction part.
+
+44 "Hung, Louis" (3378887680)
+00:05:53.575 --> 00:05:59.437
+Wait what? It's probably because like the dev for the predictions, I think.
+
+45 "Hung, Louis" (3378887680)
+00:05:59.437 --> 00:06:05.097
+No wait, wait. The prediction page is also weird.
+
+46 "izik" (2007079424)
+00:06:05.097 --> 00:06:07.276
+Oh yeah.
+
+47 "Collins, Joshua" (1202586368)
+00:06:07.276 --> 00:06:17.220
+It goes, oh yeah, the, the predictions, it goes behind predictions Yeah you can just change a Z index.
+
+48 "izik" (2007079424)
+00:06:17.220 --> 00:06:26.338
+Yeah, yeah, that's actly what I did. And then I got rid of in mainframe the position fixed or.
+
+49 "Collins, Joshua" (1202586368)
+00:06:26.338 --> 00:06:38.657
+I got rid of that issue. Yeah also my one question for the prediction pages, how are we gonna have the user input the data?
+
+50 "Hung, Louis" (3378887680)
+00:06:38.657 --> 00:06:59.629
+Oh, yeah, we talked about this last time. So we wanted to do so that like what if you click into the game, you're brought to another website that's where it shows the games statistics and how you want to bed it. So that thing, yeah, that thing will be like unique for each one of the games and like the content.
+
+51 "Hung, Louis" (3378887680)
+00:06:59.629 --> 00:07:05.959
+Will have like a framework and everything in set will be generated by JS according to the things that you select.
+
+52 "Collins, Joshua" (1202586368)
+00:07:05.959 --> 00:07:07.618
+Okay, sounds good.
+
+53 "Hung, Louis" (3378887680)
+00:07:07.618 --> 00:07:10.655
+Yeah, but like NO one's working on that right now.
+
+54 "Collins, Joshua" (1202586368)
+00:07:10.655 --> 00:07:13.635
+Yeah, we'll we'll we'll get there. That's like gonna be the last big piece.
+
+55 "Hung, Louis" (3378887680)
+00:07:13.635 --> 00:07:25.256
+I guess. Yeah, just like the last JS piece of fetching the data for individual team or I can just like basically copy and paste what I'm going to do for the profiles for each player. That's what I'm I'm currently working on.
+
+56 "Collins, Joshua" (1202586368)
+00:07:25.256 --> 00:07:47.036
+Okay, yeah, that that'll work, yeah, I think that will do it. That'll be a good way to finish it up because once I mean once we get statistics and then this kind of like link everything up, also do you think the statistics page needs to be a HTML or a PHP file?
+
+57 "Hung, Louis" (3378887680)
+00:07:47.036 --> 00:07:56.198
+The Honestly, if it doesn't fetch anything from MySQL, it doesn't have to be appeared.
+
+58 "Collins, Joshua" (1202586368)
+00:07:56.198 --> 00:08:03.402
+Okay, so I'll keep I'll keep it HTML then just for the sake of.
+
+59 "Hung, Louis" (3378887680)
+00:08:03.402 --> 00:08:15.430
+But if, because she would did like the header.PHP for the nav boards and if we want to do the if we want to use headers.php, then we have to use a PhP I think.
+
+60 "Collins, Joshua" (1202586368)
+00:08:15.430 --> 00:08:17.970
+Okay.
+
+61 "Hung, Louis" (3378887680)
+00:08:17.970 --> 00:08:22.446
+Yeah, but yeah I'll just confirm with.
+
+62 "Collins, Joshua" (1202586368)
+00:08:22.446 --> 00:08:29.652
+Isaac which one's easier for him because if that fixes the issue by converting it to PHP, that's fine.
+
+63 "izik" (2007079424)
+00:08:29.652 --> 00:08:32.271
+Which one?
+
+64 "Collins, Joshua" (1202586368)
+00:08:32.271 --> 00:08:41.483
+The stat the stat page if using that header that Shemu had. I didn't I didn't even look at that.
+
+65 "Hung, Louis" (3378887680)
+00:08:41.483 --> 00:08:51.590
+Okay. He basically just the nav bars into a file and then just input that file in every PHP file so that you don't have, we don't have to do repetitive snaff bar.
+
+66 "izik" (2007079424)
+00:08:51.590 --> 00:08:56.770
+I mean, yeah, that's that's smart, that's really small.
+
+67 "Collins, Joshua" (1202586368)
+00:08:56.770 --> 00:08:58.209
+Okay.
+
+68 "izik" (2007079424)
+00:08:58.209 --> 00:09:00.871
+I mean, if you can do that, that'd be great.
+
+69 "Hung, Louis" (3378887680)
+00:09:00.871 --> 00:09:04.914
+I think you had a seven.
+
+70 "Collins, Joshua" (1202586368)
+00:09:04.914 --> 00:09:28.112
+Yeah, and also as a fair warning, Prenee might not be here on Friday. He texted me, he texted me I don't know why he texted me specifically, but he just said like if the professor didn't see his text, he wanted to let us know that he might not be there cause he hasn't like some other like presentation or thing, something.
+
+71 "Hung, Louis" (3378887680)
+00:09:28.112 --> 00:09:30.930
+Well, it's.
+
+72 "Collins, Joshua" (1202586368)
+00:09:30.930 --> 00:09:35.492
+Like it's fine. We we got all four of us we're the dream team.
+
+73 "Hung, Louis" (3378887680)
+00:09:35.492 --> 00:09:46.090
+Yeah, exactly. We'll make it, we'll we'll make it work. It's just gonna work without.
+
+74 "izik" (2007079424)
+00:09:46.090 --> 00:09:51.253
+What has he done? Like the.
+
+75 "Collins, Joshua" (1202586368)
+00:09:52.528 --> 00:09:55.371
+The.
+
+76 "Hung, Louis" (3378887680)
+00:09:55.371 --> 00:09:58.572
+Commit yeah and that one will be commit.
+
+77 "izik" (2007079424)
+00:09:58.572 --> 00:10:10.191
+Great. And the logo. Alright. And the logo. So that's someone can talk about his logo.
+
+78 "Collins, Joshua" (1202586368)
+00:10:10.191 --> 00:10:18.326
+Yeah, we'll we'll show like we Yeah we'll show the we'll highlight that when we when we're on the title screen.
+
+79 "Hung, Louis" (3378887680)
+00:10:18.326 --> 00:10:33.687
+I have another logo updated to GitHub though if you guys want to check it out, I just ******* delly generated It should be in the assets folder and photos.
+
+80 "Collins, Joshua" (1202586368)
+00:10:33.687 --> 00:10:43.945
+Yeah, I'm gonna add to the JavaScript cause I use that one.
+
+81 "Hung, Louis" (3378887680)
+00:10:43.945 --> 00:10:50.923
+I don't know. Do we have to fix out the PowerPoint for presentation?
+
+82 "Collins, Joshua" (1202586368)
+00:10:50.923 --> 00:10:52.816
+Like you say again.
+
+83 "Hung, Louis" (3378887680)
+00:10:52.816 --> 00:10:59.085
+Do you had to fix the PowerPoint, the Google Docs for the presentation? I think that's kind of like rushed.
+
+84 "Collins, Joshua" (1202586368)
+00:10:59.085 --> 00:11:06.707
+Yeah, it's definitely yeah we can work on it today and tomorrow, if we work on our own times and just clean it up I think we'll be good.
+
+85 "Hung, Louis" (3378887680)
+00:11:06.707 --> 00:11:07.984
+Yeah.
+
+86 "Collins, Joshua" (1202586368)
+00:11:07.984 --> 00:11:18.865
+Okay, because I think for the most part our information is our, all of our information's there. It's just whether or not we want to fill that out a little bit more and styles.
+
+87 "Hung, Louis" (3378887680)
+00:11:18.865 --> 00:11:22.542
+A little bit. I mean make it better always doesn't hurt.
+
+88 "Collins, Joshua" (1202586368)
+00:11:22.542 --> 00:11:40.941
+Absolutely. Yeah, yeah, I'll I'll definitely work on that in the future. I have, what was it? Yeah, I have my hacking class tomorrow. We're, we're getting ready for our big hackathon this weekend.
+
+89 "Hung, Louis" (3378887680)
+00:11:40.941 --> 00:11:44.107
+It's this weekend I saw it's at the beginning of November now.
+
+90 "Collins, Joshua" (1202586368)
+00:11:44.107 --> 00:11:57.321
+I don't know there's another one at the beginning of November or actually NO, sorry. There's a different one the one that is for like NCL individual hackathon. I think the November ones have.
+
+91 "Hung, Louis" (3378887680)
+00:11:57.321 --> 00:12:03.402
+Back RPI. Oh yeah, yeah, yeah. Slightly different. Okay.
+
+92 "Collins, Joshua" (1202586368)
+00:12:03.402 --> 00:12:32.178
+Yeah, but overall, I I think we are in relatively good shape because then I think if we think about this right, the only thing we really have to do once the stat page is done, well, we just have to do a little bit more JS on the stat page, which I'll take care of. Prediction page we just need to get that 2nd page up and running once you click on like a game and then have the, the PHP working in the background to add like add or remove points if you're right or wrong.
+
+93 "Hung, Louis" (3378887680)
+00:12:32.178 --> 00:12:46.541
+Oh yeah for that, do we want to do it like live or do we want to do it like just You can predict on the past games.
+
+94 "Collins, Joshua" (1202586368)
+00:12:46.541 --> 00:12:52.045
+I'm guess we could predict on past games to show like proof of concept.
+
+95 "Hung, Louis" (3378887680)
+00:12:52.045 --> 00:13:07.705
+Yeah, cause like if you want to do it, like, e.g., today's the 23rd. If you want to do like predictions on a game that's on the 25th, then how, like storing the prediction data is another problem that I'm considering.
+
+96 "Collins, Joshua" (1202586368)
+00:13:07.705 --> 00:13:36.787
+Yeah, cause we have to constantly keep that data updated on the predictions page so you click a game to get a live data. And then on top of that, you have to do like overall statistics, and then we have to have some kind of measurement that goes in basically says like, when they log in, check their predictions and update their points. It's a lot more that goes in rather than like, make your prediction on a past game if correct points go up, if wrong.
+
+97 "Hung, Louis" (3378887680)
+00:13:36.787 --> 00:13:40.417
+Points go down. Yeah, we can just do that.
+
+98 "Collins, Joshua" (1202586368)
+00:13:40.417 --> 00:13:53.879
+Yeah, that that way we get the proof of concept down and we can still kind of like make it look good. Yeah, and then we should be good after that. I mean it's basically just.
+
+99 "Collins, Joshua" (1202586368)
+00:13:53.879 --> 00:14:09.966
+Get the homepage looking a little nice nicer. I haven't seen it cause I, also can somebody send me the link and discord to the, the VM Cause I couldn't like the homepage because I couldn't get that working the other.
+
+100 "Hung, Louis" (3378887680)
+00:14:09.966 --> 00:14:14.119
+Today just download the SQL.
+
+101 "Collins, Joshua" (1202586368)
+00:14:14.119 --> 00:14:16.264
+What do you mean download the.
+
+102 "Hung, Louis" (3378887680)
+00:14:16.264 --> 00:14:25.543
+So the user SQL into the chat and you can download our exam and run it locally.
+
+103 "Collins, Joshua" (1202586368)
+00:14:25.543 --> 00:14:35.341
+Oh **** I haven't figured out how to run XMPS yet. I've just been kind of busy, but I'll figure.
+
+104 "Hung, Louis" (3378887680)
+00:14:35.341 --> 00:14:41.965
+Yeah, we're all busy this week. I just finished three tests for the past two days.
+
+105 "Collins, Joshua" (1202586368)
+00:14:41.965 --> 00:14:48.048
+But should it just need the URL/index.phb?
+
+106 "Hung, Louis" (3378887680)
+00:14:48.048 --> 00:14:58.827
+I think it should be like/whatever the folder is called. RTWS 2011 F 24 wind share.
+
+107 "Collins, Joshua" (1202586368)
+00:14:58.827 --> 00:15:17.423
+Yeah, I forgot it was through the ITWS, and so it's ITWS-2110-F 20 four-or whatever the don't worry, I'll get it. Is there anything else we need for this meeting?
+
+108 "Hung, Louis" (3378887680)
+00:15:17.423 --> 00:15:21.300
+I don't think so.
+
+109 "Collins, Joshua" (1202586368)
+00:15:21.300 --> 00:15:28.619
+I think we've been I think we are really ahead like on pace at least.
+
+110 "Collins, Joshua" (1202586368)
+00:15:28.619 --> 00:15:57.643
+Because, with October almost being done, we'll definitely get I'll we'll try I'll try to get the stat page done this week and next week. If not, i'll push that off to sprint three and get it done right at the beginning. Depends on how tests play out, but at least from my part I I'm good there. I know Zeek, you're, you're pretty much wrapped up as aside from fixing a few small bugs.
+
+111 "izik" (2007079424)
+00:15:57.643 --> 00:16:00.982
+Another prediction pages on relatively.
+
+112 "Collins, Joshua" (1202586368)
+00:16:00.982 --> 00:16:14.224
+Finished in terms of how it's gonna look right, look initially, and then we'll finish that back end functionality in the next sprint, and then we'll clean up the homepage and then we should be good.
+
+113 "Hung, Louis" (3378887680)
+00:16:14.224 --> 00:16:19.226
+Maybe add one or two like.
+
+114 "Collins, Joshua" (1202586368)
+00:16:19.226 --> 00:16:36.082
+On pages like the about me page and then like the setting page should just be like coming soon, but if you're near you or something. Cause I don't think we have need any, I don't think we have need a functional settings page.
+
+115 "Collins, Joshua" (1202586368)
+00:16:36.082 --> 00:16:39.408
+We can just do like darken light mode.
+
+116 "Hung, Louis" (3378887680)
+00:16:39.408 --> 00:16:40.689
+One or something like that. He's.
+
+117 "Collins, Joshua" (1202586368)
+00:16:40.689 --> 00:16:57.320
+Yeah, Sounds good. So I hope you guys have a great evening. I'll see you guys on Friday. I don't know that we're gonna go in for the presentations, but I think we're.
+
+118 "Hung, Louis" (3378887680)
+00:16:57.320 --> 00:16:59.822
+Gonna be 1st. Yeah, same here.
+
+119 "Collins, Joshua" (1202586368)
+00:16:59.822 --> 00:17:01.192
+Well.
+
+120 "izik" (2007079424)
+00:17:01.192 --> 00:17:06.467
+They said it was randomly generated. Oh, right. Oh, right. He said it's randomly.
+
+121 "Collins, Joshua" (1202586368)
+00:17:06.467 --> 00:17:21.945
+But it's randomly generated but also did everybody prove my emerge request for chance?
+
+122 "Hung, Louis" (3378887680)
+00:17:21.945 --> 00:17:23.677
+I can do that. Yeah, I'll do that.
+
+123 "Collins, Joshua" (1202586368)
+00:17:23.677 --> 00:17:33.720
+You know yeah they can already did one. So that way we can update the statistics page but overall I think we're in a good spot.
+
+124 "izik" (2007079424)
+00:17:33.720 --> 00:17:40.164
+Is there anything else I should do or if anyone needs help? Because I'm I'm pretty free this week, I'm pretty free.
+
+125 "Collins, Joshua" (1202586368)
+00:17:40.164 --> 00:17:42.464
+Next week as well.
+
+126 "izik" (2007079424)
+00:17:42.464 --> 00:17:43.702
+Anyone like anyone's help on.
+
+127 "Hung, Louis" (3378887680)
+00:17:43.702 --> 00:18:02.143
+Or I can maybe check the projects page. So we've like last meeting with me and we did like a lot of to DOS on a project page and like if you're just free just choose one and then just try to do it because we had like specific descriptions written on it.
+
+128 "izik" (2007079424)
+00:18:02.143 --> 00:18:06.002
+Okay. All right. I can.
+
+129 "Collins, Joshua" (1202586368)
+00:18:06.002 --> 00:18:24.169
+Sounds good. Oh yeah, just main page data insert separate function, add prediction page. Stop stopped logged in user from visiting login page, add new page to view data for a team, add a new page to view data for a player.
+
+130 "izik" (2007079424)
+00:18:24.169 --> 00:18:29.771
+Yeah, I'll I'll brainstorm things. I was gonna do like add new pages to view teams or players.
+
+131 "Collins, Joshua" (1202586368)
+00:18:29.771 --> 00:18:34.808
+But yeah do it for the teams right now because we have the stat page where you can look it up for apply.
+
+132 "izik" (2007079424)
+00:18:34.808 --> 00:18:37.035
+Yeah. At least.
+
+133 "Collins, Joshua" (1202586368)
+00:18:37.035 --> 00:18:41.282
+As of right now for the top 200 most popular players.
+
+134 "izik" (2007079424)
+00:18:41.282 --> 00:18:48.395
+Yeah, I'm gonna try to base it off of like what ESPN or I know the NHL does it too. I'm gonna try to base off of that and see what.
+
+135 "Collins, Joshua" (1202586368)
+00:18:48.395 --> 00:19:04.599
+What I can do. Because it's just a stat page, right? Yeah and also I was I meant to continue on my thought yesterday I said it earlier. I think we're gonna go 1st because on Friday the NCL individual hackathon starts at one, which is halfway through our.
+
+136 "Hung, Louis" (3378887680)
+00:19:04.599 --> 00:19:06.644
+E class. Oh, so do you want to go.
+
+137 "Collins, Joshua" (1202586368)
+00:19:06.644 --> 00:19:22.582
+Go 1st. Well, with the fact that I'm participating in that starting at one and the fact that Professor Callihan is my professor for the class that's mandatory for me to participate in a hackathon, he's gonna probably make us go 1st.
+
+138 "izik" (2007079424)
+00:19:22.582 --> 00:19:25.938
+Oh, yeah. That's fine then we'll get out of the way.
+
+139 "Hung, Louis" (3378887680)
+00:19:25.938 --> 00:19:30.681
+And then it'll just be like, hey, can, can I go 1st?
+
+140 "Collins, Joshua" (1202586368)
+00:19:30.681 --> 00:19:38.804
+Yeah, well, NO, yeah, he's gonna be like, you guys go 1st and then he'll then at 01:00 point to me and say, you go into the corner.
+
+141 "Collins, Joshua" (1202586368)
+00:19:40.338 --> 00:19:44.505
+So I'll have to leave you guys at one and go sit in the corner and do my hacking.
+
+142 "Hung, Louis" (3378887680)
+00:19:44.505 --> 00:19:47.764
+Yeah, NO problem. We can just do it and show.
+
+143 "Collins, Joshua" (1202586368)
+00:19:47.764 --> 00:20:07.443
+Yeah, I I think but I'm gonna say it again, but I think we're at a really good spot at least in terms of how our pages are looking yeah so with that said, I'd beg you guys a good evening and get some sleep.
+
+144 "izik" (2007079424)
+00:20:07.443 --> 00:20:08.664
+Yep.
