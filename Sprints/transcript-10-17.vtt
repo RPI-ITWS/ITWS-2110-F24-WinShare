@@ -1,0 +1,581 @@
+WEBVTT
+
+1 "shimu" (229590528)
+00:00:00.000 --> 00:00:04.160
+If Joshua joins you will join.
+
+2 "Hung, Louis" (4088636928)
+00:00:04.160 --> 00:00:07.643
+If he does it, that's fine. That's fine.
+
+3 "shimu" (229590528)
+00:00:07.643 --> 00:00:25.561
+Okay, maybe we should talk about what we did so far per project so for me, I made the sign up page and I, so in my basically my branch, I turned all the HTML files into PHP.
+
+4 "Hung, Louis" (4088636928)
+00:00:25.561 --> 00:00:28.808
+And started working on the sign up page.
+
+5 "shimu" (229590528)
+00:00:28.808 --> 00:00:35.843
+So good news is sign up works so far, is able to put a user in the database, which is good.
+
+6 "shimu" (229590528)
+00:00:37.190 --> 00:00:50.742
+I'm gonna try to get login working by the end of this week, if not next week. And I will also try to figure out how to use cookies with the login, but that should be pretty straightforward after I implement login.
+
+7 "Hung, Louis" (4088636928)
+00:00:50.742 --> 00:00:52.590
+Can I help?
+
+8 "shimu" (229590528)
+00:00:52.590 --> 00:01:11.136
+Only thing I'm worried about is after I merge back, I merge back my branch into main, I the conflict's gonna be crazy row cause I I literally made everything PHP and yeah, it's not gonna be fun. Yeah, ok.
+
+9 "Hung, Louis" (4088636928)
+00:01:11.136 --> 00:01:37.194
+I guess I'll start with mine then. I made the prediction page, like just a general out layout, but I guess I'll share it a bit. So it looks like this for now, and these logos, I put it all in my folder over here. So I I put all of the logos in here just so that we can have it easier.
+
+10 "shimu" (229590528)
+00:01:37.194 --> 00:01:37.834
+Oh!
+
+11 "Hung, Louis" (4088636928)
+00:01:37.834 --> 00:01:46.578
+Okay nice. No, I didn't push it yet, but they're all PNG, so like NO background. Nice, nice.
+
+12 "shimu" (229590528)
+00:01:46.578 --> 00:01:49.416
+I was just about asked do we have backgrounds? No.
+
+13 "Hung, Louis" (4088636928)
+00:01:49.416 --> 00:01:58.534
+No, NO backgrounds. And I think they're all, ok, most of them are squares. I'll all switch out the ones that's not squares.
+
+14 "Hung, Louis" (4088636928)
+00:01:58.534 --> 00:02:01.772
+Just so like it will look better on this page. Yeah.
+
+15 "shimu" (229590528)
+00:02:01.772 --> 00:02:06.987
+So one thing though, are we gonna put these pictures in our database?
+
+16 "Hung, Louis" (4088636928)
+00:02:06.987 --> 00:02:17.666
+I don't think we need. We just just do like a quick, what's it called again? Just, just do a quick like data like path reference.
+
+17 "shimu" (229590528)
+00:02:17.666 --> 00:02:21.607
+Yeah, I was about to say we can't we shouldn't put this in our database.
+
+18 "Hung, Louis" (4088636928)
+00:02:21.607 --> 00:02:27.410
+Yeah, like the path reference should be fine because I I just put it in assets.
+
+19 "shimu" (229590528)
+00:02:27.410 --> 00:02:28.748
+Hi cool.
+
+20 "Hung, Louis" (4088636928)
+00:02:28.748 --> 00:02:33.323
+Yeah. And then, oh yeah, I also did this.
+
+21 "shimu" (229590528)
+00:02:33.323 --> 00:02:36.205
+Oh, you got the logo as well? Okay, that's cool. Yeah.
+
+22 "Hung, Louis" (4088636928)
+00:02:36.205 --> 00:02:39.310
+This is just Delhi generated.
+
+23 "shimu" (229590528)
+00:02:39.310 --> 00:02:41.085
+It looks nice though. Yeah.
+
+24 "Hung, Louis" (4088636928)
+00:02:41.085 --> 00:02:43.643
+And I took out the background on this one.
+
+25 "shimu" (229590528)
+00:02:43.643 --> 00:02:47.328
+Okay, I think we're gonna use this and not for this.
+
+26 "Hung, Louis" (4088636928)
+00:02:47.328 --> 00:02:48.707
+Yeah, cause.
+
+27 "shimu" (229590528)
+00:02:48.707 --> 00:02:51.305
+I don't even know where he is man. Yeah.
+
+28 "Hung, Louis" (4088636928)
+00:02:51.305 --> 00:02:54.689
+I mean it's already on my branch so I can just push it anytime. Yeah.
+
+29 "shimu" (229590528)
+00:02:54.689 --> 00:02:59.845
+It looks it looks really nice as well. I think it matches our aesthetic with all like this.
+
+30 "Hung, Louis" (4088636928)
+00:02:59.845 --> 00:03:02.265
+The color theme I chose like specifically.
+
+31 "shimu" (229590528)
+00:03:02.265 --> 00:03:04.101
+It really matches our aesthetic.
+
+32 "Hung, Louis" (4088636928)
+00:03:04.101 --> 00:03:28.204
+Yeah and what else did I do? Not much here. Oh yeah, and the and the stats page that you guys saw. Wait, this is not working. Let me open it up again. Leaderboard page, yeah. And this JS.
+
+33 "shimu" (229590528)
+00:03:28.204 --> 00:03:32.237
+I still can't go over how cool the score is the loading.
+
+34 "Hung, Louis" (4088636928)
+00:03:32.237 --> 00:03:37.486
+Yeah, the score is, it took me a while to figure it out, but it's fine.
+
+35 "shimu" (229590528)
+00:03:37.486 --> 00:03:38.476
+It looks nice.
+
+36 "Hung, Louis" (4088636928)
+00:03:38.476 --> 00:03:48.903
+Yeah, we just have to switch the, these two buttons. Yeah. No, these are already implemented. It's just the CSS has now changed.
+
+37 "shimu" (229590528)
+00:03:48.903 --> 00:03:50.802
+Oh, I see ok. Yeah.
+
+38 "Hung, Louis" (4088636928)
+00:03:50.802 --> 00:03:56.137
+And I I think I have made the data so like player one has the highest win rate blah blah blah and goes down.
+
+39 "shimu" (229590528)
+00:03:56.137 --> 00:03:59.339
+Oh, ok, ok, I see. Yeah.
+
+40 "Hung, Louis" (4088636928)
+00:03:59.339 --> 00:04:02.098
+The only problem is this. This is the only.
+
+41 "shimu" (229590528)
+00:04:02.098 --> 00:04:13.481
+It should be fine. I don't know what happened, but I hope it's it's an easy fix. You could probably give that thing on the inside. You see that like box?
+
+42 "Hung, Louis" (4088636928)
+00:04:13.481 --> 00:04:15.785
+A lower Z index.
+
+43 "shimu" (229590528)
+00:04:15.785 --> 00:04:22.637
+Yeah, like this con this content. Oh, really? Have you tried giving it a lowers D index?
+
+44 "Hung, Louis" (4088636928)
+00:04:22.637 --> 00:04:55.674
+Nope, it should be should be this one this should be a right column, it should be this one was the index? I know cause what I did here for this CSS is I just used the main page CSS, so I don't know what's wrong. But that should be something something weird is probably happening. I don't know maybe Isaac can fix that because I'm not I didn't look into the app bar yet.
+
+45 "shimu" (229590528)
+00:04:55.674 --> 00:04:58.075
+That that could just be a bug that we fixed later.
+
+46 "Hung, Louis" (4088636928)
+00:04:58.075 --> 00:05:03.517
+Yeah, but like overall this leaderboard works and we just have to do like the CSS for the page.
+
+47 "shimu" (229590528)
+00:05:03.517 --> 00:05:04.830
+Yeah.
+
+48 "Hung, Louis" (4088636928)
+00:05:04.830 --> 00:05:20.785
+And that's basically it for me. Oh yeah, and another problem that I figured out. So if you want to grab, this is the use, so if we want to grab a gay, e.g..
+
+49 "shimu" (229590528)
+00:05:20.785 --> 00:05:22.106
+We have to.
+
+50 "Hung, Louis" (4088636928)
+00:05:22.106 --> 00:05:26.756
+Now the game ID.
+
+51 "shimu" (229590528)
+00:05:26.756 --> 00:05:42.728
+What is like the game ID formatted into? Like that? Yeah. Is it arbitrary or is this like, is there like a game that is the same number but last digit is four?
+
+52 "Hung, Louis" (4088636928)
+00:05:42.728 --> 00:05:51.970
+I don't know, I haven't tried the API call yet because I'm pretty sure this is the shell version. This is not the PHP version.
+
+53 "shimu" (229590528)
+00:05:51.970 --> 00:06:05.426
+This might be a problem, but usually there should be like a API that gives you like the most recent like ten games and you get game ID and you usually use the game ID to get like the game data.
+
+54 "Hung, Louis" (4088636928)
+00:06:05.426 --> 00:06:11.630
+Yeah? Or NO? No.
+
+55 "shimu" (229590528)
+00:06:11.630 --> 00:06:13.104
+Aha.
+
+56 "Hung, Louis" (4088636928)
+00:06:13.104 --> 00:06:37.689
+So, the thing that I wanted, like the, I guess replacement solution that I come up with is I found another API because this was rated I didn't share it yet, but you can see when I do daily schedule, ****, forgotten about this.
+
+57 "shimu" (229590528)
+00:06:37.689 --> 00:06:43.503
+Sport radar. Yeah.
+
+58 "Hung, Louis" (4088636928)
+00:06:43.503 --> 00:06:58.509
+If I do this, this is giving you like the dates and what games there are today and at home points or way points.
+
+59 "shimu" (229590528)
+00:06:58.509 --> 00:07:07.009
+Oh, ok. I think this is better because we should probably update the games every day. We should get like daily games and stuff.
+
+60 "Hung, Louis" (4088636928)
+00:07:07.009 --> 00:07:24.576
+Yeah, yeah, yeah. That's, so this is like, I don't know, some kind of replacement that I come up with, but I'm not cause this API only allows you to do I think 1000 or something like that per trial and per trial is like one month.
+
+61 "shimu" (229590528)
+00:07:24.576 --> 00:07:27.710
+Oh, what the ****? Okay, that's really, that's really low.
+
+62 "Hung, Louis" (4088636928)
+00:07:27.710 --> 00:07:31.649
+Yeah, yeah, yeah. So.
+
+63 "Hung, Louis" (4088636928)
+00:07:31.649 --> 00:07:51.649
+So we either use this, like, cause we all at least have like two emails. So we either use this with a lot of different free email accounts or we can just use this to call the daily schedules and then use that info to put in the Hoop data hub, which gives us.
+
+64 "Hung, Louis" (4088636928)
+00:07:51.649 --> 00:07:55.271
+It's a much longer trial and much more tries.
+
+65 "shimu" (229590528)
+00:07:55.271 --> 00:08:07.167
+The problem might be, the problem could be that data hub stores the data differently from the other API. We don't know if they'll interact with each other correctly.
+
+66 "Hung, Louis" (4088636928)
+00:08:07.167 --> 00:08:13.248
+Okay, but if the, if the name, if the name's the same, it's the same.
+
+67 "shimu" (229590528)
+00:08:13.248 --> 00:08:15.391
+Oh, I guess so, yeah.
+
+68 "Hung, Louis" (4088636928)
+00:08:15.391 --> 00:08:36.032
+Yeah, like if the team name appears the same, it's the same. And we don't really have to make them interact because this might only be for the prediction page. That doesn't have to be for the stats page. I don't know I'm just giving you ideas. Yeah.
+
+69 "shimu" (229590528)
+00:08:36.032 --> 00:08:41.055
+The thing is really weird. How are we supposed to get game ID?
+
+70 "Hung, Louis" (4088636928)
+00:08:41.055 --> 00:08:54.872
+Oh, yeah, NO, that's my question because I was looking over it today at.
+
+71 "shimu" (229590528)
+00:08:54.872 --> 00:09:02.233
+But for all these games, for all these like other calls you do need game ID.
+
+72 "Hung, Louis" (4088636928)
+00:09:02.233 --> 00:09:22.441
+Yeah, like to get a game you need the game ID, but you don't know what's the game ID at the 1st point, so it's making really weird, so we can either just go in, we can just go into this quarter and ask for help or we can, I don't know, use the sports radar API.
+
+73 "shimu" (229590528)
+00:09:22.441 --> 00:09:36.509
+Yeah. Oh wait, can I let me find, let me try to see something.
+
+74 "shimu" (229590528)
+00:09:57.539 --> 00:10:11.814
+Yeah, actually I don't I just I was just going through it this whole day.
+
+75 "Hung, Louis" (4088636928)
+00:10:11.814 --> 00:10:27.982
+Yeah, I, I went for multiple times, I don't see the MIDs anywhere.
+
+76 "shimu" (229590528)
+00:10:27.982 --> 00:10:33.896
+Do you have an API right now? Do you have the API or authorization?
+
+77 "Hung, Louis" (4088636928)
+00:10:33.896 --> 00:10:38.531
+Thing? Oh NO, I didn't I didn't do any API stuff. Yeah.
+
+78 "shimu" (229590528)
+00:10:38.531 --> 00:10:57.393
+Let me try something Alright, how do you get your authorization key? Oh, it's right here.
+
+79 "Hung, Louis" (4088636928)
+00:10:57.393 --> 00:10:59.177
+Book data hub?
+
+80 "shimu" (229590528)
+00:10:59.177 --> 00:11:21.269
+Yeah, let me let me try to access it just to see what it looks like. Yeah, yeah, we do need to do that.
+
+81 "shimu" (229590528)
+00:11:21.269 --> 00:11:36.269
+Oh, I need my laptop because Windows can't do this apparently.
+
+82 "shimu" (229590528)
+00:11:36.269 --> 00:11:55.199
+Okay data hub.
+
+83 "shimu" (229590528)
+00:12:29.119 --> 00:12:32.211
+When you gotta go, by the way?
+
+84 "Hung, Louis" (4088636928)
+00:12:32.211 --> 00:12:37.128
+When my roommate come back.
+
+85 "shimu" (229590528)
+00:12:37.128 --> 00:12:39.272
+Okay.
+
+86 "Hung, Louis" (4088636928)
+00:12:39.272 --> 00:12:40.433
+So.
+
+87 "shimu" (229590528)
+00:12:40.433 --> 00:12:57.649
+I might have to go in like 5 min, so I'll just try this out real quick and if it works, it works.
+
+88 "Hung, Louis" (4088636928)
+00:12:57.649 --> 00:13:09.554
+I mean if it doesn't work, we'll always have the other things for replacement.
+
+89 "shimu" (229590528)
+00:13:09.554 --> 00:13:21.532
+Game ID parameters required, ok? Yeah, I don't know there's NO way they expected the users without knowing what the game ID is.
+
+90 "Hung, Louis" (4088636928)
+00:13:21.532 --> 00:13:31.358
+Yeah, cause usually there, they will give you like the games I don't know, access the way through the parameters of the game ID.
+
+91 "shimu" (229590528)
+00:13:31.358 --> 00:13:38.515
+Yeah, there should be should be like the API call that gives you the game IDs.
+
+92 "Hung, Louis" (4088636928)
+00:13:38.515 --> 00:13:46.361
+Yeah, but I don't see it in here so that's what makes me frustrated, I guess.
+
+93 "shimu" (229590528)
+00:13:46.361 --> 00:13:55.079
+Maybe the players have a list of IDs, scheme IDs? No. Oh, there's a team ID.
+
+94 "Hung, Louis" (4088636928)
+00:13:55.079 --> 00:13:59.720
+Yeah, but team ID, I don't think it correlates with the game ID.
+
+95 "shimu" (229590528)
+00:13:59.720 --> 00:14:28.915
+Yep, you're right. That doesn't give you anything.
+
+96 "Hung, Louis" (4088636928)
+00:14:28.915 --> 00:14:39.077
+Well.
+
+97 "Hung, Louis" (4088636928)
+00:14:41.339 --> 00:14:45.241
+Yeah, this is a problem that we should probably fix.
+
+98 "shimu" (229590528)
+00:14:45.241 --> 00:14:59.735
+I, this is so weird man.
+
+99 "Hung, Louis" (4088636928)
+00:14:59.735 --> 00:15:19.027
+I really don't know how to do this. Yeah.
+
+100 "shimu" (229590528)
+00:15:19.027 --> 00:15:24.078
+How does the rest of these need a game with you?
+
+101 "Hung, Louis" (4088636928)
+00:15:24.078 --> 00:15:25.580
+Sorry?
+
+102 "shimu" (229590528)
+00:15:25.580 --> 00:15:31.080
+The rest of the APIs need a game ID. It just doesn't have a way to give you.
+
+103 "Hung, Louis" (4088636928)
+00:15:31.080 --> 00:15:33.004
+That's only this one.
+
+104 "shimu" (229590528)
+00:15:33.004 --> 00:15:43.175
+No, NO, I meant like maybe see the like all time and event stats, videos, they require like a game ID for it to function.
+
+105 "Hung, Louis" (4088636928)
+00:15:43.175 --> 00:15:45.626
+Oh, we can't use that.
+
+106 "shimu" (229590528)
+00:15:45.626 --> 00:15:48.557
+Oh, the one was started.
+
+107 "Hung, Louis" (4088636928)
+00:15:48.557 --> 00:15:54.438
+That's prime is pre it's premium? That's crazy again.
+
+108 "shimu" (229590528)
+00:15:54.438 --> 00:15:59.615
+Bro that's crazy. All right. No other sure.
+
+109 "Hung, Louis" (4088636928)
+00:15:59.615 --> 00:16:01.357
+Yeah, sure we met.
+
+110 "Hung, Louis" (4088636928)
+00:16:04.398 --> 00:16:08.346
+I think it would be better off using the the reschedule of this one.
+
+111 "shimu" (229590528)
+00:16:08.346 --> 00:16:11.120
+Yeah, we should probably find your API.
+
+112 "Hung, Louis" (4088636928)
+00:16:11.120 --> 00:16:22.423
+Yeah, I mean I'll send it in the group chat 1st for now just so everyone get access to it.
+
+113 "izik" (483486976)
+00:16:22.423 --> 00:16:27.339
+Is it just for basketball or is it at all the sports?
+
+114 "Hung, Louis" (4088636928)
+00:16:27.339 --> 00:16:32.060
+I'm pretty sure it's for all the sports. Yeah sweet.
+
+115 "izik" (483486976)
+00:16:32.060 --> 00:16:35.259
+We can even expand if we, we want.
+
+116 "Hung, Louis" (4088636928)
+00:16:35.259 --> 00:16:38.881
+Now we can put in our presentation that there's more room to expand.
+
+117 "izik" (483486976)
+00:16:38.881 --> 00:16:42.295
+Yeah, yeah, yeah, yeah, yeah, yeah.
+
+118 "Hung, Louis" (4088636928)
+00:16:42.295 --> 00:16:58.516
+But this, this only gives you like one month with 1000 calls for each free trial, so we'll have to switch our emails up.
+
+119 "izik" (483486976)
+00:16:58.516 --> 00:17:19.677
+****, forgot about homework. Oh NO.
+
+120 "shimu" (229590528)
+00:17:28.083 --> 00:17:32.215
+They expect people to pay for this when it doesn't work. Well.
+
+121 "shimu" (229590528)
+00:17:38.524 --> 00:17:45.816
+I'm trying to join a discourse one that says the employee expired, expired.
+
+122 "Hung, Louis" (4088636928)
+00:17:45.816 --> 00:17:54.243
+Oh my god.
+
+123 "shimu" (229590528)
+00:17:54.243 --> 00:18:03.955
+This thing is so expensive as well. 0.0 $0.05 per request, but that's like the open AI API.
+
+124 "Hung, Louis" (4088636928)
+00:18:03.955 --> 00:18:08.534
+I don't think you'd even need to pay for the open air API.
+
+125 "shimu" (229590528)
+00:18:08.534 --> 00:18:12.694
+Like to use the API you pay like couples today.
+
+126 "Hung, Louis" (4088636928)
+00:18:12.694 --> 00:18:27.860
+Oh, really? Wait, NO. I called the API like, I called it through, what's called again? There's an automation thing that I called the open AI API through and it doesn't cost me anything.
+
+127 "shimu" (229590528)
+00:18:27.860 --> 00:18:28.919
+I really.
+
+128 "Hung, Louis" (4088636928)
+00:18:28.919 --> 00:18:46.042
+Yeah, I did that like, I don't know, two, two or three months ago and didn't cost me anything or it just might be the company the company I'm interning have like supreme membership to everything.
+
+129 "shimu" (229590528)
+00:18:46.042 --> 00:18:48.158
+Maybe they have some credit maybe.
+
+130 "shimu" (229590528)
+00:18:48.797 --> 00:19:01.089
+Yeah but I remember when I 1st used like the GPT three API I had to pay like a couple cents per use per call basically. Oh, yeah.
+
+131 "Hung, Louis" (4088636928)
+00:19:01.089 --> 00:19:10.273
+Makes sense though.
+
+132 "shimu" (229590528)
+00:19:10.273 --> 00:19:22.352
+Yeah, we should probably find a new MBA if that, if the one if we ok so sport radar is good, it looks good but low usage.
+
+133 "Hung, Louis" (4088636928)
+00:19:22.352 --> 00:19:41.929
+I mean one is the same as the data hub. Yeah cause it's it's just like per it's just one month. So like we just have to replace, make a new account with the email. Well, we at least have two emails, so we just have to make a new account.
+
+134 "shimu" (229590528)
+00:19:41.929 --> 00:19:49.150
+At this point, yeah, which is put like ten different emails ten K usage.
+
+135 "Hung, Louis" (4088636928)
+00:19:49.150 --> 00:19:54.728
+Yeah, and there's only two months left, so I I think it will work.
+
+136 "shimu" (229590528)
+00:19:54.728 --> 00:19:59.373
+You know like the day before presentation, we just make a new account.
+
+137 "Hung, Louis" (4088636928)
+00:19:59.373 --> 00:20:01.515
+Yeah.
+
+138 "shimu" (229590528)
+00:20:01.515 --> 00:20:15.850
+Okay, I think we should use sport radar because I was just checking it out and this seems pretty good. Most important thing is you could get the games being played in one day.
+
+139 "Hung, Louis" (4088636928)
+00:20:15.850 --> 00:20:19.750
+Yeah, that's like one of the crucial things that we.
+
+140 "shimu" (229590528)
+00:20:19.750 --> 00:20:22.827
+Actually yeah that that's one thing we have to support.
+
+141 "Hung, Louis" (4088636928)
+00:20:22.827 --> 00:20:29.131
+Yeah. Okay, I guess we're good then.
+
+142 "shimu" (229590528)
+00:20:29.131 --> 00:20:33.892
+Yeah, and I do have to go so do you guys wanna have a meeting?
+
+143 "Hung, Louis" (4088636928)
+00:20:33.892 --> 00:20:37.517
+Yeah, I'll just end the meeting. Sure.
+
+144 "shimu" (229590528)
+00:20:37.517 --> 00:20:40.450
+Thank you. Alright, see you. See you.
+
+145 "izik" (483486976)
+00:20:40.450 --> 00:20:42.504
+Yeah, so.

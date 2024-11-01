@@ -1,0 +1,1701 @@
+WEBVTT
+
+1 "Shimu" (1631432192)
+00:00:02.410 --> 00:00:22.329
+So I have done the login to sign up and log out. Let me share my screen to show you how it works. Okay, nice. Using sessions is actually easier than what I remembered it to be.
+
+2 "Hung, Louis" (2427235584)
+00:00:22.329 --> 00:00:25.531
+Oh, so you ended up using session sort of cookies.
+
+3 "Shimu" (1631432192)
+00:00:25.531 --> 00:00:32.067
+Yeah, yeah, because literally I was reading some documentation it was like literally just type in session start.
+
+4 "Shimu" (1631432192)
+00:00:34.050 --> 00:00:38.303
+It'll start working, and that's basically what happened.
+
+5 "Hung, Louis" (2427235584)
+00:00:38.303 --> 00:00:40.714
+What are you looking at?
+
+6 "Shimu" (1631432192)
+00:00:40.714 --> 00:00:41.686
+The.
+
+7 "Hung, Louis" (2427235584)
+00:00:41.686 --> 00:00:44.971
+Is this?
+
+8 "Shimu" (1631432192)
+00:00:44.971 --> 00:00:50.365
+Yeah, some, some webpages might be still broken because.
+
+9 "Hung, Louis" (2427235584)
+00:00:50.365 --> 00:00:52.931
+Oh wait, yeah.
+
+10 "Shimu" (1631432192)
+00:00:52.931 --> 00:01:20.227
+Yeah, so I've converted all the files to PHP, meaning that like some of the I might miss some like things where I'm not including the nav bar correctly should work. Yeah, we can fix that later. Yeah, so now I have dynamically updated the leader the the map bar. So when you log in, it'll show your name and it won't show login, logout or sign up, whatever. It'll only show logout.
+
+11 "Hung, Louis" (2427235584)
+00:01:20.227 --> 00:01:23.333
+Let's log out here.
+
+12 "Shimu" (1631432192)
+00:01:23.333 --> 00:01:38.045
+It's trying to make a new account with sign in, so it would be profile now with login sign up. Let's do like test user emails arbitrary, we don't really, we're not gonna make them like very.
+
+13 "Hung, Louis" (2427235584)
+00:01:38.045 --> 00:01:42.729
+We're not gonna yeah. But that verification sounds really good though.
+
+14 "Shimu" (1631432192)
+00:01:42.729 --> 00:01:51.326
+Yeah, it sounds cool, but we're probably gonna have to use like a separate API for it, but we could have, we'll implemented if.
+
+15 "Hung, Louis" (2427235584)
+00:01:51.326 --> 00:02:01.249
+I mean we can just use it right? We can just do anything right now and like if we have time we have time but yeah so.
+
+16 "Shimu" (1631432192)
+00:02:01.249 --> 00:02:10.368
+That makes a new entry in the database. So this guy oh it also also encodes the password.
+
+17 "Hung, Louis" (2427235584)
+00:02:10.368 --> 00:02:12.090
+Oh, you have like a.
+
+18 "Shimu" (1631432192)
+00:02:12.090 --> 00:02:30.630
+Yeah, it has a built in functional yeah so NO just PHP. They literally have a built in let me see, it's like, it was all good, it was like it literally has password, it was like, password_hash.
+
+19 "Shimu" (1631432192)
+00:02:30.630 --> 00:02:48.729
+That's like a whole function to hash it. And you just you just unhash it when you when you log in. So let's log in with the test person ok so now you logged in, go to work.
+
+20 "Shimu" (1631432192)
+00:02:49.630 --> 00:03:06.746
+Just Refresh the page if you're still logged in, just like hop around to statistics. Oh, I didn't I don't have it pulled yet. So I can only go to like, like, I don't know, another page here.
+
+21 "Hung, Louis" (2427235584)
+00:03:06.746 --> 00:03:12.032
+Okay is generally not working.
+
+22 "Shimu" (1631432192)
+00:03:12.032 --> 00:03:17.265
+It is working. I just didn't pull the new changes that we did on Friday.
+
+23 "Hung, Louis" (2427235584)
+00:03:17.265 --> 00:03:18.125
+Ah.
+
+24 "Shimu" (1631432192)
+00:03:18.125 --> 00:03:22.866
+Ah ok because I I my branch is like couple commits behind.
+
+25 "Hung, Louis" (2427235584)
+00:03:22.866 --> 00:03:25.568
+No, it's ok. Your hard will.
+
+26 "Shimu" (1631432192)
+00:03:25.568 --> 00:03:37.165
+It's actually a lot of behind, but that's what I've been working on. I'll try to fix the cu like the mergers by today. Maybe we could just do it in the meeting.
+
+27 "Hung, Louis" (2427235584)
+00:03:37.165 --> 00:03:47.609
+Yeah, but yeah I'm actually down to just keep a napart like this, to be honest.
+
+28 "Shimu" (1631432192)
+00:03:47.609 --> 00:03:49.147
+Yeah, I think it's cool.
+
+29 "Hung, Louis" (2427235584)
+00:03:49.147 --> 00:03:56.566
+Yeah, like if you think it's too annoying to fix, I think keep keeping it this way is honestly idea.
+
+30 "Shimu" (1631432192)
+00:03:56.566 --> 00:04:06.066
+No, I'm just saying not for not for our work, I just did something extra that made a break. So like.
+
+31 "Hung, Louis" (2427235584)
+00:04:06.066 --> 00:04:17.566
+I mean like I mean like you hide the function where you hide home statistic prediction, yeah. Like I kind of like just having like this on the top.
+
+32 "Shimu" (1631432192)
+00:04:17.566 --> 00:04:19.190
+Yeah, it might be because.
+
+33 "Hung, Louis" (2427235584)
+00:04:19.190 --> 00:04:25.532
+Oh, you're not smaller screen, so automatically.
+
+34 "Shimu" (1631432192)
+00:04:25.532 --> 00:04:28.765
+I mean honestly if you prefer it to be like this I think.
+
+35 "Hung, Louis" (2427235584)
+00:04:28.765 --> 00:04:32.005
+But I guess it's a bootstrap function.
+
+36 "Shimu" (1631432192)
+00:04:32.005 --> 00:04:37.290
+Yeah, yeah, it's some bootstrap stuff. Okay, yeah.
+
+37 "Hung, Louis" (2427235584)
+00:04:37.290 --> 00:04:52.234
+I mean everything works now, so array, let's do get pull order main and let's see what happens. Oh yeah, can you also like Can you share the xamp database?
+
+38 "Hung, Louis" (2427235584)
+00:04:53.766 --> 00:05:00.271
+You can like download a copy of the database? Because I want I kind of wanted to start with the profile page.
+
+39 "Shimu" (1631432192)
+00:05:00.271 --> 00:05:03.404
+Yeah for sure. I just gotta remember how to do it.
+
+40 "Hung, Louis" (2427235584)
+00:05:03.404 --> 00:05:07.108
+Export I think.
+
+41 "Shimu" (1631432192)
+00:05:07.108 --> 00:05:21.805
+Export equal I don't think this matters ok.
+
+42 "Hung, Louis" (2427235584)
+00:05:21.805 --> 00:05:31.576
+Yep and just like put in the, put in this quote or GitHub and it should work. Yep.
+
+43 "Shimu" (1631432192)
+00:05:31.576 --> 00:05:34.406
+Alright, let me see how much mergers they have.
+
+44 "Shimu" (1631432192)
+00:05:35.953 --> 00:05:46.669
+Holy **** bro. 7000 row? Oh my god. Yeah anyways let me just send this underscored.
+
+45 "Hung, Louis" (2427235584)
+00:05:46.669 --> 00:05:54.613
+Yeah, because I want to get started on the PHP part or not not like user data part.
+
+46 "Shimu" (1631432192)
+00:05:54.613 --> 00:05:57.127
+Like like a profile page, right?
+
+47 "Hung, Louis" (2427235584)
+00:05:57.127 --> 00:06:13.712
+Yeah. Okay. Yeah, yeah, yeah. Cause I currently have, I currently have dummy data for it and it's basically just player name, score, correct, wrongs, and then a profile pick.
+
+48 "Shimu" (1631432192)
+00:06:13.712 --> 00:06:23.306
+Oh, I see. Okay, so right now my guy only has, we only have username password points row in.
+
+49 "Hung, Louis" (2427235584)
+00:06:23.306 --> 00:06:26.286
+Email. Yeah, I mean we can we can just we can always add some.
+
+50 "Shimu" (1631432192)
+00:06:26.286 --> 00:06:29.068
+Yeah, I could always ask them, which one are you thinking about him.
+
+51 "Hung, Louis" (2427235584)
+00:06:29.068 --> 00:06:41.792
+I'm, what I currently have on for the leaderboard page to run is scores number one. So that's points. And I have rounds correct, rounds wrong.
+
+52 "Shimu" (1631432192)
+00:06:41.792 --> 00:06:43.852
+Oh, like that.
+
+53 "Hung, Louis" (2427235584)
+00:06:43.852 --> 00:06:47.654
+So far, right? Yeah. Like that's like a basic stats.
+
+54 "Shimu" (1631432192)
+00:06:47.654 --> 00:06:49.474
+I see, so like wind.
+
+55 "Hung, Louis" (2427235584)
+00:06:49.474 --> 00:07:02.733
+Yeah, yeah, yeah, yeah, yeah, yeah. And then that's for like the what's it called again? That's for like the wind ratio or like the correct percentage and then I have a profile pick that I want to do like a profile pick selection.
+
+56 "Shimu" (1631432192)
+00:07:02.733 --> 00:07:10.154
+I see, I see. Okay, I'll add them right now and just send the new update.
+
+57 "Hung, Louis" (2427235584)
+00:07:10.154 --> 00:07:15.774
+I guess it's fine if it didn't add it because I'll have to do it anyways.
+
+58 "Shimu" (1631432192)
+00:07:15.774 --> 00:07:18.115
+I mean that's true, yeah. You can just do install.
+
+59 "Hung, Louis" (2427235584)
+00:07:18.115 --> 00:07:23.532
+And update it when yeah yeah yeah ok.
+
+60 "Shimu" (1631432192)
+00:07:23.532 --> 00:07:30.573
+What else do we have to work on? Or what is like our next big milestone?
+
+61 "Hung, Louis" (2427235584)
+00:07:30.573 --> 00:07:36.135
+I guess API data's API data. Yep.
+
+62 "Shimu" (1631432192)
+00:07:36.135 --> 00:07:39.231
+Oh, for like, the thing.
+
+63 "Hung, Louis" (2427235584)
+00:07:39.231 --> 00:07:53.233
+For MBA MBA data. Cause currently, I think all of our HTML pages are basically done.
+
+64 "Shimu" (1631432192)
+00:07:53.233 --> 00:07:54.914
+Does this work?
+
+65 "Hung, Louis" (2427235584)
+00:07:54.914 --> 00:08:05.414
+Isn't there like a stats page, stats pool? Like I saw someone changed this page.
+
+66 "Shimu" (1631432192)
+00:08:05.414 --> 00:08:07.653
+I don't know I'm trying to feel amazing.
+
+67 "Hung, Louis" (2427235584)
+00:08:07.653 --> 00:08:14.700
+But he committed.
+
+68 "Shimu" (1631432192)
+00:08:14.700 --> 00:08:20.613
+Here you go, I didn't I didn't approve it. It's probably this, right?
+
+69 "Hung, Louis" (2427235584)
+00:08:20.613 --> 00:08:24.399
+Probably, yeah.
+
+70 "Shimu" (1631432192)
+00:08:24.399 --> 00:08:26.474
+I'll check that out later.
+
+71 "Hung, Louis" (2427235584)
+00:08:26.474 --> 00:08:34.522
+I merged one of them and there's a, Yeah, there's one by Isaac.
+
+72 "Hung, Louis" (2427235584)
+00:08:35.793 --> 00:08:45.652
+Yeah, so I I didn't have any work on from yesterday to today, but.
+
+73 "Shimu" (1631432192)
+00:08:45.652 --> 00:08:47.900
+I will I will.
+
+74 "Hung, Louis" (2427235584)
+00:08:47.900 --> 00:09:14.612
+Work on like the profile page and I'll make sure that it looks something similar to the wireframe. The wireframe is also yeah yeah and I kind of want to start pushing like what's what's he called again? Yeah. He didn't do anything now.
+
+75 "Shimu" (1631432192)
+00:09:14.612 --> 00:09:21.993
+That is true. Does, did he ever say what he wanted to do like back end front end API?
+
+76 "Hung, Louis" (2427235584)
+00:09:21.993 --> 00:09:23.383
+Anything? Nope.
+
+77 "Shimu" (1631432192)
+00:09:23.383 --> 00:09:28.595
+I don't I don't think he was here for for most of the meetings to be honest.
+
+78 "Hung, Louis" (2427235584)
+00:09:28.595 --> 00:09:43.606
+I don't think he was here, like, Yeah, I don't think he was here, so, I don't know. He sounds, he sounds like he's gonna do CSS and the class presentation.
+
+79 "Shimu" (1631432192)
+00:09:43.606 --> 00:09:46.007
+I mean that's trivial.
+
+80 "Hung, Louis" (2427235584)
+00:09:46.007 --> 00:10:04.949
+That's just, yeah, that's just bullshit that's yeah that's stuff honestly yeah but I don't know. I I don't think you'll want to figure out APIs. Yeah.
+
+81 "Shimu" (1631432192)
+00:10:08.449 --> 00:10:11.824
+Okay, I got the merge.
+
+82 "Hung, Louis" (2427235584)
+00:10:11.824 --> 00:10:14.209
+You're.
+
+83 "Shimu" (1631432192)
+00:10:14.209 --> 00:10:31.853
+The one thing though, so actually it should be why my five commits behind me.
+
+84 "Hung, Louis" (2427235584)
+00:10:31.853 --> 00:10:35.176
+Oh yeah, it's very possible your five commits behind me.
+
+85 "Shimu" (1631432192)
+00:10:35.176 --> 00:10:42.531
+I thought I fixed that I'm still behind. Okay.
+
+86 "Hung, Louis" (2427235584)
+00:10:42.531 --> 00:10:57.572
+Four commits ahead of five commits behind main. Oh my god.
+
+87 "Shimu" (1631432192)
+00:10:57.572 --> 00:11:06.505
+Yeah, it's a ******* mess right now. Maybe we, maybe we should have started with PHP, maybe.
+
+88 "Hung, Louis" (2427235584)
+00:11:06.505 --> 00:11:08.381
+Start web PhP.
+
+89 "Shimu" (1631432192)
+00:11:08.381 --> 00:11:12.639
+Start started with just straight up BHP.
+
+90 "Hung, Louis" (2427235584)
+00:11:12.639 --> 00:11:16.126
+Yeah, of course we should do it from BHP.
+
+91 "Shimu" (1631432192)
+00:11:16.126 --> 00:11:21.700
+Because we were starting like we eventually had to migrate to PHP.
+
+92 "Hung, Louis" (2427235584)
+00:11:21.700 --> 00:11:31.253
+Yeah, anyways? Oh, ok. I think I fixed it. Five commits ahead of me.
+
+93 "Shimu" (1631432192)
+00:11:31.253 --> 00:11:45.689
+That's good. That means I'm caught up with main, so if you look at like leaderboard, it's all PHP files, you have index.PHP, and you have exam, right?
+
+94 "Hung, Louis" (2427235584)
+00:11:45.689 --> 00:11:48.250
+I do, yeah. Alright nice.
+
+95 "Shimu" (1631432192)
+00:11:48.250 --> 00:11:54.547
+And this is what I meant by header breaking. I made header into like a react component.
+
+96 "Hung, Louis" (2427235584)
+00:11:54.547 --> 00:11:58.027
+So the.
+
+97 "Shimu" (1631432192)
+00:11:58.027 --> 00:12:06.127
+Yeah, so it's like it's basically you could think of as a react component, you could you just paste it like this. Otherwise, every file had like this ******* big.
+
+98 "Hung, Louis" (2427235584)
+00:12:06.127 --> 00:12:08.587
+Apply the code. Yeah.
+
+99 "Shimu" (1631432192)
+00:12:08.587 --> 00:12:16.047
+But Yeah, so that also helped me lo like make logout and stuff easier as well.
+
+100 "Hung, Louis" (2427235584)
+00:12:16.047 --> 00:12:18.709
+Yeah, we definitely need that.
+
+101 "Hung, Louis" (2427235584)
+00:12:18.709 --> 00:12:27.449
+I just didn't remember how to do it from intro. I cause I remember we had to do it, but I 1st forgot how to do it.
+
+102 "Shimu" (1631432192)
+00:12:27.449 --> 00:12:33.648
+I had to like go I had to do so much documentation work on PHP because I literally forgot every.
+
+103 "Hung, Louis" (2427235584)
+00:12:33.648 --> 00:12:41.268
+Being about BHP. Yeah, literally four years ago. Exactly rob.
+
+104 "Shimu" (1631432192)
+00:12:41.268 --> 00:12:45.108
+Where is not part located by the way?
+
+105 "Hung, Louis" (2427235584)
+00:12:45.108 --> 00:12:48.473
+I don't know. You tell me who changed it?
+
+106 "Shimu" (1631432192)
+00:12:48.473 --> 00:13:00.965
+I forgot. Oh, it's ok. Yeah, yeah, yeah. So this is the so far, so like just imagine this like 50 lines of code pasted everywhere.
+
+107 "Hung, Louis" (2427235584)
+00:13:00.965 --> 00:13:05.447
+Oh, such easier. Yeah that makes it much eas.
+
+108 "Shimu" (1631432192)
+00:13:05.447 --> 00:13:09.486
+Like how sessions like how easy session is, but I literally just type session.
+
+109 "Hung, Louis" (2427235584)
+00:13:09.486 --> 00:13:12.047
+But that's that's just like five lines, the ****?
+
+110 "Shimu" (1631432192)
+00:13:12.047 --> 00:13:28.088
+Yeah, I just do session start and this is for logout, so you don't have to worry about this. And at once I have session set, right? They have basically the session things inside these variables. Like these are basically php's global variables where you can use.
+
+111 "Hung, Louis" (2427235584)
+00:13:28.088 --> 00:13:29.905
+You can just quote user ID here.
+
+112 "Shimu" (1631432192)
+00:13:29.905 --> 00:13:37.927
+Yeah, like user ID, username to get like the the user information basically after you log in.
+
+113 "Hung, Louis" (2427235584)
+00:13:37.927 --> 00:13:40.789
+Oh, and it's like phpfls O.
+
+114 "Shimu" (1631432192)
+00:13:40.789 --> 00:13:48.048
+Oh, that's yeah yeah and this is global variables so you can use it everywhere. And yeah, fls.
+
+115 "Hung, Louis" (2427235584)
+00:13:48.048 --> 00:13:51.988
+****! Okay, so sessions is really easy.
+
+116 "Shimu" (1631432192)
+00:13:51.988 --> 00:14:07.667
+Yeah, it is really easy, I was gonna do cookies, but I'm like how am I supposed to do cookies for PHP? So I was like NO add some pictures though. It'll make everyone's life easier.
+
+117 "Hung, Louis" (2427235584)
+00:14:07.667 --> 00:14:20.469
+Pictures you mean for a main page or oh, just like oh oh just yeah Honestly, we're not really reading the.
+
+118 "Shimu" (1631432192)
+00:14:20.469 --> 00:14:38.969
+Yeah, I will If I have time I will like go through your branching ship, but I'm too lazy these days wanna Sometimes too lazy I don't even wanna, like, go into page.
+
+119 "Shimu" (1631432192)
+00:14:38.969 --> 00:15:00.048
+Oh, I also gotta make it so I'm pretty sure right now when you're logged in, you could still visit the logged in page, which is not normal, think it's something like this.
+
+120 "Hung, Louis" (2427235584)
+00:15:00.048 --> 00:15:02.605
+Oh, nope.
+
+121 "Shimu" (1631432192)
+00:15:02.605 --> 00:15:12.324
+Off/login/login.BHP. Yeah, you can ok you can still visit login when you're.
+
+122 "Hung, Louis" (2427235584)
+00:15:12.324 --> 00:15:16.312
+I mean, if you don't provide a link to it, NO one would go there.
+
+123 "Shimu" (1631432192)
+00:15:16.312 --> 00:15:18.090
+I mean, I lost it.
+
+124 "Hung, Louis" (2427235584)
+00:15:18.090 --> 00:15:20.489
+Except for.
+
+125 "Shimu" (1631432192)
+00:15:20.489 --> 00:15:27.605
+I'll like like open a bug report or something, we can fix that later. Yeah.
+
+126 "Hung, Louis" (2427235584)
+00:15:27.605 --> 00:15:32.586
+So can we like change something on the projects part?
+
+127 "Shimu" (1631432192)
+00:15:32.586 --> 00:15:33.389
+Okay.
+
+128 "Hung, Louis" (2427235584)
+00:15:33.389 --> 00:15:44.315
+What do you mean? Oh yeah, we can.
+
+129 "Shimu" (1631432192)
+00:15:44.315 --> 00:15:53.047
+Okay. Luckily the merge mergers weren't that hard luckily.
+
+130 "Hung, Louis" (2427235584)
+00:15:53.047 --> 00:15:56.208
+Luckily, yeah. Yeah, I just had.
+
+131 "Shimu" (1631432192)
+00:15:56.208 --> 00:16:06.268
+To delete a bunch of files. Alright cool. What are we gonna work on next? So you're working on profile.
+
+132 "Hung, Louis" (2427235584)
+00:16:06.268 --> 00:16:24.426
+Yeah, I'm I'm adding it in in the project page. I'm gonna add some to do ok let me, how did I add the add item, ok. One is the profile page?
+
+133 "Shimu" (1631432192)
+00:16:24.426 --> 00:16:27.348
+We should do something about this main page here.
+
+134 "Shimu" (1631432192)
+00:16:30.684 --> 00:16:44.505
+Yeah game data's inside over here. Yeah, we should put like the games happening today at this area. So we need like the like my prediction page.
+
+135 "Hung, Louis" (2427235584)
+00:16:44.505 --> 00:16:47.685
+Right, just like shrink it and put it inside.
+
+136 "Shimu" (1631432192)
+00:16:47.685 --> 00:16:48.880
+Our prediction.
+
+137 "Hung, Louis" (2427235584)
+00:16:48.880 --> 00:17:00.003
+Try visit like the prediction page that we did before or do you have it on your thing? You don't have it on your yeah you don't have it on your branch.
+
+138 "Shimu" (1631432192)
+00:17:00.003 --> 00:17:15.865
+We should have a way to start it's a new push, so.
+
+139 "Hung, Louis" (2427235584)
+00:17:15.865 --> 00:17:19.747
+Yeah, thus.
+
+140 "Shimu" (1631432192)
+00:17:19.747 --> 00:17:33.760
+Predictions.HTML. Oh, ok, let me just link it to the quick then how did GitHub not catch this? Oh, right, it's because I made it header.PHP.
+
+141 "Hung, Louis" (2427235584)
+00:17:33.760 --> 00:17:38.423
+It's a whole new. I see, I see.
+
+142 "Shimu" (1631432192)
+00:17:38.423 --> 00:17:51.164
+Do we have the statistics page?
+
+143 "Hung, Louis" (2427235584)
+00:17:51.164 --> 00:18:10.302
+I think we do, but it's like a very, a very brief one because we currently did not pull any API data. That's fine.
+
+144 "Shimu" (1631432192)
+00:18:10.302 --> 00:18:16.186
+Productions, productions. Do these naming is like so weird.
+
+145 "Shimu" (1631432192)
+00:18:17.624 --> 00:18:26.261
+So the HTML and statistics is called index.HTML and the one in predictions is called prediction.HTML.
+
+146 "Hung, Louis" (2427235584)
+00:18:26.261 --> 00:18:37.008
+I mean I named the prediction and Joshua named the statistics. Oh yeah, like this. Yeah. So I think we should basically put this into.
+
+147 "Shimu" (1631432192)
+00:18:37.008 --> 00:18:40.921
+Oh, like, the main page.
+
+148 "Hung, Louis" (2427235584)
+00:18:40.921 --> 00:18:51.090
+Yeah, yeah, yeah, yeah. Oh ****, what the ****? Is it not working? Oh, got it. Oh, maybe oh it's absolute I think.
+
+149 "Shimu" (1631432192)
+00:18:51.090 --> 00:19:15.347
+Yeah, we we gotta give that time for like a r Z index or something Okay so we put like like a small version of predictions here.
+
+150 "Hung, Louis" (2427235584)
+00:19:15.347 --> 00:19:17.368
+Yeah, that's what I'm thinking.
+
+151 "Shimu" (1631432192)
+00:19:17.368 --> 00:19:23.640
+Yeah, and I also want to put like games happening today, returned from my API, like all the way down.
+
+152 "Hung, Louis" (2427235584)
+00:19:23.640 --> 00:19:25.949
+Here. That's just the prediction, NO?
+
+153 "Shimu" (1631432192)
+00:19:25.949 --> 00:19:36.462
+No it could be like upcoming games right here or will that be included in predictions?
+
+154 "Hung, Louis" (2427235584)
+00:19:36.462 --> 00:20:04.782
+Right cause like the prediction page right now is not really the prediction, it's just like the games that you can bet on, but they're like, and I want to do like so if you click into that thing, it will show the games that you can bet on and like the details. So, oh, I see. So you have like a separate page for the game? Yeah, that's what I want to do, but I didn't I didn't do that yet.
+
+155 "Shimu" (1631432192)
+00:20:04.782 --> 00:20:11.981
+Okay, I mean, I still gotta know how the API works well.
+
+156 "Hung, Louis" (2427235584)
+00:20:11.981 --> 00:20:17.490
+The API is relatively easy, I think. At least the sports radar looks easy.
+
+157 "Shimu" (1631432192)
+00:20:17.490 --> 00:20:21.264
+Yeah, sports radar is good, but I just don't know how to use the other one.
+
+158 "Hung, Louis" (2427235584)
+00:20:21.264 --> 00:20:24.344
+Okay don't.
+
+159 "Shimu" (1631432192)
+00:20:24.344 --> 00:20:27.004
+I don't know I don't I don't like.
+
+160 "Shimu" (1631432192)
+00:20:27.004 --> 00:20:32.107
+Yeah, I mean it's good, but I don't want to use it. They don't have any documentation as well.
+
+161 "Hung, Louis" (2427235584)
+00:20:32.107 --> 00:20:38.794
+Yeah, and do have like PHP API call documentations.
+
+162 "Shimu" (1631432192)
+00:20:38.794 --> 00:20:41.873
+Yeah, yeah, I saw it like it gives you the.
+
+163 "Hung, Louis" (2427235584)
+00:20:41.873 --> 00:20:50.349
+Yeah, I just give you the code and you just copy and paste. I think that's really nice. Yeah.
+
+164 "Shimu" (1631432192)
+00:20:50.349 --> 00:20:59.009
+I guess that's it. Oh, when you make profile page, link these players to the profile.
+
+165 "Shimu" (1631432192)
+00:20:59.009 --> 00:21:00.967
+Link these.
+
+166 "Hung, Louis" (2427235584)
+00:21:00.967 --> 00:21:07.697
+Oh wait, do we, then do we need like a profile for others to see their profile for yourself?
+
+167 "Shimu" (1631432192)
+00:21:07.697 --> 00:21:17.885
+I guess we could just have, like, it'll be the same thing, I guess. Like the profile you see is the profile other people see as well. Yeah.
+
+168 "Hung, Louis" (2427235584)
+00:21:17.885 --> 00:21:20.644
+That makes sense. Okay.
+
+169 "Shimu" (1631432192)
+00:21:20.644 --> 00:21:23.649
+Cause everything's helped with?
+
+170 "Shimu" (1631432192)
+00:21:26.666 --> 00:21:37.826
+Yeah search bar to search for players, go to your profile, but that needs to be when profile page is done, what you're gonna be working on.
+
+171 "Hung, Louis" (2427235584)
+00:21:37.826 --> 00:21:40.647
+Okay, I'll add an issue then.
+
+172 "Shimu" (1631432192)
+00:21:40.647 --> 00:21:46.686
+I guess for here, we can stop using mock data now because we can actually have users.
+
+173 "Hung, Louis" (2427235584)
+00:21:46.686 --> 00:21:54.671
+Yeah, we should just just create some like fake users.
+
+174 "Shimu" (1631432192)
+00:21:54.671 --> 00:21:59.804
+Yeah, we can just create some fake users and different scores.
+
+175 "Hung, Louis" (2427235584)
+00:21:59.804 --> 00:22:11.951
+Yeah, I mean like the JavaScript for this is just the JavaScript script for this is done, so we just have to like replace the data's.
+
+176 "Shimu" (1631432192)
+00:22:11.951 --> 00:22:16.006
+Yeah, we could just like get the top ten, like most.
+
+177 "Hung, Louis" (2427235584)
+00:22:16.006 --> 00:22:19.105
+Yeah, there shouldn't be that for those.
+
+178 "Shimu" (1631432192)
+00:22:19.105 --> 00:22:29.385
+Yeah most Yeah most like point people and just display it and set the data. So that's fine. And here as well.
+
+179 "Hung, Louis" (2427235584)
+00:22:29.385 --> 00:22:33.069
+No, that, that used the same thing I just created.
+
+180 "Shimu" (1631432192)
+00:22:33.069 --> 00:22:34.948
+A smaller.
+
+181 "Hung, Louis" (2427235584)
+00:22:34.948 --> 00:22:39.647
+And a smaller CSCS for it. It's also dynamically changed.
+
+182 "Shimu" (1631432192)
+00:22:39.647 --> 00:22:42.407
+I see using the same JavaScript.
+
+183 "Hung, Louis" (2427235584)
+00:22:42.407 --> 00:22:45.833
+Basically the same, I just delete some from the main page.
+
+184 "Shimu" (1631432192)
+00:22:45.833 --> 00:22:50.786
+All right, that's cool. Just gonna add a way to like if you click on the dude, you go to your profile.
+
+185 "Hung, Louis" (2427235584)
+00:22:50.786 --> 00:22:58.139
+Yeah, I'm I'm adding an issue to that. That's why.
+
+186 "Hung, Louis" (2427235584)
+00:22:58.139 --> 00:23:20.272
+Why some.
+
+187 "Shimu" (1631432192)
+00:23:20.272 --> 00:23:23.469
+I think that's it.
+
+188 "Hung, Louis" (2427235584)
+00:23:23.469 --> 00:23:28.014
+Basically it, yeah.
+
+189 "Shimu" (1631432192)
+00:23:28.014 --> 00:23:36.006
+Just that the API front end stuff, maybe could that this middle section.
+
+190 "Hung, Louis" (2427235584)
+00:23:36.006 --> 00:23:42.210
+Yeah, but we have to 1st get the API running.
+
+191 "Shimu" (1631432192)
+00:23:42.210 --> 00:23:53.028
+And for statistics for the part where were you providing our statistics, do you, do you find your old data yet from your old projects that you're talking about?
+
+192 "Hung, Louis" (2427235584)
+00:23:53.028 --> 00:23:59.429
+It's not really compatible though like when I looked at the API data and my old data.
+
+193 "Hung, Louis" (2427235584)
+00:24:00.387 --> 00:24:09.093
+Oh really? Yeah, I have it. Okay, let me take out my hard drive.
+
+194 "Shimu" (1631432192)
+00:24:09.093 --> 00:24:15.204
+I mean honestly, how uncompatible is it? Because technically, we just need the numbers, you know.
+
+195 "Shimu" (1631432192)
+00:24:16.588 --> 00:24:21.309
+Okay, so do you have like something like two teams and there's a number?
+
+196 "Hung, Louis" (2427235584)
+00:24:21.309 --> 00:24:51.899
+I have two, I have two teams and then I think I have for each team, Wait, let me find it. Where's this? Data set ok yeah this is.
+
+197 "Hung, Louis" (2427235584)
+00:24:51.899 --> 00:25:09.689
+A very large data set. I'll start sharing so it looks like this.
+
+198 "Hung, Louis" (2427235584)
+00:25:09.689 --> 00:25:27.349
+Oh my god, I don't care. Yeah, so, this is it? This might be. Yeah, this is it. Is this? I forgot. It so it looks like something like this.
+
+199 "Shimu" (1631432192)
+00:25:27.349 --> 00:25:31.318
+Okay, so this is like the data for each player.
+
+200 "Hung, Louis" (2427235584)
+00:25:31.318 --> 00:25:45.179
+Two points percentage, three points percentage, blah blah blah blah blah. I forgot where that goes. And let me find.
+
+201 "Hung, Louis" (2427235584)
+00:25:45.179 --> 00:26:04.762
+I guess This is the one that I used, I think. This is the main one.
+
+202 "Shimu" (1631432192)
+00:26:04.762 --> 00:26:07.317
+Okay, so we have.
+
+203 "Hung, Louis" (2427235584)
+00:26:07.317 --> 00:26:18.243
+And Visitors, and then home teams, then the visitor scores and home team score and attendance.
+
+204 "Shimu" (1631432192)
+00:26:18.243 --> 00:26:19.618
+Was.
+
+205 "Hung, Louis" (2427235584)
+00:26:19.618 --> 00:26:22.724
+Like the.
+
+206 "Shimu" (1631432192)
+00:26:22.724 --> 00:26:28.894
+That number, yeah. Oh, I see, and this is doing COVID took zero, ok. Yeah.
+
+207 "Hung, Louis" (2427235584)
+00:26:28.894 --> 00:26:40.223
+And that's basically it, but I need a whole season 4th data to do this.
+
+208 "Shimu" (1631432192)
+00:26:40.223 --> 00:26:41.922
+Oh.
+
+209 "Hung, Louis" (2427235584)
+00:26:41.922 --> 00:27:00.569
+Cause at I used the previous datas e.g. like from this game 25 December I used all of the datas from this to this to the 22 and that ranks each team on a scale.
+
+210 "Hung, Louis" (2427235584)
+00:27:00.569 --> 00:27:17.309
+Of numbers and then that scale of numbers would change as the season goes on and so at the very end of the season, I will have a much more consistent breaking of each team that will make them.
+
+211 "Hung, Louis" (2427235584)
+00:27:17.309 --> 00:27:22.184
+I guess that will make the prediction closer.
+
+212 "Shimu" (1631432192)
+00:27:22.184 --> 00:27:23.876
+Okay.
+
+213 "Hung, Louis" (2427235584)
+00:27:23.876 --> 00:27:34.524
+Yeah, but like I feel I don't know if we can pull that large of a data set into the JSON file that we currently have.
+
+214 "Shimu" (1631432192)
+00:27:34.524 --> 00:27:43.738
+Well, I mean, Json could be pretty big. Are you concerned about like the size or like, we don't have enough data?
+
+215 "Hung, Louis" (2427235584)
+00:27:43.738 --> 00:27:56.101
+Not enough data because if you remember, our API calls only calls one game at a time and we only have a thousand calls.
+
+216 "Shimu" (1631432192)
+00:27:56.101 --> 00:27:57.759
+Yeah.
+
+217 "Hung, Louis" (2427235584)
+00:27:57.759 --> 00:27:58.398
+That's true.
+
+218 "Shimu" (1631432192)
+00:27:58.398 --> 00:28:04.418
+And Does MBA have their things online?
+
+219 "Hung, Louis" (2427235584)
+00:28:04.418 --> 00:28:09.224
+No, this is from like a 2nd handled website.
+
+220 "Shimu" (1631432192)
+00:28:09.224 --> 00:28:13.340
+Yeah MBA really doesn't have.
+
+221 "Hung, Louis" (2427235584)
+00:28:13.340 --> 00:28:18.844
+I have it, but like I don't think they allowed you to download it for free.
+
+222 "Shimu" (1631432192)
+00:28:18.844 --> 00:28:24.517
+That's stupid, ok.
+
+223 "Hung, Louis" (2427235584)
+00:28:24.517 --> 00:28:44.223
+Yeah, so like this is a whole season full of data that's a thousand and a hundred 72 calls. And in order to do that, I don't know if the hoop data supports it, supports auto call function or not, not hook data.
+
+224 "Shimu" (1631432192)
+00:28:44.223 --> 00:28:50.120
+You could probably just write like a ******* ball loop to call other games.
+
+225 "Hung, Louis" (2427235584)
+00:28:50.120 --> 00:28:53.979
+That works, but I'm pretty sure that.
+
+226 "Shimu" (1631432192)
+00:28:53.979 --> 00:28:58.878
+The things the API calls, the limited API calls.
+
+227 "Hung, Louis" (2427235584)
+00:28:58.878 --> 00:29:20.249
+It's gonna be issue. Yeah, let me go back.
+
+228 "Hung, Louis" (2427235584)
+00:29:20.249 --> 00:29:36.629
+I think we I guess we can use the game summary part. It's just, it also requires a game ID of it. So if I.
+
+229 "Hung, Louis" (2427235584)
+00:29:36.629 --> 00:29:52.949
+Boom, yeah also across the game ID that we didn't know. So what we can really do is just use daily schedule over here.
+
+230 "Hung, Louis" (2427235584)
+00:29:52.949 --> 00:30:18.393
+And then maybe ask for the date, like, is there any game play today? Nope, NO games, NO games today. Nope. Is there any game play this day? There is.
+
+231 "Shimu" (1631432192)
+00:30:18.393 --> 00:30:22.226
+Does it give you the team ID? Oh it does ok.
+
+232 "Hung, Louis" (2427235584)
+00:30:22.226 --> 00:30:24.687
+Yeah, it does.
+
+233 "Shimu" (1631432192)
+00:30:24.687 --> 00:30:28.265
+And then we gotta make separate calls for each game ID.
+
+234 "Hung, Louis" (2427235584)
+00:30:28.265 --> 00:30:38.720
+Oh nah. Yeah, nah. Oh nah. Okay but the whole points and away points are here.
+
+235 "Shimu" (1631432192)
+00:30:38.720 --> 00:30:42.071
+That's kind of crazy and I wasn't like, oh yeah.
+
+236 "Hung, Louis" (2427235584)
+00:30:42.071 --> 00:30:46.336
+It is here. It is here.
+
+237 "Shimu" (1631432192)
+00:30:46.336 --> 00:30:54.371
+Do you only need the home and the waypoints?
+
+238 "Hung, Louis" (2427235584)
+00:30:54.371 --> 00:31:02.178
+For like a not so after prediction, yeah. And like the wizards and the away points over here.
+
+239 "Shimu" (1631432192)
+00:31:02.178 --> 00:31:06.054
+I see. Okay, so technically.
+
+240 "Hung, Louis" (2427235584)
+00:31:06.054 --> 00:31:09.763
+Could work. Yeah, technically it could work.
+
+241 "Shimu" (1631432192)
+00:31:09.763 --> 00:31:21.950
+I mean Loki could I'm down to just write a script to do this for me. If you So you just need to, I could do this if you just tell me what data you need.
+
+242 "Hung, Louis" (2427235584)
+00:31:21.950 --> 00:31:27.455
+This home points away points, another two team names should be fine.
+
+243 "Shimu" (1631432192)
+00:31:27.455 --> 00:31:33.543
+Yeah, so we have, is it Toyedo, so games ID.
+
+244 "Hung, Louis" (2427235584)
+00:31:33.543 --> 00:31:36.923
+It's due game ID.
+
+245 "Shimu" (1631432192)
+00:31:36.923 --> 00:31:39.582
+The way points? Yeah, but do you know the team from here?
+
+246 "Hung, Louis" (2427235584)
+00:31:39.582 --> 00:31:48.350
+Yeah, so it's wait, what is it? Here. Home name wizards, a way name.
+
+247 "Shimu" (1631432192)
+00:31:48.350 --> 00:31:55.046
+I see, ok. Okay, yeah, I could, I could write a script through this.
+
+248 "Hung, Louis" (2427235584)
+00:31:55.046 --> 00:31:58.561
+Yeah, honestly, in my in my.
+
+249 "Shimu" (1631432192)
+00:31:58.561 --> 00:32:05.924
+Actually, yeah, I'll write a script to do this for me and I'll just make like three ******* support radar accounts or something.
+
+250 "Shimu" (1631432192)
+00:32:05.924 --> 00:32:15.044
+Okay. And you just need just need game data? What about like the, what about like the player data? Or you just need to use the old one.
+
+251 "Hung, Louis" (2427235584)
+00:32:15.044 --> 00:32:16.905
+What they.
+
+252 "Shimu" (1631432192)
+00:32:16.905 --> 00:32:20.742
+Yeah. Player data? The player, yeah, player data.
+
+253 "Hung, Louis" (2427235584)
+00:32:20.742 --> 00:32:22.182
+That's a cool.
+
+254 "Shimu" (1631432192)
+00:32:22.182 --> 00:32:27.203
+Good question. I really just use the all player data unless like sports radar.
+
+255 "Hung, Louis" (2427235584)
+00:32:27.203 --> 00:32:42.408
+Gives you ok I mean it can run only on the game data, it can, like it doesn't really need the player data, but the player data makes it more accurate, but I don't think we need that accurate item number yet.
+
+256 "Shimu" (1631432192)
+00:32:42.408 --> 00:32:48.804
+No, the thing is remember how Joshua was talking about how he could bet down Libron James only makes one pocket.
+
+257 "Hung, Louis" (2427235584)
+00:32:48.804 --> 00:32:53.990
+Per game, we can make a separate function, though.
+
+258 "Shimu" (1631432192)
+00:32:53.990 --> 00:33:00.965
+I don't know. I don't know, it seems kind of complex because how are we supposed to know how much ******* scores?
+
+259 "Hung, Louis" (2427235584)
+00:33:00.965 --> 00:33:12.703
+Oh yeah, the problem here is you need it for your ID your ID is required.
+
+260 "Hung, Louis" (2427235584)
+00:33:14.747 --> 00:33:19.361
+I'll see, like.
+
+261 "Shimu" (1631432192)
+00:33:19.361 --> 00:33:27.202
+Yeah, I, I could do the 1st part to get like the games. How much data do you need?
+
+262 "Hung, Louis" (2427235584)
+00:33:27.202 --> 00:33:36.401
+Just the current season, just the current season should be fine. But I don't know when's the season starting though.
+
+263 "Shimu" (1631432192)
+00:33:36.401 --> 00:33:43.645
+We're gonna just use like the past, like, I don't know, a hundred like the past year or something. I think I already.
+
+264 "Hung, Louis" (2427235584)
+00:33:43.645 --> 00:33:51.129
+Yeah, let's see.
+
+265 "Shimu" (1631432192)
+00:33:51.129 --> 00:33:53.681
+We can't use it to see them.
+
+266 "Hung, Louis" (2427235584)
+00:33:53.681 --> 00:33:58.045
+We can just fake it. We can just fake the pre season part then.
+
+267 "Shimu" (1631432192)
+00:33:58.045 --> 00:34:01.745
+Yeah, we just use some random games.
+
+268 "Hung, Louis" (2427235584)
+00:34:01.745 --> 00:34:12.127
+For like the past. Yeah, like a hundred 80 days or something half a year. Oh, NO, it's still running.
+
+269 "Shimu" (1631432192)
+00:34:12.127 --> 00:34:14.462
+Yeah, please.
+
+270 "Hung, Louis" (2427235584)
+00:34:14.462 --> 00:34:34.022
+Yeah, it's still running, so it's been running. Let me check the schedule. It says there's one yesterday. Oh yeah, there's, it is yesterday.
+
+271 "Hung, Louis" (2427235584)
+00:34:36.517 --> 00:34:52.664
+Yeah, so it is still running, we can we can still do that. I mean, yeah. What I currently just need is just scores team names and I can make a brief I can change it to a brief one.
+
+272 "Shimu" (1631432192)
+00:34:52.664 --> 00:34:54.755
+Okay, I.
+
+273 "Hung, Louis" (2427235584)
+00:34:54.755 --> 00:35:02.413
+Yeah, I'll have I'll still have to figure out how to convert our code to New.
+
+274 "Shimu" (1631432192)
+00:35:02.413 --> 00:35:08.592
+I mean, if you're, are you familiar, are you like still familiar with all.
+
+275 "Hung, Louis" (2427235584)
+00:35:08.592 --> 00:35:13.556
+A year, maybe, two years?
+
+276 "Shimu" (1631432192)
+00:35:13.556 --> 00:35:22.194
+Haven't touched it? Oh ****. I'm using R i'm using I'm using R and bio and that **** sucks.
+
+277 "Hung, Louis" (2427235584)
+00:35:22.194 --> 00:35:23.991
+The four.
+
+278 "Shimu" (1631432192)
+00:35:23.991 --> 00:35:26.711
+Thousand course? No 1000.
+
+279 "Hung, Louis" (2427235584)
+00:35:26.711 --> 00:35:32.790
+The 1001. Oh, oh, oh, ok. Oh, yeah. The lab is easy though. That art.
+
+280 "Shimu" (1631432192)
+00:35:32.790 --> 00:35:39.150
+It's very easy. Yeah, it's very easy hardware but it's so boring man. I ******* I lose my.
+
+281 "Hung, Louis" (2427235584)
+00:35:39.150 --> 00:35:41.440
+Themselves. I think it's fine.
+
+282 "Shimu" (1631432192)
+00:35:41.440 --> 00:35:46.992
+Now I just hate when Bro makes you collect the data yourself.
+
+283 "Hung, Louis" (2427235584)
+00:35:46.992 --> 00:35:52.153
+Oh yeah, yeah. But.
+
+284 "Shimu" (1631432192)
+00:35:52.153 --> 00:36:05.671
+Can you not give me the CSV? Yeah, ok. Okay, so I guess I'll work on the script. If I have time, I'll do it tomorrow.
+
+285 "Hung, Louis" (2427235584)
+00:36:05.671 --> 00:36:13.612
+I'm probably just gonna watch. I'll have to work on I'll have to work on the thing anyways. I have to work on the profile page anyways.
+
+286 "Shimu" (1631432192)
+00:36:13.612 --> 00:36:23.594
+Yeah. Let me know if you need any help with that. Are you gonna, do you have like a, like idea?
+
+287 "Hung, Louis" (2427235584)
+00:36:23.594 --> 00:36:38.518
+Yeah, it's just I'll I'm gonna grab the PHP thing and then do maybe modifications for JavaScript I guess. I think I don't think that's like very annoying.
+
+288 "Shimu" (1631432192)
+00:36:38.518 --> 00:36:50.771
+I think what I think you should do is you add the name to the URL and then you pull from the URL to get the username, and then you make a call to the backend, like there's not.
+
+289 "Hung, Louis" (2427235584)
+00:36:50.771 --> 00:36:55.098
+Make sense? Add the name to the URL. Oh, so like a unique.
+
+290 "Shimu" (1631432192)
+00:36:55.098 --> 00:37:02.933
+URL. Yeah, yeah. So when you click yeah so when you click a user, right? When you click a user on the.
+
+291 "Shimu" (1631432192)
+00:37:02.933 --> 00:37:20.669
+Make it so it redirects them to like/user/the guy's name. And then from there you could probably use JavaScript to pull the URL and extract like the username, then using that username just call the back end.
+
+292 "Shimu" (1631432192)
+00:37:20.669 --> 00:37:25.873
+Just like finding the guy who your name is that. So that way you only need.
+
+293 "Hung, Louis" (2427235584)
+00:37:25.873 --> 00:37:43.698
+The one HTML file? Yeah, yeah, yeah. Yeah. Okay. Makes sense. Yeah, I'll try to do that. But I wanna I wanna add some issues for people that's not here today so that they know what we will.
+
+294 "Shimu" (1631432192)
+00:37:43.698 --> 00:37:46.255
+We're working on. Yeah, we could I'll add some.
+
+295 "Hung, Louis" (2427235584)
+00:37:46.255 --> 00:37:58.618
+I have a leaderboard page link profile and I have a profile page. That's not an issue. It's a that's a project.
+
+296 "Shimu" (1631432192)
+00:37:58.618 --> 00:38:06.570
+I'll also make a issue for the bug.
+
+297 "Hung, Louis" (2427235584)
+00:38:06.570 --> 00:38:13.759
+Oh, right, the call again? The prediction page.
+
+298 "Shimu" (1631432192)
+00:38:13.759 --> 00:38:16.332
+Yeah, that.
+
+299 "Hung, Louis" (2427235584)
+00:38:16.332 --> 00:38:18.399
+Like overlapping stuff. Yeah.
+
+300 "Shimu" (1631432192)
+00:38:18.399 --> 00:38:23.090
+Oh, it should be using that, the project.
+
+301 "Hung, Louis" (2427235584)
+00:38:23.090 --> 00:38:52.320
+I don't even noticed for we should we should do that for like issues. We should put that issue.
+
+302 "Shimu" (1631432192)
+00:38:52.320 --> 00:39:13.880
+Add item. Now.
+
+303 "Shimu" (1631432192)
+00:39:13.880 --> 00:39:25.874
+This is my 1st time using.
+
+304 "Hung, Louis" (2427235584)
+00:39:25.874 --> 00:39:35.465
+Whatever I guess NO one actually looks like it except for TA.
+
+305 "Shimu" (1631432192)
+00:39:35.465 --> 00:39:41.582
+I mean it's pretty cool, but why why would you use these over issues I don't know.
+
+306 "Shimu" (1631432192)
+00:39:46.947 --> 00:39:53.000
+So maybe if I see if you have like a big ask.
+
+307 "Hung, Louis" (2427235584)
+00:39:53.000 --> 00:39:58.668
+Project and there's like different teams. A lot of different teams with a lot of different small tasks.
+
+308 "Shimu" (1631432192)
+00:39:58.668 --> 00:40:02.120
+Maybe, yeah, yeah, yeah. So like you don't wanna because issues you.
+
+309 "Hung, Louis" (2427235584)
+00:40:02.120 --> 00:40:02.921
+And group them.
+
+310 "Shimu" (1631432192)
+00:40:02.921 --> 00:40:19.100
+Yeah, so they would probably like open different ok yeah that makes sense honestly very script to form data.
+
+311 "Hung, Louis" (2427235584)
+00:40:19.100 --> 00:40:25.581
+How can I change this? Edit, I guess.
+
+312 "Shimu" (1631432192)
+00:40:25.581 --> 00:40:32.130
+And just will put like a name next to it if you did the thing.
+
+313 "Hung, Louis" (2427235584)
+00:40:32.130 --> 00:40:36.301
+Ah, ok.
+
+314 "Shimu" (1631432192)
+00:40:36.301 --> 00:40:40.293
+Yeah, are we still using your logo?
+
+315 "Hung, Louis" (2427235584)
+00:40:40.293 --> 00:40:44.132
+Isn't it pronounce? It doesn't matter, it's just a, this isn't.
+
+316 "Shimu" (1631432192)
+00:40:44.132 --> 00:40:46.915
+We can change anytime like yours but.
+
+317 "Hung, Louis" (2427235584)
+00:40:46.915 --> 00:40:49.056
+They're not gonna.
+
+318 "Shimu" (1631432192)
+00:40:49.056 --> 00:40:55.133
+Like NO offense to Pennate, but his like I don't know, it doesn't, it just doesn't match our.
+
+319 "Hung, Louis" (2427235584)
+00:40:55.133 --> 00:41:25.273
+Site yeah. The color theme doesn't really match. I mean mine is just really just generated. I can make it better if I want to hand draw it or change the lines or something, but I don't think it really matters at this point. Yeah, I don't know and he uploaded like on Friday.
+
+320 "Shimu" (1631432192)
+00:41:25.273 --> 00:41:28.994
+Yeah, like right before the presentation.
+
+321 "Hung, Louis" (2427235584)
+00:41:28.994 --> 00:41:43.139
+Yeah, and he uploaded in a very weird name or like a random as random generated name and just put it in index.HTML.
+
+322 "Hung, Louis" (2427235584)
+00:41:44.996 --> 00:42:18.429
+Crazy. Yeah, and I ended up ******* putting it into assets, so I guess what works?
+
+323 "Shimu" (1631432192)
+00:42:18.429 --> 00:42:25.211
+Good progress though we're like halfway done. And it's only been.
+
+324 "Hung, Louis" (2427235584)
+00:42:25.211 --> 00:42:33.897
+Semester I guess. If we get Renee and Isaac getting to work, we should be almost done.
+
+325 "Shimu" (1631432192)
+00:42:33.897 --> 00:42:42.594
+Yeah, I remember an intro, we had to do it like we did it like the day before, the week before.
+
+326 "Hung, Louis" (2427235584)
+00:42:42.594 --> 00:42:44.098
+Spring break.
+
+327 "Shimu" (1631432192)
+00:42:44.098 --> 00:42:58.651
+Oh yeah like we just grinded out or not spring break, it was thanksgiving break. Yeah. Like we just grinded that **** out over like four days and we did it in four days. Then we never touched it until the presentation.
+
+328 "Hung, Louis" (2427235584)
+00:42:58.651 --> 00:43:09.210
+I sit with, I sit in with my like team members like at the library for like 8 h per day for a few days interval.
+
+329 "Shimu" (1631432192)
+00:43:09.210 --> 00:43:10.595
+Okay.
+
+330 "Hung, Louis" (2427235584)
+00:43:10.595 --> 00:43:17.696
+Yeah, that's fine. Yeah be like sorry mine, I don't know how to do my part.
+
+331 "Shimu" (1631432192)
+00:43:17.696 --> 00:43:30.650
+Oh, same, I had a, so we had, we were in a group of three and someone else. The other person, she literally committed zero lines of code zero.
+
+332 "Shimu" (1631432192)
+00:43:32.433 --> 00:43:36.455
+It's literally zero? Literally nothing real.
+
+333 "Hung, Louis" (2427235584)
+00:43:36.455 --> 00:43:39.970
+And ok but at least did she make the PowerPoint.
+
+334 "Shimu" (1631432192)
+00:43:39.970 --> 00:43:59.612
+Well, she was like during present PowerPoint, she was like, hey guys, let's make the PowerPoint and we still had to work on to share ourselves. But I don't know. It was scuffed. Yeah we told her, I remember we told her to like start.
+
+335 "Hung, Louis" (2427235584)
+00:43:59.612 --> 00:44:02.373
+But she was like.
+
+336 "Shimu" (1631432192)
+00:44:02.373 --> 00:44:17.270
+When I think she ghosted us and we ended up finishing like quote unquote finishing the project in like four days. And then when she finally got back to us she's like, you know, it looks like you guys already done. Can I do something? And I'm like, Yeah, could you make the login and sign up?
+
+337 "Hung, Louis" (2427235584)
+00:44:17.270 --> 00:44:18.813
+For the users, she's.
+
+338 "Shimu" (1631432192)
+00:44:18.813 --> 00:44:32.936
+No, No, she was like sure talk a look at the code and go sit us until the presentation day. Like well.
+
+339 "Hung, Louis" (2427235584)
+00:44:32.936 --> 00:44:36.670
+That that really happened sometime.
+
+340 "Shimu" (1631432192)
+00:44:36.670 --> 00:44:51.652
+Yeah, really good group to see you though. This semester. Yeah.
+
+341 "Hung, Louis" (2427235584)
+00:44:51.652 --> 00:45:10.770
+Okay. Okay.
+
+342 "Hung, Louis" (2427235584)
+00:45:10.770 --> 00:45:30.770
+And well I can just assign myself, ok. I'm just assigning myself. Update comment.
+
+343 "Hung, Louis" (2427235584)
+00:45:30.770 --> 00:45:46.260
+Yeah try to add some comments to the projects part and just like let them each choose one to work on, I guess.
+
+344 "Shimu" (1631432192)
+00:45:46.260 --> 00:45:50.480
+What else did we talk about that we had people want to do?
+
+345 "Hung, Louis" (2427235584)
+00:45:50.480 --> 00:46:24.784
+Added it on. So one is just utilizing the API API data that we already have description and the profile page that I'll be working on and a main page data insert, so the main page is centerper, add like daily schedule and what's separate function you add? Oh, so another one is the like the actual place where that your points.
+
+346 "Shimu" (1631432192)
+00:46:24.784 --> 00:46:27.082
+Oh, like a.
+
+347 "Hung, Louis" (2427235584)
+00:46:27.082 --> 00:46:31.706
+The actual input. Yeah, like the actual input page where you want to bet your points.
+
+348 "Shimu" (1631432192)
+00:46:31.706 --> 00:46:35.002
+That could be in, that has to be.
+
+349 "Hung, Louis" (2427235584)
+00:46:35.002 --> 00:46:39.966
+A separate page. Yeah, that has like yeah like a game page.
+
+350 "Shimu" (1631432192)
+00:46:39.966 --> 00:46:45.720
+Yeah, yeah. We should also have a page where we show game data or team data.
+
+351 "Hung, Louis" (2427235584)
+00:46:45.720 --> 00:46:48.045
+And that should be.
+
+352 "Shimu" (1631432192)
+00:46:48.045 --> 00:46:57.418
+The statistics, NO? Yeah, yeah, that could be statistics, but I just want to like when you click on the team, you get to see like the team, the actual team.
+
+353 "Hung, Louis" (2427235584)
+00:46:57.418 --> 00:46:59.719
+I'm reading about it?
+
+354 "Shimu" (1631432192)
+00:46:59.719 --> 00:47:05.040
+And we should do the same thing for our players as well like like.
+
+355 "Hung, Louis" (2427235584)
+00:47:05.040 --> 00:47:08.762
+Like a separate like profile page for each player.
+
+356 "Hung, Louis" (2427235584)
+00:47:09.878 --> 00:47:11.380
+Or like for each team.
+
+357 "Shimu" (1631432192)
+00:47:11.380 --> 00:47:17.401
+Yeah, ok. Yeah, that makes sense. Like MBA clear is not like yeah, I know. Get it.
+
+358 "Hung, Louis" (2427235584)
+00:47:17.401 --> 00:47:19.800
+That can be another to do.
+
+359 "Shimu" (1631432192)
+00:47:19.800 --> 00:47:22.038
+Oh, after.
+
+360 "Hung, Louis" (2427235584)
+00:47:22.038 --> 00:47:46.689
+Okay, I'm adding description for the main page.
+
+361 "Shimu" (1631432192)
+00:47:46.689 --> 00:47:53.080
+Because what I wanna implement is, are you familiar with VLR.G?
+
+362 "Hung, Louis" (2427235584)
+00:47:53.080 --> 00:47:56.386
+V L R?
+
+363 "Shimu" (1631432192)
+00:47:56.386 --> 00:48:12.182
+Yeah, VRR.g. It's the it's like a Valerance site. So yeah, take a go to the No NO, It's like Valerant like competitive matches. I don't know if you have them for leap, but.
+
+364 "Shimu" (1631432192)
+00:48:13.024 --> 00:48:18.083
+Okay, I never want to do something for. Yeah, it's like it shows a lot.
+
+365 "Shimu" (1631432192)
+00:48:21.551 --> 00:48:29.310
+Yeah, yeah. So like if you click on it, you can see and if you click on a team, they have their own team like statistic page and shift.
+
+366 "Hung, Louis" (2427235584)
+00:48:29.310 --> 00:48:38.530
+How does the recent results covered players, rating history.
+
+367 "Shimu" (1631432192)
+00:48:38.530 --> 00:48:42.108
+Yeah, so I just want to do something similar to this, but we.
+
+368 "Hung, Louis" (2427235584)
+00:48:42.108 --> 00:48:52.475
+I'll have to copy 141. Okay, the the rating history part is really similar to my data. Like the my my my.
+
+369 "Shimu" (1631432192)
+00:48:52.475 --> 00:48:55.930
+System. Oh ****, nice. And maybe you can.
+
+370 "Hung, Louis" (2427235584)
+00:48:55.930 --> 00:48:59.955
+And like the ratings course I think it's identical.
+
+371 "Hung, Louis" (2427235584)
+00:49:01.512 --> 00:49:02.411
+Oh, that's fine.
+
+372 "Shimu" (1631432192)
+00:49:02.411 --> 00:49:06.308
+Yeah, cause we can actually have that bar and it looks really cool.
+
+373 "Shimu" (1631432192)
+00:49:07.148 --> 00:49:21.651
+I just don't have like that. That should be fine, we can use like a framework, I think. Like just search I don't know, chart.js or something and they should have yeah but that's one good thing about web dev. It doesn't get a framework.
+
+374 "Hung, Louis" (2427235584)
+00:49:21.651 --> 00:49:33.332
+Yeah, cause minus also based on a cause this is rating minus also based on the rating for each team and the numbers I think are really similar to each other.
+
+375 "Shimu" (1631432192)
+00:49:33.332 --> 00:49:39.206
+Nice nice. And we just have that like current roster part at the top, you know, something simple.
+
+376 "Shimu" (1631432192)
+00:49:46.937 --> 00:49:52.647
+Is there something for Lee to shut you, right?
+
+377 "Hung, Louis" (2427235584)
+00:49:52.647 --> 00:49:56.501
+I don't know.
+
+378 "Shimu" (1631432192)
+00:49:56.501 --> 00:49:59.293
+I know speaking of league, have you watched T.
+
+379 "Hung, Louis" (2427235584)
+00:49:59.293 --> 00:50:03.011
+The one person?
+
+380 "Shimu" (1631432192)
+00:50:03.011 --> 00:50:06.793
+Yeah, they got 3 h crazy.
+
+381 "Hung, Louis" (2427235584)
+00:50:06.793 --> 00:50:07.973
+This is so bad.
+
+382 "Shimu" (1631432192)
+00:50:07.973 --> 00:50:10.634
+Oh ****.
+
+383 "Hung, Louis" (2427235584)
+00:50:10.634 --> 00:50:14.658
+How could keep this bad?
+
+384 "Shimu" (1631432192)
+00:50:14.658 --> 00:50:29.474
+Yeah, I mean they're fighting faker, you know. Well, I mean that is true, but you know Riot ******* balances the game around faker when when when the *******.
+
+385 "Hung, Louis" (2427235584)
+00:50:29.474 --> 00:50:30.431
+Events happened.
+
+386 "Shimu" (1631432192)
+00:50:30.431 --> 00:50:37.694
+Yeah, but like relying like they be buffing everything their faker plays bro. Ari.
+
+387 "Shimu" (1631432192)
+00:50:41.249 --> 00:50:43.872
+Yeah but I still feel as crazy.
+
+388 "Hung, Louis" (2427235584)
+00:50:43.872 --> 00:51:07.055
+Yeah, C zero is ******* crazy. I watched game, I think game one and game three just now like right when I'm eating and holy **** The guy, the toplane guy from the team, I think called 3609.
+
+389 "Shimu" (1631432192)
+00:51:07.055 --> 00:51:12.032
+So bad. Your bro is he is he I thought he was the best helping in the world man.
+
+390 "Hung, Louis" (2427235584)
+00:51:12.032 --> 00:51:15.135
+He's so.
+
+391 "Shimu" (1631432192)
+00:51:15.135 --> 00:51:20.513
+Really? I thought he was, people said he's the best. Did you get stopped by zeuse?
+
+392 "Hung, Louis" (2427235584)
+00:51:20.513 --> 00:51:30.130
+Yeah, I think he got he got ****** by Zeus ****. He was good like a year or two ago, but to see.
+
+393 "Shimu" (1631432192)
+00:51:30.130 --> 00:51:32.943
+Which is so bad. That's crazy.
+
+394 "Hung, Louis" (2427235584)
+00:51:32.943 --> 00:51:37.169
+The only guy he knows how to play his quest on.
+
+395 "Shimu" (1631432192)
+00:51:37.169 --> 00:51:43.208
+Is that the name? That's Avery row. Like every match.
+
+396 "Hung, Louis" (2427235584)
+00:51:43.208 --> 00:51:52.626
+That's that's his only man. He only knows how to play that dude, really? He's so bad. That ramp Rambo is a ramble.
+
+397 "Shimu" (1631432192)
+00:51:52.626 --> 00:51:54.087
+A plane in Chinese.
+
+398 "Hung, Louis" (2427235584)
+00:51:54.087 --> 00:52:00.472
+Oh rumble, rumble. Rumble. Yeah his rumble is *******. Oh my god.
+
+399 "Shimu" (1631432192)
+00:52:00.472 --> 00:52:03.525
+Yeah one right?
+
+400 "Hung, Louis" (2427235584)
+00:52:03.525 --> 00:52:06.288
+I remember. Yeah, came on so bad.
+
+401 "Hung, Louis" (2427235584)
+00:52:07.344 --> 00:52:12.106
+The best, the best ramble all throughout the entire game was cast by fake.
+
+402 "Shimu" (1631432192)
+00:52:12.106 --> 00:52:17.766
+Sure, ok, that's crazy.
+
+403 "Hung, Louis" (2427235584)
+00:52:17.766 --> 00:52:24.865
+Take on silence now. Yeah. That's literally the bestanty of the entire game.
+
+404 "Shimu" (1631432192)
+00:52:24.865 --> 00:52:29.985
+That's pretty funny.
+
+405 "Hung, Louis" (2427235584)
+00:52:29.985 --> 00:52:34.237
+Okay, let me get, let me get back to this.
+
+406 "Hung, Louis" (2427235584)
+00:52:35.624 --> 00:52:53.150
+Yeah, that's on daily schedule.
+
+407 "Hung, Louis" (2427235584)
+00:52:53.150 --> 00:53:04.590
+Lost data to.
+
+408 "Hung, Louis" (2427235584)
+00:53:04.590 --> 00:53:23.340
+Update, and this click on that one.
+
+409 "Hung, Louis" (2427235584)
+00:54:06.730 --> 00:54:13.255
+What's the name of players that's gonna be on court? Like.
+
+410 "Shimu" (1631432192)
+00:54:13.255 --> 00:54:20.446
+At the beginning of the game. Oh NO.
+
+411 "Hung, Louis" (2427235584)
+00:54:20.446 --> 00:54:23.552
+Is there a name for it?
+
+412 "Shimu" (1631432192)
+00:54:23.552 --> 00:54:26.430
+I know benchmar.
+
+413 "Hung, Louis" (2427235584)
+00:54:26.430 --> 00:54:34.530
+Yeah.
+
+414 "Hung, Louis" (2427235584)
+00:54:34.530 --> 00:54:52.770
+Starters? Okay, yeah.
+
+415 "Hung, Louis" (2427235584)
+00:55:52.770 --> 00:56:08.599
+Okay, she's just urgent.
+
+416 "Shimu" (1631432192)
+00:56:08.599 --> 00:56:10.674
+No, ok. I don't know how.
+
+417 "Hung, Louis" (2427235584)
+00:56:10.674 --> 00:56:18.413
+I don't know how this works now. Yeah, I'm trying to figure it out. I guess it's fine. We'll just leave it like this.
+
+418 "Shimu" (1631432192)
+00:56:18.413 --> 00:56:22.094
+I think you could add a new, like.
+
+419 "Hung, Louis" (2427235584)
+00:56:22.094 --> 00:56:38.940
+Section. Urgent, got urgent in new column, Right. Urgent. Color red.
+
+420 "Hung, Louis" (2427235584)
+00:56:38.940 --> 00:56:56.700
+This item is need be 1st urgent.
+
+421 "Hung, Louis" (2427235584)
+00:56:56.700 --> 00:57:09.534
+API data needs to go urgent. Okay, I guess that's it for today.
+
+422 "Shimu" (1631432192)
+00:57:09.534 --> 00:57:11.244
+Okay.
+
+423 "Hung, Louis" (2427235584)
+00:57:11.244 --> 00:57:32.048
+Yeah. Yeah, I will type in this word and make sure that I guess they each take one of the to do lists and I don't know. I hope we will do something by next week, but I have a lot of tests this.
+
+424 "Shimu" (1631432192)
+00:57:32.048 --> 00:57:38.222
+Yeah, NO rush though. We still got like a lot of time to do whatever.
+
+425 "Hung, Louis" (2427235584)
+00:57:38.222 --> 00:57:52.200
+Yeah, the project. I'll try to get some progress done from next Wednesday to Friday then. Okay, I'll see you next week. Yeah. See ya. All right, see you.
