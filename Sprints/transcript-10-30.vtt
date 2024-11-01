@@ -1,0 +1,389 @@
+WEBVTT
+
+1 "Collins, Joshua" (2730627072)
+00:00:00.000 --> 00:00:10.096
+Putting the word prediction in a div and giving it the size of the the width of whatever the box would is and then have it centered sender it.
+
+2 "izik" (1066191104)
+00:00:10.096 --> 00:00:13.036
+Yeah, that was gonna be my next thing.
+
+3 "Collins, Joshua" (2730627072)
+00:00:13.036 --> 00:00:14.315
+I was just gonna do that.
+
+4 "izik" (1066191104)
+00:00:14.315 --> 00:00:21.775
+I'm gonna share my screen and show you what I have. 1st of all, I'm just gonna.
+
+5 "Collins, Joshua" (2730627072)
+00:00:21.775 --> 00:00:27.533
+Yeah. I.
+
+6 "izik" (1066191104)
+00:00:27.533 --> 00:00:40.196
+So I have a teams page. Yeah, I have a Teams page sort of working, I just need to change one simple thing.
+
+7 "Collins, Joshua" (2730627072)
+00:00:40.196 --> 00:00:42.353
+Yeah.
+
+8 "izik" (1066191104)
+00:00:42.353 --> 00:00:44.974
+Division container.
+
+9 "Collins, Joshua" (2730627072)
+00:00:44.974 --> 00:00:54.413
+Yeah, maybe Renee's thing is he can give us like an SQL command to run to like actually give us player data like that looks real.
+
+10 "izik" (1066191104)
+00:00:54.413 --> 00:00:57.618
+Okay.
+
+11 "Collins, Joshua" (2730627072)
+00:00:57.618 --> 00:01:05.135
+Yeah, we'll figure out something for him to do because he's kind of been really free loading.
+
+12 "izik" (1066191104)
+00:01:05.135 --> 00:01:08.991
+You could just ruined its grade by saying that he didn't do much.
+
+13 "Collins, Joshua" (2730627072)
+00:01:08.991 --> 00:01:09.932
+Yeah.
+
+14 "Hung, Louis" (4186699264)
+00:01:09.932 --> 00:01:13.778
+I mean the github commits just shows that he didn't do much, so.
+
+15 "Collins, Joshua" (2730627072)
+00:01:13.778 --> 00:01:19.860
+Yeah, it's yeah I don't I don't want I don't like the, the commit like if you look at.
+
+16 "Collins, Joshua" (2730627072)
+00:01:19.860 --> 00:01:34.972
+The contribute, the insights and then go to contribute contributions. I don't like it because like it shows like Isaac. Oh, there it goes, you know, it shows Shemo has like hundreds.
+
+17 "Hung, Louis" (4186699264)
+00:01:34.972 --> 00:01:52.495
+Okay that's new. That's because a lot of it is JSON and if you like exclude the JSON, if you only look at the languages like HTML or JavaScript PHP and things like that, that would show you like a different percentage, I think.
+
+18 "Collins, Joshua" (2730627072)
+00:01:52.495 --> 00:02:08.070
+No, but it's it's unny because I hate it because like Isaac, you do a lot of like really like small work, but it's very crucial work. So you look like you only did like six more, six times of what Renee's done, but like.
+
+19 "Collins, Joshua" (2730627072)
+00:02:08.070 --> 00:02:24.695
+Your work is easily like just as much work as I have, if not more, and then you look and then same thing with like you Lewis, like you have 2000, you have like half the number of additions than I do, but I know like your work is a lot more valuable than what.
+
+20 "Hung, Louis" (4186699264)
+00:02:24.695 --> 00:02:26.472
+What I've done.
+
+21 "izik" (1066191104)
+00:02:26.472 --> 00:02:38.954
+Yeah, I'm gonna share my screen. I just want to show you guys what I have right now. So this is what I have for the teams PHP file for now.
+
+22 "Hung, Louis" (4186699264)
+00:02:38.954 --> 00:02:40.972
+Oh, that's nice.
+
+23 "izik" (1066191104)
+00:02:40.972 --> 00:02:55.791
+So what I'm trying to do is, so I'm trying to copy sort of this style, but I can't get this to say Atlantic and then Pacific here. For whatever reason or oh I just have it out of order as well.
+
+24 "Collins, Joshua" (2730627072)
+00:02:55.791 --> 00:02:57.011
+Okay, that's great.
+
+25 "izik" (1066191104)
+00:02:57.011 --> 00:03:05.292
+For whatever reason, I I I was just trying to do, have like a division container and I was just fiddling around with the CSS.
+
+26 "Collins, Joshua" (2730627072)
+00:03:05.292 --> 00:03:21.522
+You're just trying to use a container which makes sense. I, I would say the really like simple but like ugly way would be a **** ton of divs, like one big div with like two smaller divs with two smaller divs and then those are like your four.
+
+27 "Hung, Louis" (4186699264)
+00:03:21.522 --> 00:03:41.728
+I think what you can do is to put like the four like pacific, Southwest Atlantic and put those into like a big container dip box and then do like a and let's put it into three parts. Cause I remember doing it in the past.
+
+28 "izik" (1066191104)
+00:03:41.728 --> 00:03:45.829
+But I need to use like flex watch or something.
+
+29 "Collins, Joshua" (2730627072)
+00:03:45.829 --> 00:03:48.972
+Great. I think.
+
+30 "izik" (1066191104)
+00:03:48.972 --> 00:04:12.831
+Yeah, that's what I have. I just don't know where, so I'm gonna change up statistics, but I don't know, like, do I have teams written here instead or just add a new pay like that's what I'm trying to fiddle around with because if I change it to teams, right? Then, I'm gonna need to get the functionality for every team done.
+
+31 "Collins, Joshua" (2730627072)
+00:04:12.831 --> 00:04:24.130
+Call it data, and then if you click on data, it goes to that page and then it says like player statistics in the like the right hand corner. If you click that, then it goes to my page.
+
+32 "izik" (1066191104)
+00:04:24.130 --> 00:04:47.057
+Well, what I was thinking is having just teams, and then if we go into, here, you can, you can click each player and then you can also have a stats page instead of overview, you can have a stats page here, another tab like yeah like this, e.g., they have other like there's a.
+
+33 "Hung, Louis" (4186699264)
+00:04:47.057 --> 00:04:49.735
+Six right here. Oh, ok.
+
+34 "izik" (1066191104)
+00:04:49.735 --> 00:05:06.328
+So I guess when you click that you can have like this, right? So you have like an overview right here and then you have stats, their next schedule, whatever, that way we can lay it out a little bit better stuff like that. And I really liked today.
+
+35 "Collins, Joshua" (2730627072)
+00:05:06.328 --> 00:05:20.893
+Yeah, it's also ESPN like I bet they haven't create, I don't even want to know how many developers they have running on working on that. No, I know it's actually insane.
+
+36 "izik" (1066191104)
+00:05:20.893 --> 00:05:22.591
+But yeah.
+
+37 "Collins, Joshua" (2730627072)
+00:05:22.591 --> 00:05:44.894
+Yeah, I yeah, we're we're gonna get in a good position. Yeah, just try to get whatever you guys currently have working, just trying to finish it up before our meeting tomorrow I think it's at three. We're gonna meet we're gonna meet in probably the in person on campus in Laly, like the.
+
+38 "izik" (1066191104)
+00:05:44.894 --> 00:05:47.491
+Oh, in person?
+
+39 "Collins, Joshua" (2730627072)
+00:05:47.491 --> 00:05:54.235
+Yeah, yeah. I think I think it, yeah, she wants us to do it in person. So we'll just come to her and like.
+
+40 "Hung, Louis" (4186699264)
+00:05:54.235 --> 00:06:00.497
+Oh yeah, because I booked the time on Webex, I saw it's gonna be online too.
+
+41 "izik" (1066191104)
+00:06:00.497 --> 00:06:02.380
+Yeah, I thought it was online.
+
+42 "Hung, Louis" (4186699264)
+00:06:02.380 --> 00:06:08.078
+I mean person who works for me, so I have too.
+
+43 "Collins, Joshua" (2730627072)
+00:06:08.078 --> 00:06:10.377
+That's you?
+
+44 "Hung, Louis" (4186699264)
+00:06:10.377 --> 00:06:17.518
+Yeah, my lab I mean, I think she will have like lab going from two to four.
+
+45 "Collins, Joshua" (2730627072)
+00:06:17.518 --> 00:06:19.858
+Whether They're at two to four?
+
+46 "Hung, Louis" (4186699264)
+00:06:19.858 --> 00:06:26.574
+She would have left from two to four but like I think he he'll get off early. That's an easy lab.
+
+47 "Collins, Joshua" (2730627072)
+00:06:26.574 --> 00:06:37.454
+Yeah, be fair, as long as three of us are there, we can explain why the other two aren't. We'll just say Prane has a lab or something covers but.
+
+48 "izik" (1066191104)
+00:06:37.454 --> 00:06:39.500
+Stuff right now.
+
+49 "Collins, Joshua" (2730627072)
+00:06:39.500 --> 00:06:44.872
+No, NO, we'll give him, give the guy's a chance if he's.
+
+50 "izik" (1066191104)
+00:06:44.872 --> 00:06:52.715
+Still hasn't done anything. And like we come to these meetings and he doesn't, so it's just like.
+
+51 "Collins, Joshua" (2730627072)
+00:06:52.715 --> 00:06:53.313
+Like.
+
+52 "izik" (1066191104)
+00:06:53.313 --> 00:07:01.277
+At this point, well, like, we're halfway this we're more than halfway to the semester, like, come on. Four commits.
+
+53 "Hung, Louis" (4186699264)
+00:07:01.277 --> 00:07:07.560
+Yeah, and two of the commits are his reading me for lab one and one of it is for the logo.
+
+54 "izik" (1066191104)
+00:07:07.560 --> 00:07:08.316
+Okay.
+
+55 "Collins, Joshua" (2730627072)
+00:07:08.316 --> 00:07:23.078
+Yeah, yeah, it's it's a little unfortunate. To be fair though half my commits were allowed one, but I have done like 16 commits. So I'm I'm still can you, yeah. No, but to be fair.
+
+56 "Hung, Louis" (4186699264)
+00:07:23.078 --> 00:07:30.178
+They're like some someone should talk to him about like he should do more or something. I try to.
+
+57 "Collins, Joshua" (2730627072)
+00:07:30.178 --> 00:07:37.399
+But he's like, yeah, yeah, yeah. And then doesn't really. We should probably.
+
+58 "Hung, Louis" (4186699264)
+00:07:37.399 --> 00:07:39.193
+If you really doesn't come.
+
+59 "Collins, Joshua" (2730627072)
+00:07:39.193 --> 00:07:41.815
+I think.
+
+60 "Hung, Louis" (4186699264)
+00:07:41.815 --> 00:07:47.079
+Doesn't come to the theme tomorrow then I guess that shows his attitude, I don't know.
+
+61 "Collins, Joshua" (2730627072)
+00:07:47.079 --> 00:07:59.939
+Well, yeah, let's see if he comes up, if he comes tomorrow. If he doesn't, we will have a discussion with him on Friday and then from there we can go as a group to determine like how we're gonna deal with that.
+
+62 "Collins, Joshua" (2730627072)
+00:07:59.939 --> 00:08:29.093
+Later on. Yeah. Yeah, but also whenever we get before we get to the meeting though, if you go to GitHub, the GitHub project itself and go to wind share, just take away all the to do's and in progresses, whether that means like renaming with the stuff we're doing in progress to say like because remember last time she said like, oh, if you have anything in progress or to do.
+
+63 "izik" (1066191104)
+00:08:29.093 --> 00:08:31.229
+Yeah.
+
+64 "Collins, Joshua" (2730627072)
+00:08:31.229 --> 00:08:43.005
+Yeah, she did say that, so I was just gonna say, for simplicity's sake, we should re like I'm gonna rename my stat my stat ticket real quick.
+
+65 "Hung, Louis" (4186699264)
+00:08:43.005 --> 00:08:46.411
+Which she said we need to take off and progress into those.
+
+66 "Collins, Joshua" (2730627072)
+00:08:46.411 --> 00:08:47.329
+Right?
+
+67 "izik" (1066191104)
+00:08:47.329 --> 00:08:50.271
+Yeah, like, because technically we're supposed to be done with all of it.
+
+68 "Hung, Louis" (4186699264)
+00:08:50.271 --> 00:08:58.650
+Oh, ok.
+
+69 "izik" (1066191104)
+00:08:58.650 --> 00:09:06.745
+So yeah, please work, please work. Oh, yeah.
+
+70 "Hung, Louis" (4186699264)
+00:09:06.745 --> 00:09:10.570
+Can I just convert it to issues so we don't have any to do with.
+
+71 "Collins, Joshua" (2730627072)
+00:09:10.570 --> 00:09:31.249
+Progress. Yeah, just yeah convert them to issues for now and then we'll do that tomorrow. Don't worry about doing that now cause I know you guys are busy, but yeah, it just it just means like whatever we are looking at, it should all be in the done column and it should not be, there should be NO to do is urgent or in progress for the for the sake of when we go.
+
+72 "Collins, Joshua" (2730627072)
+00:09:31.249 --> 00:09:34.803
+Go and talk through it, we need to just like blitz through it.
+
+73 "Hung, Louis" (4186699264)
+00:09:34.803 --> 00:09:45.466
+Ah, ok. Wait, can I can I pretend like a function where it's like nice to have and then just put it in the nice to have parts?
+
+74 "Collins, Joshua" (2730627072)
+00:09:45.466 --> 00:09:49.107
+Yeah, yeah, yeah. Add that and say like nice to have.
+
+75 "Collins, Joshua" (2730627072)
+00:09:49.107 --> 00:09:54.598
+Yeah, that that'd be that's mart, that's good, that's good.
+
+76 "Hung, Louis" (4186699264)
+00:09:54.598 --> 00:09:59.129
+Yeah, I'll do that real quick.
+
+77 "izik" (1066191104)
+00:09:59.129 --> 00:10:07.991
+Oh, I got it in the same road. That's done now.
+
+78 "Collins, Joshua" (2730627072)
+00:10:07.991 --> 00:10:28.969
+Yeah, well, I I think we're on a good track for tomorrow. I will yeah nice to have all the should nice to have and then yeah there you go. Yeah, I think.
+
+79 "Collins, Joshua" (2730627072)
+00:10:28.969 --> 00:10:46.373
+We're in a very good spot, at least where if we had to present a final product in like a week or two, we definitely could. We might not get a hundred, but we would have a finished product and that gives us probably another two to three weeks where we can add fancy features given our free times.
+
+80 "Hung, Louis" (4186699264)
+00:10:46.373 --> 00:11:09.323
+Yeah, I'll do the cause Shebu got the data out, I think this week and I'll try to convert my the wind rate thing into, maybe, maybe if I cannot convert it directly into JS I'll do it like locally and then put it in the JSON file and then put it in the.
+
+81 "Collins, Joshua" (2730627072)
+00:11:09.323 --> 00:11:18.384
+Yeah, as, as long as the numbers appear, we can, we can bullshit ourselves and be like using this high tech brand new algorithm.
+
+82 "Hung, Louis" (4186699264)
+00:11:18.384 --> 00:11:21.373
+Yeah yeah yeah.
+
+83 "Collins, Joshua" (2730627072)
+00:11:21.373 --> 00:11:25.754
+Louis going into a TXT file and writing it out.
+
+84 "Hung, Louis" (4186699264)
+00:11:25.754 --> 00:11:32.402
+Yeah, I'll definitely figure something out about that and it should be real quick and.
+
+85 "Collins, Joshua" (2730627072)
+00:11:32.402 --> 00:11:45.629
+Yeah, and I'll do the same thing with the table, so the question is, do we want the stat page to display stats for all players or just like the top 200 like I currently have it?
+
+86 "Hung, Louis" (4186699264)
+00:11:45.629 --> 00:11:51.603
+I think currently top 200 is fine. It's good enough for me at least.
+
+87 "Collins, Joshua" (2730627072)
+00:11:51.603 --> 00:12:12.139
+Yeah, because if I was gonna do all of the players, I need to have the the search bar wait until you input like three or four characters before it starts looking for the names. That way the search, like the dropdown bar isn't ridiculously long. Like if it's if it's like searched by like one or two characters, if you like look for Lebron, so it would be like L E.
+
+88 "Collins, Joshua" (2730627072)
+00:12:12.139 --> 00:12:16.886
+Everybody has like an LE in their name, so like the table just like the dropdown just goes so.
+
+89 "Hung, Louis" (4186699264)
+00:12:16.886 --> 00:12:22.537
+Go far down. Can you just limit the dropdown to like 20 choices maybe? The.
+
+90 "Collins, Joshua" (2730627072)
+00:12:22.537 --> 00:12:46.059
+I I'll research that as well need some more looking on W three schools and other apps. That's what that's what I've been doing. I've been doing a **** ton of reading of like, can I do this? Am I a good boy if I do this? Oh.
+
+91 "izik" (1066191104)
+00:12:46.059 --> 00:12:48.316
+Alright, this is what I have.
+
+92 "Collins, Joshua" (2730627072)
+00:12:48.316 --> 00:12:49.860
+**** yeah that'.
+
+93 "Hung, Louis" (4186699264)
+00:12:49.860 --> 00:12:51.659
+That's good. That's good. That's good.
+
+94 "izik" (1066191104)
+00:12:51.659 --> 00:12:57.164
+Good. I had to do a flex route, and so yeah this one.
+
+95 "Collins, Joshua" (2730627072)
+00:12:57.164 --> 00:13:00.880
+Yeah.
+
+96 "izik" (1066191104)
+00:13:00.880 --> 00:13:05.563
+So I literally like have it down I just I just need us to work on.
+
+97 "Collins, Joshua" (2730627072)
+00:13:05.563 --> 00:13:09.624
+The logos is what is gonna bug me so.
