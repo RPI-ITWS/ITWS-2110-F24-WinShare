@@ -23,6 +23,13 @@ const teamId = queryParams['id'];
 if (teamName && teamId) {
    document.title = teamName;
    document.getElementById('team-name').innerText = teamName;
+      const teamNameParts = teamName.split(" ");
+      const logoFileName = teamNameParts[teamNameParts.length - 1].toLowerCase() + ".png";
+      const logoPath = `../assets/Photos/teamLogo/${logoFileName}`;
+      
+      const logoImg = document.getElementById('logoPath');
+      logoImg.src = logoPath;
+      logoImg.alt = `${teamName} Logo`;
    fetch(`../php/fetchTeamByID.php?teamId=${teamId}`)
         .then((response) => response.json())
         .then((data) => {

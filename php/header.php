@@ -23,6 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                     <a class="nav-link" href="/ITWS-2110-F24-WinShare/Statistics/index.html">Statistics</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Team/Teams.php">Teams</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/ITWS-2110-F24-WinShare/Predictions/Predictions.html">Predictions</a>
                 </li>
             </ul>
