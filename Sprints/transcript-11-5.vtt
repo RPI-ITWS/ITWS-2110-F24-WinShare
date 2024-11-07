@@ -1,0 +1,921 @@
+WEBVTT
+
+1 "Callahan, Brian Robert" (3981836032)
+00:00:00.000 --> 00:00:03.635
+Are they coming?
+
+2 "Collins, Joshua" (2814625536)
+00:00:03.635 --> 00:00:05.943
+I'm.
+
+3 "Hung, Louis" (2383002112)
+00:00:05.943 --> 00:00:08.523
+This point, he said he would.
+
+4 "Shimu Pan" (982173440)
+00:00:08.523 --> 00:00:13.679
+That's a common pattern for him to say that it had not show up?
+
+5 "Callahan, Brian Robert" (3981836032)
+00:00:13.679 --> 00:00:17.481
+Okay, and he knows that I'm also in this meeting.
+
+6 "Shimu Pan" (982173440)
+00:00:17.481 --> 00:00:18.999
+Yeah.
+
+7 "izik" (832479232)
+00:00:18.999 --> 00:00:23.819
+Maybe we said it during. I didn't know that we put it you you said something in the chat.
+
+8 "Callahan, Brian Robert" (3981836032)
+00:00:23.819 --> 00:00:38.361
+Okay, well, I suppose that is a decision he can make. Alright, with that said, do we know why we're having a meeting tonight?
+
+9 "Shimu Pan" (982173440)
+00:00:38.361 --> 00:00:42.280
+Not really? Not really.
+
+10 "Callahan, Brian Robert" (3981836032)
+00:00:42.280 --> 00:01:14.701
+So the reason we are having a meeting tonight is because you all did your retro with the TA and she mentioned that it seemed like we were not teamworking as well as we should be. So I would like to get to the bottom of this problem and fix it and make sure you have a good last month and last sprint. So what is going on? Does any of this ring a bell? Yes. Okay, so what's going on?
+
+11 "Collins, Joshua" (2814625536)
+00:01:14.701 --> 00:01:28.683
+Well, it was it was more so just that all four of us have been doing consistent work and then our current, our teammate who's not here has not really carried their part of the, the, the project.
+
+12 "Callahan, Brian Robert" (3981836032)
+00:01:28.683 --> 00:01:34.135
+Okay, and with him not being here, it's gonna be difficult for him to defend him.
+
+13 "Shimu Pan" (982173440)
+00:01:34.135 --> 00:01:36.443
+I suppose.
+
+14 "Callahan, Brian Robert" (3981836032)
+00:01:36.443 --> 00:01:42.932
+He is choosing to not defend himself because he's not here.
+
+15 "izik" (832479232)
+00:01:42.932 --> 00:01:45.238
+Okay.
+
+16 "Callahan, Brian Robert" (3981836032)
+00:01:45.238 --> 00:01:46.675
+Yes.
+
+17 "Hung, Louis" (2383002112)
+00:01:46.675 --> 00:01:49.176
+And if we looked at.
+
+18 "izik" (832479232)
+00:01:49.176 --> 00:01:50.967
+Add the.
+
+19 "Hung, Louis" (2383002112)
+00:01:50.967 --> 00:01:54.554
+Let me share the screen real quick. If we look at the GitHub.
+
+20 "Hung, Louis" (2383002112)
+00:01:54.554 --> 00:02:05.053
+Like contributions? Yes. We can see most of us did close to a thousands of being line of code, but.
+
+21 "Shimu Pan" (982173440)
+00:02:05.053 --> 00:02:14.495
+Oh, I I personally don't think that lines of code.
+
+22 "Callahan, Brian Robert" (3981836032)
+00:02:14.495 --> 00:02:40.040
+Part of it, and it's not the whole story, but it's certainly part of the story. The other part of the story is, is he active in making issues and pull requests? Is he active in reviewing code? Is he active in controlling the parts of the sprint backlog that get assigned to him? Et cetera, et cetera?
+
+23 "Shimu Pan" (982173440)
+00:02:40.040 --> 00:02:46.421
+So I, the only or the only major thing I remember Pranav was.
+
+24 "Shimu Pan" (982173440)
+00:02:48.077 --> 00:03:11.600
+He, he said he was gonna make a logo, which I don't think was ever pushed on GitHub unless i'm wrong about that, and he doesn't really work on pull request. Yeah, but he does approve some pull requests sometimes I do see that, but he in terms of like adding issues or like actually completing the issues, I don't think he.
+
+25 "Shimu Pan" (982173440)
+00:03:11.600 --> 00:03:13.512
+Did anything major.
+
+26 "Collins, Joshua" (2814625536)
+00:03:13.512 --> 00:03:32.450
+Yeah, from what I can remember, the only thing he's personally added was, well, he said he was gonna do the logo. I don't, I couldn't find it in the files, it could be there, but the only other change he's made is turned our CS from like a gray and to a black and blue.
+
+27 "Collins, Joshua" (2814625536)
+00:03:32.450 --> 00:03:34.317
+Well, that was about it.
+
+28 "Callahan, Brian Robert" (3981836032)
+00:03:34.317 --> 00:03:51.420
+Okay, fair enough. I suppose, where did she on this list? There he is. I don't want that.
+
+29 "Callahan, Brian Robert" (3981836032)
+00:03:51.420 --> 00:04:12.300
+Yeah we go, that just says the commits kind of looking for everything else. Well, and it even I will, I will go through it. So.
+
+30 "Callahan, Brian Robert" (3981836032)
+00:04:12.300 --> 00:04:37.837
+I suppose then the question is twofold. The 1st part of the question is, does he have things to do for this final sprint? And then the 2nd part of that question is, do you all have a backup plan so that those things can get done if he does not do them?
+
+31 "izik" (832479232)
+00:04:37.837 --> 00:04:38.601
+Yeah.
+
+32 "Hung, Louis" (2383002112)
+00:04:38.601 --> 00:05:08.994
+So I think the way that our collaboration works is we make issues and to DOS inside the project and the GitHub repo and when we're finished with each one of them, we just move on to the next one. So, and we've been working, I mean pretty on progress and consistently without him taking any a major part in any of the commits.
+
+33 "Shimu Pan" (982173440)
+00:05:08.994 --> 00:05:09.854
+Okay.
+
+34 "Callahan, Brian Robert" (3981836032)
+00:05:09.854 --> 00:05:11.558
+Yeah.
+
+35 "izik" (832479232)
+00:05:11.558 --> 00:05:19.595
+So we we we each have like an idea, and we kinda go through with that idea and since he wasn't really here, we didn't he didn't really have an idea.
+
+36 "Callahan, Brian Robert" (3981836032)
+00:05:19.595 --> 00:05:35.279
+To begin with, and so that idea that he may or may not have had is not represented in your project. Yeah. Very enough. Alright, I'm going to have to.
+
+37 "Callahan, Brian Robert" (3981836032)
+00:05:35.279 --> 00:05:51.569
+Look through all your PRs and stuff and just see where he is or isn't instead PRs.
+
+38 "Callahan, Brian Robert" (3981836032)
+00:05:51.569 --> 00:06:08.729
+Like how many PRs has he actually approved? How many commits he's actually made, what are the quality of set commits? Let me see.
+
+39 "Callahan, Brian Robert" (3981836032)
+00:06:08.729 --> 00:06:26.909
+Yeah, so I can't find him so far. That doesn't mean I won't find him, but I can't find him so far, actually, well that's because he hasn't done anything.
+
+40 "Callahan, Brian Robert" (3981836032)
+00:06:26.909 --> 00:06:42.179
+I don't think that's right. And anyway, I will look through everything, I will see what he really has or has not done, but.
+
+41 "Callahan, Brian Robert" (3981836032)
+00:06:42.179 --> 00:06:57.479
+For you all, I guess, I guess there's a couple of things. Item one is if you can figure out a way to include him in things try to find a way to include him in things.
+
+42 "Callahan, Brian Robert" (3981836032)
+00:06:57.479 --> 00:07:12.599
+At the same time, have a backup plan so that you all accomplish the things that you want to get accomplished in this last month, I suppose with or without him.
+
+43 "Callahan, Brian Robert" (3981836032)
+00:07:12.599 --> 00:07:34.985
+Preferably with him, but with or without him and make sure that there is good accounting of what work has been done and by whom when I go to check everything again in the semester.
+
+44 "Callahan, Brian Robert" (3981836032)
+00:07:34.985 --> 00:07:36.950
+Does that make sense?
+
+45 "Collins, Joshua" (2814625536)
+00:07:36.950 --> 00:07:39.671
+Yes sir. Yeah, sounds good.
+
+46 "Callahan, Brian Robert" (3981836032)
+00:07:39.671 --> 00:07:45.256
+Okay, and then the four of you were getting by just fine?
+
+47 "Hung, Louis" (2383002112)
+00:07:45.256 --> 00:07:47.733
+Yeah, I was.
+
+48 "Shimu Pan" (982173440)
+00:07:47.733 --> 00:07:53.173
+Yeah, I'll say we're actually making really good progress as of like just were four people.
+
+49 "Shimu Pan" (982173440)
+00:07:53.173 --> 00:07:58.397
+Okay, but we do have a lot of stuff that we do wanna implement by the end of this mess.
+
+50 "Callahan, Brian Robert" (3981836032)
+00:07:58.397 --> 00:08:01.762
+Sir. Sure, I get it.
+
+51 "Collins, Joshua" (2814625536)
+00:08:01.762 --> 00:08:11.847
+Yeah of course yeah it's gonna be a lot of balancing between what we need to get done and then also like if given free time what we would like to do.
+
+52 "Callahan, Brian Robert" (3981836032)
+00:08:11.847 --> 00:08:14.066
+Yeah, NO, that I.
+
+53 "Collins, Joshua" (2814625536)
+00:08:14.066 --> 00:08:30.450
+I I say group before we all share a very similar idea of what this project should vaguely look like as a product. So I think in terms of us for at least we've had a really tight cohesion when it comes to producing our, our work.
+
+54 "Callahan, Brian Robert" (3981836032)
+00:08:30.450 --> 00:08:51.592
+Okay, good. Alright, then in that case, I suppose I should just let the four of you keep on moving forward with what you got. And if he suddenly reappears, by all means, give him something to do and let me know.
+
+55 "Shimu Pan" (982173440)
+00:08:51.592 --> 00:08:52.806
+Yeah.
+
+56 "Collins, Joshua" (2814625536)
+00:08:52.806 --> 00:08:54.088
+Yeah sounds.
+
+57 "Hung, Louis" (2383002112)
+00:08:54.088 --> 00:08:56.072
+Sounds good.
+
+58 "Callahan, Brian Robert" (3981836032)
+00:08:56.072 --> 00:09:01.453
+Then that's it. That's what I wanted to know, so thank you guys.
+
+59 "Shimu Pan" (982173440)
+00:09:01.453 --> 00:09:02.824
+Yeah.
+
+60 "Collins, Joshua" (2814625536)
+00:09:02.824 --> 00:09:14.470
+Thank you. Thank you. Thank you for your time. All right, see you all on Friday.
+
+61 "Shimu Pan" (982173440)
+00:09:14.470 --> 00:09:23.948
+Well, it's kind of like pretty in something like that.
+
+62 "Hung, Louis" (2383002112)
+00:09:23.948 --> 00:09:30.980
+Yeah, I mean, if you really did something then.
+
+63 "Shimu Pan" (982173440)
+00:09:30.980 --> 00:09:37.312
+I'll probably not do that. I know he ok so now that I know he changed this.
+
+64 "izik" (832479232)
+00:09:37.312 --> 00:09:38.590
+Yeah.
+
+65 "Shimu Pan" (982173440)
+00:09:38.590 --> 00:09:41.972
+Gray black ****. I don't like it.
+
+66 "izik" (832479232)
+00:09:41.972 --> 00:09:44.932
+Yeah, could we, can we change that.
+
+67 "Shimu Pan" (982173440)
+00:09:44.932 --> 00:09:48.949
+Like we change that back, I really.
+
+68 "Collins, Joshua" (2814625536)
+00:09:48.949 --> 00:09:55.675
+From a one set color, like, you know, like a dark gray, a medium gray, and then whatever colored.
+
+69 "izik" (832479232)
+00:09:55.675 --> 00:09:59.652
+Really we're gonna go with. I think, I think what we have in the teams page.
+
+70 "Shimu Pan" (982173440)
+00:09:59.652 --> 00:10:03.386
+I like yeah yeah.
+
+71 "Collins, Joshua" (2814625536)
+00:10:03.386 --> 00:10:09.252
+Yeah, let's it in a discord with three colors, that way we can keep it the same.
+
+72 "Shimu Pan" (982173440)
+00:10:09.252 --> 00:10:12.736
+I mean I don't I don't mind the colors I just wanted to go back.
+
+73 "Collins, Joshua" (2814625536)
+00:10:12.736 --> 00:10:21.366
+Yeah yeah. I mean it the layout is fine it's just overall it's not what I think, I think it's just too dark.
+
+74 "Shimu Pan" (982173440)
+00:10:21.366 --> 00:10:25.796
+Loki thought what if you guys did it so I never brought it up.
+
+75 "Hung, Louis" (2383002112)
+00:10:25.796 --> 00:10:29.784
+No, I never bothered dealing with CSS on the main.
+
+76 "Collins, Joshua" (2814625536)
+00:10:29.784 --> 00:10:37.092
+Yeah, it wasn't yeah. I I just feel like if you go up to more calls, it would be.
+
+77 "Shimu Pan" (982173440)
+00:10:37.092 --> 00:10:41.106
+A lot better because then at least say like, oh, I can pick that up for you.
+
+78 "Collins, Joshua" (2814625536)
+00:10:41.106 --> 00:10:41.655
+Guys.
+
+79 "izik" (832479232)
+00:10:41.655 --> 00:10:45.435
+Because exactly. I remember one time I was working on it.
+
+80 "Shimu Pan" (982173440)
+00:10:45.435 --> 00:10:53.015
+And I I pulled from main and I suddenly my whole thing changed. I was like, nobody even, you know, told me.
+
+81 "Hung, Louis" (2383002112)
+00:10:53.015 --> 00:11:07.328
+I think it might be, it might be like the what's it called again? The main main page CSS got changed. So everything else just like used the main page CSS that we just took it.
+
+82 "Collins, Joshua" (2814625536)
+00:11:07.328 --> 00:11:09.980
+Yeah, that's.
+
+83 "izik" (832479232)
+00:11:09.980 --> 00:11:13.866
+Because I I don't remember any one of you guys like saying like oh yeah I changed this.
+
+84 "Collins, Joshua" (2814625536)
+00:11:13.866 --> 00:11:15.464
+CSS, so when I like.
+
+85 "izik" (832479232)
+00:11:15.464 --> 00:11:17.861
+Before like our presentation.
+
+86 "Collins, Joshua" (2814625536)
+00:11:17.861 --> 00:11:18.669
+And it was like that black.
+
+87 "izik" (832479232)
+00:11:18.669 --> 00:11:21.989
+Back in blue. I threw like an hour to my wind.
+
+88 "Collins, Joshua" (2814625536)
+00:11:21.989 --> 00:11:24.126
+At the time and just like moved and changed their.
+
+89 "izik" (832479232)
+00:11:24.126 --> 00:11:30.083
+Everything on high page. Well.
+
+90 "Collins, Joshua" (2814625536)
+00:11:30.083 --> 00:11:35.061
+I guess we can fix that then. Yeah, yeah.
+
+91 "izik" (832479232)
+00:11:35.061 --> 00:11:41.461
+I think I'm gonna be working on finishing up the team's page I'm just gonna add a section for now just so it's.
+
+92 "Collins, Joshua" (2814625536)
+00:11:41.461 --> 00:11:49.001
+Placeholder. Yeah. You were saying it's the CSS you're talking about?
+
+93 "Hung, Louis" (2383002112)
+00:11:49.001 --> 00:11:50.842
+And for.
+
+94 "Collins, Joshua" (2814625536)
+00:11:50.842 --> 00:11:53.709
+What was the, the three colors?
+
+95 "Hung, Louis" (2383002112)
+00:11:53.709 --> 00:12:05.832
+Oh ****, I changed I changed that on my PR. Okay wait wait a 2nd. I changed it on my branch because like I want to fit in with the entire theme today.
+
+96 "Collins, Joshua" (2814625536)
+00:12:05.832 --> 00:12:07.150
+I.
+
+97 "Shimu Pan" (982173440)
+00:12:07.150 --> 00:12:14.980
+Yeah just just leave it alone because my team's page I didn't follow because it looked really ugly.
+
+98 "Shimu Pan" (982173440)
+00:12:16.487 --> 00:12:18.788
+If.
+
+99 "Collins, Joshua" (2814625536)
+00:12:18.788 --> 00:12:38.368
+Yeah, let's say that for like the last week cause that's a simple fix later down the road. That'll just take like an hour of our time respectively just to go back and flip everything, but it's an easy fix that we know we can do easily. We should probably tackle the, the data aspects and get everything else working.
+
+100 "Hung, Louis" (2383002112)
+00:12:38.368 --> 00:12:55.863
+Yeah, like, I just sent the color just in case you want to save it because I don't know, maybe I'll override it one day and forgot about it, yeah. But anyways, if, ok, I'll continue with my part, I guess.
+
+101 "izik" (832479232)
+00:12:55.863 --> 00:12:58.302
+Okay.
+
+102 "Shimu Pan" (982173440)
+00:12:58.302 --> 00:13:04.124
+Yeah, and I will I will try to build out the, the.
+
+103 "izik" (832479232)
+00:13:04.124 --> 00:13:06.353
+Okay.
+
+104 "Hung, Louis" (2383002112)
+00:13:06.353 --> 00:13:09.788
+So, the main page that.
+
+105 "izik" (832479232)
+00:13:09.788 --> 00:13:12.486
+As an alludible.
+
+106 "Hung, Louis" (2383002112)
+00:13:12.486 --> 00:13:17.788
+Forward here like that's now ready for user and a PHP my admin instead instead of like.
+
+107 "Collins, Joshua" (2814625536)
+00:13:17.788 --> 00:13:20.660
+All data. That's good. That's, that's that's huge bra.
+
+108 "Hung, Louis" (2383002112)
+00:13:20.660 --> 00:13:30.181
+Yeah, like it's it's ok so basically that's one of it and this is also dynamically, so I change it a bit so you know we can figure it around.
+
+109 "Collins, Joshua" (2814625536)
+00:13:30.181 --> 00:13:31.367
+Right.
+
+110 "Hung, Louis" (2383002112)
+00:13:31.367 --> 00:13:55.565
+That's awesome. And wait, how do I Okay so if I do a login and I made the profile page, and this is I think unique to each player, if I'm correct. So email, total rounds, correct rounds, round rounds, scores, win rate, and a profile.
+
+111 "Collins, Joshua" (2814625536)
+00:13:55.565 --> 00:14:01.209
+That's that that is wow. Dude. I'm not trying to glaze you but that that's a good wor.
+
+112 "Shimu Pan" (982173440)
+00:14:01.209 --> 00:14:06.026
+Yeah, the the animation is really cool.
+
+113 "Hung, Louis" (2383002112)
+00:14:06.026 --> 00:14:16.140
+Yeah, like the small bug on this page is like the CSS not matching with each other and like when you click on the top right corner, there's nothing popping out and I put down issue and we.
+
+114 "Collins, Joshua" (2814625536)
+00:14:16.140 --> 00:14:24.162
+We can fix that later. Yeah, not a big bug, yeah. It's, as far as the indexing issue if I had a guess, it just probably appears right behind that white, the.
+
+115 "Hung, Louis" (2383002112)
+00:14:24.162 --> 00:14:40.588
+Yeah, probably. And another thing I fixed is for stats and predictions, they, like the nav bar was like independently put in the stats and nav bar files that you that you.
+
+116 "Collins, Joshua" (2814625536)
+00:14:40.588 --> 00:14:41.488
+So that's the same.
+
+117 "Hung, Louis" (2383002112)
+00:14:41.488 --> 00:14:43.540
+Regardless. Yeah, yeah, yeah, I changed it.
+
+118 "Collins, Joshua" (2814625536)
+00:14:43.540 --> 00:14:46.282
+Yeah. Okay, that's good, that's good.
+
+119 "Hung, Louis" (2383002112)
+00:14:46.282 --> 00:14:48.044
+And I think that's all.
+
+120 "Collins, Joshua" (2814625536)
+00:14:48.044 --> 00:14:53.206
+Okay, yeah. So is, is the nav bar always gonna be used by.
+
+121 "Hung, Louis" (2383002112)
+00:14:53.206 --> 00:14:58.447
+Yeah, it's always PHP, so every file now in the thing is PHP.
+
+122 "Collins, Joshua" (2814625536)
+00:14:58.447 --> 00:14:59.710
+Oh, including the.
+
+123 "Hung, Louis" (2383002112)
+00:14:59.710 --> 00:15:01.955
+Yeah, including staff page.
+
+124 "Collins, Joshua" (2814625536)
+00:15:01.955 --> 00:15:04.205
+Oh, so the staff page itself is not.
+
+125 "Hung, Louis" (2383002112)
+00:15:04.205 --> 00:15:05.811
+Now PHP I got it. Yeah.
+
+126 "Collins, Joshua" (2814625536)
+00:15:05.811 --> 00:15:22.491
+Yeah. Yeah, so I'll I'll make what I'll do is I'll keep a copy of my HTML on my page and I'll continue changing it and then I'll change it over into the PHP. Cause right now I'm doing JavaScript so that shouldn't have a huge impact on any.
+
+127 "Hung, Louis" (2383002112)
+00:15:22.491 --> 00:15:34.824
+BHP. Okay, the only thing I changed for the status page, let me let me check. It's one, one of this and one of this and I deleted a header.
+
+128 "Collins, Joshua" (2814625536)
+00:15:34.824 --> 00:15:41.176
+Yeah, yeah, yeah. Yeah, you just had the yeah you had the PHP just go in and start the header part, but then everything.
+
+129 "Hung, Louis" (2383002112)
+00:15:41.176 --> 00:15:44.601
+At the bottom is still. Yeah, it's still the same, so nothing too.
+
+130 "Collins, Joshua" (2814625536)
+00:15:44.601 --> 00:15:55.001
+Crazy. Yeah yeah yeah that yeah what I was saying just is so I can actually view it because I I'm not gonna try and spend a while getting all the SQL data.
+
+131 "Hung, Louis" (2383002112)
+00:15:55.001 --> 00:15:56.758
+To work on Xamp?
+
+132 "Collins, Joshua" (2814625536)
+00:15:56.758 --> 00:16:00.797
+I'll just keep, yeah, I'll just keep a backup on my computer.
+
+133 "Hung, Louis" (2383002112)
+00:16:00.797 --> 00:16:04.104
+Yeah, yeah, definitely. Keep it like in one of your branches or something like.
+
+134 "Shimu Pan" (982173440)
+00:16:04.104 --> 00:16:07.802
+Yeah, and he can always export it so he.
+
+135 "Hung, Louis" (2383002112)
+00:16:07.802 --> 00:16:26.342
+Alright, ok. Yeah, so talking about the exam, I I also changed a little bit to like the user, user part, user, like the user data structures that I added like two more variables and I'll export it, I guess.
+
+136 "Collins, Joshua" (2814625536)
+00:16:26.342 --> 00:16:27.949
+Yeah.
+
+137 "Hung, Louis" (2383002112)
+00:16:27.949 --> 00:16:41.972
+I'll just export this what I have right now because I added like these three. I'll export it and I'll just give it to you guys through this recording and just input it. Yeah, I guess.
+
+138 "Collins, Joshua" (2814625536)
+00:16:41.972 --> 00:16:53.723
+That's all for me. Hey, yeah, that sounds good. I mean yeah you're basically done with the, oh, do we have the system yet where like the points increase or decrease or is.
+
+139 "Hung, Louis" (2383002112)
+00:16:53.723 --> 00:16:57.441
+That's something we still need to figure out. That's something we still need to figure out, like that's like the.
+
+140 "Collins, Joshua" (2814625536)
+00:16:57.441 --> 00:17:31.488
+I guess. Okay, so so right now we're just working on the API stuff. Okay, yeah. Sounds good. And let me know if we run out of clicks, we can just make a note a new API key. Probably what we should do, at least for that is we have my API key right now where we're using it to get all the data. If we run low, we should have somebody else get a new API key for at least for the hoop data one. Okay. And then we can use that for our demo just to make sure that we don't run out of API fetches.
+
+141 "Hung, Louis" (2383002112)
+00:17:31.488 --> 00:17:35.487
+It's Halfway through our demo. No, it's fine because mine API I hadn't used.
+
+142 "Collins, Joshua" (2814625536)
+00:17:35.487 --> 00:17:40.196
+Mine yet, so. Oh yeah, that's perfect. Yeah, that's good that's good.
+
+143 "Hung, Louis" (2383002112)
+00:17:40.196 --> 00:17:43.989
+What else?
+
+144 "Hung, Louis" (2383002112)
+00:17:43.989 --> 00:17:49.589
+Yeah, any other updates or we're just good?
+
+145 "Collins, Joshua" (2814625536)
+00:17:49.589 --> 00:18:03.246
+I think that's about it. I mean, we're all, we all have our work to do. I'll definitely try to, I I can't really work this weekend because of the hackathon for the hacking class, but after that I should be able to start, you know, contributing my.
+
+146 "Shimu Pan" (982173440)
+00:18:03.246 --> 00:18:05.306
+Right that's fine.
+
+147 "Hung, Louis" (2383002112)
+00:18:05.306 --> 00:18:20.627
+That's fine, it's fine, yeah. I'm a I'm I'm showing this week. Well, more or less showing. So I'll probably work on the, the point system and the points page, like the vetting page and try to figure out.
+
+148 "Collins, Joshua" (2814625536)
+00:18:20.627 --> 00:18:28.302
+Something. Yeah, I mean, I think if you just do the, like, like you said where you click on the game and then you can drop like kind of have like some kind of dropdown there.
+
+149 "Hung, Louis" (2383002112)
+00:18:28.302 --> 00:18:38.209
+Yeah, that that would also make sense but like I don't know if anyone is working on cause Isaac said he did the game page, I think.
+
+150 "Shimu Pan" (982173440)
+00:18:38.209 --> 00:18:40.570
+No, he did the team.
+
+151 "Collins, Joshua" (2814625536)
+00:18:40.570 --> 00:18:45.201
+Yeah so that like basically we're gonna replace the staf.
+
+152 "Hung, Louis" (2383002112)
+00:18:45.201 --> 00:18:46.227
+That page with teams.
+
+153 "Collins, Joshua" (2814625536)
+00:18:46.227 --> 00:18:55.966
+The team page where you can click on all the teams and then in the top right corner there will be a button that says like search for player stats, and that's where the old statistic.
+
+154 "Hung, Louis" (2383002112)
+00:18:55.966 --> 00:19:02.704
+Page that I'm working on. Ah, ok, ok, so then I'll I'll just work on like, like a game page.
+
+155 "Collins, Joshua" (2814625536)
+00:19:02.704 --> 00:19:14.291
+Or something like that. Yeah, yeah, yeah. Yeah cause right now basically Isaac and I are on the stat tab and we need some yeah we need the predict, the last big functionality set.
+
+156 "Hung, Louis" (2383002112)
+00:19:14.291 --> 00:19:15.566
+The prediction tab. Okay.
+
+157 "Collins, Joshua" (2814625536)
+00:19:15.566 --> 00:19:40.787
+Okay I'll work on that then. Yeah, I mean, I should get I should be able to get those the tables down pretty quickly, and then if you need help, let me know. Okay. Yeah, and then I think we should be good there. And then if we have any spare time, we could probably try to implement that taunting thing that Callen suggested when we did our demo where like if you can like select a player in tant.
+
+158 "Hung, Louis" (2383002112)
+00:19:40.787 --> 00:19:47.510
+Oh, that's another front option in.
+
+159 "Collins, Joshua" (2814625536)
+00:19:47.510 --> 00:19:49.369
+I guess PHP. Yeah.
+
+160 "Hung, Louis" (2383002112)
+00:19:49.369 --> 00:19:51.615
+Yeah, we can do that.
+
+161 "Collins, Joshua" (2814625536)
+00:19:51.615 --> 00:19:54.612
+That I guess. Or, you know, have like a.
+
+162 "Hung, Louis" (2383002112)
+00:19:54.612 --> 00:19:56.029
+Friends list.
+
+163 "Collins, Joshua" (2814625536)
+00:19:56.029 --> 00:20:00.411
+Yeah. And then we can make some and then I could probably make a BS like about us.
+
+164 "Hung, Louis" (2383002112)
+00:20:00.411 --> 00:20:04.511
+Like like a fredge leap.
+
+165 "Collins, Joshua" (2814625536)
+00:20:04.511 --> 00:20:07.407
+Yeah. Oh yeah, like a friendly to board.
+
+166 "Shimu Pan" (982173440)
+00:20:07.407 --> 00:20:10.043
+Yeah, yeah, yeah. Oh, we got two friends 1st though.
+
+167 "Hung, Louis" (2383002112)
+00:20:10.043 --> 00:20:11.125
+Yeah.
+
+168 "Collins, Joshua" (2814625536)
+00:20:11.125 --> 00:20:21.523
+Yeah friends would just be like friends would probably just be a column called friends and you store it as like a JSON list, or whatever.
+
+169 "Shimu Pan" (982173440)
+00:20:21.523 --> 00:20:24.508
+Yeah that stands like your works.
+
+170 "Collins, Joshua" (2814625536)
+00:20:24.508 --> 00:20:49.009
+Yeah, you basically have the file, the JSON file saved in that column and then you say find friends, then you pull up the Json and then you add accordingly or take away accordingly. Yeah. Yeah, but I I think we're in a good spot at least. We just, we need to see if we can talk, we can talk to Renee on Friday and be like.
+
+171 "Shimu Pan" (982173440)
+00:20:49.009 --> 00:20:50.907
+We did pull somewhere.
+
+172 "Collins, Joshua" (2814625536)
+00:20:50.907 --> 00:20:59.725
+Yeah, like dude, you kind of ****** up Actually, let's let's give him the about page to do. Let's see if he does the.
+
+173 "Hung, Louis" (2383002112)
+00:20:59.725 --> 00:21:01.269
+Got page.
+
+174 "Collins, Joshua" (2814625536)
+00:21:01.269 --> 00:21:22.375
+If he doesn't do that it's fine we don't need it. But if he does do it, we can then maybe give him a smaller another smaller task and say he kind he kind of like picked up some slack. Yeah. Because I want to give him at least a chance to pick up some slack now, even if it is only like a mall little bit at the end.
+
+175 "Shimu Pan" (982173440)
+00:21:22.375 --> 00:21:26.048
+And yeah.
+
+176 "Collins, Joshua" (2814625536)
+00:21:26.048 --> 00:21:39.165
+Cause I kind of feel, I feel bad and also you don't have the same time because like we he didn't even show up today like I'm not here, doesn't.
+
+177 "Shimu Pan" (982173440)
+00:21:39.165 --> 00:21:42.965
+Yeah. Do you actually not know what means about?
+
+178 "Collins, Joshua" (2814625536)
+00:21:42.965 --> 00:21:51.170
+I, I I could I didn't I didn't tell him. I I said like oh Callihanna wants to talk to us as a group.
+
+179 "Hung, Louis" (2383002112)
+00:21:51.170 --> 00:21:56.309
+I mean, if Callern is here, he's supposed to be.
+
+180 "Collins, Joshua" (2814625536)
+00:21:56.309 --> 00:22:15.451
+Yeah, it's just like it's like one of those things where it's like, even if he didn't know it was about him specifically, he still needs to like show up. Yeah. And we can see he says I'm free tomorrow. He yesterday he said I'm free after five for both meetings and all day Wednesday.
+
+181 "Shimu Pan" (982173440)
+00:22:15.451 --> 00:22:17.783
+Pages doesn't.
+
+182 "Collins, Joshua" (2814625536)
+00:22:17.783 --> 00:22:26.004
+Yeah, and then we make the messages in discord and then he just refuses.
+
+183 "Hung, Louis" (2383002112)
+00:22:26.004 --> 00:22:28.730
+To listen. Yeah, and Isaac even at him about.
+
+184 "Shimu Pan" (982173440)
+00:22:28.730 --> 00:22:32.531
+Yeah, I think you added him.
+
+185 "Hung, Louis" (2383002112)
+00:22:32.531 --> 00:22:36.348
+I didn't even bother adding him, so.
+
+186 "Collins, Joshua" (2814625536)
+00:22:36.348 --> 00:22:40.923
+Well, NO, you can see in our chats that we've slowly stopped including him.
+
+187 "Hung, Louis" (2383002112)
+00:22:40.923 --> 00:22:46.550
+On like the hours request. Oh yeah. That's the only thing he does though. I'm not gonna.
+
+188 "Collins, Joshua" (2814625536)
+00:22:46.550 --> 00:22:58.550
+Well, yeah, because it takes like a minute to just go approve. True. Yeah, I think we're in a good spot at least.
+
+189 "Shimu Pan" (982173440)
+00:22:58.550 --> 00:22:59.609
+Even though.
+
+190 "Collins, Joshua" (2814625536)
+00:22:59.609 --> 00:23:05.270
+Yeah wait, did either of you guys get your like pages to pop up correctly?
+
+191 "Shimu Pan" (982173440)
+00:23:05.270 --> 00:23:09.647
+On the test. Yeah, my page just works right now.
+
+192 "Hung, Louis" (2383002112)
+00:23:09.647 --> 00:23:12.889
+Oh, you should have asked, you should have.
+
+193 "Collins, Joshua" (2814625536)
+00:23:12.889 --> 00:23:17.052
+****. Yeah, you're right. Yeah. Well I did wanna ask.
+
+194 "Shimu Pan" (982173440)
+00:23:17.052 --> 00:23:22.862
+You guys. That's true. Yeah, but definitely try to like ask him after.
+
+195 "Collins, Joshua" (2814625536)
+00:23:22.862 --> 00:23:26.208
+In class or something. Yeah, I'll well I have them on Thursday.
+
+196 "Shimu Pan" (982173440)
+00:23:26.208 --> 00:23:26.810
+So I could talk to.
+
+197 "Hung, Louis" (2383002112)
+00:23:26.810 --> 00:23:28.610
+Yeah.
+
+198 "Collins, Joshua" (2814625536)
+00:23:28.610 --> 00:23:31.888
+Okay, yeah. I'm gonna I'm gonna interrogate them in my.
+
+199 "Shimu Pan" (982173440)
+00:23:31.888 --> 00:23:35.129
+A hacking class.
+
+200 "Collins, Joshua" (2814625536)
+00:23:35.129 --> 00:23:39.286
+Yeah, also how was that.
+
+201 "Shimu Pan" (982173440)
+00:23:39.286 --> 00:23:41.943
+It was fine.
+
+202 "Collins, Joshua" (2814625536)
+00:23:41.943 --> 00:23:46.742
+Hopefully, hopefully, I know hopefully fingers crossed late, Lewis, are you in progres.
+
+203 "Hung, Louis" (2383002112)
+00:23:46.742 --> 00:23:48.730
+How are you with sophomore? I'm sopho.
+
+204 "Collins, Joshua" (2814625536)
+00:23:48.730 --> 00:23:51.770
+More. He's my brother. Wait.
+
+205 "Shimu Pan" (982173440)
+00:23:51.770 --> 00:23:54.387
+No, you don't have to ******* take it. Yeah, he doesn't have to take it.
+
+206 "Collins, Joshua" (2814625536)
+00:23:54.387 --> 00:24:01.407
+Yeah. Yeah Louis, you're the, you're the 1st class that doesn't.
+
+207 "Hung, Louis" (2383002112)
+00:24:01.407 --> 00:24:03.990
+You have to take frogway. Yay!
+
+208 "Shimu Pan" (982173440)
+00:24:03.990 --> 00:24:06.285
+Yeah, and it's a good thing Robert.
+
+209 "Collins, Joshua" (2814625536)
+00:24:06.285 --> 00:24:17.728
+Well yes, NO, do not do it 1st language you have to learn is Hascal, which is like C++ with a different syntax and just extra steps.
+
+210 "Shimu Pan" (982173440)
+00:24:17.728 --> 00:24:20.571
+It's asked yeah also uses it.
+
+211 "Collins, Joshua" (2814625536)
+00:24:20.571 --> 00:24:28.350
+Yeah, the only people that use it are like a few unique departments and like the and like government contractors. So it's like.
+
+212 "Shimu Pan" (982173440)
+00:24:28.350 --> 00:24:30.391
+Not really use that much.
+
+213 "Collins, Joshua" (2814625536)
+00:24:30.391 --> 00:24:42.269
+Yeah, and then the other language we just learned was Erland, which is an actor model language. So you have like actors you spawn in so you can run like stuff concurrently.
+
+214 "Hung, Louis" (2383002112)
+00:24:42.269 --> 00:24:43.827
+Okay.
+
+215 "Collins, Joshua" (2814625536)
+00:24:43.827 --> 00:24:52.670
+Yeah, NO, it sounds just as bad as it is or you could use salsa, which is the professor's language and is just as bad, if not worse.
+
+216 "Hung, Louis" (2383002112)
+00:24:52.670 --> 00:24:56.405
+But I guess I'm lucky then.
+
+217 "Collins, Joshua" (2814625536)
+00:24:56.405 --> 00:25:03.664
+Don't have to take it. Yeah, and then we have to do, what's it, not a vero log, prolog. I don't even know what that one is. It sounds.
+
+218 "Hung, Louis" (2383002112)
+00:25:03.664 --> 00:25:06.443
+Yeah, I don't even know what that one is. Literally it sounds like.
+
+219 "Hung, Louis" (2383002112)
+00:25:10.401 --> 00:25:21.364
+Well, good luck guys. I don't know what you say. Yep.
+
+220 "Shimu Pan" (982173440)
+00:25:21.364 --> 00:25:23.295
+This is it?
+
+221 "Collins, Joshua" (2814625536)
+00:25:23.295 --> 00:25:30.223
+Yep. See you guys on Saturday or sometime, let's Are you guys available?
+
+222 "Shimu Pan" (982173440)
+00:25:30.223 --> 00:25:33.207
+Saturday? Yeah, yeah. Oh yeah, I'm good. I'm using.
+
+223 "Hung, Louis" (2383002112)
+00:25:33.207 --> 00:25:43.301
+Do we need to like do one of the, like, cause this one is a makeup for Saturday or Sunday or the weekend, right? Do you have to do it tomorrow or.
+
+224 "Collins, Joshua" (2814625536)
+00:25:43.301 --> 00:25:47.142
+Yeah, we'll we'll find a time to do it tomorrow.
+
+225 "Hung, Louis" (2383002112)
+00:25:47.142 --> 00:25:50.884
+But I don't think there's a lot of to talk about.
+
+226 "Collins, Joshua" (2814625536)
+00:25:50.884 --> 00:25:56.799
+About tomorrow. Well, yeah, we we could just, you know, continue talking about where, where we are.
+
+227 "Hung, Louis" (2383002112)
+00:25:56.799 --> 00:26:00.198
+With what we talked about today. All right. All right. Fair enough.
+
+228 "Collins, Joshua" (2814625536)
+00:26:00.198 --> 00:26:01.196
+Okay.
+
+229 "Hung, Louis" (2383002112)
+00:26:01.196 --> 00:26:02.342
+Good evening, guys.
+
+230 "Shimu Pan" (982173440)
+00:26:02.342 --> 00:26:06.252
+Alright, see ya. Yep. See you.
