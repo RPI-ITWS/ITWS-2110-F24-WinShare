@@ -42,7 +42,7 @@ session_start();
                     </tbody>
                 </table>
             </div>
-            <div id="RightColumn"></div>
+            <div id="RightCol"></div>
         </div>
 
     </body>

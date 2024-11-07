@@ -20,10 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                     <a class="nav-link" href="/ITWS-2110-F24-WinShare/index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Statistics/index.html">Statistics</a>
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Statistics/index.php">Statistics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Predictions/Predictions.html">Predictions</a>
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Predictions/Predictions.php">Predictions</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto me-3">
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                     </a>
                     <ul class="dropdown-menu" style="background-color: #1a1a1a; border-color: #00aaff;">
                         <?php if (isset($_SESSION['user_id'])): ?>
-                            <li><a class="dropdown-item" href="#" style="color: #00aaff;">Profile</a></li>
+                            <li><a class="dropdown-item" href="/ITWS-2110-F24-WinShare/Auth/Profile/profile.php?id=<?php echo $_SESSION['user_id']; ?>" style="color: #00aaff;">Profile</a></li>
                             <li><a class="dropdown-item" href="#" style="color: #00aaff;">Settings</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
