@@ -1,18 +1,20 @@
 let leaderboardData = [];
 let currentSortBy = 'score';
 
+
 // Fetch the JSON data
-fetch('./src/leaderboard_data.json')
+fetch('./src/get_leaderboard.php')
     .then(response => response.json())
     .then(data => {
-        leaderboardData = processLeaderboardData(data.leaderboard);
+        console.log('Received data:', data);
+        leaderboardData = processLeaderboardData(data.users);
         populateLeaderboard(leaderboardData);
         setTimeout(() => animateScores(leaderboardData), 100);
         setupSortButtons();
     })
     .catch(error => console.error('Error:', error));
 
-// Process the leaderboard data: sort and add rankings
+// Rest of the JavaScript code remains the same
 function processLeaderboardData(data) {
     return data.map(entry => ({
         ...entry,
@@ -29,7 +31,7 @@ function populateLeaderboard(data) {
     data.forEach(entry => {
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td>${entry.rank}</td>
+            <td id="rank-num">${entry.rank}</td>
             <td>
                 <img src="${entry.profilePic}" alt="${entry.player}'s profile" class="profile-pic">
                 <span class="player-name">${entry.player}</span>
