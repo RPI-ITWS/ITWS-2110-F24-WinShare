@@ -14,7 +14,7 @@
 <body>
     <?php include "../php/header.php" ?>
     <header class="header">
-        <img src="../assets/Photos/teamLogo/lakers.png" alt="Wolves Esports Logo" class="logo">
+        <img id="logoPath" alt="Team Logo" class="logo">
         <div class="team-info">
             <h1 id="team-name">Wolves Esports WOL</h1>
             <p>
