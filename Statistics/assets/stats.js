@@ -94,6 +94,7 @@ document.addEventListener('click', function(exit) {
     }
 });
 
+
 const players = [
     "Nikola Jokić", "LeBron James", "Stephen Curry", "Shai Gilgeous-Alexander", "Kevin Durant",
     "Jayson Tatum", "Anthony Edwards", "Joel Embiid", "Damian Lillard", "Jimmy Butler",
