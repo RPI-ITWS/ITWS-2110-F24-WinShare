@@ -11,7 +11,7 @@ document
          const result = await response.json();
          if (result.message) {
             window.location.href =
-               '/ITWS-2110-F24-winshare/Auth/Login/login.php';
+               '/ITWS-2110-F24-WinShare/Auth/Login/login.php';
          } else if (result.error) {
             alert(result.error);
          }

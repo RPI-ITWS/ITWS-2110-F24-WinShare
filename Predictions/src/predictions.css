@@ -8,13 +8,13 @@
 }
 
 #mainframe {
-    background-color: white;
-    border-radius: 15px;
-    padding: 30px;
+    background-color: rgb(39, 36, 36);
+    border-radius: 10px;
+    padding: 10px;
     width: 90%;
-    max-width: 1800px;
-    height: 80vh;
-    max-height: 800px;
+    max-width: 1700px;
+    height: 90vh;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,23 +22,23 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     border: 10px solid #000000;
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 5rem auto;
+    z-index: 1; 
     overflow-y: auto;
 }
 
+
+
 #mainframe > div {
     width: 100%;
-    min-height: 33.333vh;
-    margin-bottom: 10px;
+    min-height: 20vh;
+    margin-bottom: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-    border: #56d7b2 solid 1px;
+    border: #00aaff solid 1px;
 }
 
 #mainframe > div:last-child {
@@ -47,7 +47,7 @@
 
 #mainframe > div img {
     max-width: 20%;
-    max-height: 80%;
+    max-height: 70%;
     object-fit: contain;
 }
 
@@ -59,6 +59,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white
 }
 
 #mainframe > div .content h2,
@@ -72,6 +73,7 @@
     display: flex;
     font-size: 60px;
     position: absolute;
-    left: 40%;
-    color: #7fe1c5;
+    left: 35%;
+    color: #00aaff;
+    align-items: center;
 }
