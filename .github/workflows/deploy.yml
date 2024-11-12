@@ -1,0 +1,21 @@
+name: Deployment to VM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: winshare.eastus.cloudapp.azure.com
+          username: winshare
+          password: winshare123@
+          port: 22
+          script: |
+            cd /var/www/html/ITWS-2110-F24-WinShare
+            sudo git pull
