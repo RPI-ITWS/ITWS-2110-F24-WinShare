@@ -18,7 +18,7 @@ session_start();
 
 <?php include '../php/header.php'; ?>
 
-    <div id = "body">
+<div id = "body">
         <div id = "content">
             <div id = "tabs">
                 <button id="StatButton">Search For Statistic</button>
@@ -49,17 +49,73 @@ session_start();
             <div id = "StatContent">
                 <div id = "top">
                     <input type="text" id="PlayerSearch" placeholder="Search Players">
-                    <button id = "FindPlayer">Search</button>
+                    <button id = "FindPlayer" onclick = "FindPlayerStats()">Search</button>
                 </div>
                 <div id="center">
                     <div id="PlayerOptions"></div>
                     <div id = "null"></div>
                 </div>
-                <div id = "data2"></div>
+                <div id = "data2">
+                    <div class="photo-container">
+                        <img src="./assets/Photos/default.png" alt="Profile" class="profile-photo">
+                    </div>
+                    <div class="player-container">
+                        <h2 class="name">...</h2>
+                        <p class="position">...</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-box" id="stat-box-1">
+                            <p class="stat-label" id="label-1"></p>
+                            <p class="stat-value" id="value-1"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-2">
+                            <p class="stat-label" id="label-2"></p>
+                            <p class="stat-value" id="value-2"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-3">
+                            <p class="stat-label" id="label-3"></p>
+                            <p class="stat-value" id="value-3"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-4">
+                            <p class="stat-label" id="label-4"></p>
+                            <p class="stat-value" id="value-4"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-5">
+                            <p class="stat-label" id="label-5"></p>
+                            <p class="stat-value" id="value-5"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-6">
+                            <p class="stat-label" id="label-6"></p>
+                            <p class="stat-value" id="value-6"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-7">
+                            <p class="stat-label" id="label-7"></p>
+                            <p class="stat-value" id="value-7"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-8">
+                            <p class="stat-label" id="label-8"></p>
+                            <p class="stat-value" id="value-8"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-9">
+                            <p class="stat-label" id="label-9"></p>
+                            <p class="stat-value" id="value-9"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-10">
+                            <p class="stat-label" id="label-10"></p>
+                            <p class="stat-value" id="value-10"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-11">
+                            <p class="stat-label" id="label-11"></p>
+                            <p class="stat-value" id="value-11"></p>
+                        </div>
+                        <div class="stat-box" id="stat-box-12">
+                            <p class="stat-label" id="label-12"></p>
+                            <p class="stat-value" id="value-12"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>        
     </div>
-
-
 </body>
 </html>
