@@ -64,6 +64,30 @@ body, html {
     margin: 10px 0;
 }
 
+.result {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.result img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.result.win {
+    background-color: rgba(0, 255, 0, 0.1);
+    border-left: 3px solid #00aa00;
+}
+
+.result.loss {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-left: 3px solid #aa0000;
+}
+
 .match img, .result img, .player img {
     width: 40px;
 }
@@ -88,4 +112,20 @@ body, html {
    margin: 10px 0;
    font-size: 14px;
    font-weight: bold;
+}
+
+.toggle-results-btn {
+    display: none;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-results-btn:hover {
+    background-color: #0056b3;
 }

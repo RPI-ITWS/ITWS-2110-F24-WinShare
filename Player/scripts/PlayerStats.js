@@ -71,7 +71,6 @@ function displayStats(data) {
 
     const careerStats = calculateCareerStats(data.seasons);
 
-    // Update the stats display
     const statsSection = document.getElementById('season-stats');
     const statsHTML = `
         <div class="career-stats">

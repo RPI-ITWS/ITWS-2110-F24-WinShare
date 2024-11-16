@@ -50,13 +50,10 @@
         </section>
 
         <section class="recent-results">
-            <h2>Recent Results</h2>
-            <div class="result">
-                <span>WALL-E Cup</span>
-                <img src="../assets/Photos/teamLogo/lakers.png" alt="Wolves">
-                <span>2 : 1</span>
-                <img src="../assets/Photos/teamLogo/clippers.png" alt="All Gamers">
+            <h2>Past Results</h2>
+            <div class="results-container">
             </div>
+            <button id="toggleResults" class="toggle-results-btn">View More</button>
         </section>
 
         <section class="current-coaches">

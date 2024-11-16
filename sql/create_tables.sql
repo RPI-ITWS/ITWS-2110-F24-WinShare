@@ -1,9 +1,11 @@
+-- Create teams table
 CREATE TABLE teams (
     id VARCHAR(36) PRIMARY KEY,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Create previous games table
 CREATE TABLE previous_games (
     game_id VARCHAR(36) PRIMARY KEY,
     home_team_id VARCHAR(36),
@@ -12,12 +14,13 @@ CREATE TABLE previous_games (
     away_team_score INT,
     game_date DATETIME,
     season_year INT,
-    season_type VARCHAR(10), -- 'REG', 'PST', 'PRE'
+    season_type VARCHAR(10),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (home_team_id) REFERENCES teams(id),
     FOREIGN KEY (away_team_id) REFERENCES teams(id)
 );
-
+ 
+-- Insert the teams data
 INSERT INTO teams (id, name) VALUES
 ('583eca88-fb46-11e1-82cb-f4ce4684ea4c', 'Memphis Grizzlies'),
 ('583ed0ac-fb46-11e1-82cb-f4ce4684ea4c', 'Sacramento Kings'),

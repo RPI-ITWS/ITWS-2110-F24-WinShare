@@ -15,43 +15,67 @@ function displayMore() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-   fetch('./php/fetchTodaySchedule.php')
-      .then((response) => response.json())
-      .then((data) => {
-         console.log('NBA Daily Schedule:', data);
-         const upcomingGamesToday = filterGames(data.today.games, [
-            'scheduled',
-            'created',
-            'inprogress',
-            'halftime',
-         ]);
-         const completedGamesToday = filterGames(data.today.games, [
-            'complete',
-            'closed',
-         ]);
-         const upcomingGamesTomorrow = filterGames(data.tomorrow.games, [
-            'scheduled',
-            'created',
-            'inprogress',
-            'halftime',
-         ]);
-         const completedGamesTomorrow = filterGames(data.tomorrow.games, [
-            'complete',
-            'closed',
-         ]);
-         const completedGamesYesterday = filterGames(data.yesterday.games, [
-            'complete',
-            'closed',
-         ]);
+    fetch('./php/fetchTodaySchedule.php')
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then((data) => {
+            console.log('Raw NBA Daily Schedule:', data);
+            
+            if (!data.today || !data.tomorrow || !data.yesterday) {
+                console.error('Missing data in response:', data);
+                return;
+            }
 
-         displayGames(upcomingGamesToday, 'Upcoming_Matches');
-         displayGames(upcomingGamesTomorrow, 'Upcoming_Matches');
-         displayGames(completedGamesTomorrow, 'Recent_Results');
-         displayGames(completedGamesToday, 'Recent_Results');
-         displayGames(completedGamesYesterday, 'Recent_Results');
-      })
-      .catch((error) => console.error('Error fetching NBA schedule:', error));
+            const upcomingGamesToday = filterGames(data.today.games, [
+                'scheduled', 'created', 'inprogress', 'halftime',
+            ]) || [];
+            const completedGamesToday = filterGames(data.today.games, [
+                'complete', 'closed',
+            ]) || [];
+            const upcomingGamesTomorrow = filterGames(data.tomorrow.games, [
+                'scheduled', 'created', 'inprogress', 'halftime',
+            ]) || [];
+            const completedGamesTomorrow = filterGames(data.tomorrow.games, [
+                'complete', 'closed',
+            ]) || [];
+            const completedGamesYesterday = filterGames(data.yesterday.games, [
+                'complete', 'closed',
+            ]) || [];
+
+            console.log('Filtered games:', {
+                upcomingGamesToday,
+                completedGamesToday,
+                upcomingGamesTomorrow,
+                completedGamesTomorrow,
+                completedGamesYesterday
+            });
+
+            displayGames(upcomingGamesToday, 'Upcoming_Matches');
+            displayGames(upcomingGamesTomorrow, 'Upcoming_Matches');
+            displayGames(completedGamesTomorrow, 'Recent_Results');
+            displayGames(completedGamesToday, 'Recent_Results');
+            displayGames(completedGamesYesterday, 'Recent_Results');
+        })
+        .catch((error) => {
+            console.error('Error fetching NBA schedule:', error);
+            document.getElementById('Upcoming_Matches').innerHTML = 
+                '<p>Error loading games. Please try again later.</p>';
+            document.getElementById('Recent_Results').innerHTML = 
+                '<p>Error loading games. Please try again later.</p>';
+        });
 });
+
+function filterGames(games, statuses) {
+    if (!games || !Array.isArray(games)) {
+        console.warn('Invalid games data:', games);
+        return [];
+    }
+    return games.filter((game) => statuses.includes(game.status));
+}
 
 // "cached" real data so we dont waste api calls
 /*
@@ -1498,13 +1522,6 @@ displayGames(completedGamesToday, 'Recent_Results');
 displayGames(completedGamesYesterday, 'Recent_Results');
 */
 
-function filterGames(games, statuses) {
-   if (!games) {
-      return;
-   }
-   return games.filter((game) => statuses.includes(game.status));
-}
-
 function formatTimeDifference(milliseconds) {
    const totalMinutes = Math.floor(milliseconds / 60000);
    const hours = Math.floor(totalMinutes / 60);
@@ -1534,6 +1551,15 @@ function displayGames(games, containerId) {
       const timeLeftString = formatTimeDifference(timeLeft);
       const timeAgoString = formatTimeDifference(timeAgo) + ' ago';
 
+      const homeTeamLogo = `./assets/Photos/teamLogo/${game.home.name
+         .split(' ')
+         .pop()
+         .toLowerCase()}.png`;
+      const awayTeamLogo = `./assets/Photos/teamLogo/${game.away.name
+         .split(' ')
+         .pop()
+         .toLowerCase()}.png`;
+
       if (
          ['scheduled', 'created', 'inprogress', 'halftime'].includes(
             game.status
@@ -1541,12 +1567,12 @@ function displayGames(games, containerId) {
       ) {
          gameElement.innerHTML = `
             <div class="game-info">
-                <img class="small-logo" src="https://static.cdnlogo.com/logos/l/15/los-angeles-lakers.svg" alt="${game.home.name} logo">
-                <div class="team" onclick="navigateToTeamPage('${game.home.name}', '${game.away.id}')">${game.home.name}</div>
+                <img class="small-logo" src="${homeTeamLogo}" alt="${game.home.name} logo">
+                <div class="team" onclick="navigateToTeamPage('${game.home.name}', '${game.home.id}')">${game.home.name}</div>
                 <div class="time green-text">${timeLeftString}</div>
             </div>
             <div class="game-info">
-                <img class="small-logo" src="https://static.cdnlogo.com/logos/g/71/golden-state-warriors.svg" alt="${game.away.name} logo">
+                <img class="small-logo" src="${awayTeamLogo}" alt="${game.away.name} logo">
                 <div class="team" onclick="navigateToTeamPage('${game.away.name}', '${game.away.id}')">${game.away.name}</div>
                 <div class="time invisible">${timeLeftString}</div>
             </div>
@@ -1555,13 +1581,13 @@ function displayGames(games, containerId) {
       } else if (['complete', 'closed'].includes(game.status)) {
          gameElement.innerHTML = `
             <div class="game-info">
-                <img class="small-logo" src="https://static.cdnlogo.com/logos/l/15/los-angeles-lakers.svg" alt="${game.home.name} logo">
-                <div class="team" onclick="navigateToTeamPage('${game.home.name}', '${game.away.id}')">${game.home.name}</div>
+                <img class="small-logo" src="${homeTeamLogo}" alt="${game.home.name} logo">
+                <div class="team" onclick="navigateToTeamPage('${game.home.name}', '${game.home.id}')">${game.home.name}</div>
                 <div class="score">${game.home_points}</div>
                 <div class="time">${timeAgoString}</div>
             </div>
             <div class="game-info">
-            <img class="small-logo" src="https://static.cdnlogo.com/logos/g/71/golden-state-warriors.svg" alt="${game.away.name} logo">
+            <img class="small-logo" src="${awayTeamLogo}" alt="${game.away.name} logo">
             <div class="team" onclick="navigateToTeamPage('${game.away.name}', '${game.away.id}')">${game.away.name}</div>
             <div class="score">${game.away_points}</div>
             <div class="time invisible">${timeAgoString}</div>
