@@ -1,0 +1,203 @@
+.player-header {
+    display: flex;
+    padding: 3rem;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+    align-items: center;
+    gap: 3rem;
+    color: white;
+}
+
+.player-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.player-photo:hover {
+    transform: scale(1.05);
+}
+
+.player-info {
+    flex-grow: 1;
+}
+
+.player-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f8f9fa;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+/* Career stats grid */
+.career-stats .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.career-stats .stat-item {
+    background: #f8f9fa;
+    padding: 1.25rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.career-stats .stat-item:hover {
+    background: #e9ecef;
+}
+
+.career-stats .stat-item label {
+    display: block;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.career-stats .stat-item span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Season stats table */
+.season-stats table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+}
+
+.season-stats th {
+    background: #f8f9fa;
+    padding: 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: #2c3e50;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.season-stats td {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    color: #495057;
+}
+
+.season-stats tr:hover {
+    background-color: #f8f9fa;
+}
+
+.player-details, .draft-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-item {
+    background: #ffffff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: all 0.2s ease;
+}
+
+.stat-item:hover {
+    background: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+.stat-item strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .player-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .player-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .career-stats .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .season-stats {
+        overflow-x: auto;
+    }
+}
+
+.season-stats td[data-value="plus"] {
+    color: #28a745;
+}
+
+.season-stats td[data-value="minus"] {
+    color: #dc3545;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+section:nth-child(3) {
+    animation-delay: 0.4s;
+}

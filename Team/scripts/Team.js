@@ -671,6 +671,11 @@ function displayTeamInfo(data) {
    data.players.forEach((player) => {
       const playerCard = document.createElement('div');
       playerCard.className = 'player-card';
+      playerCard.onclick = () => {
+         window.location.href = `../Player/Player.php?id=${player.id}&name=${encodeURIComponent(player.full_name)}`;
+      };
+
+      playerCard.style.cursor = 'pointer';
 
       const playerImage = document.createElement('img');
       playerImage.src = '../assets/Photos/default.png';

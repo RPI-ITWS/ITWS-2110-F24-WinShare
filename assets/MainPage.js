@@ -14,7 +14,6 @@ function displayMore() {
    }
 }
 
-/*
 document.addEventListener('DOMContentLoaded', function () {
    fetch('./php/fetchTodaySchedule.php')
       .then((response) => response.json())
@@ -53,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .catch((error) => console.error('Error fetching NBA schedule:', error));
 });
-*/
 
 // "cached" real data so we dont waste api calls
+/*
 const data = {
    yesterday: {
       date: '2024-10-24',
@@ -1467,7 +1466,6 @@ const data = {
       ],
    },
 };
-
 const upcomingGamesToday = filterGames(data.today.games, [
    'scheduled',
    'created',
@@ -1498,6 +1496,7 @@ displayGames(upcomingGamesTomorrow, 'Upcoming_Matches');
 displayGames(completedGamesTomorrow, 'Recent_Results');
 displayGames(completedGamesToday, 'Recent_Results');
 displayGames(completedGamesYesterday, 'Recent_Results');
+*/
 
 function filterGames(games, statuses) {
    if (!games) {
