@@ -269,14 +269,14 @@ select#stat {
     z-index: 0;
 }
 
-.name {
+#name {
     font-size: 28px;
     color: #00aaff;
     margin: 0 0 8px 0;
     font-weight: bold;
 }
 
-.position {
+#position {
     color: #7a7f86;
     margin: 0;
     font-size: 18px;
