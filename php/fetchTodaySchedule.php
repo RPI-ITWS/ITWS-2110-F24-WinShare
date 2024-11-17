@@ -48,7 +48,6 @@ function fetchSchedule($date, $apiKey) {
 
 // Get dates for yesterday, today, and tomorrow
 $yesterday = date('Y/m/d', strtotime('-1 day'));
-sleep(1);
 $today = date('Y/m/d');
 sleep(1);
 $tomorrow = date('Y/m/d', strtotime('+1 day'));

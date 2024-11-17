@@ -106,6 +106,19 @@ function displayRecentResults(games) {
     let isExpanded = false;
     const initialDisplay = 5;
 
+    let wins = 0;
+    let losses = 0;
+    games.forEach(game => {
+        const isHomeTeam = game.home_team_id === teamId;
+        const isWin = isHomeTeam ? 
+            game.home_team_score > game.away_team_score :
+            game.away_team_score > game.home_team_score;
+        if (isWin) wins++; else losses++;
+    });
+
+    const sectionTitle = recentResultsSection.querySelector('h2');
+    sectionTitle.innerHTML = `Past Results <span style="color: #666; font-size: 0.8em;">(Wins: ${wins} - Losses: ${losses})</span>`;
+
     function renderResults(count) {
         resultsContainer.innerHTML = ''; 
         const displayGames = count ? games.slice(0, count) : games;
@@ -127,9 +140,9 @@ function displayRecentResults(games) {
 
             resultDiv.innerHTML = `
                 <span>${formattedDate}</span>
-                <img src="${homeTeamLogo}" alt="${game.home_team_name}">
+                <img src="${homeTeamLogo}" alt="${game.home_team_name}" onclick="window.location.href='Team.php?teamName=${encodeURIComponent(game.home_team_name)}&id=${game.home_team_id}'" style="cursor: pointer;">
                 <span>${game.home_team_score} : ${game.away_team_score}</span>
-                <img src="${awayTeamLogo}" alt="${game.away_team_name}">
+                <img src="${awayTeamLogo}" alt="${game.away_team_name}" onclick="window.location.href='Team.php?teamName=${encodeURIComponent(game.away_team_name)}&id=${game.away_team_id}'" style="cursor: pointer;">
             `;
 
             if (isHomeTeam) {
@@ -164,3 +177,90 @@ function displayRecentResults(games) {
         toggleButton.style.display = 'none';
     }
 }
+
+function loadUpcomingMatches() {
+    fetch('../php/fetchTodaySchedule.php')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('upcoming-matches-container');
+            container.className = 'matches-container';
+            container.innerHTML = '';
+            
+            const todayGames = data.today ? Object.values(data.today.games) : [];
+            const tomorrowGames = data.tomorrow ? Object.values(data.tomorrow.games) : [];
+            const allMatches = [...todayGames, ...tomorrowGames];
+            
+            const now = new Date();
+            const upcomingMatches = allMatches.filter(match => 
+                new Date(match.scheduled) > now && 
+                (match.home.id === teamId || match.away.id === teamId)
+            );
+            
+            const initialDisplay = 5;
+            let isExpanded = false;
+
+            function renderMatches(count) {
+                container.innerHTML = '';
+                const displayMatches = count ? upcomingMatches.slice(0, count) : upcomingMatches;
+
+                if (displayMatches.length === 0) {
+                    container.innerHTML = '<p>No upcoming matches scheduled.</p>';
+                    return;
+                }
+
+                displayMatches.forEach(match => {
+                    const matchTime = new Date(match.scheduled);
+                    const matchDiv = document.createElement('div');
+                    matchDiv.className = 'match';
+                    
+                    const team1Logo = match.home.name.split(' ').pop().toLowerCase() + '.png';
+                    const team2Logo = match.away.name.split(' ').pop().toLowerCase() + '.png';
+                    
+                    matchDiv.innerHTML = `
+                        <span>${match.tournament_name || 'Upcoming Match'}</span>
+                        <img src="../assets/Photos/teamLogo/${team1Logo}" alt="${match.home.name}" onclick="window.location.href='Team.php?teamName=${encodeURIComponent(match.home.name)}&id=${match.home.id}'" style="cursor: pointer;">
+                        <span>vs</span>
+                        <img src="../assets/Photos/teamLogo/${team2Logo}" alt="${match.away.name}" onclick="window.location.href='Team.php?teamName=${encodeURIComponent(match.away.name)}&id=${match.away.id}'" style="cursor: pointer;">
+                        <span class="time-until">${formatTimeUntil(match.scheduled)}</span>
+                    `;
+                    
+                    container.appendChild(matchDiv);
+                });
+            }
+
+            renderMatches(initialDisplay);
+
+            const toggleButton = document.createElement('button');
+            toggleButton.id = 'toggleMatches';
+            toggleButton.className = 'toggle-matches-btn';
+            toggleButton.textContent = 'View More';
+
+            if (upcomingMatches.length > initialDisplay) {
+                toggleButton.style.display = 'block';
+                container.parentElement.appendChild(toggleButton);
+                
+                toggleButton.addEventListener('click', () => {
+                    isExpanded = !isExpanded;
+                    renderMatches(isExpanded ? null : initialDisplay);
+                    toggleButton.textContent = isExpanded ? 'Show Less' : 'View More';
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error loading matches:', error);
+        });
+}
+
+function formatTimeUntil(startTime) {
+    const diff = new Date(startTime) - new Date();
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    
+    if (hours >= 24) {
+        const days = Math.floor(hours / 24);
+        return `${days}d ${hours % 24}h`;
+    }
+    return `${hours}h ${minutes}m`;
+}
+
+document.addEventListener('DOMContentLoaded', loadUpcomingMatches);

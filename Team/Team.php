@@ -33,19 +33,7 @@
     <main class="content">
         <section class="upcoming-matches">
             <h2>Upcoming Matches</h2>
-            <div class="match">
-                <span>WALL-E Cup</span>
-                <img src="../assets/Photos/teamLogo/lakers.png" alt="Wolves">
-                <span>vs</span>
-                <img src="../assets/Photos/teamLogo/hornets.png" alt="Nova">
-                <span>3h 14m</span>
-            </div>
-            <div class="match">
-                <span>FGC 24</span>
-                <img src="../assets/Photos/teamLogo/lakers.png" alt="Wolves">
-                <span>vs</span>
-                <img src="../assets/Photos/teamLogo/magic.png" alt="Titan">
-                <span>5d 2h</span>
+            <div id="upcoming-matches-container">
             </div>
         </section>
 

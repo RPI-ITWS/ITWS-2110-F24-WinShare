@@ -57,6 +57,67 @@ body, html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.upcoming-matches {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.match:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.match img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.match span {
+    font-size: 14px;
+    color: #333;
+}
+
+.match span.time-until {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.toggle-matches-btn, .toggle-results-btn {
+    display: none;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-matches-btn:hover, .toggle-results-btn:hover {
+    background-color: #0056b3;
+}
+
 .match, .result, .player {
     display: flex;
     align-items: center;
@@ -112,20 +173,4 @@ body, html {
    margin: 10px 0;
    font-size: 14px;
    font-weight: bold;
-}
-
-.toggle-results-btn {
-    display: none;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.toggle-results-btn:hover {
-    background-color: #0056b3;
 }
