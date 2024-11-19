@@ -115,6 +115,8 @@ function FindPlayerStats(){
             const teamName = player[query.toLowerCase()].team_name;
             const teamMarket = player[query.toLowerCase()].market;
             const team = `${teamMarket} ${teamName}`;
+
+            const fgp = (player[query.toLowerCase()].season_stats["field_goals_pct"] * 100).toFixed(1) + '%';
             
             const displayName = document.getElementById("name");
             displayName.textContent = playerName;
@@ -122,7 +124,10 @@ function FindPlayerStats(){
             const displayTeam = document.getElementById("position");
             displayTeam.textContent = team;
     
-            
+            const stat1 = document.getElementById("value-1");
+            stat1.textContent = "Field Goal Pct:";
+            const stat2 = document.getElementById("label-2");
+            stat2.textContent = fgp;
 
         })
         .catch(error => {
