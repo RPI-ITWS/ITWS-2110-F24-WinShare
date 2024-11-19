@@ -1,32 +1,49 @@
 let leaderboardData = [];
 let currentSortBy = 'score';
+let currentView = 'global'; // New variable to track current view
 
+// Fetch leaderboard data based on current view
+function fetchLeaderboardData() {
+    const endpoint = currentView === 'global'
+        ? './src/get_leaderboard.php'
+        : './src/get_friends_leaderboard.php';
 
-// Fetch the JSON data
-fetch('./src/get_leaderboard.php')
-    .then(response => response.json())
-    .then(data => {
-        console.log('Received data:', data);
-        leaderboardData = processLeaderboardData(data.users);
-        populateLeaderboard(leaderboardData);
-        setTimeout(() => animateScores(leaderboardData), 100);
-        setupSortButtons();
-    })
-    .catch(error => console.error('Error:', error));
+    fetch(endpoint)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Received data:', data);
+            leaderboardData = processLeaderboardData(data.users);
+            populateLeaderboard(leaderboardData);
+            setTimeout(() => animateScores(leaderboardData), 100);
+        })
+        .catch(error => console.error('Error:', error));
+}
 
-// Rest of the JavaScript code remains the same
+// Initial fetch
+fetchLeaderboardData();
+
 function processLeaderboardData(data) {
     return data.map(entry => ({
         ...entry,
-        winRate: (entry.RoundsCorrect / (entry.RoundsCorrect + entry.RoundsWrong)) * 100
+        winRate: (entry.RoundsCorrect / (entry.RoundsCorrect + entry.RoundsWrong)) * 100 || 0
     })).sort((a, b) => b.score - a.score)
         .map((entry, index) => ({ ...entry, rank: index + 1 }));
 }
 
-// Populate the leaderboard table
 function populateLeaderboard(data) {
     const tableBody = document.querySelector("#leaderboardTable tbody");
-    tableBody.innerHTML = ''; // Clear existing rows
+    tableBody.innerHTML = '';
+
+    if (data.length === 0) {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td colspan="4" class="text-center">
+                ${currentView === 'friends' ? 'No friends found. Add some friends to see their rankings!' : 'No users found.'}
+            </td>
+        `;
+        tableBody.appendChild(row);
+        return;
+    }
 
     data.forEach(entry => {
         const row = document.createElement("tr");
@@ -51,11 +68,50 @@ function populateLeaderboard(data) {
     });
 }
 
-// Animate the scores and win rates with a cascading effect
+function setupButtons() {
+    // Sort buttons
+    const sortByScoreBtn = document.getElementById('sortByScore');
+    const sortByWinRateBtn = document.getElementById('sortByWinRate');
+    sortByScoreBtn.addEventListener('click', () => sortLeaderboard('score'));
+    sortByWinRateBtn.addEventListener('click', () => sortLeaderboard('winRate'));
+
+    // View toggle buttons
+    const viewButtons = document.createElement('div');
+    viewButtons.id = 'viewButtons';
+    viewButtons.className = 'mb-3';
+    viewButtons.innerHTML = `
+        <button id="globalView" class="btn btn-primary active">Global</button>
+        <button id="friendsView" class="btn btn-primary">Friends</button>
+    `;
+    document.getElementById('sortButtons').insertAdjacentElement('beforebegin', viewButtons);
+
+    document.getElementById('globalView').addEventListener('click', () => switchView('global'));
+    document.getElementById('friendsView').addEventListener('click', () => switchView('friends'));
+}
+
+function switchView(view) {
+    currentView = view;
+    document.querySelectorAll('#viewButtons .btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(`${view}View`).classList.add('active');
+    fetchLeaderboardData();
+}
+
+function sortLeaderboard(sortBy) {
+    currentSortBy = sortBy;
+    leaderboardData.sort((a, b) => b[sortBy] - a[sortBy]);
+    leaderboardData.forEach((entry, index) => entry.rank = index + 1);
+    populateLeaderboard(leaderboardData);
+    animateScores(leaderboardData);
+
+    document.querySelectorAll('#sortButtons .btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(`sortBy${sortBy.charAt(0).toUpperCase() + sortBy.slice(1)}`).classList.add('active');
+}
+
+// Animation functions remain the same
 function animateScores(data) {
-    const baseDuration = 3000; // Base animation duration in milliseconds
-    const delayBetweenScores = 200; // Delay between each score finishing
-    const fps = 30; // Frames per second
+    const baseDuration = 3000;
+    const delayBetweenScores = 200;
+    const fps = 30;
 
     const maxScore = Math.max(...data.map(entry => entry.score));
     const maxWinRate = Math.max(...data.map(entry => entry.winRate));
@@ -107,22 +163,7 @@ function formatValue(value, isPercentage) {
     }
 }
 
-function setupSortButtons() {
-    const sortByScoreBtn = document.getElementById('sortByScore');
-    const sortByWinRateBtn = document.getElementById('sortByWinRate');
-
-    sortByScoreBtn.addEventListener('click', () => sortLeaderboard('score'));
-    sortByWinRateBtn.addEventListener('click', () => sortLeaderboard('winRate'));
-}
-
-function sortLeaderboard(sortBy) {
-    currentSortBy = sortBy;
-    leaderboardData.sort((a, b) => b[sortBy] - a[sortBy]);
-    leaderboardData.forEach((entry, index) => entry.rank = index + 1);
-    populateLeaderboard(leaderboardData);
-    animateScores(leaderboardData);
-
-    // Update active button
-    document.querySelectorAll('#sortButtons .btn').forEach(btn => btn.classList.remove('active'));
-    document.getElementById(`sortBy${sortBy.charAt(0).toUpperCase() + sortBy.slice(1)}`).classList.add('active');
-}
+// Initialize buttons when document is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    setupButtons();
+});

@@ -8,12 +8,10 @@ body {
 }
 
 .container {
-    /*max-width: 1200px;*/
     margin: 0 auto;
     padding: 20px;
     background-color: #1a1a1a;
     color: #ffffff;
-
 }
 
 /* Profile Header */
@@ -108,50 +106,293 @@ body {
     margin-right: 10px;
 }
 
-/* Matches List */
-.matches-list {
+/* Friend System Styles */
+.friendship-actions {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.friendship-actions button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.friendship-actions .btn-primary {
+    background: #00aaff;
+    color: white;
+}
+
+.friendship-actions .btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.friendship-actions .btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+/* Pending Requests Section */
+.pending-requests-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #00aaff;
+    display: none; /* Hidden by default */
+}
+
+.pending-requests-section.has-requests {
+    display: block;
+    animation: fadeInOut 0.3s ease-out forwards;
+}
+
+.pending-requests-section h3 {
+    color: #00aaff;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.pending-requests {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.match-card {
+.request-card {
+    background: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    border-radius: 6px;
-    background: #1a1a1a;
-    transition: transform 0.2s;
-    border: 1px solid #333;
+    animation: fadeInOut 0.3s ease-out forwards;
 }
 
-.match-card:hover {
+.request-card.removing {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
+.request-card:last-child {
+    margin-bottom: 0;
+}
+
+.request-card .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.request-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aaff;
+}
+
+.request-name a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.request-name a:hover {
+    color: #00aaff;
+}
+
+.request-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.inline-form {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pending-status {
+    color: #ffc107;
+    font-style: italic;
+}
+
+/* Friends List */
+.friends-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.friend-card {
+    background: #1a1a1a;
+    border: 1px solid #00aaff;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.friend-card:hover {
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.2);
+}
+
+.friend-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #00aaff;
+}
+
+.friend-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-name {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.friend-points {
+    font-size: 0.9em;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.no-friends, .no-requests {
+    text-align: center;
+    color: #888;
+    padding: 15px;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Friend Search */
+.friend-search-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #00aaff;
+}
+
+.search-container {
+    position: relative;
+}
+
+.friend-search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #2a2a2a;
+    color: white;
+    font-size: 1em;
+}
+
+.friend-search-input:focus {
+    outline: none;
     border-color: #00aaff;
 }
 
-.match-card.win {
-    border-left: 4px solid #00aaff;
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #2a2a2a;
+    border: 1px solid #00aaff;
+    border-radius: 4px;
+    margin-top: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
 }
 
-.match-card.loss {
-    border-left: 4px solid #ff4444;
+.search-result-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
 }
 
-.match-result {
-    font-weight: bold;
-    color: #00aaff;
+.search-result-item:last-child {
+    border-bottom: none;
 }
 
-.match-score {
-    color: #00aaff;
-    margin-left: 10px;
+.search-result-item:hover {
+    background: #1a1a1a;
 }
 
-.match-date {
-    font-size: 14px;
-    color: #888;
+.search-result-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #00aaff;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    grid-column: 1 / -1;
+    animation: fadeInOut 0.3s ease-out;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
 }
 
 /* Responsive Design */
@@ -169,20 +410,20 @@ body {
         width: 100px;
         height: 100px;
     }
-}
 
-/* Animations */
-.profile-header, .profile-section {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    .friend-card {
+        flex-direction: column;
+        text-align: center;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .request-card {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .request-actions {
+        width: 100%;
+        justify-content: center;
     }
 }

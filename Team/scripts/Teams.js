@@ -62,3 +62,4 @@ function displayTeamInfo(data) {
         rosterList.innerHTML = '<li>No players available</li>';
     }
 }
+
