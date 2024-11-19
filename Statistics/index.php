@@ -58,8 +58,8 @@ session_start();
                         <img src="./assets/Photos/default.png" alt="Profile" class="profile-photo">
                     </div>
                     <div class="player-container">
-                        <h2 class="name">...</h2>
-                        <p class="position">...</p>
+                        <h2 id="name">...</h2>
+                        <p id="position">...</p>
                     </div>
                     <div class="stats-grid">
                         <div class="stat-box" id="stat-box-1">
