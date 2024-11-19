@@ -94,85 +94,118 @@ document.addEventListener('click', function(exit) {
     }
 });
 
+function FindPlayerStats(){
+    const query = document.getElementById('PlayerSearch').value;
+    
+    if(!lowerplayers.includes(query.toLowerCase()) ||  !query.trim()){
+        alert("Player not found!");
+        return;
+    }
+
+    fetch("./assets/PlayerStats.json")
+        .then(response => {
+            if(!response.ok){
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(player => {
+            const playerName = players[lowerplayers.indexOf(query.toLowerCase())]; // Player's name
+            
+            const teamName = player[query.toLowerCase()].team_name;
+            const teamMarket = player[query.toLowerCase()].market;
+            const team = `${teamMarket} ${teamName}`;
+            
+            const displayName = document.getElementById("name");
+            displayName.textContent = playerName;
+
+            const displayTeam = document.getElementById("position");
+            displayTeam.textContent = team;
+    
+            
+
+        })
+        .catch(error => {
+            console.error("There was a problem with the fetch operation:", error);
+        });
+        document.getElementById("PlayerSearch").value = "";
+        FindPlayer.style.cursor = 'not-allowed';
+        FindPlayer.disabled = true;
+        FindPlayer.style.backgroundColor = '#7a7f86';
+    return;
+}
+
 const players = [
-    "Nikola Jokić", "LeBron James", "Stephen Curry", "Shai Gilgeous-Alexander", "Kevin Durant",
-    "Jayson Tatum", "Anthony Edwards", "Joel Embiid", "Damian Lillard", "Jimmy Butler",
-    "Luka Dončić", "Kawhi Leonard", "Ja Morant", "Donovan Mitchell", "Bam Adebayo",
-    "Karl-Anthony Towns", "Jaren Jackson Jr.", "Draymond Green", "Zion Williamson", "LaMelo Ball",
-    "Trae Young", "Chris Paul", "Bradley Beal", "Devin Booker", "Klay Thompson",
-    "Kyrie Irving", "CJ McCollum", "DeMar DeRozan", "Mikal Bridges", "Jrue Holiday",
-    "Tyrese Haliburton", "Nikola Vučević", "Pascal Siakam", "John Collins", "Michael Porter Jr.",
-    "Darius Garland", "Jaden Ivey", "Franz Wagner", "Bojan Bogdanović", "Jalen Green",
-    "Jonas Valančiūnas", "Collin Sexton", "OG Anunoby", "Jaren Jackson", "Derrick Rose",
-    "Rudy Gobert", "Kyle Lowry", "Tobias Harris", "Robert Williams III", "Bobby Portis",
-    "Victor Wembanyama", "Scoot Henderson", "Chet Holmgren", "Paolo Banchero", "Jabari Smith Jr.",
-    "Evan Mobley", "Scottie Barnes", "Josh Giddey", "Tyler Herro", "RJ Barrett",
-    "De'Aaron Fox", "Domantas Sabonis", "Brandon Ingram", "Zach LaVine", "Keldon Johnson",
-    "Fred VanVleet", "Julius Randle", "Miles Bridges", "Desmond Bane", "Anfernee Simons",
-    "Gary Trent Jr.", "Lonzo Ball", "D'Angelo Russell", "Markelle Fultz", "Patrick Williams",
-    "Keegan Murray", "Cade Cunningham", "Tyrese Maxey", "Bennedict Mathurin", "Shaedon Sharpe",
-    "Cam Thomas", "Josh Hart", "Malcolm Brogdon", "Trey Murphy III", "Austin Reaves",
-    "Grayson Allen", "Alperen Şengün", "Davion Mitchell", "Jordan Poole", "Jonathan Kuminga",
-    "Moses Moody", "Kevon Looney", "Andrew Wiggins", "James Wiseman", "Jalen Duren",
-    "Tari Eason", "Kenyon Martin Jr.", "Christian Wood", "Jeremy Sochan", "Walker Kessler",
-    "Brook Lopez", "Chris Duarte", "Jalen Johnson", "Onyeka Okongwu", "Mo Bamba",
-    "Bol Bol", "Isaiah Stewart", "Marvin Bagley III", "Killian Hayes", "Herbert Jones",
-    "Tre Mann", "Ayo Dosunmu", "Cam Reddish", "Dyson Daniels", "Talen Horton-Tucker",
-    "Luguentz Dort", "Josh Richardson", "Aaron Gordon", "Bruce Brown", "Reggie Jackson",
-    "Dennis Schröder", "Monte Morris", "Kelly Oubre Jr.", "PJ Washington", "Malik Beasley",
-    "Malik Monk", "Terance Mann", "Rui Hachimura", "Deni Avdija", "Corey Kispert",
-    "Daniel Gafford", "Saddiq Bey", "De'Andre Hunter", "Bogdan Bogdanović", "Dillon Brooks",
-    "Steven Adams", "Isaac Okoro", "Coby White", "Wendell Carter Jr.", "Cole Anthony",
-    "Mo Wagner", "Naz Reid", "Kyle Anderson", "Patrick Beverley", "Kris Dunn",
-    "Santi Aldama", "Tyus Jones", "Jalen Suggs", "Chris Boucher", "Precious Achiuwa",
-    "Nick Richards", "Cody Martin", "Ziaire Williams", "Usman Garuba", "Jabari Walker",
-    "Chuma Okeke", "Payton Pritchard", "Luke Kennard", "Svi Mykhailiuk", "Isaiah Hartenstein",
-    "Jericho Sims", "Nassir Little", "Drew Eubanks", "Xavier Tillman", "Sandro Mamukelashvili",
-    "Jalen Williams", "Isaiah Jackson", "Justin Holiday", "Gabe Vincent", "Caleb Martin",
-    "Max Strus", "Duncan Robinson", "JaVale McGee", "Zeke Nnaji", "Jevon Carter",
-    "Ty Jerome", "Thanasis Antetokounmpo", "Delon Wright", "Jordan Clarkson", "Brandon Clarke",
-    "Al Horford", "Trent Forrest", "Jaylen Nowell", "David Roddy", "Jock Landale",
-    "Paul Reed", "Peyton Watson", "Aleksej Pokuševski", "Isaiah Joe"
+    "Brandon Clarke", "Desmond Bane", "Ja Morant", "Jaren Jackson Jr.", "Luke Kennard",
+    "Santi Aldama", "De'Aaron Fox", "DeMar DeRozan", "Domantas Sabonis", "Keegan Murray",
+    "Malik Monk", "Aaron Gordon", "Michael Porter Jr.", "Nikola Jokic", "Peyton Watson",
+    "Zeke Nnaji", "Al Horford", "Jayson Tatum", "Jrue Holiday", "Payton Pritchard",
+    "Bobby Portis", "Brook Lopez", "Damian Lillard", "Delon Wright", "Gary Trent Jr.",
+    "Corey Kispert", "Jonas Valanciunas", "Jordan Poole", "Malcolm Brogdon", "Marvin Bagley III",
+    "Saddiq Bey", "Jericho Sims", "Josh Hart", "Karl-Anthony Towns", "Mikal Bridges",
+    "OG Anunoby", "Precious Achiuwa", "Bol Bol", "Bradley Beal", "Devin Booker",
+    "Grayson Allen", "Kevin Durant", "Monte Morris", "Tyus Jones", "Caleb Martin",
+    "Joel Embiid", "Kelly Oubre Jr.", "Kyle Lowry", "Reggie Jackson", "Tyrese Maxey",
+    "Brandon Ingram", "CJ McCollum", "Herbert Jones", "Jaylen Nowell", "Trey Murphy III",
+    "Zion Williamson", "Cody Martin", "LaMelo Ball", "Miles Bridges", "Nick Richards",
+    "Tre Mann", "Austin Reaves", "Cam Reddish", "Christian Wood", "D'Angelo Russell",
+    "Gabe Vincent", "LeBron James", "Rui Hachimura", "Bennedict Mathurin", "Isaiah Jackson",
+    "James Wiseman", "Pascal Siakam", "Tyrese Haliburton", "Bruce Brown", "Chris Boucher",
+    "Davion Mitchell", "RJ Barrett", "Scottie Barnes", "Darius Garland", "Donovan Mitchell",
+    "Evan Mobley", "Isaac Okoro", "Max Strus", "Ty Jerome", "Ayo Dosunmu", "Chris Duarte",
+    "Coby White", "Jevon Carter", "Josh Giddey", "Lonzo Ball", "Nikola Vucevic",
+    "Patrick Williams", "Talen Horton-Tucker", "Zach LaVine", "Bojan Bogdanovic", "Cam Thomas",
+    "Ziaire Williams", "Chris Paul", "Jeremy Sochan", "Keldon Johnson", "Sandro Mamukelashvili",
+    "Victor Wembanyama", "Anthony Edwards", "Julius Randle", "Naz Reid", "Rudy Gobert",
+    "Dillon Brooks", "Fred VanVleet", "Jabari Smith Jr.", "Jalen Green", "Jock Landale",
+    "Steven Adams", "Tari Eason", "Daniel Gafford", "Klay Thompson", "Kyrie Irving",
+    "Luka Doncic", "Anfernee Simons", "Deni Avdija", "Jabari Walker", "Robert Williams III",
+    "Scoot Henderson", "Shaedon Sharpe", "Cade Cunningham", "Isaiah Stewart", "Jaden Ivey",
+    "Jalen Duren", "Malik Beasley", "Paul Reed", "Tobias Harris", "Andrew Wiggins",
+    "Draymond Green", "Jonathan Kuminga", "Kevon Looney", "Kyle Anderson", "Moses Moody",
+    "Stephen Curry", "Bogdan Bogdanovic", "David Roddy", "De'Andre Hunter", "Dyson Daniels",
+    "Jalen Johnson", "Onyeka Okongwu", "Trae Young", "Kawhi Leonard", "Kris Dunn",
+    "Mo Bamba", "Terance Mann", "Bam Adebayo", "Duncan Robinson", "Jimmy Butler",
+    "Josh Richardson", "Tyler Herro", "Chet Holmgren", "Isaiah Hartenstein", "Isaiah Joe",
+    "Jalen Williams", "Luguentz Dort", "Shai Gilgeous-Alexander", "Collin Sexton", "Drew Eubanks",
+    "John Collins", "Jordan Clarkson", "Svi Mykhailiuk", "Walker Kessler", "Cole Anthony",
+    "Franz Wagner", "Jalen Suggs", "Paolo Banchero", "Wendell Carter Jr."  
 ];
 
 
 const lowerplayers = [
-    "nikola jokić", "lebron james", "stephen curry", "shai gilgeous-alexander", "kevin durant",
-    "jayson tatum", "anthony edwards", "joel embiid", "damian lillard", "jimmy butler",
-    "luka dončić", "kawhi leonard", "ja morant", "donovan mitchell", "bam adebayo",
-    "karl-anthony towns", "jaren jackson jr.", "draymond green", "zion williamson", "lamelo ball",
-    "trae young", "chris paul", "bradley beal", "devin booker", "klay thompson",
-    "kyrie irving", "cj mccollum", "demar derozan", "mikal bridges", "jrue holiday",
-    "tyrese haliburton", "nikola vučević", "pascal siakam", "john collins", "michael porter jr.",
-    "darius garland", "jaden ivey", "franz wagner", "bojan bogdanović", "jalen green",
-    "jonas valančiūnas", "collin sexton", "og anunoby", "jaren jackson", "derrick rose",
-    "rudy gobert", "kyle lowry", "tobias harris", "robert williams iii", "bobby portis",
-    "victor wembanyama", "scoot henderson", "chet holmgren", "paolo banchero", "jabari smith jr.",
-    "evan mobley", "scottie barnes", "josh giddey", "tyler herro", "rj barrett",
-    "de'aaron fox", "domantas sabonis", "brandon ingram", "zach lavine", "keldon johnson",
-    "fred vanvleet", "julius randle", "miles bridges", "desmond bane", "anfernee simons",
-    "gary trent jr.", "lonzo ball", "d'angelo russell", "markelle fultz", "patrick williams",
-    "keegan murray", "cade cunningham", "tyrese maxey", "bennedict mathurin", "shaedon sharpe",
-    "cam thomas", "josh hart", "malcolm brogdon", "trey murphy iii", "austin reaves",
-    "grayson allen", "alperen şengün", "davion mitchell", "jordan poole", "jonathan kuminga",
-    "moses moody", "kevon looney", "andrew wiggins", "james wiseman", "jalen duren",
-    "tari eason", "kenyon martin jr.", "christian wood", "jeremy sochan", "walker kessler",
-    "brook lopez", "chris duarte", "jalen johnson", "onyeka okongwu", "mo bamba",
-    "bol bol", "isaiah stewart", "marvin bagley iii", "killian hayes", "herbert jones",
-    "tre mann", "ayo dosunmu", "cam reddish", "dyson daniels", "talen horton-tucker",
-    "luguentz dort", "josh richardson", "aaron gordon", "bruce brown", "reggie jackson",
-    "dennis schröder", "monte morris", "kelly oubre jr.", "pj washington", "malik beasley",
-    "malik monk", "terance mann", "rui hachimura", "deni avdija", "corey kispert",
-    "daniel gafford", "saddiq bey", "de'andre hunter", "bogdan bogdanović", "dillon brooks",
-    "steven adams", "isaac okoro", "coby white", "wendell carter jr.", "cole anthony",
-    "mo wagner", "naz reid", "kyle anderson", "patrick beverley", "kris dunn",
-    "santi aldama", "tyus jones", "jalen suggs", "chris boucher", "precious achiuwa",
-    "nick richards", "cody martin", "ziaire williams", "usman garuba", "jabari walker",
-    "chuma okeke", "payton pritchard", "luke kennard", "svi mykhailiuk", "isaiah hartenstein",
-    "jericho sims", "nassir little", "drew eubanks", "xavier tillman", "sandro mamukelashvili",
-    "jalen williams", "isaiah jackson", "justin holiday", "gabe vincent", "caleb martin",
-    "max strus", "duncan robinson", "javale mcgee", "zeke nnaji", "jevon carter",
-    "ty jerome", "thanasis antetokounmpo", "delon wright", "jordan clarkson", "brandon clarke",
-    "al horford", "trent forrest", "jaylen nowell", "david roddy", "jock landale",
-    "paul reed", "peyton watson", "aleksej pokuševski", "isaiah joe"
+    "brandon clarke", "desmond bane", "ja morant", "jaren jackson jr.", "luke kennard",
+    "santi aldama", "de'aaron fox", "demar derozan", "domantas sabonis", "keegan murray",
+    "malik monk", "aaron gordon", "michael porter jr.", "nikola jokic", "peyton watson",
+    "zeke nnaji", "al horford", "jayson tatum", "jrue holiday", "payton pritchard",
+    "bobby portis", "brook lopez", "damian lillard", "delon wright", "gary trent jr.",
+    "corey kispert", "jonas valanciunas", "jordan poole", "malcolm brogdon", "marvin bagley iii",
+    "saddiq bey", "jericho sims", "josh hart", "karl-anthony towns", "mikal bridges",
+    "og anunoby", "precious achiuwa", "bol bol", "bradley beal", "devin booker",
+    "grayson allen", "kevin durant", "monte morris", "tyus jones", "caleb martin",
+    "joel embiid", "kelly oubre jr.", "kyle lowry", "reggie jackson", "tyrese maxey",
+    "brandon ingram", "cj mccollum", "herbert jones", "jaylen nowell", "trey murphy iii",
+    "zion williamson", "cody martin", "lamelo ball", "miles bridges", "nick richards",
+    "tre mann", "austin reaves", "cam reddish", "christian wood", "d'angelo russell",
+    "gabe vincent", "lebron james", "rui hachimura", "bennedict mathurin", "isaiah jackson",
+    "james wiseman", "pascal siakam", "tyrese haliburton", "bruce brown", "chris boucher",
+    "davion mitchell", "rj barrett", "scottie barnes", "darius garland", "donovan mitchell",
+    "evan mobley", "isaac okoro", "max strus", "ty jerome", "ayo dosunmu", "chris duarte",
+    "coby white", "jevon carter", "josh giddey", "lonzo ball", "nikola vucevic",
+    "patrick williams", "talen horton-tucker", "zach lavine", "bojan bogdanovic", "cam thomas",
+    "ziaire williams", "chris paul", "jeremy sochan", "keldon johnson", "sandro mamukelashvili",
+    "victor wembanyama", "anthony edwards", "julius randle", "naz reid", "rudy gobert",
+    "dillon brooks", "fred vanvleet", "jabari smith jr.", "jalen green", "jock landale",
+    "steven adams", "tari eason", "daniel gafford", "klay thompson", "kyrie irving",
+    "luka doncic", "anfernee simons", "deni avdija", "jabari walker", "robert williams iii",
+    "scoot henderson", "shaedon sharpe", "cade cunningham", "isaiah stewart", "jaden ivey",
+    "jalen duren", "malik beasley", "paul reed", "tobias harris", "andrew wiggins",
+    "draymond green", "jonathan kuminga", "kevon looney", "kyle anderson", "moses moody",
+    "stephen curry", "bogdan bogdanovic", "david roddy", "de'andre hunter", "dyson daniels",
+    "jalen johnson", "onyeka okongwu", "trae young", "kawhi leonard", "kris dunn",
+    "mo bamba", "terance mann", "bam adebayo", "duncan robinson", "jimmy butler",
+    "josh richardson", "tyler herro", "chet holmgren", "isaiah hartenstein", "isaiah joe",
+    "jalen williams", "luguentz dort", "shai gilgeous-alexander", "collin sexton", "drew eubanks",
+    "john collins", "jordan clarkson", "svi mykhailiuk", "walker kessler", "cole anthony",
+    "franz wagner", "jalen suggs", "paolo banchero", "wendell carter jr."
 ];
