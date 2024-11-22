@@ -350,3 +350,70 @@ p {
     font-size: 14px;
     margin-top: 10px;
 }
+
+.predictions-section {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.predictions-section h4 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.probability {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.probability.favorable {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.probability.unfavorable {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.score-placeholder {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.correct-prediction {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.incorrect-prediction {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.prediction-result {
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.correct-prediction .prediction-result {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.incorrect-prediction .prediction-result {
+    background-color: #f8d7da;
+    color: #721c24;
+}

@@ -29,6 +29,58 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 });
 
+const teamEloScores = {
+    '76ers': 1509.8949,
+    'Blazers': 1495.2697,
+    'Bucks': 1501.5102,
+    'Bulls': 1508.048,
+    'Cavaliers': 1504.5623,
+    'Celtics': 1497.0135,
+    'Clippers': 1487.0311,
+    'Grizzlies': 1512.5353,
+    'Hawks': 1493.8404,
+    'Heat': 1503.6657,
+    'Hornets': 1497.0017,
+    'Jazz': 1495.2262,
+    'Kings': 1492.2708,
+    'Knicks': 1512.3603,
+    'Lakers': 1515.5124,
+    'Magic': 1503.275,
+    'Mavericks': 1504.5808,
+    'Nets': 1503.0356,
+    'Nuggets': 1509.4212,
+    'Pacers': 1504.7406,
+    'Pelicans': 1492.1657,
+    'Pistons': 1490.012,
+    'Raptors': 1489.1503,
+    'Rockets': 1488.9597,
+    'Spurs': 1492.3143,
+    'Suns': 1486.021,
+    'Thunder': 1504.5864,
+    'Timberwolves': 1514.038,
+    'Warriors': 1498.3336,
+    'Wizards': 1493.6232
+};
+
+// FORMULA: P(A wins) = 1 / (1 + 10^((RatingB - RatingA)/400))
+function calculateWinProbability(teamAName, teamBName) {
+    const teamA = teamAName.split(' ').pop();
+    const teamB = teamBName.split(' ').pop();
+    
+    const ratingA = teamEloScores[teamA];
+    const ratingB = teamEloScores[teamB];
+    
+    if (!ratingA || !ratingB) {
+        console.error('Team not found:', !ratingA ? teamA : teamB);
+        return null;
+    }
+
+    const exponent = (ratingB - ratingA) / 200;
+    const expectedScore = 1 / (1 + Math.pow(10, exponent));
+    
+    return Math.round(expectedScore * 100);
+}
+
 function displayGameSummary(data, userId) {
     const container = document.getElementById('game-summary');
     if (!container) {
@@ -36,7 +88,10 @@ function displayGameSummary(data, userId) {
         return;
     }
 
-    // Check if user has made a prediction for completed games
+    // Calculate win probabilities
+    const homeWinProbability = calculateWinProbability(data.home.name, data.away.name);
+    const awayWinProbability = 100 - homeWinProbability;
+
     fetch(`../php/checkPrediction.php?game_id=${data.id}&user_id=${userId}`)
         .then(response => response.text())
         .then(text => {
@@ -60,63 +115,70 @@ function displayGameSummary(data, userId) {
 
             const gameInfo = `
                 <div class="game-header">
-                    <div class="status-badge status-${data.status.toLowerCase()}">${
-               data.status
-            }</div>
-                    ${
-                       data.inseason_tournament
-                          ? '<div class="tournament-badge">In-Season Tournament Game</div>'
-                          : ''
-                    }
-                    <p>${new Date(data.scheduled).toLocaleDateString('en-US', {
-                       weekday: 'long',
-                       year: 'numeric',
-                       month: 'long',
-                       day: 'numeric',
-                       hour: '2-digit',
-                       minute: '2-digit',
+                    <div class="status-badge status-${data.status.toLowerCase()}">${data.status}</div>
+                    ${data.inseason_tournament ? '<div class="tournament-badge">In-Season Tournament Game</div>' : ''}
+                    <p>${new Date(data.scheduled).toLocaleDateString('en-US', { 
+                        weekday: 'long', 
+                        year: 'numeric', 
+                        month: 'long',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
                     })}</p>
                 </div>
 
                 <div class="teams-container">
-                <div class="team-box">
-                    <img class="team-logo" src="${homeTeamLogo}" alt="${
-                        data.home.name
-                        } logo">
-                    <h2>${data.home.name}</h2>
-                    <p class="team-market">${data.home.market}</p>
-                    ${
-                    shouldShowScores
-                        ? `<div class="score" style="color: ${
-                            data.home.points > data.away.points ? '#28a745' : '#dc3545'
-                            }">${data.home.points}</div>`
-                        : `<div class="prediction-needed">Prediction required</div>`
-                    }
-                </div>
-                <div class="versus">VS</div>
-                <div class="team-box">
-                    <img class="team-logo" src="${awayTeamLogo}" alt="${
-                        data.away.name
-                        } logo">
-                    <h2>${data.away.name}</h2>
-                    <p class="team-market">${data.away.market}</p>
-                    ${
-                    shouldShowScores
-                        ? `<div class="score" style="color: ${
-                            data.away.points > data.home.points ? '#28a745' : '#dc3545'
-                            }">${data.away.points}</div>`
-                        : `<div class="prediction-needed">Prediction required</div>`
-                    }
-                </div>
-            </div>
-            `;
+                    <div class="team-box">
+                        <img class="team-logo" src="${homeTeamLogo}" alt="${data.home.name} logo">
+                        <h2>${data.home.name}</h2>
+                        <p class="team-market">${data.home.market}</p>
+                        ${shouldShowScores ? 
+                            `<div class="score" style="color: ${data.home.points > data.away.points ? '#28a745' : '#dc3545'}">${data.home.points}</div>` :
+                            `<div class="score-placeholder">-</div>`
+                        }
+                        <div class="predictions-section">
+                            <h4>Our Prediction</h4>
+                            <div class="probability ${homeWinProbability > 50 ? 'favorable' : 'unfavorable'}">${homeWinProbability}%</div>
+                        </div>
+                    </div>
+                    <div class="versus">VS</div>
+                    <div class="team-box">
+                        <img class="team-logo" src="${awayTeamLogo}" alt="${data.away.name} logo">
+                        <h2>${data.away.name}</h2>
+                        <p class="team-market">${data.away.market}</p>
+                        ${shouldShowScores ? 
+                            `<div class="score" style="color: ${data.away.points > data.home.points ? '#28a745' : '#dc3545'}">${data.away.points}</div>` :
+                            `<div class="score-placeholder">-</div>`
+                        }
+                        <div class="predictions-section">
+                            <h4>Our Prediction</h4>
+                            <div class="probability ${awayWinProbability > 50 ? 'favorable' : 'unfavorable'}">${awayWinProbability}%</div>
+                        </div>
+                    </div>
+                </div>`;
 
             const predictionSection = `
                 <div class="prediction-section">
                     <h3>Game Prediction</h3>
                     ${predictionData && predictionData.hasPrediction ? `
                         <div class="existing-prediction">
-                            <p>Your prediction: ${predictionData.prediction.winner_name} will win</p>
+                            <p class="${data.status === 'complete' || data.status === 'closed' ? 
+                                (data.home.points > data.away.points && predictionData.prediction.winner_name === data.home.name) || 
+                                (data.away.points > data.home.points && predictionData.prediction.winner_name === data.away.name) ? 
+                                'correct-prediction' : 'incorrect-prediction' 
+                                : ''
+                            }">
+                                Your prediction: ${predictionData.prediction.winner_name} will win
+                                ${(data.status === 'complete' || data.status === 'closed') ? 
+                                    `<span class="prediction-result">
+                                        ${(data.home.points > data.away.points && predictionData.prediction.winner_name === data.home.name) || 
+                                          (data.away.points > data.home.points && predictionData.prediction.winner_name === data.away.name) ? 
+                                            '✓ Correct!' : '✗ Incorrect'
+                                        }
+                                    </span>` 
+                                    : ''
+                                }
+                            </p>
                             <p class="prediction-time">Made on: ${new Date(predictionData.prediction.prediction_time).toLocaleString()}</p>
                         </div>
                     ` : `
