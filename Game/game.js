@@ -169,21 +169,23 @@ function displayGameSummary(data, userId) {
                                 : ''
                             }">
                                 Your prediction: ${predictionData.prediction.winner_name} will win
-                                ${(data.status === 'complete' || data.status === 'closed') ? 
-                                    `<span class="prediction-result">
-                                        ${(data.home.points > data.away.points && predictionData.prediction.winner_name === data.home.name) || 
-                                          (data.away.points > data.home.points && predictionData.prediction.winner_name === data.away.name) ? 
-                                            '✓ Correct!' : '✗ Incorrect'
-                                        }
-                                    </span>` 
+                                <br>Points wagered: ${predictionData.prediction.points_wagered}
+                                ${predictionData.prediction.points_earned ? 
+                                    `<br>Points earned: <span class="${predictionData.prediction.points_earned > 0 ? 'text-success' : 'text-danger'}">
+                                        ${predictionData.prediction.points_earned > 0 ? '+' : ''}${predictionData.prediction.points_earned}
+                                    </span><br>` 
                                     : ''
                                 }
+                                <span class="prediction-time">Made on: ${new Date(predictionData.prediction.prediction_time).toLocaleString()}</span>
                             </p>
-                            <p class="prediction-time">Made on: ${new Date(predictionData.prediction.prediction_time).toLocaleString()}</p>
                         </div>
                     ` : `
                         <div class="prediction-form">
                             <p>Who do you think will win?</p>
+                            <div class="points-input">
+                                <label for="points">Points to wager (min 1):</label>
+                                <input type="number" id="points" min="1" value="1" step="1">
+                            </div>
                             <div class="team-choices">
                                 <button class="team-choice" data-team-id="${data.home.id}" data-team-name="${data.home.name}">
                                     <img src="${homeTeamLogo}" alt="${data.home.name}" class="choice-logo">
@@ -240,7 +242,7 @@ function displayGameSummary(data, userId) {
             if (!predictionData || !predictionData.hasPrediction) {
                 const teamButtons = container.querySelectorAll('.team-choice');
                 teamButtons.forEach(button => {
-                    button.addEventListener('click', () => handleTeamChoice(button, data.id, userId));
+                    button.addEventListener('click', () => handleTeamChoice(button, data.id, userId, data.home.points, data.away.points));
                 });
             }
         })
@@ -249,9 +251,32 @@ function displayGameSummary(data, userId) {
         });
 }
 
-function handleTeamChoice(button, gameId, userId) {
+function handleTeamChoice(button, gameId, userId, homeScore, awayScore) {
     const teamId = button.dataset.teamId;
     const teamName = button.dataset.teamName;
+    const pointsInput = document.getElementById('points');
+    const pointsWagered = Math.max(1, parseInt(pointsInput.value) || 1);
+
+    const homeTeam = document.querySelector('.team-box:first-child');
+    const awayTeam = document.querySelector('.team-box:last-child');
+    
+    if (!homeTeam || !awayTeam) {
+        console.error('Team elements not found');
+        return;
+    }
+
+    const homeTeamName = homeTeam.querySelector('h2')?.textContent;
+    const awayTeamName = awayTeam.querySelector('h2')?.textContent;
+
+    const actual_winner = homeScore > awayScore ? homeTeamName : awayTeamName;
+    
+    const homeWinProbability = calculateWinProbability(homeTeamName, awayTeamName);
+    const awayWinProbability = 100 - homeWinProbability;
+
+    const systemProbabilities = {
+        [homeTeamName]: homeWinProbability,
+        [awayTeamName]: awayWinProbability
+    };
 
     fetch(`../php/submitPrediction.php?user_id=${userId}`, {
         method: 'POST',
@@ -261,16 +286,16 @@ function handleTeamChoice(button, gameId, userId) {
         body: JSON.stringify({
             game_id: gameId,
             winner_id: teamId,
-            winner_name: teamName
+            winner_name: teamName,
+            points_wagered: pointsWagered,
+            system_probabilities: systemProbabilities,
+            actual_winner: actual_winner,
+            game_status: 'complete'
         })
     })
     .then(response => response.json())
     .then(result => {
-        if (result.success) {
-            location.reload();
-        } else {
-            alert(result.error || 'Failed to submit prediction');
-        }
+        location.reload();
     })
     .catch(error => {
         console.error('Error submitting prediction:', error);

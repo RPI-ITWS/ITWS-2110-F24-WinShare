@@ -72,6 +72,10 @@ ALTER TABLE `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+-- Add new column for system probabilities in game_predictions table
+ALTER TABLE game_predictions ADD COLUMN system_probabilities JSON DEFAULT NULL;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
