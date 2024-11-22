@@ -62,7 +62,7 @@ const teamEloScores = {
     'Wizards': 1493.6232
 };
 
-// FORMULA: P(A wins) = 1 / (1 + 10^((RatingB - RatingA)/400))
+// FORMULA: P(A wins) = 1 / (1 + 10^((RatingB - RatingA)/200))
 function calculateWinProbability(teamAName, teamBName) {
     const teamA = teamAName.split(' ').pop();
     const teamB = teamBName.split(' ').pop();
