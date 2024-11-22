@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 completedGamesTomorrow,
                 completedGamesYesterday
             });
-
+            console.log(completedGamesYesterday);
             displayGames(upcomingGamesToday, 'Upcoming_Matches');
             displayGames(upcomingGamesTomorrow, 'Upcoming_Matches');
             displayGames(completedGamesTomorrow, 'Recent_Results');
@@ -1544,6 +1544,8 @@ function displayGames(games, containerId) {
    games.forEach((game) => {
       const gameElement = document.createElement('div');
       gameElement.className = 'game-card';
+      gameElement.dataset.gameId = game.id; // Store game ID in data attribute
+      gameElement.style.cursor = 'pointer'; // Add cursor style
       const startTime = new Date(game.scheduled);
       const now = new Date();
       const timeLeft = startTime - now;
@@ -1595,5 +1597,12 @@ function displayGames(games, containerId) {
             `;
          container.appendChild(gameElement);
       }
+
+      // Add event listener to navigate to game page
+      gameElement.addEventListener('click', function (event) {
+         if (!event.target.classList.contains('team')) {
+            window.location.href = `Game/game.php?game_id=${game.id}`;
+         }
+      });
    });
 }
