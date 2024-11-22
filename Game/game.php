@@ -13,10 +13,12 @@ include '../php/config.php';
     <link rel="stylesheet" href="../assets/navbar.css">
     <link rel="stylesheet" href="game.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="game.js" defer></script>
 </head>
 <body>
     <?php include '../php/header.php'; ?>
-    <div id="game-summary"></div>
-    <script src="game.js"></script>
+    
+    <div id="game-summary" data-user-id="<?php echo isset($_SESSION['user_id']) ? $_SESSION['user_id'] : ''; ?>">
+    </div>
 </body>
 </html>

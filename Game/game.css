@@ -94,7 +94,7 @@ p {
     font-size: 48px;
     font-weight: bold;
     margin: 10px 0;
-    min-width: 50px; /* Ensures consistent width for scores and placeholders */
+    min-width: 50px;
     text-align: center;
 }
 
@@ -173,4 +173,180 @@ p {
 .status-closed {
     background-color: #f8d7da;
     color: #721c24;
+}
+
+.prediction-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.prediction-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.team-prediction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-prediction input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.submit-prediction {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.submit-prediction:hover {
+    background-color: #0056b3;
+}
+
+.prediction-needed {
+    color: #dc3545;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* ...existing styles... */
+
+.prediction-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.prediction-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.prediction-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.team-prediction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-prediction label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.team-prediction input {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.submit-prediction {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.submit-prediction:hover {
+    background-color: #218838;
+}
+
+.existing-prediction {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.prediction-time {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.team-choices {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.team-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.team-choice:hover {
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.choice-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.team-choice span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.existing-prediction {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.prediction-time {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
 }

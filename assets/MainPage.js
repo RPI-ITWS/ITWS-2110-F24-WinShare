@@ -1585,13 +1585,13 @@ function displayGames(games, containerId) {
             <div class="game-info">
                 <img class="small-logo" src="${homeTeamLogo}" alt="${game.home.name} logo">
                 <div class="team" onclick="navigateToTeamPage('${game.home.name}', '${game.home.id}')">${game.home.name}</div>
-                <div class="score">${game.home_points}</div>
+                <div class="score">xxx</div>
                 <div class="time">${timeAgoString}</div>
             </div>
             <div class="game-info">
             <img class="small-logo" src="${awayTeamLogo}" alt="${game.away.name} logo">
             <div class="team" onclick="navigateToTeamPage('${game.away.name}', '${game.away.id}')">${game.away.name}</div>
-            <div class="score">${game.away_points}</div>
+            <div class="score">xxx</div>
             <div class="time invisible">${timeAgoString}</div>
             </div>
             `;
