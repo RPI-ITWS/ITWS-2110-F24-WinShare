@@ -1,0 +1,122 @@
+[
+  {
+    "team_name": "76ers",
+    "Elo_Score": 1509.8949
+  },
+  {
+    "team_name": "Blazers",
+    "Elo_Score": 1495.2697
+  },
+  {
+    "team_name": "Bucks",
+    "Elo_Score": 1501.5102
+  },
+  {
+    "team_name": "Bulls",
+    "Elo_Score": 1508.048
+  },
+  {
+    "team_name": "Cavaliers",
+    "Elo_Score": 1504.5623
+  },
+  {
+    "team_name": "Celtics",
+    "Elo_Score": 1497.0135
+  },
+  {
+    "team_name": "Clippers",
+    "Elo_Score": 1487.0311
+  },
+  {
+    "team_name": "Grizzlies",
+    "Elo_Score": 1512.5353
+  },
+  {
+    "team_name": "Hawks",
+    "Elo_Score": 1493.8404
+  },
+  {
+    "team_name": "Heat",
+    "Elo_Score": 1503.6657
+  },
+  {
+    "team_name": "Hornets",
+    "Elo_Score": 1497.0017
+  },
+  {
+    "team_name": "Jazz",
+    "Elo_Score": 1495.2262
+  },
+  {
+    "team_name": "Kings",
+    "Elo_Score": 1492.2708
+  },
+  {
+    "team_name": "Knicks",
+    "Elo_Score": 1512.3603
+  },
+  {
+    "team_name": "Lakers",
+    "Elo_Score": 1515.5124
+  },
+  {
+    "team_name": "Magic",
+    "Elo_Score": 1503.275
+  },
+  {
+    "team_name": "Mavericks",
+    "Elo_Score": 1504.5808
+  },
+  {
+    "team_name": "Nets",
+    "Elo_Score": 1503.0356
+  },
+  {
+    "team_name": "Nuggets",
+    "Elo_Score": 1509.4212
+  },
+  {
+    "team_name": "Pacers",
+    "Elo_Score": 1504.7406
+  },
+  {
+    "team_name": "Pelicans",
+    "Elo_Score": 1492.1657
+  },
+  {
+    "team_name": "Pistons",
+    "Elo_Score": 1490.012
+  },
+  {
+    "team_name": "Raptors",
+    "Elo_Score": 1489.1503
+  },
+  {
+    "team_name": "Rockets",
+    "Elo_Score": 1488.9597
+  },
+  {
+    "team_name": "Spurs",
+    "Elo_Score": 1492.3143
+  },
+  {
+    "team_name": "Suns",
+    "Elo_Score": 1486.021
+  },
+  {
+    "team_name": "Thunder",
+    "Elo_Score": 1504.5864
+  },
+  {
+    "team_name": "Timberwolves",
+    "Elo_Score": 1514.038
+  },
+  {
+    "team_name": "Warriors",
+    "Elo_Score": 1498.3336
+  },
+  {
+    "team_name": "Wizards",
+    "Elo_Score": 1493.6232
+  }
+]
