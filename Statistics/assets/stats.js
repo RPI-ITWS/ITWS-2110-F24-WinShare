@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     playerButton.addEventListener('click', function() {
         playerContent.style.display = 'none';
         statContent.style.display = 'block';
+        FindPlayerStats("lebron james");
     });
 
     // Changes base off dropdown selection
@@ -125,9 +126,7 @@ document.addEventListener('click', function(exit) {
     }
 });
 
-function FindPlayerStats(){
-    const query = document.getElementById('PlayerSearch').value;
-    
+function FindPlayerStats(query){
     if (!query.trim()) {
         query = "lebron james";
     }

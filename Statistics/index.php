@@ -47,7 +47,7 @@ session_start();
             <div id = "StatContent">
                 <div id = "top">
                     <input type="text" id="PlayerSearch" placeholder="Search Players">
-                    <button id = "FindPlayer" onclick = "FindPlayerStats()">Search</button>
+                    <button id = "FindPlayer" onclick = "FindPlayerStats(document.getElementById('PlayerSearch').value)">Search</button>
                 </div>
                 <div id="center">
                     <div id="PlayerOptions"></div>
