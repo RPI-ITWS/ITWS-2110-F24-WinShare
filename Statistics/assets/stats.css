@@ -81,6 +81,10 @@ body{
     cursor: pointer;
 } 
 
+#data1{
+    color: white;
+}
+
 #content {
     padding-top: 20px;
     display: flex;
@@ -112,7 +116,7 @@ body{
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 #stat {
@@ -127,11 +131,13 @@ body{
     color: #000;
 }
 
-#stat:hover {
-    background-color: #7a7f86;
-    cursor: pointer;
+#stat option {
+    background-color: #00aaff;
 }
 
+#stat option:hover {
+    background-color: #7a7f86;
+}
 select#stat {
     position: relative;
     z-index: 1;
@@ -181,10 +187,6 @@ select#stat {
     margin: 0 auto;
 }
 
-#statlabel {
-    margin-right: 20px;
-}
-
 #StatContent {
     display: none;
 }
@@ -208,6 +210,7 @@ select#stat {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 #FindPlayer {
@@ -218,6 +221,7 @@ select#stat {
     font-size: 16px;
     background-color: #7a7f86;
     color: black;
+    box-sizing: border-box;
 }
 
 #FindPlayer:hover {
@@ -227,20 +231,23 @@ select#stat {
 
 #PlayerOptions {
     border: 1px solid #ccc;
-    width: 18.5%;
+    width: 30vw;
     position: absolute;
     z-index: 100;
+    margin-top: 2px;
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .player {
-    width: 100%;
+    width: 92%;
     padding-left: 4%;
     padding-right: 4%;
     background-color: #1a1a1a;
 }
 
 .player:hover {
-    width:100%;
+    width:92.25%;
     cursor: pointer;
     background-color: #00aaff;
     color: black;
@@ -295,6 +302,13 @@ select#stat {
     border-radius: 5px;
     border: 1px solid #00aaff;
     transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;  
+    min-width: 250px;  
+    box-sizing: border-box;  
 }
 
 .stat-box:hover {
@@ -309,16 +323,19 @@ select#stat {
 
 .stat-label {
     color: #7a7f86;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 0 8px 0;
     transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
 }
 
 .stat-value {
     color: #00aaff;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin: 0;
     transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
 }
-
