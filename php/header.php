@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
     session_unset();
@@ -27,6 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/ITWS-2110-F24-WinShare/Predictions/Predictions.php">Predictions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Leaderboard/Leaderboard.php">Leaderboard</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto me-3">
