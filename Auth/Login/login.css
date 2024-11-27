@@ -12,7 +12,7 @@ body {
 .form-container {
     width: 400px;
     padding: 2rem;
-    border: 2px solid #00FFFF; /* Cyan */
+    border: 2px solid #00ffc3; /* Cyan */
     border-radius: 8px;
     background-color: #D3D3D3; /* Light grey */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     font-style: italic;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     margin-bottom: 1.5rem;
 }
 
@@ -40,7 +40,7 @@ input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 1rem;
-    border: 1px solid #00FFFF; /* Cyan */
+    border: 1px solid #00ffc3; /* Cyan */
     border-radius: 5px;
     background-color: #FFFFFF; /* White */
     font-size: 1rem;
@@ -50,7 +50,7 @@ input[type="password"] {
 input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #00B2B2; /* Slightly darker cyan */
+    border-color: #00b28e; /* Slightly darker cyan */
 }
 
 button[type="submit"] {
@@ -60,7 +60,7 @@ button[type="submit"] {
     font-weight: bold;
     font-style: italic;
     color: #FFFFFF; /* White */
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -68,12 +68,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #00B2B2; /* Slightly darker cyan */
+    background-color: #00b28e; /* Slightly darker cyan */
 }
 
 #signup a {
     font-weight: bold;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     text-decoration: none;
 }
 

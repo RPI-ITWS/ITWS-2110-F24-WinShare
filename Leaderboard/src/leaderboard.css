@@ -16,7 +16,7 @@ body, html {
 }
 
 #leaderboardTable th, #leaderboardTable td {
-    border: 1px solid #00FFFF; /* Cyan */
+    border: 1px solid #00ffc3; /* Cyan */
     padding: 12px;
     text-align: center;
     overflow: hidden;
@@ -26,7 +26,7 @@ body, html {
 
 #leaderboardTable th {
     background-color: #D3D3D3; /* Light grey */
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     font-weight: bold;
 }
 
@@ -49,13 +49,13 @@ body, html {
     margin: 10px;
     background-color: #D3D3D3; /* Light grey */
     border-radius: 8px;
-    border: 2px solid #00FFFF; /* Cyan */
+    border: 2px solid #00ffc3; /* Cyan */
     width: 70%;
     height: auto;
 }
 
 #leaderBoardTitle {
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     text-align: center;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -69,10 +69,10 @@ body, html {
 
 #sortButtons .btn {
     background-color: #D3D3D3; /* Light grey */
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     margin-right: 10px;
     padding: 10px 20px;
-    border: 1px solid #00FFFF; /* Cyan */
+    border: 1px solid #00ffc3; /* Cyan */
     border-radius: 5px;
     font-weight: bold;
     font-style: italic;
@@ -81,11 +81,11 @@ body, html {
 }
 
 #sortButtons .btn:hover {
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF; /* White */
 }
 
 #sortButtons .btn.active {
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF; /* White */
 }

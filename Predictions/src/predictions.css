@@ -21,7 +21,7 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    border: 10px solid #00FFFF; /* Cyan */
+    border: 10px solid #00ffc3; /* Cyan */
     margin: 5rem auto;
     z-index: 1; 
     overflow-y: auto;
@@ -36,7 +36,7 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-    border: #00FFFF solid 1px;
+    border: #00ffc3 solid 1px;
     background-color: #FFFFFF; /* White */
 }
 
@@ -72,6 +72,6 @@
     font-size: 60px;
     font-weight: bold;
     font-style: italic;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     text-align: center;
 }

@@ -1,6 +1,6 @@
 .navbar {
     background-color: #D3D3D3; /* Light grey */
-    border-bottom: 5px solid #00FFFF; /* Cyan */
+    border-bottom: 5px solid #00ffc3; /* Cyan */
     padding: 10px 20px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .nav-link {
-    color: #00FFFF !important; /* Cyan */
+    color: #00ffc3 !important; /* Cyan */
     font-family: 'Arial Black', sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -25,28 +25,28 @@
 }
 
 .nav-link:hover {
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF !important; /* White */
     border-radius: 5px;
 }
 
 .navbar .dropdown-menu {
     background-color: #FFFFFF; /* White */
-    border: 1px solid #00FFFF; /* Cyan */
+    border: 1px solid #00ffc3; /* Cyan */
 }
 
 .dropdown-item {
-    color: #00FFFF;
+    color: #00ffc3;
     font-weight: bold;
 }
 
 .dropdown-item:hover {
-    background-color: #00FFFF;
+    background-color: #00ffc3;
     color: #FFFFFF; /* White */
 }
 
 .navbar .active {
-    background-color: #00FFFF; /* Cyan for active page */
+    background-color: #00ffc3; /* Cyan for active page */
     color: #FFFFFF !important; /* White */
     border-radius: 5px;
 }

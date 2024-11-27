@@ -22,7 +22,7 @@ body, html {
     margin: 10px;
     background-color: #D3D3D3; /* Light grey */
     border-radius: 8px;
-    border: 2px solid #00FFFF; /* Cyan */
+    border: 2px solid #00ffc3; /* Cyan */
 }
 
 #MiddleColumn {
@@ -31,7 +31,7 @@ body, html {
     box-sizing: border-box;
     margin: 10px;
     background-color: #D3D3D3; /* Light grey */
-    border: 2px solid #00FFFF; /* Cyan */
+    border: 2px solid #00ffc3; /* Cyan */
     border-radius: 8px;
     overflow: auto;
     max-height: 100vh;
@@ -40,24 +40,24 @@ body, html {
 h3 {
     font-weight: bold;
     font-style: italic;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
 }
 
 #RightColumn ul li a {
     text-decoration: none;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     font-weight: bold;
 }
 
 #RightColumn ul li a:hover {
     color: #FFFFFF; /* White */
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     padding: 2px;
     border-radius: 4px;
 }
 
 #Thumbnails .thumbnail {
-    border: 2px solid #00FFFF; /* Cyan */
+    border: 2px solid #00ffc3; /* Cyan */
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -65,7 +65,7 @@ h3 {
 
 .thumbnail:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #00FFFF;
+    box-shadow: 0 0 10px #00ffc3;
 }
 
 .game-card {

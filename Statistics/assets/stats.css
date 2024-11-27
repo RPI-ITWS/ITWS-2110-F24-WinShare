@@ -5,7 +5,7 @@ body {
 #body {
     padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: #FFFFFF; /* White */
+    background-color: #00ffc3; /* White */
     color: #000000; /* Black */
 }
 
@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #00FFFF; /* Cyan */
+    border-bottom: 5px solid #00ffc3; /* Cyan */
     background-color: #D3D3D3; /* Light grey */
     position: absolute;
 }
@@ -42,13 +42,13 @@ body {
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     font-size: larger;
     font-weight: bold;
 }
 
 .tab a:hover {
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF; /* White */
 }
 
@@ -72,11 +72,11 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
 } 
 
 #MoreOptions:hover {
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF; /* White */
     cursor: pointer;
 } 
@@ -112,7 +112,7 @@ body {
 
 #statlabel {
     font-size: 28px;
-    color: #00FFFF; /* Cyan */
+    color: #00ffc3; /* Cyan */
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
@@ -137,7 +137,7 @@ body {
 }
 
 #stat option {
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #000000; /* Black */
 }
 
@@ -160,8 +160,8 @@ body {
     padding: 12px 24px;
     font-size: 16px;
     background-color: #D3D3D3; /* Light grey */
-    color: #00FFFF; /* Cyan */
-    border: 2px solid #00FFFF;
+    color: #00ffc3; /* Cyan */
+    border: 2px solid #00ffc3;
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: relative;
@@ -180,7 +180,7 @@ body {
 }
 
 #StatButton:hover, #PlayerButton:hover {
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF; /* White */
 }
 
@@ -208,7 +208,7 @@ body {
 
 #FindPlayer:hover {
     cursor: pointer;
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF; /* White */
 }
 
@@ -232,6 +232,6 @@ body {
 .player:hover {
     width: 100%;
     cursor: pointer;
-    background-color: #00FFFF; /* Cyan */
+    background-color: #00ffc3; /* Cyan */
     color: #FFFFFF; /* White */
 }
