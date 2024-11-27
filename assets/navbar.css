@@ -1,34 +1,52 @@
 .navbar {
-    background-color: #000;
-    border-bottom: 5px solid #00aaff;
+    background-color: #D3D3D3; /* Light grey */
+    border-bottom: 5px solid #00FFFF; /* Cyan */
+    padding: 10px 20px;
 }
 
-.navbar-brand, .nav-link {
-    color: #00aaff !important;
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px; /* Adjusted to fit the navbar */
+    width: auto;
+}
+
+.nav-link {
+    color: #00FFFF !important; /* Cyan */
     font-family: 'Arial Black', sans-serif;
     font-style: italic;
     font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover {
-    background-color: #00aaff;
-    color: #000 !important;
+    background-color: #00FFFF; /* Cyan */
+    color: #FFFFFF !important; /* White */
+    border-radius: 5px;
 }
 
 .navbar .dropdown-menu {
-    background-color: #1a1a1a;
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    z-index: 1050; 
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #00FFFF; /* Cyan */
 }
 
 .dropdown-item {
-    color: #00aaff;
+    color: #00FFFF;
+    font-weight: bold;
 }
 
 .dropdown-item:hover {
-    background-color: #00aaff;
-    color: #000;
+    background-color: #00FFFF;
+    color: #FFFFFF; /* White */
+}
+
+.navbar .active {
+    background-color: #00FFFF; /* Cyan for active page */
+    color: #FFFFFF !important; /* White */
+    border-radius: 5px;
 }

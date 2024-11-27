@@ -1,12 +1,12 @@
-body{
-    background-color: #000;
+body {
+    background-color: #FFFFFF; /* White */
 }
 
 #body {
     padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: #000;
-    color: #fff;
+    background-color: #FFFFFF; /* White */
+    color: #000000; /* Black */
 }
 
 #Hotbar {
@@ -19,8 +19,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #00aaff;
-    background-color: #1a1a1a;
+    border-bottom: 5px solid #00FFFF; /* Cyan */
+    background-color: #D3D3D3; /* Light grey */
     position: absolute;
 }
 
@@ -42,14 +42,14 @@ body{
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #00aaff;
+    color: #00FFFF; /* Cyan */
     font-size: larger;
     font-weight: bold;
 }
 
 .tab a:hover {
-    background-color: #00aaff;
-    color: #000;
+    background-color: #00FFFF; /* Cyan */
+    color: #FFFFFF; /* White */
 }
 
 #Filler {
@@ -72,12 +72,12 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #00aaff;
+    color: #00FFFF; /* Cyan */
 } 
 
 #MoreOptions:hover {
-    background-color: #00aaff;
-    color: #000;
+    background-color: #00FFFF; /* Cyan */
+    color: #FFFFFF; /* White */
     cursor: pointer;
 } 
 
@@ -89,7 +89,7 @@ body{
     margin: 5% auto;
     height: 1050px;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #D3D3D3; /* Light grey */
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -108,7 +108,7 @@ body{
 
 #statlabel {
     font-size: 28px;
-    color: #00aaff;
+    color: #00FFFF; /* Cyan */
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
@@ -121,14 +121,14 @@ body{
     padding: 1%;
     border: none;
     border-radius: 5px;
-    background-color: #00aaff;
+    background-color: #FFFFFF; /* White */
     outline: none;
     flex-grow: 1;
-    color: #000;
+    color: #000000; /* Black */
 }
 
 #stat:hover {
-    background-color: #7a7f86;
+    background-color: #D3D3D3; /* Light grey */
     cursor: pointer;
 }
 
@@ -151,9 +151,9 @@ select#stat {
 #StatButton, #PlayerButton {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #1a1a1a;
-    color: #00aaff;
-    border: 2px solid #00aaff;
+    background-color: #D3D3D3; /* Light grey */
+    color: #00FFFF; /* Cyan */
+    border: 2px solid #00FFFF;
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: relative;
@@ -172,7 +172,8 @@ select#stat {
 }
 
 #StatButton:hover, #PlayerButton:hover {
-    background-color: #7a7f86;
+    background-color: #00FFFF; /* Cyan */
+    color: #FFFFFF; /* White */
 }
 
 #search {
@@ -216,13 +217,16 @@ select#stat {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #7a7f86;
-    color: black;
+    background-color: #D3D3D3; /* Light grey */
+    color: #000000; /* Black */
+    font-weight: bold;
+    font-style: italic;
 }
 
 #FindPlayer:hover {
     cursor: pointer;
-    color: #000;
+    background-color: #00FFFF; /* Cyan */
+    color: #FFFFFF; /* White */
 }
 
 #PlayerOptions {
@@ -236,14 +240,14 @@ select#stat {
     width: 100%;
     padding-left: 4%;
     padding-right: 4%;
-    background-color: #1a1a1a;
+    background-color: #D3D3D3; /* Light grey */
 }
 
 .player:hover {
-    width:100%;
+    width: 100%;
     cursor: pointer;
-    background-color: #00aaff;
-    color: black;
+    background-color: #00FFFF; /* Cyan */
+    color: #FFFFFF; /* White */
 }
 
 .photo-container {
@@ -260,7 +264,7 @@ select#stat {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #00aaff;
+    border: 3px solid #00FFFF; /* Cyan */
 }
 
 .player-container {
@@ -271,13 +275,13 @@ select#stat {
 
 #name {
     font-size: 28px;
-    color: #00aaff;
+    color: #00FFFF; /* Cyan */
     margin: 0 0 8px 0;
     font-weight: bold;
 }
 
 #position {
-    color: #7a7f86;
+    color: #D3D3D3; /* Light grey */
     margin: 0;
     font-size: 18px;
 }
@@ -290,35 +294,34 @@ select#stat {
 }
 
 .stat-box {
-    background-color: #000;
+    background-color: #FFFFFF; /* White */
     padding: 16px;
     border-radius: 5px;
-    border: 1px solid #00aaff;
+    border: 1px solid #00FFFF; /* Cyan */
     transition: background-color 0.3s ease;
 }
 
 .stat-box:hover {
-    background-color: #00aaff;
+    background-color: #00FFFF; /* Cyan */
     cursor: pointer;
 }
 
 .stat-box:hover .stat-label,
 .stat-box:hover .stat-value {
-    color: #000;
+    color: #FFFFFF; /* White */
 }
 
 .stat-label {
-    color: #7a7f86;
+    color: #D3D3D3; /* Light grey */
     font-size: 16px;
     margin: 0 0 8px 0;
     transition: color 0.3s ease;
 }
 
 .stat-value {
-    color: #00aaff;
+    color: #00FFFF; /* Cyan */
     font-size: 18px;
     font-weight: bold;
     margin: 0;
     transition: color 0.3s ease;
 }
-
