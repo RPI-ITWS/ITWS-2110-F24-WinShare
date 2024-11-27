@@ -139,10 +139,14 @@ function displayRecentResults(games) {
             const awayTeamLogo = `../assets/Photos/teamLogo/${game.away_team_name.split(' ').pop().toLowerCase()}.png`;
 
             resultDiv.innerHTML = `
-                <span>${formattedDate}</span>
-                <img src="${homeTeamLogo}" alt="${game.home_team_name}" onclick="window.location.href='Team.php?teamName=${encodeURIComponent(game.home_team_name)}&id=${game.home_team_id}'" style="cursor: pointer;">
-                <span>${game.home_team_score} : ${game.away_team_score}</span>
-                <img src="${awayTeamLogo}" alt="${game.away_team_name}" onclick="window.location.href='Team.php?teamName=${encodeURIComponent(game.away_team_name)}&id=${game.away_team_id}'" style="cursor: pointer;">
+                <div>
+                    <span>${formattedDate}</span>
+                    <img src="${homeTeamLogo}" alt="${game.home_team_name}" class="team-logo" 
+                        onclick="window.location.href='Team.php?teamName=${encodeURIComponent(game.home_team_name)}&id=${game.home_team_id}'">
+                    <span>xxx : xxx</span>
+                    <img src="${awayTeamLogo}" alt="${game.away_team_name}" class="team-logo"
+                        onclick="window.location.href='Team.php?teamName=${encodeURIComponent(game.away_team_name)}&id=${game.away_team_id}'">
+                </div>
             `;
 
             if (isHomeTeam) {
@@ -158,6 +162,13 @@ function displayRecentResults(games) {
                     resultDiv.classList.add('loss');
                 }
             }
+
+            resultDiv.style.cursor = 'pointer';
+            resultDiv.onclick = function(e) {
+                if (!e.target.classList.contains('team-logo')) {
+                    window.location.href = `../Game/game.php?game_id=${game.game_id}`;
+                }
+            };
 
             resultsContainer.appendChild(resultDiv);
         });

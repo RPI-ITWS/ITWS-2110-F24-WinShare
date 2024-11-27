@@ -1,0 +1,419 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#game-summary {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2, h3, h4 {
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#home-team-stats, #away-team-stats {
+    margin-top: 20px;
+}
+
+.team-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.team-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.broadcast-info {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.tournament-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffd700;
+    color: #000;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.team-box {
+    text-align: center;
+    flex: 1;
+}
+
+.team-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.versus {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    min-width: 50px;
+    text-align: center;
+}
+
+.game-info-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.game-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.broadcasts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.broadcast-item {
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.broadcast-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.broadcast-item a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.venue-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.venue-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-scheduled {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.status-inprogress {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-closed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.prediction-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.prediction-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.team-prediction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-prediction input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.submit-prediction {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.submit-prediction:hover {
+    background-color: #0056b3;
+}
+
+.prediction-needed {
+    color: #dc3545;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* ...existing styles... */
+
+.prediction-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.prediction-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.prediction-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.team-prediction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-prediction label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.team-prediction input {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.submit-prediction {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.submit-prediction:hover {
+    background-color: #218838;
+}
+
+.existing-prediction {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.prediction-time {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.team-choices {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.team-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.team-choice:hover {
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.choice-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.team-choice span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.existing-prediction {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.prediction-time {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.predictions-section {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.predictions-section h4 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.probability {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.probability.favorable {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.probability.unfavorable {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.score-placeholder {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.correct-prediction {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.incorrect-prediction {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.prediction-result {
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.correct-prediction .prediction-result {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.incorrect-prediction .prediction-result {
+    background-color: #f8d7da;
+    color: #721c24;
+}
