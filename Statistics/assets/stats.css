@@ -42,6 +42,7 @@ body{
     align-content: center;
     text-align: center;
     text-decoration: none;
+    color: #00aaff;
     font-size: larger;
     font-weight: bold;
 }
@@ -71,10 +72,12 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #00ffc3; /* Cyan */
+    color: #00aaff;
 } 
 
 #MoreOptions:hover {
+    background-color: #00aaff;
+    color: #000;
     cursor: pointer;
 } 
 
