@@ -1,0 +1,70 @@
+.navbar {
+    background-color: #333; 
+    border-bottom: 5px solid #00ffc3; 
+    padding: 5px 10px; /* Reduce padding for a shorter navbar */
+    position: relative; /* Default position, not fixed to the viewport */
+    top: 0; /* Position it at the very top of the page */
+    left: 0; /* Align it with the left edge of the page */
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Logo styling */
+.navbar-logo img {
+    position: relative; /* Ensures the image is positioned within its container */
+    top: 0px; /* Adjust vertical alignment */
+    left: 15px; /* Align the logo to the left of the navbar */
+    height: 50px; /* Keep the logo as small as an icon */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent unwanted inline spacing */
+    z-index: 1100; /* Ensure it appears above the navbar */
+}
+
+.nav-link {
+    color: #00ffc3 !important; 
+    font-family: 'Arial Black', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 10px; /* Reduce padding between links */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 20px; /* Bring links closer together */
+}
+
+.nav-link:hover {
+    background-color: #00ffc3; 
+    color: #FFFFFF !important; 
+    border-radius: 5px;
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown-menu {
+    background-color: #FFFFFF; 
+    border: 1px solid #00ffc3; 
+}
+
+.dropdown-item {
+    color: #00ffc3;
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: #00ffc3;
+    color: #FFFFFF; 
+}
+
+/* Active link styling */
+.navbar .active {
+    background-color: #00ffc3; 
+    color: #FFFFFF; 
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-indent: -9999px; /* Hides the text "WinShare" */
+    position: relative;
+}

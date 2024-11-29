@@ -1,0 +1,78 @@
+#frameWords {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainframe {
+    background-color: #00ffc3;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1700px;
+    height: 90vh;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin: 5rem auto;
+    z-index: 1; 
+    overflow-y: auto;
+}
+
+#mainframe > div {
+    width: 100%;
+    min-height: 20vh;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #ffff; 
+}
+
+#mainframe > div:last-child {
+    margin-bottom: 0;
+}
+
+#mainframe > div img {
+    max-width: 20%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+#mainframe > div .content {
+    flex-grow: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#mainframe > div .content h2,
+#mainframe > div .content p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+#header1 {
+    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #333; 
+    text-align: center;
+}
