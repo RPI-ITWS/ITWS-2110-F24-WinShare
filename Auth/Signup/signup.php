@@ -51,9 +51,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="../../assets/navbar.css">
+    <link rel="stylesheet" href="login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>    
+<body>
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="../../assets/Photos/logo2_processed.png" alt="WinShare Logo">
+    </div>
 
     <?php include '../../php/header.php'; ?>
 

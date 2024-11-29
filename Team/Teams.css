@@ -1,16 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    margin: 0;
+    background-color: #ffff;
 }
 
 h1 {
-    text-align: left;
-    font-size: 24px;
+    text-align: center;
     font-weight: bold;
     padding: 30px 0px 20px 20px;
-    color: #000;
+    font-family: Arial black, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    color: #333;
+    margin: 0;
 }
 
 .division-container {
@@ -24,8 +24,8 @@ h1 {
 
 .division {
     flex: 1 1 45%;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #d3d3d3;
+    border: 2px solid #00ffc3;
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ h1 {
 
 .division li {
     padding: 8px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ffff;
 }
 
 .division li:last-child {
@@ -57,9 +57,10 @@ h1 {
 
 .division li a {
     text-decoration: none;
-    color: #00ffc3;
+    color: #333;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: none;
+    font-style: normal;
 }
 
 .division li a:hover {

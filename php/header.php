@@ -11,7 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
 }
 ?>
 <nav class="navbar navbar-expand-lg px-3">
-    <div class="container-fluid">
+<div class="navbar-logo">
+    <img src="/ITWS-2110-F24-WinShare/assets/Photos/logo2_processed.png" alt="WinShare Logo">
+</div>
+<link rel="stylesheet" href="../assets/navbar.css">    
+<div class="container-fluid">
         <a class="navbar-brand" href="#">WinShare</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

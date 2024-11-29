@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF; 
 }
 
 #Page {
@@ -11,7 +11,7 @@ body, html {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
-    color: #000000; /* Black text */
+    color: #000000; 
     box-sizing: border-box;
 }
 
@@ -20,9 +20,8 @@ body, html {
     padding: 20px;
     box-sizing: border-box;
     margin: 10px;
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #D3D3D3; 
     border-radius: 8px;
-    border: 2px solid #00ffc3; /* Cyan */
 }
 
 #MiddleColumn {
@@ -30,8 +29,8 @@ body, html {
     padding: 20px;
     box-sizing: border-box;
     margin: 10px;
-    background-color: #D3D3D3; /* Light grey */
-    border: 2px solid #00ffc3; /* Cyan */
+    background-color: #D3D3D3; 
+    border: 2px solid #00ffc3; 
     border-radius: 8px;
     overflow: auto;
     max-height: 100vh;
@@ -40,24 +39,24 @@ body, html {
 h3 {
     font-weight: bold;
     font-style: italic;
-    color: #00ffc3; /* Cyan */
+    color: #333; 
 }
 
 #RightColumn ul li a {
     text-decoration: none;
-    color: #00ffc3; /* Cyan */
+    color: #333; 
     font-weight: bold;
 }
 
 #RightColumn ul li a:hover {
-    color: #FFFFFF; /* White */
-    background-color: #00ffc3; /* Cyan */
+    color: #FFFFFF;
+    background-color: #00ffc3; 
     padding: 2px;
     border-radius: 4px;
 }
 
 #Thumbnails .thumbnail {
-    border: 2px solid #00ffc3; /* Cyan */
+    border: 2px solid #00ffc3; 
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -69,12 +68,12 @@ h3 {
 }
 
 .game-card {
-    border: 1px solid #D3D3D3; /* Light grey */
+    border: 1px solid #D3D3D3; 
     padding: 10px;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -97,7 +96,7 @@ h3 {
 .score {
     font-size: 1em;
     font-weight: bold;
-    color: #000000; /* Black */
+    color: #000000; 
     text-align: center; 
     flex: 0 0 400px;
 }

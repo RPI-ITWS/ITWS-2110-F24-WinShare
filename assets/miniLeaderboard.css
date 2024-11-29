@@ -3,17 +3,17 @@
     border-collapse: collapse;
     margin-top: 10px;
     font-size: 0.9em;
-    color: #fff;
+    color: #333;
 }
 
 #miniLeaderboard td {
-    border: 1px solid #00ffc3;
+    border: 2px solid #333;
     padding: 8px;
     text-align: left;
 }
 
 #miniLeaderboard tr:nth-child(even) {
-    background-color: #1a1a1a;
+    background-color: #fff;
 }
 
 #miniLeaderboard tr:hover {

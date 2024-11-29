@@ -7,7 +7,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WinShare</title>
-    <link rel="stylesheet" href="./assets/stats.css">
+    <link rel="stylesheet" href="./assets/stats.css?v=1.0">
     <script src="./assets/stats.js" defer></script>
     <?php include "../php/include_header.php"?>
 
@@ -17,6 +17,7 @@ session_start();
 <?php include '../php/header.php'; ?>
 
 <div id = "body">
+<h1 id="SeasonStatsTitle">Statistics</h1> 
         <div id = "content">
             <div id = "tabs">
                 <button id="StatButton">Search For Statistic</button>
@@ -24,7 +25,7 @@ session_start();
             </div>
             <div id="PlayerContent">
                 <div id="search">
-                    <label for="stat" id="statlabel">Season-wide Statistics:</label>
+                    <label for="stat" id="statlabel">Search Season-wide Statistics:</label>
                     <select id="stat" for="stat">
                         <option value="default">Select an option</option>
                         <option value="statP0">Point Rankings</option>                

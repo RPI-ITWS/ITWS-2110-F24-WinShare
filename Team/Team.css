@@ -2,16 +2,18 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF; /* White */
-    color: #000000; /* Black */
+    background-color: #FFFFFF;
+    color: #000000; 
 }
 
 .header {
+    font-family: Arial black, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #D3D3D3; /* Light grey */
-    color: #00ffc3; /* Cyan */
+    background-color: #D3D3D3;
+    color: #333; 
+    font-weight: bold;
 }
 
 .logo {
@@ -24,55 +26,57 @@ body, html {
     font-size: 2.5rem;
     font-weight: bold;
     font-style: italic;
-    color: #00ffc3; /* Cyan */
+    color: #333;    
 }
 
 .team-info a {
-    color: #00ffc3; /* Cyan */
+    color: #333; 
     text-decoration: none;
     margin-right: 10px;
     font-weight: bold;
 }
 
 .nav-tabs {
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #D3D3D3; 
     padding: 10px;
     display: flex;
     justify-content: center;
 }
 
 .nav-tabs a {
-    color: #00ffc3; /* Cyan */
+    color: #333; 
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
     margin: 0 15px;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    background-color: #00ffc3;
 }
 
 .nav-tabs a:hover {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #00c194;
+    color: #FFFFFF; 
 }
 
 .nav-tabs a.active {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #00ffc3; 
+    color: #FFFFFF; 
 }
 
 .content {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffff; 
+    border: 4px solid #00ffc3; 
 }
 
 .upcoming-matches, .recent-results, .current-roster {
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #D3D3D3; 
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -84,8 +88,8 @@ body, html {
 .current-roster h2 {
     font-size: 1.8rem;
     font-weight: bold;
-    font-style: italic;
-    color: #00ffc3; /* Cyan */
+    font-style: normal;
+    color: #333; 
     margin-bottom: 20px;
 }
 
@@ -94,8 +98,8 @@ body, html {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    background: #FFFFFF; /* White */
-    border: 1px solid #D3D3D3; /* Light grey */
+    background: #FFFFFF; 
+    border: 1px solid #D3D3D3; 
     border-radius: 8px;
     margin-bottom: 10px;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -118,11 +122,11 @@ body, html {
     width: 150px;
     margin: 10px;
     text-align: center;
-    border: 1px solid #D3D3D3; /* Light grey */
+    border: 1px solid #D3D3D3; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF; 
 }
 
 .player-card img, .coach-card img {
@@ -134,5 +138,5 @@ body, html {
     margin: 10px 0;
     font-size: 1rem;
     font-weight: bold;
-    color: #00ffc3; /* Cyan */
+    color: #00ffc3; 
 }

@@ -1,12 +1,29 @@
-body {
-    background-color: #FFFFFF; /* White */
+body { 
+    background-color: #FFFFFF; 
+}
+
+h1 {
+    font-family: Arial Black, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold; 
+    color: #333;
 }
 
 #body {
     padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: #00ffc3; /* White */
-    color: #000000; /* Black */
+    background-color: #ffff; 
+    color: #333; 
+    border-radius: 8px; 
+    padding: 20px;
+    line-height: 1.6;
+    
+}
+
+#body p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #Hotbar {
@@ -19,8 +36,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #00ffc3; /* Cyan */
-    background-color: #D3D3D3; /* Light grey */
+    border-bottom: 5px solid #00ffc3; 
+    background-color: #333; 
     position: absolute;
 }
 
@@ -42,14 +59,14 @@ body {
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #00ffc3; /* Cyan */
+    color: #00ffc3; 
     font-size: larger;
     font-weight: bold;
 }
 
 .tab a:hover {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #00ffc3;
+    color: #FFFFFF; 
 }
 
 #Filler {
@@ -82,7 +99,18 @@ body {
 } 
 
 #data1 {
-    color: white;
+    color: #333; /* Text color */
+    list-style: none; /* Remove default list style */
+    text-transform: capitalize; /* Capitalize each word */
+    padding: 10px;
+    margin: 0 auto; /* Center the element */
+    display: flex;
+    flex-direction: column; /* Ensure it appears in list view */
+    gap: 8px; /* Add spacing between items */
+    width: 50%; /* Make it narrower */
+    background-color: #d3d3d3; /* Add a contrasting background */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Align text to the left */
 }
 
 #content {
@@ -91,12 +119,15 @@ body {
     flex-direction: column;
     width: 75%;
     margin: 5% auto;
-    height: 1050px;
+    height: auto; /* Allow flexible height for content */
+    max-height: 1050px; /* Prevent content from exceeding the container height */
     align-items: center;
     background-color: #D3D3D3; /* Light grey */
+    border: 4px solid #00ffc3; /* Cyan border */
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Prevent content overflow */
 }
 
 #search {
@@ -111,12 +142,15 @@ body {
 }
 
 #statlabel {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
-    color: #00ffc3; /* Cyan */
+    color: #333;
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
     margin-right: 20px;
+    font-style: italic; 
+    font-weight: bold; 
 }
 
 #stat {
@@ -125,24 +159,24 @@ body {
     padding: 1%;
     border: none;
     border-radius: 5px;
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF;
     outline: none;
     flex-grow: 1;
-    color: #000000; /* Black */
+    color: #333; 
 }
 
 #stat:hover {
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #00ffc3; 
     cursor: pointer;
 }
 
 #stat option {
-    background-color: #00ffc3; /* Cyan */
-    color: #000000; /* Black */
+    background-color: #ffff; 
+    color: #000000; 
 }
 
 #stat option:hover {
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #ffff; 
 }
 
 #tabs {
@@ -159,9 +193,9 @@ body {
 #StatButton, #PlayerButton {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #D3D3D3; /* Light grey */
-    color: #00ffc3; /* Cyan */
-    border: 2px solid #00ffc3;
+    background-color: #00ffc3; 
+    color: #333;
+    border: 0px solid #00ffc3;
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: relative;
@@ -180,8 +214,8 @@ body {
 }
 
 #StatButton:hover, #PlayerButton:hover {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #00c194; 
+    color: #FFFFFF; 
 }
 
 #PlayerSearch {
@@ -200,16 +234,16 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #D3D3D3; /* Light grey */
-    color: #000000; /* Black */
+    background-color: #D3D3D3; 
+    color: #000000; 
     font-weight: bold;
     font-style: italic;
 }
 
 #FindPlayer:hover {
     cursor: pointer;
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #ffff; 
+    color: #333; 
 }
 
 #PlayerOptions {
@@ -226,12 +260,12 @@ body {
     width: 92%;
     padding-left: 4%;
     padding-right: 4%;
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #D3D3D3; 
 }
 
 .player:hover {
     width: 100%;
     cursor: pointer;
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #fff; 
+    color: #333; 
 }
