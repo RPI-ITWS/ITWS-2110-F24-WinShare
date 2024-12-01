@@ -19,8 +19,10 @@ h1 {
     border-radius: 8px; 
     padding: 20px;
     line-height: 1.6;
+    text-align: center;
     
 }
+
 
 #body p {
     font-family: Arial, Helvetica, sans-serif;
@@ -234,7 +236,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #D3D3D3; 
+    background-color: #ffff; 
     color: #000000; 
     font-weight: bold;
     font-style: italic;
@@ -242,8 +244,8 @@ h1 {
 
 #FindPlayer:hover {
     cursor: pointer;
-    background-color: #ffff; 
-    color: #333; 
+    background-color: #333; 
+    color: #fff; 
 }
 
 #PlayerOptions {
@@ -260,12 +262,12 @@ h1 {
     width: 92%;
     padding-left: 4%;
     padding-right: 4%;
-    background-color: #D3D3D3; 
+    background-color: #fff; 
 }
 
 .player:hover {
     width: 100%;
     cursor: pointer;
-    background-color: #fff; 
-    color: #333; 
+    background-color: #333; 
+    color: #fff; 
 }

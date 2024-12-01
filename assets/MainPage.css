@@ -15,6 +15,42 @@ body, html {
     box-sizing: border-box;
 }
 
+.image-container-left {
+    position: absolute; /* Ensures the image is fixed at the bottom of the container */
+    bottom: 0; /* Positions the image at the very bottom of the LeftColumn */
+    width: 100%; /* Makes the image span the full width of the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.background-image-left {
+    width: 90%; /* Ensures the image fills the width of the container */
+    height: auto; /* Maintains aspect ratio */
+    opacity: 0.3; /* Reduces opacity for a subtle effect */
+    display: block;
+    padding: -100px;
+}
+
+#LeftColumn {
+    position: relative; /* Needed for positioning the child elements absolutely within this container */
+    width: 20%; /* Matches existing width */
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #D3D3D3; /* Light grey */
+    border-radius: 8px;
+    border: 2px solid #00ffc3; /* Cyan */
+    min-height: 300px; /* Ensures enough height for the content and the image */
+}
+
+
+#LeftColumn h3 a {
+    color: #333; 
+}
+
+#LeftColumn h3 a:hover {
+    color: #00ffc3; 
+}
+
 #LeftColumn, #RightColumn {
     width: 20%;
     padding: 20px;
@@ -22,6 +58,7 @@ body, html {
     margin: 10px;
     background-color: #D3D3D3; 
     border-radius: 8px;
+    border: 2px solid #00ffc3; 
 }
 
 #MiddleColumn {
@@ -42,17 +79,54 @@ h3 {
     color: #333; 
 }
 
+#RightColumn ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#RightColumn {
+    position: relative; /* Needed for positioning the child elements absolutely within this container */
+    width: 20%; /* Matches existing width */
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #D3D3D3; /* Light grey */
+    border-radius: 8px;
+    border: 2px solid #00ffc3; /* Cyan */
+    min-height: 300px; /* Ensures enough height for the articles and the image */
+}
+
+#RightColumn ul li {
+    margin-bottom: 20px; /* Add spacing between each article */
+    border-bottom: 1px solid #ccc; /* Optional: add a separator line */
+    padding-bottom: 15px; /* Space within each article's container */
+    padding-top: 15px;
+}
+
+#RightColumn ul li {
+    margin-bottom: 20px; /* Add spacing between articles */
+    list-style: none;
+    text-decoration: underline;
+}
+
 #RightColumn ul li a {
+    font-size: 16px;
     text-decoration: none;
-    color: #333; 
-    font-weight: bold;
+    color: #333; /* Keep it consistent with your design */
+}
+
+#RightColumn ul li p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666; /* Subtle color for summaries */
+
 }
 
 #RightColumn ul li a:hover {
-    color: #FFFFFF;
-    background-color: #00ffc3; 
-    padding: 2px;
+    color: #00ffc3;
     border-radius: 4px;
+    text-decoration: underline;
 }
 
 #Thumbnails .thumbnail {
@@ -130,4 +204,19 @@ h3 {
     width: 50px;
     height: auto;
     vertical-align: middle;
+}
+
+.image-container {
+    position: absolute; /* Ensures the image is fixed at the bottom of the container */
+    bottom: 0; /* Positions the image at the very bottom of the RightColumn */
+    width: 100%; /* Makes the image span the full width of the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.background-image {
+    width: 135%; /* Ensures the image fills the width of the container */
+    height: auto; /* Maintains aspect ratio */
+    opacity: 0.3; /* Reduces opacity for a subtle effect */
+    display: block;
+    padding-left: -40px;
 }

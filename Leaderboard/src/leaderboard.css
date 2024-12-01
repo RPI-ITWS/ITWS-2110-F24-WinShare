@@ -72,7 +72,7 @@ body, html {
 }
 
 #leaderboardTable th, #leaderboardTable td {
-    border: 2px solid #333; 
+    border: 2px solid #00ffc3; 
     padding: 12px; /* Padding for cells */
     text-align: center; /* Center-align text in cells */
     overflow: hidden; /* Prevent overflow */
@@ -81,8 +81,8 @@ body, html {
 }
 
 #leaderboardTable th {
-    background-color: #ffff; 
-    color: #333; 
+    background-color: #333; 
+    color: #00ffc3; 
     font-weight: bold; 
 }
 

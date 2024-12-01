@@ -29,8 +29,19 @@ body {
 }
 
 .logo-container img {
-    width: 275px; 
+    width: 235px; 
     height: auto; 
+}
+
+.login-title {
+    font-family: "Arial Black", sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: -35px;
+
 }
 
 .form-container {
@@ -64,7 +75,7 @@ input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 1rem;
-    border: 1px solid #00ffc3; 
+    border: 2px solid #00ffc3; 
     border-radius: 5px;
     background-color: #FFFFFF; 
     font-size: 1rem;
@@ -83,7 +94,7 @@ button[type="submit"] {
     font-size: 1rem;
     font-weight: bold;
     font-style: italic;
-    color: #FFFFFF; 
+    color: #333; 
     background-color: #00ffc3; 
     border: none;
     border-radius: 5px;
@@ -93,6 +104,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #00b28e; 
+    color: #FFFFFF;
 }
 
 #signup a {

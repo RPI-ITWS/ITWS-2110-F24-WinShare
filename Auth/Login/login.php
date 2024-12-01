@@ -54,8 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <!-- Logo Section -->
-    <div class="logo-container">
-        <img src="../../assets/Photos/logo2_processed.png" alt="WinShare Logo">
+    <div class="logo-container text-center">
+        <img src="../../assets/Photos/logo2_processed.png" alt="WinShare Logo" class="mb-3">
+        <h1 class="display-4 login-title">Login</h1>
     </div>
 
     <!-- Login Form -->
@@ -84,4 +85,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </body>
 </html>
-
