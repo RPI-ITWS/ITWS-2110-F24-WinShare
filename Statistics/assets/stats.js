@@ -95,7 +95,7 @@ InputtedSearch.addEventListener("input", function() {
                 InputtedSearch.value = player;
                 SearchList.style.display = 'none';
                 FindPlayer.disabled = false;
-                FindPlayer.style.backgroundColor = '#00aaff';
+                FindPlayer.style.backgroundColor = '#18E69E';
                 FindPlayer.style.cursor = 'pointer';
             };
     
@@ -106,7 +106,7 @@ InputtedSearch.addEventListener("input", function() {
     
         if (players.includes(InputtedSearch.value) || lowerplayers.includes(InputtedSearch.value.toLowerCase())) {
             FindPlayer.disabled = false;
-            FindPlayer.style.backgroundColor = '#00aaff';
+            FindPlayer.style.backgroundColor = '#18E69E';
             FindPlayer.style.color = 'black';
             FindPlayer.style.cursor = 'pointer';
         } else {
