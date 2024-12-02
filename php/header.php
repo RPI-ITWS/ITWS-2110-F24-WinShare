@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                     <a class="nav-link" href="/ITWS-2110-F24-WinShare/Predictions/Predictions.php">Predictions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Leaderboard/Leaderboard.php">Leaderboard</a>
+                    <a class="nav-link" href="/ITWS-2110-F24-WinShare/Leaderboard/leaderboard.php">Leaderboard</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto me-3">
