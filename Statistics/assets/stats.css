@@ -1,12 +1,12 @@
-body {
-    background-color: #FFFFFF; /* White */
+body{
+    background-color: #000;
 }
 
 #body {
     padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: #00ffc3; /* White */
-    color: #000000; /* Black */
+    background-color: #000;
+    color: #fff;
 }
 
 #Hotbar {
@@ -19,8 +19,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #00ffc3; /* Cyan */
-    background-color: #D3D3D3; /* Light grey */
+    border-bottom: 5px solid #00aaff;
+    background-color: #1a1a1a;
     position: absolute;
 }
 
@@ -42,14 +42,14 @@ body {
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #00ffc3; /* Cyan */
+    color: #00aaff;
     font-size: larger;
     font-weight: bold;
 }
 
 .tab a:hover {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #00aaff;
+    color: #000;
 }
 
 #Filler {
@@ -72,16 +72,16 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #00ffc3; /* Cyan */
+    color: #00aaff;
 } 
 
 #MoreOptions:hover {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #00aaff;
+    color: #000;
     cursor: pointer;
 } 
 
-#data1 {
+#data1{
     color: white;
 }
 
@@ -93,7 +93,7 @@ body {
     margin: 5% auto;
     height: 1050px;
     align-items: center;
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #1a1a1a;
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -112,7 +112,7 @@ body {
 
 #statlabel {
     font-size: 28px;
-    color: #00ffc3; /* Cyan */
+    color: #00aaff;
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
@@ -125,24 +125,22 @@ body {
     padding: 1%;
     border: none;
     border-radius: 5px;
-    background-color: #FFFFFF; /* White */
+    background-color: #00aaff;
     outline: none;
     flex-grow: 1;
-    color: #000000; /* Black */
-}
-
-#stat:hover {
-    background-color: #D3D3D3; /* Light grey */
-    cursor: pointer;
+    color: #000;
 }
 
 #stat option {
-    background-color: #00ffc3; /* Cyan */
-    color: #000000; /* Black */
+    background-color: #00aaff;
 }
 
 #stat option:hover {
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #7a7f86;
+}
+select#stat {
+    position: relative;
+    z-index: 1;
 }
 
 #tabs {
@@ -159,9 +157,9 @@ body {
 #StatButton, #PlayerButton {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #D3D3D3; /* Light grey */
-    color: #00ffc3; /* Cyan */
-    border: 2px solid #00ffc3;
+    background-color: #1a1a1a;
+    color: #00aaff;
+    border: 2px solid #00aaff;
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: relative;
@@ -180,8 +178,29 @@ body {
 }
 
 #StatButton:hover, #PlayerButton:hover {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #7a7f86;
+}
+
+#search {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#StatContent {
+    display: none;
+}
+
+#PlayerContent {
+    width: 100%;
+    display: block;
+    position: relative;
+    bottom: 2%;
+}
+
+#top {
+    display: flex;
+    align-items: center;
 }
 
 #PlayerSearch {
@@ -200,16 +219,14 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #D3D3D3; /* Light grey */
-    color: #000000; /* Black */
-    font-weight: bold;
-    font-style: italic;
+    background-color: #7a7f86;
+    color: black;
+    box-sizing: border-box;
 }
 
 #FindPlayer:hover {
     cursor: pointer;
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    color: #000;
 }
 
 #PlayerOptions {
@@ -218,20 +235,107 @@ body {
     position: absolute;
     z-index: 100;
     margin-top: 2px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .player {
     width: 92%;
     padding-left: 4%;
     padding-right: 4%;
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #1a1a1a;
 }
 
 .player:hover {
-    width: 100%;
+    width:92.25%;
     cursor: pointer;
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #00aaff;
+    color: black;
+}
+
+.photo-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00aaff;
+}
+
+.player-container {
+    text-align: center;
+    margin-bottom: 30px;
+    z-index: 0;
+}
+
+#name {
+    font-size: 28px;
+    color: #00aaff;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+#position {
+    color: #7a7f86;
+    margin: 0;
+    font-size: 18px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 24px 24px 24px;
+}
+
+.stat-box {
+    background-color: #000;
+    padding: 16px;
+    border-radius: 5px;
+    border: 1px solid #00aaff;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;  
+    min-width: 250px;  
+    box-sizing: border-box;  
+}
+
+.stat-box:hover {
+    background-color: #00aaff;
+    cursor: pointer;
+}
+
+.stat-box:hover .stat-label,
+.stat-box:hover .stat-value {
+    color: #000;
+}
+
+.stat-label {
+    color: #7a7f86;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.stat-value {
+    color: #00aaff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
 }

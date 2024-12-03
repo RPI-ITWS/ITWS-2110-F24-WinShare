@@ -1,3 +1,3 @@
 <?php
-define('SPORTS_RADAR_API_KEY', 'QEyV6QxA8jXjvqpxTF1Oo6ryGc3wn7BjMPA9sy8q');
+define('SPORTS_RADAR_API_KEY', 'tO63xruLG9m40nNmCJPrBh4XP81AlMhVfcIOTO6y');
 ?>
