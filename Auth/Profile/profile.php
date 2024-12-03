@@ -359,7 +359,6 @@ if (isset($_SESSION['user_id'])) {
 
             <div class="friends-list">
                 <?php
-                // Replace stored procedure with direct query
                 $friendsSql = "SELECT u.id, u.username, u.profilePic, u.points 
                               FROM users u 
                               JOIN friendships f ON (u.id = f.friend_id OR u.id = f.user_id)
@@ -413,15 +412,18 @@ if (isset($_SESSION['user_id'])) {
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Team Predicted</th>
+                                <th>Match-up</th>
+                                <th>Prediction</th>
                                 <th>Points Wagered</th>
                                 <th>Points Earned</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php while ($pred = $predictions->fetch_assoc()): ?>
-                                <tr class="<?php echo $pred['points_earned'] >= 0 ? 'table-success' : 'table-danger'; ?>">
+                                <tr class="<?php echo $pred['points_earned'] >= 0 ? 'table-success' : 'table-danger'; ?> clickable-row" 
+                                    onclick="window.location.href='../../Game/game.php?game_id=<?php echo $pred['game_id']; ?>'">
                                     <td><?php echo date('M j, Y', strtotime($pred['prediction_time'])); ?></td>
+                                    <td><?php echo htmlspecialchars($pred['home_team']) . " vs " . htmlspecialchars($pred['away_team']); ?></td>
                                     <td><?php echo htmlspecialchars($pred['winner_name']); ?></td>
                                     <td><?php echo number_format($pred['points_wagered']); ?></td>
                                     <td><?php echo ($pred['points_earned'] >= 0 ? '+' : '') . number_format($pred['points_earned']); ?></td>
@@ -437,8 +439,7 @@ if (isset($_SESSION['user_id'])) {
                 ?>
             </div>
         </div>
-
-    </div> <!-- End of profile-content -->
+    </div>
 </div>
 
 <script src="./src/profile.js"></script>

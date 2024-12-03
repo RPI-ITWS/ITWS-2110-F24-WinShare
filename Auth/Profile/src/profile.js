@@ -154,15 +154,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
-    // Initialize all functionality
     const init = () => {
         animateStats();
         initFriendSearch();
     };
 
-    // Run initialization
     init();
     initPendingRequests();
+
+    document.querySelectorAll('.clickable-row').forEach(row => {
+        row.addEventListener('click', function() {
+            window.location.href = this.dataset.href;
+        });
+    });
 });
 
 function initPendingRequests() {
@@ -171,7 +175,6 @@ function initPendingRequests() {
 
     if (!requestsSection || !requestsList) return;
 
-    // Update section visibility based on content
     function updateSectionVisibility() {
         const hasRequests = requestsList.querySelector('.request-card') !== null;
         requestsSection.classList.toggle('has-requests', hasRequests);

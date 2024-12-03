@@ -457,3 +457,85 @@ body {
     padding: 20px;
     font-style: italic;
 }
+
+.game-details-list {
+    margin-top: 30px;
+}
+
+.game-card {
+    background: #1a1a1a;
+    border: 1px solid #00aaff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.2);
+}
+
+.game-link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.vs {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.score {
+    font-weight: bold;
+    color: #00aaff;
+    margin-left: 10px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.game-status {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.clickable-row {
+    cursor: pointer;
+}
+
+.clickable-row:hover {
+    background-color: rgba(0, 170, 255, 0.15) !important;
+}
+
+.clickable-row.table-success:hover {
+    background-color: rgba(40, 167, 69, 0.3) !important;
+}
+
+.clickable-row.table-danger:hover {
+    background-color: rgba(220, 53, 69, 0.3) !important;
+}

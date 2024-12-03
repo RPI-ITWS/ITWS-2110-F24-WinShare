@@ -31,12 +31,14 @@ try {
     $game_id = $data['game_id'] ?? '';
     $winner_id = $data['winner_id'] ?? '';
     $winner_name = $data['winner_name'] ?? '';
+    $home_team = $data['home_team'] ?? '';
+    $away_team = $data['away_team'] ?? '';
     $points_wagered = $data['points_wagered'] ?? 0;
     $system_probabilities = $data['system_probabilities'] ?? [];
     $actual_winner = $data['actual_winner'] ?? '';
     $game_status = $data['game_status'] ?? '';
 
-    if (empty($game_id) || empty($winner_id) || empty($winner_name) || empty($actual_winner) || empty($game_status)) {
+    if (empty($game_id) || empty($winner_id) || empty($winner_name) || empty($home_team) || empty($away_team) || empty($actual_winner) || empty($game_status)) {
         echo json_encode(['error' => 'Invalid prediction data']);
         exit;
     }
@@ -84,8 +86,8 @@ try {
         $stmt->execute();
 
         // Store the prediction with points earned
-        $stmt = $conn->prepare("INSERT INTO game_predictions (user_id, game_id, winner_id, winner_name, points_wagered, points_earned) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("isssis", $user_id, $game_id, $winner_id, $winner_name, $points_wagered, $points_adjustment);
+        $stmt = $conn->prepare("INSERT INTO game_predictions (user_id, game_id, home_team, away_team, winner_id, winner_name, points_wagered, points_earned) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("isssisis", $user_id, $game_id, $home_team, $away_team, $winner_id, $winner_name, $points_wagered, $points_adjustment);
         $stmt->execute();
 
         $conn->commit();
@@ -104,24 +106,27 @@ try {
 }
 
 function calculatePointsAdjustment($userPrediction, $actualWinner, $systemProbabilities, $pointsWagered) {
+    $systemWinnerProb = $systemProbabilities[$actualWinner];
+    $systemLoserProb = 100 - $systemWinnerProb;
+    
     $isUserCorrect = $userPrediction === $actualWinner;
     $didSystemPredictCorrectly = $systemProbabilities[$actualWinner] > 50;
     
     if ($isUserCorrect) {
         if ($didSystemPredictCorrectly) {
             // System was right, user was right - lower reward
-            return round($pointsWagered * (1 + (100 - $systemProbabilities[$actualWinner]) / 100));
+            return round($pointsWagered * (1 + ($systemLoserProb / 100)));
         } else {
             // System was wrong, user was right - higher reward
-            return round($pointsWagered * (1 + (100 - $systemProbabilities[$actualWinner]) / 100));
+            return round($pointsWagered * (1 + ($systemWinnerProb / 100)));
         }
     } else {
         if ($didSystemPredictCorrectly) {
             // System was right, user was wrong - higher penalty
-            return -round($pointsWagered * (1 + (100 - $systemProbabilities[$actualWinner]) / 100));
+            return -round($pointsWagered * (1 + ($systemWinnerProb / 100)));
         } else {
             // System was wrong, user was wrong - lower penalty
-            return -round($pointsWagered * (1 + (100 - $systemProbabilities[$actualWinner]) / 100));
+            return -round($pointsWagered * (1 + ($systemLoserProb / 100)));
         }
     }
 }
