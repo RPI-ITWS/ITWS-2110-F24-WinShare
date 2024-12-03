@@ -359,8 +359,15 @@ if (isset($_SESSION['user_id'])) {
 
             <div class="friends-list">
                 <?php
-                $stmt = $conn->prepare("CALL get_user_friends(?)");
-                $stmt->bind_param("i", $userId);
+                // Replace stored procedure with direct query
+                $friendsSql = "SELECT u.id, u.username, u.profilePic, u.points 
+                              FROM users u 
+                              JOIN friendships f ON (u.id = f.friend_id OR u.id = f.user_id)
+                              WHERE (f.user_id = ? OR f.friend_id = ?) 
+                              AND f.status = 'accepted'
+                              AND u.id != ?";
+                $stmt = $conn->prepare($friendsSql);
+                $stmt->bind_param("iii", $userId, $userId, $userId);
                 $stmt->execute();
                 $friends = $stmt->get_result();
 
@@ -387,8 +394,51 @@ if (isset($_SESSION['user_id'])) {
                 $stmt->close();
                 ?>
             </div>
+        </div> <!-- End of friends section -->
+
+        <div class="profile-section">
+            <h2>Predictions History</h2>
+            <div class="predictions-list">
+                <?php
+                // Get user predictions
+                $predictionsSql = "SELECT * FROM game_predictions WHERE user_id = ? ORDER BY prediction_time DESC";
+                $stmt = $conn->prepare($predictionsSql);
+                $stmt->bind_param("i", $userId);
+                $stmt->execute();
+                $predictions = $stmt->get_result();
+
+                if ($predictions->num_rows > 0):
+                    ?>
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Team Predicted</th>
+                                <th>Points Wagered</th>
+                                <th>Points Earned</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php while ($pred = $predictions->fetch_assoc()): ?>
+                                <tr class="<?php echo $pred['points_earned'] >= 0 ? 'table-success' : 'table-danger'; ?>">
+                                    <td><?php echo date('M j, Y', strtotime($pred['prediction_time'])); ?></td>
+                                    <td><?php echo htmlspecialchars($pred['winner_name']); ?></td>
+                                    <td><?php echo number_format($pred['points_wagered']); ?></td>
+                                    <td><?php echo ($pred['points_earned'] >= 0 ? '+' : '') . number_format($pred['points_earned']); ?></td>
+                                </tr>
+                            <?php endwhile; ?>
+                        </tbody>
+                    </table>
+                <?php else: ?>
+                    <p class="no-predictions">No predictions made yet</p>
+                <?php 
+                endif;
+                $stmt->close();
+                ?>
+            </div>
         </div>
-    </div>
+
+    </div> <!-- End of profile-content -->
 </div>
 
 <script src="./src/profile.js"></script>
@@ -396,6 +446,5 @@ if (isset($_SESSION['user_id'])) {
 </html>
 
 <?php
-// Close the connection at the very end of the file
 $conn->close();
 ?>
