@@ -1,0 +1,345 @@
+WEBVTT
+
+1 "Mandloi, Priyanka" (1184103936)
+00:00:00.000 --> 00:00:04.714
+Time period from last sprint to till now, ok?
+
+2 "Collins, Joshua" (3013193472)
+00:00:04.714 --> 00:00:05.491
+Okay.
+
+3 "Mandloi, Priyanka" (1184103936)
+00:00:05.491 --> 00:00:31.969
+Okay, like, yeah, last retro till now answering that so our questions are same, so I will just give you one by one question in the chat and let's just discuss over those and try to give your individual answers what you think about those answers and if everyone try to participate, that's good. And since you have to add this I think have you started the recordings?
+
+4 "Hung, Louis" (2193208576)
+00:00:31.969 --> 00:00:36.672
+Okay. Yeah, I just started the recordings. Yeah, yeah, right, ok.
+
+5 "Mandloi, Priyanka" (1184103936)
+00:00:36.672 --> 00:00:53.311
+Alright so 1st question is like what you liked in this sprint, what you liked about the sprint?
+
+6 "Collins, Joshua" (3013193472)
+00:00:53.311 --> 00:01:04.093
+I'm go 1st. I I really liked the our improved communication and reliability during this sprint.
+
+7 "Collins, Joshua" (3013193472)
+00:01:04.093 --> 00:01:20.874
+And, I also liked the, I liked the kind of I liked the updated UI, at least in terms of layout. I think we did a good job with that so far.
+
+8 "Mandloi, Priyanka" (1184103936)
+00:01:20.874 --> 00:01:22.470
+Anyone else?
+
+9 "izik" (103924224)
+00:01:22.470 --> 00:01:27.272
+Yeah, oh night. Oh, ok. So.
+
+10 "Hung, Louis" (2193208576)
+00:01:27.272 --> 00:01:48.010
+I'll go then. Okay, so I really liked about how we're like improving from our sprint, the 1st sprint about like having weekly meetings every Wednesday and almost every Saturday, and I think that makes our communication very efficient during this whole sprint and makes I guess all of us that participated in the meeting really.
+
+11 "Hung, Louis" (2193208576)
+00:01:48.010 --> 00:01:59.750
+Just stay on track of what each other's doing and we also utilize the project function in GitHub that makes it like makes we know what we're each working on currently.
+
+12 "Mandloi, Priyanka" (1184103936)
+00:01:59.750 --> 00:02:14.623
+Yeah ok good also just to reminds me of at the end we will just quickly review your project board, ok? At the end. Okay anyone else who wants to go and yeah.
+
+13 "izik" (103924224)
+00:02:14.623 --> 00:02:30.186
+Yeah I was gonna say that, what I thought I liked is that we were all on board. Everyone agrees on everything, everything we do, and I think that's really vital to a project.
+
+14 "Collins, Joshua" (3013193472)
+00:02:30.186 --> 00:02:36.545
+Can one of you guys display our project board? I I'm on my phone.
+
+15 "Mandloi, Priyanka" (1184103936)
+00:02:37.284 --> 00:02:40.961
+I'll do a room. Then we will do at end after all the questions.
+
+16 "Collins, Joshua" (3013193472)
+00:02:40.961 --> 00:02:41.664
+As a finished.
+
+17 "izik" (103924224)
+00:02:41.664 --> 00:02:42.571
+Oh, ok, ok.
+
+18 "Mandloi, Priyanka" (1184103936)
+00:02:42.571 --> 00:02:51.881
+Okay, yeah. One thing I wanted to tell you guys, you know, I think that that's your team, right? Which had that animation for the scoreboard.
+
+19 "Mandloi, Priyanka" (1184103936)
+00:02:52.689 --> 00:02:59.247
+That's your team, right? Just build that animations in this code while displaying this core board.
+
+20 "Hung, Louis" (2193208576)
+00:02:59.247 --> 00:03:02.385
+The scoreboard, like the leaderboard?
+
+21 "Mandloi, Priyanka" (1184103936)
+00:03:02.385 --> 00:03:06.485
+Yeah, right. That's in your application, right? Your team has been.
+
+22 "Hung, Louis" (2193208576)
+00:03:06.485 --> 00:03:08.625
+Doing that right? Oh yeah, I built that.
+
+23 "Mandloi, Priyanka" (1184103936)
+00:03:08.625 --> 00:03:27.500
+Yeah, that was a good thing. I mean I liked that particular scoreboard. It was very, you know, it's kind of a very realistic like you see in games or something like that. So that was good. Just wanted to highlight that so ok so next question we have.
+
+24 "Mandloi, Priyanka" (1184103936)
+00:03:27.500 --> 00:03:31.020
+That is what you learned in this sprint.
+
+25 "Collins, Joshua" (3013193472)
+00:03:31.020 --> 00:03:55.624
+I I for one learned a lot more about JavaScript and getting basically like a good functionality with displaying information, whether that might be like a search bar with a dropdown or overall just filtering a user's input in JavaScript to get a desired display based off of that.
+
+26 "Shimu" (1785532928)
+00:03:55.624 --> 00:03:57.268
+Okay.
+
+27 "Mandloi, Priyanka" (1184103936)
+00:03:57.268 --> 00:03:59.121
+Oh golden.
+
+28 "Shimu" (1785532928)
+00:03:59.121 --> 00:04:28.840
+So I learned a lot about the API we're gonna use so well most sport radar where I know what the API offers us that we could use, and I also know like the weaknesses of the API that information that they do not like directly give you. So now that I know that, you know, if the API is missing some information that we need, we should try to store some of the information by ourselves.
+
+29 "Mandloi, Priyanka" (1184103936)
+00:04:28.840 --> 00:04:31.696
+Okay. Thank you.
+
+30 "Collins, Joshua" (3013193472)
+00:04:31.696 --> 00:04:49.117
+Yeah, and we try to get around that shortcoming by using two APIs, but even then there are certain bits of information that we just simply can't get from either one of them or any API that is free for that matter, and Isaac.
+
+31 "izik" (103924224)
+00:04:49.117 --> 00:05:06.646
+Yeah, I I learned a lot about this more CSS stuff, I learned a lot about containers and, and how to edit certain things, really, really the small things, how to move things from one side to the other using Flexbox and stuff like that.
+
+32 "Mandloi, Priyanka" (1184103936)
+00:05:06.646 --> 00:05:22.260
+Okay, so let's move to the next question which is what you lagged during the sprint.
+
+33 "Collins, Joshua" (3013193472)
+00:05:22.260 --> 00:05:55.021
+I, for me, I I liked getting my input player input box on the statistics page so that a user types in the input, a dropbox will come down and you can click on a, a desired player or you can type in the player's name fully, and based off of that, that's the only inputs that the input, the input will allow and the other input won't let you click the buttons.
+
+34 "Collins, Joshua" (3013193472)
+00:05:58.056 --> 00:06:00.801
+And that's it. Yeah.
+
+35 "Mandloi, Priyanka" (1184103936)
+00:06:00.801 --> 00:06:09.060
+Okay, anyone else?
+
+36 "Hung, Louis" (2193208576)
+00:06:09.060 --> 00:06:16.196
+I'll go next. I think what we really liked in this sprint.
+
+37 "Collins, Joshua" (3013193472)
+00:06:16.196 --> 00:06:17.378
+I.
+
+38 "Mandloi, Priyanka" (1184103936)
+00:06:17.378 --> 00:06:22.918
+No liked. It's slacked. It's lacked.
+
+39 "Collins, Joshua" (3013193472)
+00:06:22.918 --> 00:06:54.839
+Oh sorry oh oh my bad. Well, we lacked I just think, just based off of where we are in the, in our school semester, I think we locked lacked a little bit of cohesion with, some people more than others, but for the most part we stayed like really on top of things, but every once in a while you would go like a week or two without hearing from well like a few days to a week without hearing from somebody cause they had to study for a test. Yeah.
+
+40 "Hung, Louis" (2193208576)
+00:06:54.839 --> 00:07:17.241
+That's really, I I also have the same opinion right here, so like cause it has been the midterm week last week, so some of us are not responding to each other on like maybe and like some other sprints, someone's missing, but I guess overall we still did it quite a good job in this group community.
+
+41 "Mandloi, Priyanka" (1184103936)
+00:07:17.241 --> 00:07:18.795
+Patients.
+
+42 "Hung, Louis" (2193208576)
+00:07:18.795 --> 00:07:29.041
+And I guess it's just other academic pressures that's keeping us up a bit off the loose sometimes, but generally we're doing good.
+
+43 "Mandloi, Priyanka" (1184103936)
+00:07:29.041 --> 00:07:37.234
+Yeah, I mean that's ok that is bound to happen, right? So we have to manage things around that.
+
+44 "Mandloi, Priyanka" (1184103936)
+00:07:39.123 --> 00:07:41.481
+Okay, anyone else?
+
+45 "Shimu" (1785532928)
+00:07:41.481 --> 00:07:44.559
+I think I noticed the same things that they.
+
+46 "Mandloi, Priyanka" (1184103936)
+00:07:44.559 --> 00:08:13.999
+You said alright ok so we can move to our last question, which is what you learned for during this sprint. So I just want to give a brief like here now you we want to discuss the things like if there are any improvement areas, do you feel you know let's just say I mean what you it's in kind of an open end question to express, you know, like is there been missing.
+
+47 "Mandloi, Priyanka" (1184103936)
+00:08:13.999 --> 00:08:22.564
+Something among you or things are not going good. So those kind of a thing you can highlight in this question.
+
+48 "Collins, Joshua" (3013193472)
+00:08:22.564 --> 00:08:42.289
+Okay, I well on for myself personally, I kind of, I felt like I was a little less productive than again because of midterms and tests and for the next sprint I'm gonna try and be a little bit more diligent on on getting my stuff done earlier in the sprint rather than the back half.
+
+49 "Collins, Joshua" (3013193472)
+00:08:42.289 --> 00:09:03.229
+Cause the 1st sprint I was better at keeping things pretty evenly distributed throughout the sprint when I was working. Yeah, and that's why I aimed for more of during this last sprint session and then from and as a team as and as a whole a group, a whole group, I would say I'm, I just.
+
+50 "Collins, Joshua" (3013193472)
+00:09:03.229 --> 00:09:12.985
+On a little bit more clearer communication especially when it comes to like, guys, I I have this activity or I have this test I have to study for, I can't be.
+
+51 "Mandloi, Priyanka" (1184103936)
+00:09:12.985 --> 00:09:15.039
+Here. I I just.
+
+52 "Collins, Joshua" (3013193472)
+00:09:15.039 --> 00:09:21.063
+So like a little bit more clear communication from some individuals that when we have, when you can't show.
+
+53 "Mandloi, Priyanka" (1184103936)
+00:09:21.063 --> 00:09:23.948
+Can you just explain like why? Cause.
+
+54 "Collins, Joshua" (3013193472)
+00:09:23.948 --> 00:09:31.365
+I mean if you have a test that's fine, but if you're like, if you're not showing up because you just don't feel like it, that's.
+
+55 "Mandloi, Priyanka" (1184103936)
+00:09:31.365 --> 00:10:08.319
+Different. Right, correct. Okay. Yeah, so this is something, you know, which as a team you have to take into accountability because, at the end you try to distribute things and try to complete your task and what at the end, you know, that's another person's responsibilities as well, right? Because they are also responsible towards working, I mean in this particular project. So you can if you feel like things are not working out, I would suggest as a team have a discussion and see how can you make it work.
+
+56 "Collins, Joshua" (3013193472)
+00:10:08.319 --> 00:10:10.341
+Okay.
+
+57 "Hung, Louis" (2193208576)
+00:10:10.341 --> 00:10:35.089
+Same here for, for my part, like I think I personally having trouble is to one is converting one is actually creating some information from the API datas but that's because of personal issue. So it's really just me not having enough time to put into that I wanted to make sure I finished during the sprint, but it turns out I ran out of time.
+
+58 "Hung, Louis" (2193208576)
+00:10:35.089 --> 00:10:54.162
+And that I would try to finish as soon as possible. And for the team, I'm just more concerned about some individual not doing enough work as the others because, last time I checked he did four commits for other semester.
+
+59 "Hung, Louis" (2193208576)
+00:10:56.645 --> 00:11:09.045
+And that individual hasn't showed up to any scrum meetings, I believe, since the start of the semester.
+
+60 "Mandloi, Priyanka" (1184103936)
+00:11:09.045 --> 00:11:16.169
+Okay.
+
+61 "Mandloi, Priyanka" (1184103936)
+00:11:16.169 --> 00:11:35.228
+All right, actually, yeah, I mean at the end we will definitely have a peer review. This is what I came to know from dr. Panam. So if you feel something is not going and you can highlight all these things that didn't went well as a team in the peer reviews so we can keep into accountability.
+
+62 "Hung, Louis" (2193208576)
+00:11:35.228 --> 00:11:37.789
+Before that. Yeah, definitely.
+
+63 "Mandloi, Priyanka" (1184103936)
+00:11:37.789 --> 00:11:56.179
+Yes. Okay. So these are the questions that we had to discuss. Does anyone have anything else to highlight for that particular last question? So the thing is I would say see if you have anything, this is the platform you.
+
+64 "Mandloi, Priyanka" (1184103936)
+00:11:56.179 --> 00:12:12.708
+You can discuss it and try to normalize the situations for your team dynamics, ok? So if anyone have any concern like if you want to highlight, you can highlight in this platform.
+
+65 "Collins, Joshua" (3013193472)
+00:12:12.708 --> 00:12:27.134
+Yeah, I'm just gonna be honest like I I think with everybody here at least we're, we're doing, we're doing very well as a group together, and I don't think we I don't think we have any issues with, with this group before. Thank you.
+
+66 "Mandloi, Priyanka" (1184103936)
+00:12:27.134 --> 00:12:41.090
+Okay. All right, that's good. So we can quickly review the project board, the backlog and then after that we can wrap up this call.
+
+67 "Collins, Joshua" (3013193472)
+00:12:41.090 --> 00:12:47.767
+I'm Isaac, would you mind doing that?
+
+68 "izik" (103924224)
+00:12:47.767 --> 00:12:57.087
+Yeah, 1 s.
+
+69 "Collins, Joshua" (3013193472)
+00:12:58.148 --> 00:13:06.909
+I will say that we did add a new column to the project where we have like nice, a column called nice.
+
+70 "Mandloi, Priyanka" (1184103936)
+00:13:06.909 --> 00:13:09.149
+To have which were made.
+
+71 "Collins, Joshua" (3013193472)
+00:13:09.149 --> 00:13:12.288
+Which are mainly things that we plan on doing or tackling in the next.
+
+72 "Mandloi, Priyanka" (1184103936)
+00:13:12.288 --> 00:13:14.168
+Correct.
+
+73 "Collins, Joshua" (3013193472)
+00:13:14.168 --> 00:13:20.450
+Okay. And and then done is just everything we have currently done from the start up until now.
+
+74 "Shimu" (976671232)
+00:13:20.450 --> 00:13:28.635
+Right. Yeah.
+
+75 "Mandloi, Priyanka" (1184103936)
+00:13:28.635 --> 00:13:31.559
+Okay.
+
+76 "Mandloi, Priyanka" (1184103936)
+00:13:31.559 --> 00:13:51.559
+So I would suggest one more thing. Are you guys tracking bug creations and defect or like if you found any defect? Because topical specifically mentioned along with the tickets you have to maintain if you have any bug or you have identify any bug. So create the bugs as well. So.
+
+77 "Mandloi, Priyanka" (1184103936)
+00:13:51.559 --> 00:13:59.333
+So I would suggest to start tracking it so if he at the end of the semester he will see all these things, right?
+
+78 "Hung, Louis" (2193208576)
+00:13:59.333 --> 00:14:02.596
+Yeah, so I think we have both of our bugs and.
+
+79 "Mandloi, Priyanka" (1184103936)
+00:14:02.596 --> 00:14:04.339
+Issues and I think we.
+
+80 "Hung, Louis" (2193208576)
+00:14:04.339 --> 00:14:06.678
+Yeah, we closed multiple, we closed two.
+
+81 "Mandloi, Priyanka" (1184103936)
+00:14:06.678 --> 00:14:24.976
+Already So that's a good thing, yeah, because I don't want you guys to miss anything, so that is I mean have everything in your repository so that you know we don't lack points anywhere. Okay, so that is good thing you are tracking everything so yeah good.
+
+82 "Collins, Joshua" (3013193472)
+00:14:24.976 --> 00:14:27.323
+Yeah, thank you so much for your.
+
+83 "Mandloi, Priyanka" (1184103936)
+00:14:27.323 --> 00:14:39.118
+Your time. Yeah, NO worries, yeah. I just my office available only soon and that's the purpose of this ok right so yeah we can wrap up.
+
+84 "Hung, Louis" (2193208576)
+00:14:39.118 --> 00:14:40.398
+And.
+
+85 "izik" (103924224)
+00:14:41.356 --> 00:14:42.373
+Thank you so much.
+
+86 "Collins, Joshua" (3013193472)
+00:14:42.373 --> 00:14:44.124
+Thank you. Yeah, have a good day.
