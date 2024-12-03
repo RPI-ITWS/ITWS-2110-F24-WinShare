@@ -421,7 +421,8 @@ if (isset($_SESSION['user_id'])) {
                         <tbody>
                             <?php while ($pred = $predictions->fetch_assoc()): ?>
                                 <tr class="<?php echo $pred['points_earned'] >= 0 ? 'table-success' : 'table-danger'; ?> clickable-row" 
-                                    onclick="window.location.href='../../Game/game.php?game_id=<?php echo $pred['game_id']; ?>'">
+                                    data-game-id="<?php echo $pred['game_id']; ?>"
+                                    onclick="window.location.href='/ITWS-2110-F24-WinShare/Game/game.php?game_id=<?php echo $pred['game_id']; ?>'">
                                     <td><?php echo date('M j, Y', strtotime($pred['prediction_time'])); ?></td>
                                     <td><?php echo htmlspecialchars($pred['home_team']) . " vs " . htmlspecialchars($pred['away_team']); ?></td>
                                     <td><?php echo htmlspecialchars($pred['winner_name']); ?></td>

@@ -157,16 +157,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const init = () => {
         animateStats();
         initFriendSearch();
+        
+        // Update the click handler for rows
+        document.querySelectorAll('.clickable-row').forEach(row => {
+            row.addEventListener('click', function(e) {
+                const gameId = this.getAttribute('onclick').match(/game_id=([^']+)/)[1];
+                if (gameId) {
+                    window.location.href = `/ITWS-2110-F24-WinShare/Game/game.php?game_id=${gameId}`;
+                }
+            });
+        });
     };
 
     init();
     initPendingRequests();
 
+    // Remove this section as we're handling clicks differently now
+    /*
     document.querySelectorAll('.clickable-row').forEach(row => {
         row.addEventListener('click', function() {
             window.location.href = this.dataset.href;
         });
     });
+    */
 });
 
 function initPendingRequests() {
