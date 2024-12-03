@@ -7,7 +7,7 @@
 }
 
 #miniLeaderboard td {
-    border: 1px solid #00ffc3;
+    border: 1px solid #00aaff;
     padding: 8px;
     text-align: left;
 }
@@ -17,7 +17,7 @@
 }
 
 #miniLeaderboard tr:hover {
-    background-color: #00ffc3;
+    background-color: #00aaff;
 }
 
 #miniLeaderboard td:first-child {
