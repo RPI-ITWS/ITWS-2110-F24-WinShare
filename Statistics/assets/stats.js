@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const playerButton = document.getElementById('PlayerButton');
     const playerContent = document.getElementById('PlayerContent');
     const statContent = document.getElementById('StatContent');
-
     const statSelect = document.getElementById('stat');
 
     statButton.addEventListener('click', function() {
@@ -23,26 +22,40 @@ document.addEventListener('DOMContentLoaded', function() {
         FindPlayerStats("lebron james");
     });
 
-    // Changes base off dropdown selection
+    // Changes based on dropdown selection
     statSelect.addEventListener('change', async function() {
         const value = this.value;
         const jsonKey = StatOptionsDropDown[value];
-        const out = document.getElementById("data1");
-        out.textContent = jsonKey;
         const list = await bestPlayers(jsonKey);
-        out.textContent = list.map((player, index) => 
-            `${index + 1}. ${player[0]}: ${player[1]}`
-        ).join('\n');
+
+        const out = document.getElementById("data1-default");
+        const table = document.getElementById("playerTable");
+
+        // alters the viewed content based on the dropwdown choice selected
+        if (jsonKey === 'default') {
+            out.textContent = 'Select a statistic to view top players';
+            out.style.display = "block";
+            table.style.display = "none";
+        } else {
+            out.style.display = "none";
+            table.style.display = "block";
+
+            const tbody = table.querySelector('tbody');
+            tbody.innerHTML = ''; 
+            list.forEach((player, index) => {
+                const playerName = player[0];
+                const playerIndex = lowerplayers.indexOf(playerName.toLowerCase());
+                const originalName = players[playerIndex];
+                const row = document.createElement('tr');
+                row.innerHTML = `<td class="table-cell">${index + 1}</td><td class="table-cell">${originalName}</td><td class="table-cell">${player[1]}</td>`;
+                tbody.appendChild(row);
+            });
+        }
     });
 });
 
 async function bestPlayers(jsonKey) {
     try {
-        if (jsonKey === 'default') {
-            const out = document.getElementById("data1");
-            out.textContent = 'Select a statistic to view top players';
-            return;
-        }
         const response = await fetch("./assets/PlayerStats.json");
         const playersData = await response.json();
         const playerArray = Object.entries(playersData).map(([name, data]) => ({
@@ -82,7 +95,7 @@ InputtedSearch.addEventListener("input", function() {
                 InputtedSearch.value = player;
                 SearchList.style.display = 'none';
                 FindPlayer.disabled = false;
-                FindPlayer.style.backgroundColor = '#00aaff';
+                FindPlayer.style.backgroundColor = '#18E69E';
                 FindPlayer.style.cursor = 'pointer';
             };
     
@@ -93,7 +106,7 @@ InputtedSearch.addEventListener("input", function() {
     
         if (players.includes(InputtedSearch.value) || lowerplayers.includes(InputtedSearch.value.toLowerCase())) {
             FindPlayer.disabled = false;
-            FindPlayer.style.backgroundColor = '#00aaff';
+            FindPlayer.style.backgroundColor = '#18E69E';
             FindPlayer.style.color = 'black';
             FindPlayer.style.cursor = 'pointer';
         } else {
@@ -259,25 +272,25 @@ const lowerplayers = [
     "gabe vincent", "lebron james", "rui hachimura", "bennedict mathurin", "isaiah jackson",
     "james wiseman", "pascal siakam", "tyrese haliburton", "bruce brown", "chris boucher",
     "davion mitchell", "rj barrett", "scottie barnes", "darius garland", "donovan mitchell",
-    "evan mobley", "isaac okoro", "max strus", "ty jerome", "ayo dosunmu", "chris duarte",
-    "coby white", "jevon carter", "josh giddey", "lonzo ball", "nikola vucevic",
-    "patrick williams", "talen horton-tucker", "zach lavine", "bojan bogdanovic", "cam thomas",
-    "ziaire williams", "chris paul", "jeremy sochan", "keldon johnson", "sandro mamukelashvili",
-    "victor wembanyama", "anthony edwards", "julius randle", "naz reid", "rudy gobert",
-    "dillon brooks", "fred vanvleet", "jabari smith jr.", "jalen green", "jock landale",
-    "steven adams", "tari eason", "daniel gafford", "klay thompson", "kyrie irving",
-    "luka doncic", "anfernee simons", "deni avdija", "jabari walker", "robert williams iii",
-    "scoot henderson", "shaedon sharpe", "cade cunningham", "isaiah stewart", "jaden ivey",
-    "jalen duren", "malik beasley", "paul reed", "tobias harris", "andrew wiggins",
-    "draymond green", "jonathan kuminga", "kevon looney", "kyle anderson", "moses moody",
-    "stephen curry", "bogdan bogdanovic", "david roddy", "de'andre hunter", "dyson daniels",
-    "jalen johnson", "onyeka okongwu", "trae young", "kawhi leonard", "kris dunn",
-    "mo bamba", "terance mann", "bam adebayo", "duncan robinson", "jimmy butler",
-    "josh richardson", "tyler herro", "chet holmgren", "isaiah hartenstein", "isaiah joe",
-    "jalen williams", "luguentz dort", "shai gilgeous-alexander", "collin sexton", "drew eubanks",
-    "john collins", "jordan clarkson", "svi mykhailiuk", "walker kessler", "cole anthony",
-    "franz wagner", "jalen suggs", "paolo banchero", "wendell carter jr."
-];
+    "evan mobley", "isaac okoro", "max strus", "ty jerome", "ayo dosunmu",
+    "chris duarte", "coby white", "jevon carter", "josh giddey", "lonzo ball",
+    "nikola vucevic", "patrick williams", "talen horton-tucker", "zach lavine", "bojan bogdanovic",
+    "cam thomas", "ziaire williams", "chris paul", "jeremy sochan", "keldon johnson",
+    "sandro mamukelashvili", "victor wembanyama", "anthony edwards", "julius randle", "naz reid",
+    "rudy gobert", "dillon brooks", "fred vanvleet", "jabari smith jr.", "jalen green",
+    "jock landale", "steven adams", "tari eason", "daniel gafford", "klay thompson",
+    "kyrie irving", "luka doncic", "anfernee simons", "deni avdija", "jabari walker",
+    "robert williams iii", "scoot henderson", "shaedon sharpe", "cade cunningham", "isaiah stewart",
+    "jaden ivey", "jalen duren", "malik beasley", "paul reed", "tobias harris",
+    "andrew wiggins", "draymond green", "jonathan kuminga", "kevon looney", "kyle anderson",
+    "moses moody", "stephen curry", "bogdan bogdanovic", "david roddy", "de'andre hunter",
+    "dyson daniels", "jalen johnson", "onyeka okongwu", "trae young", "kawhi leonard",
+    "kris dunn", "mo bamba", "terance mann", "bam adebayo", "duncan robinson",
+    "jimmy butler", "josh richardson", "tyler herro", "chet holmgren", "isaiah hartenstein",
+    "isaiah joe", "jalen williams", "luguentz dort", "shai gilgeous-alexander", "collin sexton",
+    "drew eubanks", "john collins", "jordan clarkson", "svi mykhailiuk", "walker kessler",
+    "cole anthony", "franz wagner", "jalen suggs", "paolo banchero", "wendell carter jr.",
+    ];
 
 const playerid = {
     "Brandon Clarke": "c978afe7-cf22-45fc-8d0f-da8f867eb5ee","Desmond Bane": "49962b13-0afc-43f5-a3e2-7e37b7736260",
