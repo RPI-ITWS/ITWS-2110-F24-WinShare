@@ -1,0 +1,597 @@
+WEBVTT
+
+1 "Collins, Joshua" (1808401664)
+00:00:00.000 --> 00:00:11.128
+I just started recording, so let's get this off a roll. Have you guys been able to do any work since yesterday?
+
+2 "Sharma, Pranay" (1904302080)
+00:00:11.128 --> 00:00:15.328
+Not really, NO. Yeah, NO, I, I was.
+
+3 "Collins, Joshua" (1808401664)
+00:00:15.328 --> 00:00:22.248
+Able to get my lab done so I was gonna try and focus on this, project a little bit more tomorrow.
+
+4 "Hung, Louis" (3732433152)
+00:00:23.289 --> 00:00:26.843
+Can you feel me in about like a little bit what happened yesterday?
+
+5 "Collins, Joshua" (1808401664)
+00:00:26.843 --> 00:00:34.302
+Yes, not really, not really much. We were I was, it was mostly just me thinking about my API not working.
+
+6 "Hung, Louis" (3732433152)
+00:00:34.302 --> 00:00:36.320
+Ah, ok.
+
+7 "Collins, Joshua" (1808401664)
+00:00:36.320 --> 00:00:38.423
+Yeah, so.
+
+8 "izik" (192344064)
+00:00:38.423 --> 00:00:42.260
+Hey guys, sorry I'm late. I just finished my other meeting.
+
+9 "Collins, Joshua" (1808401664)
+00:00:42.260 --> 00:01:10.727
+No worries. We just started recording like 2 min ago. Perfect. Yeah, I was just telling Lewis that basically Hoop data hub, the player IDs are **** to be put it lightly. So if you like search for a player based off of like their name, like Lebron James, and then try to find the player ID in the JSON file, the numbers is blatantly wrong.
+
+10 "Hung, Louis" (3732433152)
+00:01:10.727 --> 00:01:11.905
+A big sense.
+
+11 "Collins, Joshua" (1808401664)
+00:01:11.905 --> 00:01:20.490
+Yeah. Have you done anything with sports radar yet? Have you tried that? No, NO NO. I was planning on doing that tomorrow. I, I dedicated most of today to get my lab done.
+
+12 "Collins, Joshua" (1808401664)
+00:01:20.490 --> 00:01:35.569
+Yep. So I haven't have had a chance to really touch it. But yeah, I'm basically gonna take all the data that you and Shebu had put together and I'm gonna go through each team and pull data from each player, from each team.
+
+13 "izik" (192344064)
+00:01:35.569 --> 00:01:43.426
+All right. Yeah. Tried to see how I did it in teams. And if you need help using the JS, just let me know.
+
+14 "Collins, Joshua" (1808401664)
+00:01:43.426 --> 00:01:51.583
+Yeah, how how many teams are there? They're like, what, 20 teams in the MBA? 32. ****, ok.
+
+15 "izik" (192344064)
+00:01:54.450 --> 00:01:57.932
+Yeah, it's a lot. I need to get the logo still, that that's I guess.
+
+16 "Collins, Joshua" (1808401664)
+00:01:57.932 --> 00:02:03.908
+Still might be yeah oh Lewis, you're.
+
+17 "izik" (192344064)
+00:02:03.908 --> 00:02:21.439
+Your pull request, when you change the headers, that fixed the the dropdown window to being like all the same. For whatever reason, I I kinda went through it before you did that. I was just going through it to see if it fixed anything and it just I could not figure out why it was doing it, but how many fixes.
+
+18 "Hung, Louis" (3732433152)
+00:02:21.439 --> 00:02:23.665
+Sure fix.
+
+19 "izik" (192344064)
+00:02:23.665 --> 00:02:28.228
+So I don't really care. Yeah completely fixed.
+
+20 "Collins, Joshua" (1808401664)
+00:02:28.228 --> 00:02:34.871
+Yeah yes because we were in my class yesterday, right? And you were just like, Oh ****, it's fixed.
+
+21 "izik" (192344064)
+00:02:34.871 --> 00:02:38.390
+Yeah, it was so random but now the wor.
+
+22 "Collins, Joshua" (1808401664)
+00:02:38.390 --> 00:02:47.270
+Yeah, also, I I know he's not here, but she was a God for putting that like file in so that we can automatically update the machine.
+
+23 "izik" (192344064)
+00:02:47.270 --> 00:02:48.820
+Oh yeah.
+
+24 "Hung, Louis" (3732433152)
+00:02:48.820 --> 00:02:50.399
+Okay, so he have a script present.
+
+25 "Collins, Joshua" (1808401664)
+00:02:50.399 --> 00:03:14.520
+Yeah, yeah. So what the push he made yesterday his push basically added a do a file to our GitHub repo that basically allows GitHub to, when you make a merge request, when you merge it, it automatically updates the VM for him. Oh, so that yeah yeah so that way we're not relying on him to update the VM every single time we make a merge request.
+
+26 "Collins, Joshua" (1808401664)
+00:03:14.520 --> 00:03:22.860
+Downside, if one of us decides to be a bum above your ************ and break something, it immediately goes down.
+
+27 "Hung, Louis" (3732433152)
+00:03:22.860 --> 00:03:30.248
+I mean always get like like GitHub can always bring us back to the previous version, so I don't think that's that big of it.
+
+28 "Collins, Joshua" (1808401664)
+00:03:30.248 --> 00:03:40.846
+Yeah, I'm just I'm just gonna remind us not to be bumpy ************* and politely double check your work. I mean if anyone's gonna break it, it's probably gonna be me, but.
+
+29 "izik" (192344064)
+00:03:44.626 --> 00:03:48.468
+I've broken things before. It's fine. They're all good.
+
+30 "Collins, Joshua" (1808401664)
+00:03:48.468 --> 00:03:55.891
+Wait, yeah, also, so once this, this sprint ends basically the beginning of December, right? I think so.
+
+31 "Hung, Louis" (3732433152)
+00:03:55.891 --> 00:03:57.382
+Yep.
+
+32 "Collins, Joshua" (1808401664)
+00:03:57.382 --> 00:04:05.967
+And then we go right into presentations basically, right? ****, so we got like three weeks. So yeah, we should be fine.
+
+33 "Hung, Louis" (3732433152)
+00:04:05.967 --> 00:04:14.066
+The only thing that I'm worried about is, like, how the whole like currency system is not yet set up.
+
+34 "Collins, Joshua" (1808401664)
+00:04:14.066 --> 00:04:17.163
+Yeah, we can probably I'll probably.
+
+35 "Hung, Louis" (3732433152)
+00:04:17.163 --> 00:04:19.273
+Hey Ash.
+
+36 "Collins, Joshua" (1808401664)
+00:04:19.273 --> 00:04:27.689
+Do you do you I mean, do we have the SQL tables to set up so that it has points already like as a column?
+
+37 "Hung, Louis" (3732433152)
+00:04:27.689 --> 00:04:36.144
+I'm pretty sure that like each player has their own points, but there's NO such thing as column.
+
+38 "Collins, Joshua" (1808401664)
+00:04:36.144 --> 00:04:47.486
+Okay, so good, well, if the column already exists, all we have to do is implement the PHP scripts for increasing or decreasing.
+
+39 "Hung, Louis" (3732433152)
+00:04:47.486 --> 00:04:50.643
+Yes, that's what we need to worry about.
+
+40 "Collins, Joshua" (1808401664)
+00:04:50.643 --> 00:05:02.000
+Out right now. Yeah, yeah, yeah. I'll try to finish up my stat page in this week soon so that we can all focus on that prediction page.
+
+41 "Hung, Louis" (3732433152)
+00:05:02.000 --> 00:05:24.679
+Yeah, cause, for cause I'm currently working about like doing the like wind rate thing and what do you mean, what do you mean wind rate? Like, I have to, I have a script that I'm writing a script to determine like their wind rate or like for like ******* the lakers versus.
+
+42 "Hung, Louis" (3732433152)
+00:05:24.679 --> 00:05:36.879
+Each other and that's what I'm currently working on, but I'm not sure if like I don't know how to work on that to the betting system or like the to the current.
+
+43 "Collins, Joshua" (1808401664)
+00:05:36.879 --> 00:05:50.387
+Well, where is that data gonna be stored like because my question is if you can get that running, what we could do is we could kind of act, use that as like a multiplier for the points like.
+
+44 "Hung, Louis" (3732433152)
+00:05:50.387 --> 00:05:57.491
+It can probably be like a JSON file and I use a JS to access it.
+
+45 "Collins, Joshua" (1808401664)
+00:05:57.491 --> 00:06:17.669
+Something like that where basically it's like, you, you pull up the data, well you have, you have like the two teams available, you pull up the data a number for like wind probability, the lower the wind probability is more, more is multiplied if it's correct.
+
+46 "Collins, Joshua" (1808401664)
+00:06:17.669 --> 00:06:34.883
+Probably what we should do for this at least is like go off of static data for the sake of like oh if like like you make a prediction, you get an instantaneous response if you're right or wrong.
+
+47 "Hung, Louis" (3732433152)
+00:06:34.883 --> 00:06:43.740
+But what we're looking at is like data from like games, that's gonna be played in the future, you know?
+
+48 "Collins, Joshua" (1808401664)
+00:06:43.740 --> 00:06:45.564
+Okay, ok.
+
+49 "Collins, Joshua" (1808401664)
+00:06:45.564 --> 00:06:50.460
+Then, yeah, we can we can work, we can make a work around somewhere about that.
+
+50 "izik" (192344064)
+00:06:50.460 --> 00:06:53.625
+About that one before, like.
+
+51 "Hung, Louis" (3732433152)
+00:06:53.625 --> 00:07:06.995
+During the meetings they guys are not here. The solution that we came up with is like during presentations, we just use like occurred games instead of like new games for a demonstration and be like, oh, we can work on this function and make it available in the future.
+
+52 "Collins, Joshua" (1808401664)
+00:07:06.995 --> 00:07:23.681
+Something like that. Yeah, because the only issue is if we do go off of like future games, that means that theoretically the player isn't gonna get a feedback instantaneously if their tradition is right or wrong. And then how do we exactly demo that that feature's there?
+
+53 "Hung, Louis" (3732433152)
+00:07:23.681 --> 00:07:28.003
+Yeah yeah that's also like one of the concerns that we had.
+
+54 "Collins, Joshua" (1808401664)
+00:07:28.003 --> 00:07:50.371
+Yeah, so that's why I was saying we should probably go off of static data because we can, we can make like an obvious prediction like Lakers beat some really bad team and it goes up by like ten points, but then you say like, that really bad team beats the lakers. Oh, it's gonna go down, it's gonna go down like ten.
+
+55 "Hung, Louis" (3732433152)
+00:07:50.371 --> 00:07:51.613
+Points. Yeah.
+
+56 "izik" (192344064)
+00:07:51.613 --> 00:07:55.134
+Do you want betting arts?
+
+57 "Collins, Joshua" (1808401664)
+00:07:55.134 --> 00:07:58.717
+We, we can.
+
+58 "izik" (192344064)
+00:07:58.717 --> 00:08:01.830
+There's an API for it.
+
+59 "Collins, Joshua" (1808401664)
+00:08:01.830 --> 00:08:04.394
+Okay, that makes sense.
+
+60 "izik" (192344064)
+00:08:04.394 --> 00:08:14.961
+Dot com. So they can't provide historical odds so we're gonna have to get like fresh games and you get five requests per month.
+
+61 "Hung, Louis" (3732433152)
+00:08:14.961 --> 00:08:22.813
+Five? Five, sorry, 500. Oh, oh, ok. Okay, ok.
+
+62 "izik" (192344064)
+00:08:22.813 --> 00:08:25.512
+Can maybe use that and like rotate around accounts?
+
+63 "Collins, Joshua" (1808401664)
+00:08:25.512 --> 00:08:32.036
+Of course. We'll, we'll use like one or two accounts for testing and then for demo, we'll switch over to a fresh account.
+
+64 "izik" (192344064)
+00:08:32.036 --> 00:08:49.438
+Yep. We can try to use that, and if you want me working on that I can I can do that and try to get data from that because I, I really have nothing besides like getting logos. I think Renee has the CSS done or is gonna do that.
+
+65 "Sharma, Pranay" (1904302080)
+00:08:49.438 --> 00:08:52.459
+The logos for the teams you're saying?
+
+66 "izik" (192344064)
+00:08:52.459 --> 00:08:57.628
+Just recolor the pages. Yeah, switching back to the original.
+
+67 "Sharma, Pranay" (1904302080)
+00:08:57.628 --> 00:09:10.416
+Or like getting yeah yeah NO I'll I'll I'll rehold pages. I'm gonna add the articles to the article page and then I'll also just have the logo on every page as well at the top.
+
+68 "Collins, Joshua" (1808401664)
+00:09:10.416 --> 00:09:12.218
+Well, that was good.
+
+69 "izik" (192344064)
+00:09:12.218 --> 00:09:26.891
+Yeah, I'll so for me, I was like oh the only thing I was gonna have to do is adding the rest of the logos for the MBA teams, and like since we were talking more predictions, I was just like well let's just get a sports betting API down.
+
+70 "Collins, Joshua" (1808401664)
+00:09:26.891 --> 00:09:41.899
+Yeah, yeah, definitely do some research on that and if we could talk about that as a group as a whole with shemo, she move here on Friday. We can kind of get a good idea of like what we need to tackle for that last, for the prediction part.
+
+71 "Hung, Louis" (3732433152)
+00:09:41.899 --> 00:09:43.639
+Yeah, definitely.
+
+72 "Collins, Joshua" (1808401664)
+00:09:43.639 --> 00:09:44.440
+Yeah.
+
+73 "izik" (192344064)
+00:09:44.440 --> 00:09:48.689
+Yeah, it doesn't look that bad, and I'm looking through Oh wait, is it in Python?
+
+74 "Collins, Joshua" (1808401664)
+00:09:48.689 --> 00:09:52.019
+**** is it? Hopefully not Python.
+
+75 "Hung, Louis" (3732433152)
+00:09:52.019 --> 00:09:59.757
+And another thing we have to do is the friends function cause that's what Calvan mentioned last time during our mid semester pres.
+
+76 "izik" (192344064)
+00:09:59.757 --> 00:10:02.669
+Oh, that's hard.
+
+77 "Collins, Joshua" (1808401664)
+00:10:02.669 --> 00:10:06.796
+Yeah, our idea, like.
+
+78 "Hung, Louis" (3732433152)
+00:10:06.796 --> 00:10:16.934
+Last time I talked with like right now is that we have like a username and then the username corresponds to in another table with the list of threads.
+
+79 "izik" (192344064)
+00:10:16.934 --> 00:10:19.590
+And the friends.
+
+80 "Hung, Louis" (3732433152)
+00:10:19.590 --> 00:10:27.858
+Like, you get your own like friend leadership leaderboard instead of like the whole leaderboard on your main page. That's good, yeah.
+
+81 "Collins, Joshua" (1808401664)
+00:10:27.858 --> 00:10:33.213
+Yeah, if, and if that's loaded dynamically that can save a speed.
+
+82 "izik" (192344064)
+00:10:33.213 --> 00:10:54.973
+And stuff like do you should we also count the amount of we can have the static data because like a lot of this doesn't I remember you saying that a lot of it doesn't have to be like actually real. A lot of it can just be like really static data. So we can have for the tables, we can have the amount of matches you bet on, so we can count that, we can count the amount of points you have, your wind weight loss.
+
+83 "Hung, Louis" (3732433152)
+00:10:54.973 --> 00:11:01.946
+Show your Yeah that was that like all of that was kind of, ok, let me show you the data structure that we have.
+
+84 "Collins, Joshua" (1808401664)
+00:11:01.946 --> 00:11:05.810
+Right now. Yeah.
+
+85 "Hung, Louis" (3732433152)
+00:11:05.810 --> 00:11:23.219
+This is the exempt right now, so the admin, there's points, there's rounds correct, there's rounds wrong, and then if I go to the where's my if I go, is it this one? It's this one.
+
+86 "Hung, Louis" (3732433152)
+00:11:23.219 --> 00:11:40.195
+Yeah. Okay, so if I go to the profile page, if I log in, and the profile page shows your score and your wind rate, your correct rounds, your total rounds, and stuff like that. And we can add it in theme.
+
+87 "izik" (192344064)
+00:11:40.195 --> 00:11:42.071
+Yeah. Perfect.
+
+88 "izik" (192344064)
+00:11:42.813 --> 00:11:48.128
+Yeah, and that way we can each have our own account and then have our friends and then we can show that as like our demo.
+
+89 "Hung, Louis" (3732433152)
+00:11:48.128 --> 00:11:59.460
+So like fake data? Yeah, that would be perfect, but like the what is now what is now done is this. This is like the global leadership data.
+
+90 "Collins, Joshua" (1808401664)
+00:11:59.460 --> 00:12:16.576
+Yeah, and then all we need is just some kind of, at least for the predictions, like if you go to prediction page, if you can click that real quick, like, yeah, you just click on the games and then you can probably what we can do here is we can just predict like which team is gonna win, at least right now.
+
+91 "Hung, Louis" (3732433152)
+00:12:16.576 --> 00:12:18.478
+Yeah.
+
+92 "Collins, Joshua" (1808401664)
+00:12:18.478 --> 00:12:22.898
+And then, yeah, you can get points based off of that.
+
+93 "Hung, Louis" (3732433152)
+00:12:22.898 --> 00:12:27.214
+That's where we're the 1st step that we need to do though.
+
+94 "izik" (192344064)
+00:12:27.214 --> 00:12:31.442
+Where would our analysis come through?
+
+95 "Hung, Louis" (3732433152)
+00:12:31.442 --> 00:12:32.764
+What now.
+
+96 "Collins, Joshua" (1808401664)
+00:12:32.764 --> 00:13:04.458
+We we can say that like we think this team has a X amount X cancer winning and then well, I don't know exactly because at least with your statistics Lewis, we'll have some kind of wind probability. So the question is, is do we display that exact wind probability or should we like also have like a small function that like randomizes it a little bit?
+
+97 "izik" (192344064)
+00:13:04.458 --> 00:13:06.903
+I think we should make it static.
+
+98 "Collins, Joshua" (1808401664)
+00:13:06.903 --> 00:13:08.294
+Yeah, let's.
+
+99 "Hung, Louis" (3732433152)
+00:13:08.294 --> 00:13:31.175
+Yeah. Like what we should do is like we should run like a wind rate between all of the teams and then just like put the wind rate right there be like we think like atlantic hops versus the hornets that there's a 63 % that the hops will win and like a ******* 34 % at the hornets will win.
+
+100 "Collins, Joshua" (1808401664)
+00:13:31.175 --> 00:13:39.065
+Yeah, then we go in there and then we have some kind of multiplier based off of the probability.
+
+101 "izik" (192344064)
+00:13:39.065 --> 00:13:55.499
+Honestly, what we could do is it's kind of a little cheat, but, so we can have all the games like up to date updated for like bedding odds and all the games, and we can use the odds that we are, that we have.
+
+102 "izik" (192344064)
+00:13:55.499 --> 00:14:12.689
+For that day, let's say, and have it updated every day and say whichever team has the better odds, just make a function and have like a percentage and it they don't, NO one has to know about us that that is how we have analysis that could just be it.
+
+103 "izik" (192344064)
+00:14:12.689 --> 00:14:30.898
+Because like our project was analysis as well. I don't know if, I I know Callan is only grading on like the actual code itself is not gonna be great, he's not grill where he's not grading on like actually, performance, like part of our part of our group is also analysis.
+
+104 "Collins, Joshua" (1808401664)
+00:14:30.898 --> 00:14:53.514
+Oh, and also we don't really have much. Just as a warning for you guys, for Lewis since you and have set up the PHP stuff so far, when you're dealing with pulling stuff from the table, if you guys can try to use like prepare statements because are really good at stopping SQL SQL exemp.
+
+105 "Hung, Louis" (3732433152)
+00:14:53.514 --> 00:14:55.242
+Options. Okay.
+
+106 "Collins, Joshua" (1808401664)
+00:14:55.242 --> 00:15:15.403
+Okay, so in the PHP code itself, you can look this up online, but it's just like statement point like arrow prepare, and basically what it does is it it kind of tells the PHP code that whatever you're inputting should not be interpreted as like pure SQL code, but rather just plain text.
+
+107 "Hung, Louis" (3732433152)
+00:15:15.403 --> 00:15:35.789
+Okay, so, wait, I can't find new psvs. It's mostly config. Wait not in config. So like if we look at leaders board page, like you mean these.
+
+108 "Collins, Joshua" (1808401664)
+00:15:35.789 --> 00:15:41.364
+Yeah, you see how the right below it, it just says connection query S.
+
+109 "Hung, Louis" (3732433152)
+00:15:41.364 --> 00:15:44.168
+Yep.
+
+110 "Collins, Joshua" (1808401664)
+00:15:44.168 --> 00:16:00.147
+You should probably look online I can probably try and send you a link or two about like prepare statements, but it's just basically just whenever you input something into a table or take it out from the table, you should prepare it.
+
+111 "Hung, Louis" (3732433152)
+00:16:00.147 --> 00:16:02.800
+Do we need to prepare while we take it out?
+
+112 "Collins, Joshua" (1808401664)
+00:16:02.800 --> 00:16:11.346
+Because every all I'm doing here is taking it out. I don't think you need to. I think it's good practice in like the real world to do that, but for our case I don't think you need.
+
+113 "Hung, Louis" (3732433152)
+00:16:11.346 --> 00:16:22.651
+Yeah cause like I don't see where we can really just like type in something and send it to our PHP myadmin because that's not a thing in the program.
+
+114 "Collins, Joshua" (1808401664)
+00:16:22.651 --> 00:16:24.306
+Yeah, yeah.
+
+115 "Hung, Louis" (3732433152)
+00:16:24.306 --> 00:16:31.211
+Oh wait, it is. It's in the login page, ok.
+
+116 "Hung, Louis" (3732433152)
+00:16:31.211 --> 00:16:41.829
+Just login, here. Sign up, I guess.
+
+117 "Collins, Joshua" (1808401664)
+00:16:41.829 --> 00:16:47.488
+Yeah, it's called Prepare and bind. I'll send you a link through discord.
+
+118 "Hung, Louis" (3732433152)
+00:16:47.488 --> 00:16:51.731
+Okay, I'll make sure I take a note down who's that.
+
+119 "Collins, Joshua" (1808401664)
+00:16:51.731 --> 00:17:07.433
+Yeah, yeah. It it's just basically saying like I should be expecting this kind of input and output and just kind of, does a good job at stopping people from being malicious.
+
+120 "Hung, Louis" (3732433152)
+00:17:07.433 --> 00:17:09.776
+Okay.
+
+121 "Collins, Joshua" (1808401664)
+00:17:09.776 --> 00:17:14.452
+Okay, let me I should have just sent it to you person.
+
+122 "Hung, Louis" (3732433152)
+00:17:14.452 --> 00:17:16.435
+Emily. Yep. Okay found it.
+
+123 "Collins, Joshua" (1808401664)
+00:17:16.435 --> 00:17:28.389
+Yeah yeah it's it's relatively simple. It just before you do the query, you just kind of prepare it based off of what you're gonna put in.
+
+124 "Hung, Louis" (3732433152)
+00:17:28.389 --> 00:17:33.396
+Gotcha, ok. I was just writing that in case I forgot.
+
+125 "Collins, Joshua" (1808401664)
+00:17:33.396 --> 00:17:48.211
+Yeah, it's it's called the prepare statement. So it's yeah you do like a prepare statement which binds values and then send that then then you input your variables and query it.
+
+126 "Hung, Louis" (3732433152)
+00:17:48.211 --> 00:17:51.374
+Okay.
+
+127 "Collins, Joshua" (1808401664)
+00:17:51.374 --> 00:17:55.890
+Yeah, it's just basically that, prepared bind statement.
+
+128 "Hung, Louis" (3732433152)
+00:17:55.890 --> 00:18:01.948
+Where it says like insert into this. Okay.
+
+129 "Collins, Joshua" (1808401664)
+00:18:01.948 --> 00:18:07.344
+Yeah, I did I did that for my lab and it stopped all SQL injections on the zapp score.
+
+130 "Hung, Louis" (3732433152)
+00:18:07.344 --> 00:18:10.845
+Okay, then.
+
+131 "izik" (192344064)
+00:18:10.845 --> 00:18:13.967
+It makes sense where we should do it.
+
+132 "Collins, Joshua" (1808401664)
+00:18:13.967 --> 00:18:22.228
+Yeah, I'm just I'm emphasizing that because Callihan is the information security IT professor.
+
+133 "Hung, Louis" (3732433152)
+00:18:22.228 --> 00:18:24.560
+Yeah, so.
+
+134 "Collins, Joshua" (1808401664)
+00:18:24.560 --> 00:18:27.727
+If we lack security features, he's gonna get.
+
+135 "Hung, Louis" (3732433152)
+00:18:27.727 --> 00:18:35.668
+That mad yeah we should do that, yeah. Okay.
+
+136 "Collins, Joshua" (1808401664)
+00:18:35.668 --> 00:18:43.829
+Yeah. So with that said, I think we're all good. I will try to finish up my, at least the player side of the.
+
+137 "Collins, Joshua" (1808401664)
+00:18:43.829 --> 00:19:03.829
+Predictions page this week, and then we could all start, and then Isaac with the logos and then Renee with the color, the colored template and then we'll all kind of, once we get done with this week, we'll all kind of pivot towards the prediction page to make sure that's done because that's where our.
+
+138 "Collins, Joshua" (1808401664)
+00:19:03.829 --> 00:19:06.327
+The Main functionality lies.
+
+139 "Hung, Louis" (3732433152)
+00:19:06.327 --> 00:19:13.887
+Yeah, I think we just have like all of the other random stuff done. Now we just have to do the main functionality part.
+
+140 "Collins, Joshua" (1808401664)
+00:19:13.887 --> 00:19:21.092
+Yeah, not even that like we have all the cool, well, we have all the cool features that makes the main functionality look great.
+
+141 "Hung, Louis" (3732433152)
+00:19:21.092 --> 00:19:23.378
+Yeah, yeah, yeah.
+
+142 "Collins, Joshua" (1808401664)
+00:19:23.378 --> 00:19:29.654
+Yeah, and the main functionality itself is only like 20 % of the websites, which is good. Fair enough, I'll work on the.
+
+143 "Hung, Louis" (3732433152)
+00:19:29.654 --> 00:19:31.098
+Friends function at least try to work.
+
+144 "Collins, Joshua" (1808401664)
+00:19:31.098 --> 00:19:38.877
+Got it. Yeah, yeah, yeah. You, you work on the friends function and then we'll all try to get that, the prediction stuff running.
+
+145 "Hung, Louis" (3732433152)
+00:19:38.877 --> 00:19:40.013
+Okay.
+
+146 "Collins, Joshua" (1808401664)
+00:19:40.013 --> 00:19:46.313
+Okay yeah and with that said, I think we are done.
+
+147 "izik" (192344064)
+00:19:46.313 --> 00:19:50.619
+Perfect. Anyone else have any other questions before?
+
+148 "izik" (192344064)
+00:19:50.619 --> 00:19:52.590
+Now from my side.
+
+149 "Sharma, Pranay" (1904302080)
+00:19:52.590 --> 00:19:54.336
+Think I think I'm good. I'm good.
