@@ -1,15 +1,11 @@
 body{
     background-color: #6E7F82;
-body {
-    background-color: #FFFFFF; /* White */
 }
 
 #body {
     padding-top: 1px;
     padding-bottom: 12vh;
     background-color: #6E7F82;
-    background-color: #00ffc3; /* White */
-    color: #000000; /* Black */
 }
 
 #Hotbar {
@@ -24,8 +20,6 @@ body {
     flex-direction: row;
     border-bottom: 5px solid #18E69E;
     background-color: #2B3233;
-    border-bottom: 5px solid #00ffc3; /* Cyan */
-    background-color: #D3D3D3; /* Light grey */
     position: absolute;
 }
 
@@ -48,7 +42,6 @@ body {
     text-align: center;
     text-decoration: none;
     color: #18E69E;
-    color: #00ffc3; /* Cyan */
     font-size: larger;
     font-weight: bold;
 }
@@ -56,8 +49,6 @@ body {
 .tab a:hover {
     background-color: #18E69E;
     color: #6E7F82;
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
 }
 
 #Filler {
@@ -81,14 +72,11 @@ body {
     text-decoration: none;
     font-size: xx-large;
     color: #18E69E;
-    color: #00ffc3; /* Cyan */
 } 
 
 #MoreOptions:hover {
     background-color: #18E69E;
     color: #6E7F82;
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
     cursor: pointer;
 } 
 
@@ -146,8 +134,6 @@ body {
 
 #playerTable th, #playerTable td {
     transition: 0.3s ease, color 0.3s ease;
-#data1 {
-    color: white;
 }
 
 #content {
@@ -159,7 +145,6 @@ body {
     height: 1050px;
     align-items: center;
     background-color: #2B3233;
-    background-color: #D3D3D3; /* Light grey */
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
@@ -179,7 +164,6 @@ body {
 #statlabel {
     font-size: 28px;
     color: #18E69E;
-    color: #00ffc3; /* Cyan */
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
@@ -193,26 +177,21 @@ body {
     border: none;
     border-radius: 5px;
     background-color: #18E69E;
-    background-color: #FFFFFF; /* White */
     outline: none;
     flex-grow: 1;
     color: #6E7F82;
-    color: #000000; /* Black */
-}
-
-#stat:hover {
-    background-color: #D3D3D3; /* Light grey */
-    cursor: pointer;
 }
 
 #stat option {
     background-color: #18E69E;
-    background-color: #00ffc3; /* Cyan */
-    color: #000000; /* Black */
 }
 
 #stat option:hover {
-    background-color: #D3D3D3; /* Light grey */
+    background-color: #7a7f86;
+}
+select#stat {
+    position: relative;
+    z-index: 1;
 }
 
 #tabs {
@@ -232,9 +211,6 @@ body {
     background-color: #2B3233;
     color: #18E69E;
     border: 2px solid #18E69E;
-    background-color: #D3D3D3; /* Light grey */
-    color: #00ffc3; /* Cyan */
-    border: 2px solid #00ffc3;
     cursor: pointer;
     transition: 0.3s ease;
     position: relative;
@@ -253,8 +229,29 @@ body {
 }
 
 #StatButton:hover, #PlayerButton:hover {
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
+    background-color: #7a7f86;
+}
+
+#search {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#StatContent {
+    display: none;
+}
+
+#PlayerContent {
+    width: 100%;
+    display: block;
+    position: relative;
+    bottom: 2%;
+}
+
+#top {
+    display: flex;
+    align-items: center;
 }
 
 #PlayerSearch {
@@ -276,17 +273,11 @@ body {
     background-color: #6E7F82;
     color: black;
     box-sizing: border-box;
-    background-color: #D3D3D3; /* Light grey */
-    color: #000000; /* Black */
-    font-weight: bold;
-    font-style: italic;
 }
 
 #FindPlayer:hover {
     cursor: pointer;
     color: #1d2122;
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
 }
 
 #PlayerOptions {
@@ -295,8 +286,8 @@ body {
     position: absolute;
     z-index: 100;
     margin-top: 2px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .player {
@@ -304,11 +295,10 @@ body {
     padding-left: 4%;
     padding-right: 4%;
     background-color: #2B3233;
-    background-color: #D3D3D3; /* Light grey */
 }
 
 .player:hover {
-    width: 100%;
+    width:92.25%;
     cursor: pointer;
     background-color: #18E69E;
     color: black;
@@ -399,7 +389,4 @@ body {
     transition: color 0.3s ease;
     text-align: center;
     width: 100%;
-}
-    background-color: #00ffc3; /* Cyan */
-    color: #FFFFFF; /* White */
 }
