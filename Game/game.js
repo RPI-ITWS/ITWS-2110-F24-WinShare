@@ -257,25 +257,19 @@ function handleTeamChoice(button, gameId, userId, homeScore, awayScore) {
     const pointsInput = document.getElementById('points');
     const pointsWagered = Math.max(1, parseInt(pointsInput.value) || 1);
 
-    const homeTeam = document.querySelector('.team-box:first-child');
-    const awayTeam = document.querySelector('.team-box:last-child');
-    
+    const homeTeam = document.querySelector('.team-box:first-child h2')?.textContent;
+    const awayTeam = document.querySelector('.team-box:last-child h2')?.textContent;
+
     if (!homeTeam || !awayTeam) {
         console.error('Team elements not found');
         return;
     }
 
-    const homeTeamName = homeTeam.querySelector('h2')?.textContent;
-    const awayTeamName = awayTeam.querySelector('h2')?.textContent;
-
-    const actual_winner = homeScore > awayScore ? homeTeamName : awayTeamName;
+    const actual_winner = homeScore > awayScore ? homeTeam : awayTeam;
     
-    const homeWinProbability = calculateWinProbability(homeTeamName, awayTeamName);
-    const awayWinProbability = 100 - homeWinProbability;
-
     const systemProbabilities = {
-        [homeTeamName]: homeWinProbability,
-        [awayTeamName]: awayWinProbability
+        [homeTeam]: calculateWinProbability(homeTeam, awayTeam),
+        [awayTeam]: calculateWinProbability(awayTeam, homeTeam)
     };
 
     fetch(`../php/submitPrediction.php?user_id=${userId}`, {
@@ -287,6 +281,8 @@ function handleTeamChoice(button, gameId, userId, homeScore, awayScore) {
             game_id: gameId,
             winner_id: teamId,
             winner_name: teamName,
+            home_team: homeTeam,
+            away_team: awayTeam,
             points_wagered: pointsWagered,
             system_probabilities: systemProbabilities,
             actual_winner: actual_winner,

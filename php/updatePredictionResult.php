@@ -12,9 +12,8 @@ if ($conn->connect_error) {
 }
 
 function calculatePointsAdjustment($userPrediction, $actualWinner, $systemProbabilities, $pointsWagered) {
-    $systemWinnerProb = $userPrediction === $actualWinner ? 
-        $systemProbabilities[$actualWinner] : 
-        $systemProbabilities[$userPrediction];
+    $systemWinnerProb = $systemProbabilities[$actualWinner];
+    $systemLoserProb = 100 - $systemWinnerProb;
     
     $isUserCorrect = $userPrediction === $actualWinner;
     $didSystemPredictCorrectly = $systemProbabilities[$actualWinner] > 50;
@@ -22,18 +21,18 @@ function calculatePointsAdjustment($userPrediction, $actualWinner, $systemProbab
     if ($isUserCorrect) {
         if ($didSystemPredictCorrectly) {
             // System was right, user was right - lower reward
-            return round($pointsWagered * (1 + (100 - $systemProbabilities[$actualWinner]) / 100));
+            return round($pointsWagered * (1 + ($systemLoserProb / 100)));
         } else {
             // System was wrong, user was right - higher reward
-            return round($pointsWagered * (1 + $systemProbabilities[$actualWinner] / 100));
+            return round($pointsWagered * (1 + ($systemWinnerProb / 100)));
         }
     } else {
         if ($didSystemPredictCorrectly) {
             // System was right, user was wrong - higher penalty
-            return -round($pointsWagered * (1 + $systemProbabilities[$actualWinner] / 100));
+            return -round($pointsWagered * (1 + ($systemWinnerProb / 100)));
         } else {
             // System was wrong, user was wrong - lower penalty
-            return -round($pointsWagered * (1 + (100 - $systemProbabilities[$actualWinner]) / 100));
+            return -round($pointsWagered * (1 + ($systemLoserProb / 100)));
         }
     }
 }
@@ -42,6 +41,8 @@ try {
     $data = json_decode(file_get_contents('php://input'), true);
     $game_id = $data['game_id'] ?? '';
     $actual_winner = $data['actual_winner'] ?? '';
+    $home_team = $data['home_team'] ?? ''; // Add this
+    $away_team = $data['away_team'] ?? ''; // Add this
 
     if (empty($game_id) || empty($actual_winner)) {
         echo json_encode(['error' => 'Missing required data']);
