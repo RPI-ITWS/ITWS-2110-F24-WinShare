@@ -42,7 +42,22 @@ session_start();
                         <option value="statP12">Fouls</option>
                     </select>
                 </div>
-                <p id="data1"></p>
+                <div id="data1">
+                    <p id="data1-default">Select a statistic to view top players</p>
+                    <div id ="divTable">
+                        <table id="playerTable">
+                            <thead>
+                                <tr>
+                                    <th id="index-header" class="table-header">Index</th>
+                                    <th id="player-name-header" class="table-header">Player Name</th>
+                                    <th id="player-value-header" class="table-header">Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div id = "StatContent">
                 <div id = "top">

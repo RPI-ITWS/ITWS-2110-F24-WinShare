@@ -1,12 +1,11 @@
 body{
-    background-color: #000;
+    background-color: #6E7F82;
 }
 
 #body {
     padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: #000;
-    color: #fff;
+    background-color: #6E7F82;
 }
 
 #Hotbar {
@@ -19,8 +18,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #00aaff;
-    background-color: #1a1a1a;
+    border-bottom: 5px solid #18E69E;
+    background-color: #2B3233;
     position: absolute;
 }
 
@@ -42,14 +41,14 @@ body{
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #00aaff;
+    color: #18E69E;
     font-size: larger;
     font-weight: bold;
 }
 
 .tab a:hover {
-    background-color: #00aaff;
-    color: #000;
+    background-color: #18E69E;
+    color: #6E7F82;
 }
 
 #Filler {
@@ -72,17 +71,69 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #00aaff;
+    color: #18E69E;
 } 
 
 #MoreOptions:hover {
-    background-color: #00aaff;
-    color: #000;
+    background-color: #18E69E;
+    color: #6E7F82;
     cursor: pointer;
 } 
 
-#data1{
-    color: white;
+#data1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+#data1-default {
+    color: #18E69E;
+    font-size: 20px; 
+    display: block;
+}
+
+#divTable {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; 
+}
+
+#playerTable {
+    width: 100%; 
+    margin-left: 22vw;
+    align-items: center;
+    border-collapse: collapse;
+    display: none;
+}
+
+#playerTable th, #playerTable td {
+    border: 1px solid #18E69E;
+    padding: 16px;
+    text-align: center;
+    font-size: 20px; 
+}
+
+#playerTable th {
+    background-color: #6E7F82;
+    color: #18E69E;
+}
+
+#playerTable td {
+    background-color: #6E7F82;
+    color: #18E69E;
+}
+
+#playerTable tr:hover td {
+    background-color: #18E69E;
+    border: 1px solid #6E7F82;
+    color: #6E7F82;
+    cursor: pointer;
+}
+
+#playerTable th, #playerTable td {
+    transition: 0.3s ease, color 0.3s ease;
 }
 
 #content {
@@ -93,10 +144,10 @@ body{
     margin: 5% auto;
     height: 1050px;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #2B3233;
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 #search {
@@ -112,7 +163,7 @@ body{
 
 #statlabel {
     font-size: 28px;
-    color: #00aaff;
+    color: #18E69E;
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
@@ -125,14 +176,14 @@ body{
     padding: 1%;
     border: none;
     border-radius: 5px;
-    background-color: #00aaff;
+    background-color: #18E69E;
     outline: none;
     flex-grow: 1;
-    color: #000;
+    color: #6E7F82;
 }
 
 #stat option {
-    background-color: #00aaff;
+    background-color: #18E69E;
 }
 
 #stat option:hover {
@@ -157,11 +208,11 @@ select#stat {
 #StatButton, #PlayerButton {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #1a1a1a;
-    color: #00aaff;
-    border: 2px solid #00aaff;
+    background-color: #2B3233;
+    color: #18E69E;
+    border: 2px solid #18E69E;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     position: relative;
     margin-right: 4px;
     font-weight: bold;
@@ -219,14 +270,14 @@ select#stat {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #7a7f86;
+    background-color: #6E7F82;
     color: black;
     box-sizing: border-box;
 }
 
 #FindPlayer:hover {
     cursor: pointer;
-    color: #000;
+    color: #1d2122;
 }
 
 #PlayerOptions {
@@ -243,13 +294,13 @@ select#stat {
     width: 92%;
     padding-left: 4%;
     padding-right: 4%;
-    background-color: #1a1a1a;
+    background-color: #2B3233;
 }
 
 .player:hover {
     width:92.25%;
     cursor: pointer;
-    background-color: #00aaff;
+    background-color: #18E69E;
     color: black;
 }
 
@@ -267,7 +318,7 @@ select#stat {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #00aaff;
+    border: 3px solid #18E69E;
 }
 
 .player-container {
@@ -278,7 +329,7 @@ select#stat {
 
 #name {
     font-size: 28px;
-    color: #00aaff;
+    color: #18E69E;
     margin: 0 0 8px 0;
     font-weight: bold;
 }
@@ -297,11 +348,11 @@ select#stat {
 }
 
 .stat-box {
-    background-color: #000;
+    background-color: #6E7F82;
     padding: 16px;
     border-radius: 5px;
-    border: 1px solid #00aaff;
-    transition: background-color 0.3s ease;
+    border: 1px solid #18E69E;
+    transition: 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,17 +363,17 @@ select#stat {
 }
 
 .stat-box:hover {
-    background-color: #00aaff;
+    background-color: #18E69E;
     cursor: pointer;
 }
 
 .stat-box:hover .stat-label,
 .stat-box:hover .stat-value {
-    color: #000;
+    color: #6E7F82;
 }
 
 .stat-label {
-    color: #7a7f86;
+    color: #18E69E;
     font-size: 18px;
     margin: 0 0 8px 0;
     transition: color 0.3s ease;
@@ -331,7 +382,7 @@ select#stat {
 }
 
 .stat-value {
-    color: #00aaff;
+    color: #18E69E;
     font-size: 22px;
     font-weight: bold;
     margin: 0;
