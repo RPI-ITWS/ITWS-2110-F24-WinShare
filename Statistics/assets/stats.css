@@ -295,6 +295,7 @@ select#stat {
     padding-left: 4%;
     padding-right: 4%;
     background-color: #2B3233;
+    color: #18E69E;
 }
 
 .player:hover {
