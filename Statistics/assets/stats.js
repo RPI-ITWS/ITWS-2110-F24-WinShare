@@ -219,7 +219,7 @@ function FindPlayerStats(query){
 
 document.getElementById('name').addEventListener('click', function() {
     const name = document.getElementById('name');
-    linktopage(name.value());
+    linktopage(name.textContent());
 });
 
 function linktopage(name){
