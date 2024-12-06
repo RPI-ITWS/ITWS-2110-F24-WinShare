@@ -331,6 +331,7 @@ select#stat {
     color: #18E69E;
     margin: 0 0 8px 0;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #position {
