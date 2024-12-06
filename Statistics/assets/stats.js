@@ -217,6 +217,26 @@ function FindPlayerStats(query){
     return;
 }
 
+document.getElementById('name').addEventListener('click', function() {
+    const name = document.getElementById('name');
+    linktopage(name.value());
+});
+
+function linktopage(name){
+    const filteredname = name.trim().toLowerCase();
+    const Index = lowerplayers.findIndex(name => name.toLowerCase() === filteredname );
+
+    if (Index === -1){
+        return
+    }else{
+        const x = players[Index];
+        const key = playerid[x];
+        const nameParts = name.split(' ');
+        window.location.href = "https://winshare.eastus.cloudapp.azure.com/ITWS-2110-F24-WinShare/Player/Player.php?id="+key+"&name="+nameParts[0]+"%20"+nameParts[1]; 
+    }
+
+};
+
 const players = [
     "Brandon Clarke", "Desmond Bane", "Ja Morant", "Jaren Jackson Jr.", "Luke Kennard",
     "Santi Aldama", "De'Aaron Fox", "DeMar DeRozan", "Domantas Sabonis", "Keegan Murray",
