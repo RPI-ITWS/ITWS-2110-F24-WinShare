@@ -234,7 +234,7 @@ function linktopage(name){
         const nameParts = name.split(' ');
         window.location.href = "https://winshare.eastus.cloudapp.azure.com/ITWS-2110-F24-WinShare/Player/Player.php?id="+key+"&name="+nameParts[0]+"%20"+nameParts[1]; 
     }
-
+    return;
 };
 
 const players = [
