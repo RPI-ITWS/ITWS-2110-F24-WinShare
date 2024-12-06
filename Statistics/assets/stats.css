@@ -1,12 +1,15 @@
 body{
-    background-color: #000;
+    background-color: #6E7F82;
+body {
+    background-color: #FFFFFF; /* White */
 }
 
 #body {
     padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: #000;
-    color: #fff;
+    background-color: #6E7F82;
+    background-color: #00ffc3; /* White */
+    color: #000000; /* Black */
 }
 
 #Hotbar {
@@ -19,8 +22,10 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #00aaff;
-    background-color: #1a1a1a;
+    border-bottom: 5px solid #18E69E;
+    background-color: #2B3233;
+    border-bottom: 5px solid #00ffc3; /* Cyan */
+    background-color: #D3D3D3; /* Light grey */
     position: absolute;
 }
 
@@ -42,14 +47,17 @@ body{
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #00aaff;
+    color: #18E69E;
+    color: #00ffc3; /* Cyan */
     font-size: larger;
     font-weight: bold;
 }
 
 .tab a:hover {
-    background-color: #00aaff;
-    color: #000;
+    background-color: #18E69E;
+    color: #6E7F82;
+    background-color: #00ffc3; /* Cyan */
+    color: #FFFFFF; /* White */
 }
 
 #Filler {
@@ -72,14 +80,75 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #00aaff;
+    color: #18E69E;
+    color: #00ffc3; /* Cyan */
 } 
 
 #MoreOptions:hover {
-    background-color: #00aaff;
-    color: #000;
+    background-color: #18E69E;
+    color: #6E7F82;
+    background-color: #00ffc3; /* Cyan */
+    color: #FFFFFF; /* White */
     cursor: pointer;
 } 
+
+#data1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+#data1-default {
+    color: #18E69E;
+    font-size: 20px; 
+    display: block;
+}
+
+#divTable {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; 
+}
+
+#playerTable {
+    width: 100%; 
+    margin-left: 22vw;
+    align-items: center;
+    border-collapse: collapse;
+    display: none;
+}
+
+#playerTable th, #playerTable td {
+    border: 1px solid #18E69E;
+    padding: 16px;
+    text-align: center;
+    font-size: 20px; 
+}
+
+#playerTable th {
+    background-color: #6E7F82;
+    color: #18E69E;
+}
+
+#playerTable td {
+    background-color: #6E7F82;
+    color: #18E69E;
+}
+
+#playerTable tr:hover td {
+    background-color: #18E69E;
+    border: 1px solid #6E7F82;
+    color: #6E7F82;
+    cursor: pointer;
+}
+
+#playerTable th, #playerTable td {
+    transition: 0.3s ease, color 0.3s ease;
+#data1 {
+    color: white;
+}
 
 #content {
     padding-top: 20px;
@@ -89,10 +158,11 @@ body{
     margin: 5% auto;
     height: 1050px;
     align-items: center;
-    background-color: #1a1a1a;
+    background-color: #2B3233;
+    background-color: #D3D3D3; /* Light grey */
     border-radius: 4%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 #search {
@@ -108,11 +178,12 @@ body{
 
 #statlabel {
     font-size: 28px;
-    color: #00aaff;
+    color: #18E69E;
+    color: #00ffc3; /* Cyan */
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 #stat {
@@ -121,20 +192,27 @@ body{
     padding: 1%;
     border: none;
     border-radius: 5px;
-    background-color: #00aaff;
+    background-color: #18E69E;
+    background-color: #FFFFFF; /* White */
     outline: none;
     flex-grow: 1;
-    color: #000;
+    color: #6E7F82;
+    color: #000000; /* Black */
 }
 
 #stat:hover {
-    background-color: #7a7f86;
+    background-color: #D3D3D3; /* Light grey */
     cursor: pointer;
 }
 
-select#stat {
-    position: relative;
-    z-index: 1;
+#stat option {
+    background-color: #18E69E;
+    background-color: #00ffc3; /* Cyan */
+    color: #000000; /* Black */
+}
+
+#stat option:hover {
+    background-color: #D3D3D3; /* Light grey */
 }
 
 #tabs {
@@ -151,11 +229,14 @@ select#stat {
 #StatButton, #PlayerButton {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #1a1a1a;
-    color: #00aaff;
-    border: 2px solid #00aaff;
+    background-color: #2B3233;
+    color: #18E69E;
+    border: 2px solid #18E69E;
+    background-color: #D3D3D3; /* Light grey */
+    color: #00ffc3; /* Cyan */
+    border: 2px solid #00ffc3;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     position: relative;
     margin-right: 4px;
     font-weight: bold;
@@ -172,33 +253,8 @@ select#stat {
 }
 
 #StatButton:hover, #PlayerButton:hover {
-    background-color: #7a7f86;
-}
-
-#search {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-}
-
-#statlabel {
-    margin-right: 20px;
-}
-
-#StatContent {
-    display: none;
-}
-
-#PlayerContent {
-    width: 100%;
-    display: block;
-    position: relative;
-    bottom: 2%;
-}
-
-#top {
-    display: flex;
-    align-items: center;
+    background-color: #00ffc3; /* Cyan */
+    color: #FFFFFF; /* White */
 }
 
 #PlayerSearch {
@@ -208,6 +264,7 @@ select#stat {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 #FindPlayer {
@@ -216,33 +273,44 @@ select#stat {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #7a7f86;
+    background-color: #6E7F82;
     color: black;
+    box-sizing: border-box;
+    background-color: #D3D3D3; /* Light grey */
+    color: #000000; /* Black */
+    font-weight: bold;
+    font-style: italic;
 }
 
 #FindPlayer:hover {
     cursor: pointer;
-    color: #000;
+    color: #1d2122;
+    background-color: #00ffc3; /* Cyan */
+    color: #FFFFFF; /* White */
 }
 
 #PlayerOptions {
     border: 1px solid #ccc;
-    width: 18.5%;
+    width: 30vw;
     position: absolute;
     z-index: 100;
+    margin-top: 2px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .player {
-    width: 100%;
+    width: 92%;
     padding-left: 4%;
     padding-right: 4%;
-    background-color: #1a1a1a;
+    background-color: #2B3233;
+    background-color: #D3D3D3; /* Light grey */
 }
 
 .player:hover {
-    width:100%;
+    width: 100%;
     cursor: pointer;
-    background-color: #00aaff;
+    background-color: #18E69E;
     color: black;
 }
 
@@ -260,7 +328,7 @@ select#stat {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #00aaff;
+    border: 3px solid #18E69E;
 }
 
 .player-container {
@@ -271,7 +339,7 @@ select#stat {
 
 #name {
     font-size: 28px;
-    color: #00aaff;
+    color: #18E69E;
     margin: 0 0 8px 0;
     font-weight: bold;
 }
@@ -290,35 +358,48 @@ select#stat {
 }
 
 .stat-box {
-    background-color: #000;
+    background-color: #6E7F82;
     padding: 16px;
     border-radius: 5px;
-    border: 1px solid #00aaff;
-    transition: background-color 0.3s ease;
+    border: 1px solid #18E69E;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;  
+    min-width: 250px;  
+    box-sizing: border-box;  
 }
 
 .stat-box:hover {
-    background-color: #00aaff;
+    background-color: #18E69E;
     cursor: pointer;
 }
 
 .stat-box:hover .stat-label,
 .stat-box:hover .stat-value {
-    color: #000;
+    color: #6E7F82;
 }
 
 .stat-label {
-    color: #7a7f86;
-    font-size: 16px;
+    color: #18E69E;
+    font-size: 18px;
     margin: 0 0 8px 0;
     transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
 }
 
 .stat-value {
-    color: #00aaff;
-    font-size: 18px;
+    color: #18E69E;
+    font-size: 22px;
     font-weight: bold;
     margin: 0;
     transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
 }
-
+    background-color: #00ffc3; /* Cyan */
+    color: #FFFFFF; /* White */
+}

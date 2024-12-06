@@ -1,0 +1,893 @@
+WEBVTT
+
+1 "Collins, Joshua" (1546155008)
+00:00:00.000 --> 00:00:13.247
+I'll I'll just start recording right now and then we can have the other team join us as they come in. Have you guys been able to work on it since yesterday at all?
+
+2 "shimu" (144983040)
+00:00:13.247 --> 00:00:28.022
+I guess I didn't I didn't really have anything to work on to be honest. Okay. I finished my tasks and I guess the website is, you know, pretty much done.
+
+3 "shimu" (144983040)
+00:00:28.022 --> 00:00:30.645
+Suffer just some some functions.
+
+4 "Hung, Louis" (2009880320)
+00:00:30.645 --> 00:00:36.250
+Except for the one big function.
+
+5 "Collins, Joshua" (1546155008)
+00:00:36.250 --> 00:00:54.382
+Yeah, the production part. Yeah, everything else is done. Yeah, yeah. I'll finish up my page this week. I, It's kind of been on the back burner because we have the quiz on Friday. I have two projects to do and then also, my hacking home.
+
+6 "Hung, Louis" (2009880320)
+00:00:54.382 --> 00:01:04.410
+Work. Yeah, I don't I also don't think I'll work on this before weekend because I have two comp work homework due on Friday and Saturday and the and the quiz on Friday.
+
+7 "shimu" (144983040)
+00:01:04.410 --> 00:01:07.130
+Oh. Is that the, is that the architecture?
+
+8 "Hung, Louis" (2009880320)
+00:01:07.130 --> 00:01:27.744
+Yeah, I like the circuit stuff. Oh, I hated that one. Yeah. He messed up so like he was originally assigning homework six to be due at the end of the break, but then he's like he figured out somehow he didn't have time to input the grades, so he just move it till like Saturday instead of next next week.
+
+9 "Collins, Joshua" (1546155008)
+00:01:27.744 --> 00:01:28.491
+What.
+
+10 "shimu" (144983040)
+00:01:28.491 --> 00:01:30.966
+What? Easy, what? Yeah.
+
+11 "Hung, Louis" (2009880320)
+00:01:30.966 --> 00:01:33.930
+It's ******* crazy, so he didn't cancel it.
+
+12 "shimu" (144983040)
+00:01:33.930 --> 00:01:35.229
+Homework you just made it do it.
+
+13 "Hung, Louis" (2009880320)
+00:01:35.229 --> 00:01:50.731
+Yeah, he just made it due earlier. He's, he's like, hey, you guys had two weeks for homework five and I'll give you one week for homework six, and they're gonna be due on Friday and Saturday and also we're gonna be.
+
+14 "Collins, Joshua" (1546155008)
+00:01:50.731 --> 00:02:02.469
+Presenting on the last that last day of class, not next week but like the week after that Tuesday or whatever. Tuesday the 10th, I think it is.
+
+15 "Hung, Louis" (2009880320)
+00:02:02.469 --> 00:02:07.751
+No problem. I have a.
+
+16 "Collins, Joshua" (1546155008)
+00:02:07.751 --> 00:02:15.871
+That starts on Friday, so I won't be in class and callend doesn't want us to present without me being there, kind of like.
+
+17 "shimu" (144983040)
+00:02:15.871 --> 00:02:18.851
+Oh, so what are we presenting? The time.
+
+18 "Collins, Joshua" (1546155008)
+00:02:18.851 --> 00:02:21.191
+Like the last day of class Tuesday the 10th.
+
+19 "shimu" (144983040)
+00:02:21.191 --> 00:02:23.265
+Yeah, that's fine.
+
+20 "Collins, Joshua" (1546155008)
+00:02:23.265 --> 00:02:29.848
+If anything it's better cause we get to see what everybody else does, so we know how screwed we are or not screwed.
+
+21 "shimu" (144983040)
+00:02:29.848 --> 00:02:32.603
+True.
+
+22 "Collins, Joshua" (1546155008)
+00:02:32.603 --> 00:02:52.441
+Yeah, but that's really good, I guess. All of our data is accurate. Our CSS looks good. We have a bunch of functionality functionality that's just as important as the prediction one that we didn't initially display now, but now now we have it display displayable, so.
+
+23 "Hung, Louis" (2009880320)
+00:02:52.441 --> 00:03:00.510
+Yeah, oh, another problem I noticed, there's the prediction page is completely pass.
+
+24 "shimu" (144983040)
+00:03:00.510 --> 00:03:02.333
+What's what was wrong with it?
+
+25 "Hung, Louis" (2009880320)
+00:03:02.333 --> 00:03:05.303
+Like it's not changed since like two months ago.
+
+26 "Izik" (4265501952)
+00:03:05.303 --> 00:03:07.387
+Top guys?
+
+27 "Collins, Joshua" (1546155008)
+00:03:07.387 --> 00:03:10.170
+What's up?
+
+28 "shimu" (144983040)
+00:03:10.170 --> 00:03:11.487
+Oh wait.
+
+29 "Collins, Joshua" (1546155008)
+00:03:11.487 --> 00:03:14.904
+Did we, did we use data for the prediction page or was it supposed to be like dynamic?
+
+30 "Hung, Louis" (2009880320)
+00:03:14.904 --> 00:03:21.950
+It's supposed to be dynamic. It's supposed to be like the like the home team, like the homepage but like I guess the one.
+
+31 "Izik" (4265501952)
+00:03:21.950 --> 00:03:26.627
+Yeah, it was static for a while.
+
+32 "Collins, Joshua" (1546155008)
+00:03:26.627 --> 00:03:52.330
+Okay. Yeah. Yeah, so this weekend I'll finish up my page and then we should probably do a meeting like on Sunday and we should probably all point out like how we're gonna get this next, the the prediction functionality running because that'll probably be our Thanksgiving like assignment, and then if we have time, we can pretty anything else up.
+
+33 "shimu" (144983040)
+00:03:52.330 --> 00:03:57.531
+Yeah, that's fine. I think Louis already made the prediction like actual function.
+
+34 "Hung, Louis" (2009880320)
+00:03:57.531 --> 00:04:04.688
+So you just got to implement it. No, it's just it's just like the wind rate thing, it's not the function, so.
+
+35 "Collins, Joshua" (1546155008)
+00:04:04.688 --> 00:04:09.749
+Oh, I mean, we could just make that. Yeah.
+
+36 "shimu" (144983040)
+00:04:09.749 --> 00:04:11.588
+To keep it simple, right?
+
+37 "Collins, Joshua" (1546155008)
+00:04:11.588 --> 00:04:28.859
+Yeah, we could just take that number and then turn it into like, you could take that number, sub have a sub subtract that number from a hundred and then like you have your wind probability and you lose probability and then like.
+
+38 "Collins, Joshua" (1546155008)
+00:04:28.859 --> 00:04:45.750
+Depending on those two numbers, you can add a, we could use those as point multipliers. And then all we need to do is say like, is the, we need to find a way to say, is the prediction right or wrong? If so, apply when multiplier if correct, if not deduct points if wrong.
+
+39 "Hung, Louis" (2009880320)
+00:04:45.750 --> 00:04:56.972
+Yeah I guess the JS is not like the hard part. I guess like what we're willing to work on is like making a page dynamic for each game and like remembering the scores.
+
+40 "Collins, Joshua" (1546155008)
+00:04:56.972 --> 00:04:59.589
+Yeah.
+
+41 "shimu" (144983040)
+00:04:59.589 --> 00:05:09.988
+Well, I guess we also don't have to, I'm not sure actually yeah we need the game page as well.
+
+42 "Izik" (4265501952)
+00:05:09.988 --> 00:05:11.367
+The was it?
+
+43 "shimu" (144983040)
+00:05:11.367 --> 00:05:15.789
+Like the actual game page to see the game between two teams.
+
+44 "Izik" (4265501952)
+00:05:15.789 --> 00:05:21.986
+Oh yeah. Like I said, yeah.
+
+45 "shimu" (144983040)
+00:05:21.986 --> 00:05:36.929
+I think predictions is like a bit, you know, kind of out of scope. Like actual form prediction prediction is kind of out of scope for our project now.
+
+46 "shimu" (144983040)
+00:05:36.929 --> 00:05:54.419
+We, so we have a way to just to like basically display which team that we think are gonna win from Lewis's quote unquote like function. How do we, you know, like update our like user state based off that?
+
+47 "shimu" (144983040)
+00:05:54.419 --> 00:06:10.977
+Because we can't, we don't really know when a game ends. Like, do you, like when a game ends, right? We're supposed to catch out the users, but we don't know how to track when a specific game ends, right? Without recalling the API every 2nd.
+
+48 "Hung, Louis" (2009880320)
+00:06:10.977 --> 00:06:14.619
+Yeah. And the API can't be called through the website.
+
+49 "shimu" (144983040)
+00:06:14.619 --> 00:06:19.138
+Yeah.
+
+50 "Hung, Louis" (2009880320)
+00:06:19.138 --> 00:06:29.373
+Like making, people looking at like games that just happened like maybe like now a few hours ago and then doing that I guess.
+
+51 "Collins, Joshua" (1546155008)
+00:06:29.373 --> 00:06:30.815
+I'm.
+
+52 "shimu" (144983040)
+00:06:30.815 --> 00:06:35.612
+But like they will have this score ready though, of the games that happened like 2 h ago.
+
+53 "Collins, Joshua" (1546155008)
+00:06:35.612 --> 00:07:05.219
+Yeah, my, my, the best solution I could give us there is, based what we should probably do is based off like the probability, of Lewis's stuff, we should probably make a JSON file that's like hidden that basically says like who's gonna win and who's gonna lose with the idea of saying like and then we can use that for our demo, saying.
+
+54 "Collins, Joshua" (1546155008)
+00:07:05.219 --> 00:07:24.898
+In the real world we would have been able to, if we had to do this in the real life, we would have actually had it go off of future future games, but since we had to demo this working feature to the, to our class, we'll use a past game or whatever.
+
+55 "shimu" (144983040)
+00:07:24.898 --> 00:07:26.711
+Yeah.
+
+56 "Collins, Joshua" (1546155008)
+00:07:26.711 --> 00:07:33.538
+Cause there's NO way for us to demo the prediction feature without us using static data in that specific scenario because.
+
+57 "shimu" (144983040)
+00:07:33.538 --> 00:07:52.239
+Oh, oh, ok, actually, how about this, how about this? We could just hide the score of previous games until user makes a prediction. Then we, then like when they make a prediction, we show the score and, you know, like add points or subtract points. So that kind of mimics like them making a prediction on a real gu.
+
+58 "Collins, Joshua" (1546155008)
+00:07:52.239 --> 00:07:54.116
+Name? Yeah, yeah, yeah.
+
+59 "shimu" (144983040)
+00:07:54.116 --> 00:07:55.975
+I think that's actually a good idea.
+
+60 "Hung, Louis" (2009880320)
+00:07:55.975 --> 00:07:59.658
+That definitely makes sense. I guess that's what we.
+
+61 "shimu" (144983040)
+00:07:59.658 --> 00:08:13.576
+Yeah ok so if you guys go to the wind share website, right? Yeah. And you scroll down to recent results, we will just basically just hide.
+
+62 "Hung, Louis" (2009880320)
+00:08:13.576 --> 00:08:17.256
+There's NO recent results right now.
+
+63 "shimu" (144983040)
+00:08:17.256 --> 00:08:39.817
+I think I think the APIs is like really limiting us, but ok so if there is recent results, right, it will show the results, but we hide it until a user makes a prediction. Then when they make the when they make the prediction, we just update the JavaScript, display the scores, and then display our and then and then based on our like prediction like rates, we just adjust the user's points that way.
+
+64 "Collins, Joshua" (1546155008)
+00:08:39.817 --> 00:08:50.757
+Yeah, also by this weekend if Renee has not changed the CSS, I'll just go in and do that as well.
+
+65 "shimu" (144983040)
+00:08:50.757 --> 00:08:54.636
+Yeah, ok. I could I could work on that, you know, prediction feature.
+
+66 "Collins, Joshua" (1546155008)
+00:08:54.636 --> 00:09:07.177
+Okay. Yeah, absolutely. If you need any help, let me know about that. I'll I'll be more than happy to help with you if you have any trouble with that. Yeah. And then yeah because.
+
+67 "shimu" (144983040)
+00:09:07.177 --> 00:09:09.469
+Picking a pranaide, didn't use seals and shot?
+
+68 "Izik" (4265501952)
+00:09:09.469 --> 00:09:10.795
+Yeah.
+
+69 "Hung, Louis" (2009880320)
+00:09:10.795 --> 00:09:14.116
+He said that every time bro.
+
+70 "Collins, Joshua" (1546155008)
+00:09:15.755 --> 00:09:22.017
+So he's like, I know I said wood pushing back to nine work for you, and he goes yes.
+
+71 "Hung, Louis" (2009880320)
+00:09:22.017 --> 00:09:23.972
+I'm not even surprised at this point.
+
+72 "Collins, Joshua" (1546155008)
+00:09:23.972 --> 00:09:37.516
+Yeah, I I'm just, we're over it. We'll we'll let the reviews be. Yeah, I don't know about you guys. I'm giving you guys all a hundred.
+
+73 "shimu" (144983040)
+00:09:37.516 --> 00:09:41.511
+Yeah, definitely. Yeah I hope you guys all of you guys did a lot of work.
+
+74 "Collins, Joshua" (1546155008)
+00:09:41.511 --> 00:09:45.854
+Were joining this, I can't say that where I'm recording.
+
+75 "shimu" (144983040)
+00:09:45.854 --> 00:09:48.153
+I mean it's fine. I don't think anyone looks at it try.
+
+76 "Izik" (4265501952)
+00:09:48.153 --> 00:09:51.237
+Yeah, I was gonna say welcome to the.
+
+77 "Collins, Joshua" (1546155008)
+00:09:51.237 --> 00:09:53.356
+Are we just give each other hundreds?
+
+78 "shimu" (144983040)
+00:09:53.356 --> 00:09:57.159
+No, but like we actually did a lot of work though, so, you know, it's deserved.
+
+79 "Collins, Joshua" (1546155008)
+00:09:57.159 --> 00:10:03.016
+Yeah. Yeah especially you Shema with the hundred and 30000 additions to the.
+
+80 "shimu" (144983040)
+00:10:03.016 --> 00:10:06.794
+The that's that's fake though, that's just some data.
+
+81 "Collins, Joshua" (1546155008)
+00:10:06.794 --> 00:10:24.906
+Some data. Did you see, did he seek Professor Callhan during class that I mentioned the fact my file had like eleven and a half thousand lines, he was like, oh, I didn't want to mention that your file is like a million lines.
+
+82 "shimu" (144983040)
+00:10:24.906 --> 00:10:36.132
+I mean yeah also you know I would have to put it in a GitHub if there was like a better way to just distribute like a million line long json, right? I can't just upload on this.
+
+83 "Collins, Joshua" (1546155008)
+00:10:36.132 --> 00:10:49.814
+Yeah, yeah. I'm gonna do some research and I since I have my JSON I'm just gonna find a way to display like stuff by stat because I have it right now so you can do it by player, so if I could find a way to do it by stat.
+
+84 "shimu" (144983040)
+00:10:49.814 --> 00:10:53.574
+Okay. Yeah, that would be great.
+
+85 "Collins, Joshua" (1546155008)
+00:10:53.574 --> 00:10:59.634
+And most most importantly I'm gonna get that dropdown to actually dropdown instead of dropping up.
+
+86 "shimu" (144983040)
+00:10:59.634 --> 00:11:09.495
+And always I also think that Renee is never gonna add the articles, so I take so much to get on that as well.
+
+87 "Collins, Joshua" (1546155008)
+00:11:09.495 --> 00:11:15.255
+Oh yeah, NO, I'll do that as well. It's, it's like a I'll just find three articles and then change the title.
+
+88 "shimu" (144983040)
+00:11:15.255 --> 00:11:18.612
+Yeah, it'll just be static, it's the one i.
+
+89 "Collins, Joshua" (1546155008)
+00:11:18.612 --> 00:11:26.674
+Yeah, I'm gonna find like like Lebronz shaves his head or something, like something random.
+
+90 "shimu" (144983040)
+00:11:26.674 --> 00:11:31.028
+Crazy Uppernette can't do that man, like that's like literally the bare minimum.
+
+91 "Collins, Joshua" (1546155008)
+00:11:31.028 --> 00:11:34.609
+He he changed the CSS once.
+
+92 "shimu" (144983040)
+00:11:34.609 --> 00:11:39.602
+We got dude. And it made it uglier. Yeah that dude, that dude did not do anything.
+
+93 "Izik" (4265501952)
+00:11:39.602 --> 00:11:42.545
+Yeah, it's coming from me.
+
+94 "Collins, Joshua" (1546155008)
+00:11:42.545 --> 00:11:52.962
+Let's be honest though, you you did like a lot of the which is a key as a key piece of our website, and you did the team page as well.
+
+95 "Izik" (4265501952)
+00:11:52.962 --> 00:12:07.303
+Yeah, yeah. Fair. I mean, I'm also dealing with kind of a similar situation with my MITRE group actually, where just our front end developer hasn't done anything and she hasn't said anything in the past week and a half now.
+
+96 "Collins, Joshua" (1546155008)
+00:12:07.303 --> 00:12:10.807
+It it's always the.
+
+97 "Izik" (4265501952)
+00:12:11.669 --> 00:12:26.488
+Yeah, and it's like our professor said that if she doesn't do anything then like we kind of have to screw over with the, the view review and like someone has to do work over break.
+
+98 "shimu" (144983040)
+00:12:26.488 --> 00:12:28.262
+That sucks man.
+
+99 "Izik" (4265501952)
+00:12:28.262 --> 00:12:38.829
+I mean I'm PM, I don't know any reacts, so I'm like hey man, I'm sorry but you guys are gonna have to do our work. Yeah.
+
+100 "Collins, Joshua" (1546155008)
+00:12:38.829 --> 00:12:55.991
+Yeah, I had that issue with I had a different a similar but different issue in intro. I had a Raven in my group, and if you know anything about Raven, he's this a he's a he's a guy, he, he can do really good work, but he's a huge procrastinator.
+
+101 "shimu" (144983040)
+00:12:55.991 --> 00:12:58.807
+No, like dude, we.
+
+102 "Collins, Joshua" (1546155008)
+00:12:58.807 --> 00:13:05.408
+We were we walked into the day we were supposed to present and half our buttons on the main page.
+
+103 "Izik" (4265501952)
+00:13:05.408 --> 00:13:07.268
+That'll work. Oh boy.
+
+104 "Collins, Joshua" (1546155008)
+00:13:07.268 --> 00:13:21.894
+He we were about to get called up and he and give us an extra 5 min break, we used it full 5 min for our website and gotta work. I had never been so scared in my life about failing a class.
+
+105 "Izik" (4265501952)
+00:13:21.894 --> 00:13:23.434
+There.
+
+106 "Hung, Louis" (2009880320)
+00:13:23.434 --> 00:13:24.295
+But.
+
+107 "Izik" (4265501952)
+00:13:24.295 --> 00:13:26.691
+Oh my god, my best gonna hit?
+
+108 "Collins, Joshua" (1546155008)
+00:13:26.691 --> 00:13:44.032
+I ripped into him on to the on the Yeah, it was crazy. And then the then my other teammate, was doing back end and he was more clueless than me. So the entire time he's he he wanted us to do all the HTML into PHP.
+
+109 "shimu" (144983040)
+00:13:44.032 --> 00:13:45.835
+And.
+
+110 "Collins, Joshua" (1546155008)
+00:13:45.835 --> 00:13:59.012
+Like I couldn't see his end of it because he's the one who had the the SQL database. So I couldn't see what the data looked like. So he just text me, by the way, there's an issue with your webpage, fix it.
+
+111 "shimu" (144983040)
+00:13:59.012 --> 00:14:02.529
+Can you.
+
+112 "Collins, Joshua" (1546155008)
+00:14:02.529 --> 00:14:18.093
+Tell me like what's wrong with it. You don't have the VM up or anything, so I can't see it. He's like, oh yeah, this page just isn't displaying. I'm like, so I, for that, for that I was I was basically doing the entire project blind.
+
+113 "shimu" (144983040)
+00:14:18.093 --> 00:14:20.231
+Sucks man.
+
+114 "Hung, Louis" (2009880320)
+00:14:20.231 --> 00:14:21.772
+Stocks.
+
+115 "Collins, Joshua" (1546155008)
+00:14:21.772 --> 00:14:28.334
+Yeah, but we gotta, we gotta payment oh wait, should we make a hidden page of a photo of Omar somewhere?
+
+116 "shimu" (144983040)
+00:14:28.334 --> 00:14:29.454
+Okay.
+
+117 "Izik" (4265501952)
+00:14:29.454 --> 00:14:30.533
+I.
+
+118 "Collins, Joshua" (1546155008)
+00:14:30.533 --> 00:14:31.910
+We arresting people.
+
+119 "Hung, Louis" (2009880320)
+00:14:31.910 --> 00:14:33.836
+As we have time.
+
+120 "Collins, Joshua" (1546155008)
+00:14:33.836 --> 00:14:37.352
+If we have time, if we had times.
+
+121 "Hung, Louis" (2009880320)
+00:14:37.352 --> 00:14:40.455
+But I guess we're not having enough time.
+
+122 "Collins, Joshua" (1546155008)
+00:14:40.455 --> 00:14:45.411
+Thanksgiving's gonna be busy. I have to draw a photo of the Catsai nebulous.
+
+123 "shimu" (144983040)
+00:14:45.411 --> 00:14:46.582
+Oh the.
+
+124 "Hung, Louis" (2009880320)
+00:14:46.582 --> 00:14:47.592
+What.
+
+125 "Collins, Joshua" (1546155008)
+00:14:47.592 --> 00:14:52.294
+Is that's a ******* nebula in space?
+
+126 "shimu" (144983040)
+00:14:52.294 --> 00:14:57.186
+Oh Yeah, I have to.
+
+127 "Collins, Joshua" (1546155008)
+00:14:57.186 --> 00:15:00.034
+Yeah I'm gonna do it at MS paid, this shit's gonna look ugly.
+
+128 "shimu" (144983040)
+00:15:00.034 --> 00:15:03.015
+U.
+
+129 "Collins, Joshua" (1546155008)
+00:15:03.015 --> 00:15:06.689
+Yeah. No bro. I'm just so ready for the semester to be over.
+
+130 "shimu" (144983040)
+00:15:06.689 --> 00:15:10.272
+Maybe I seeing bro. But.
+
+131 "Collins, Joshua" (1546155008)
+00:15:10.272 --> 00:15:20.510
+Yeah. No, what's what's crazy though is we cu we we go home for Thanksgiving, we come back for a week and a half, and then I leave because I don't have any funnels.
+
+132 "shimu" (144983040)
+00:15:20.510 --> 00:15:26.473
+Actually I don't have any fun as well, but I come back from my thanksgiving break right into the MITRE presentation.
+
+133 "Collins, Joshua" (1546155008)
+00:15:26.473 --> 00:15:27.452
+Who.
+
+134 "Hung, Louis" (2009880320)
+00:15:27.452 --> 00:15:30.791
+Oh, you have it on the 2nd? Yeah.
+
+135 "shimu" (144983040)
+00:15:30.791 --> 00:15:35.075
+And wait, Isaac, does your professor or what's your professor? Like you gotta wear a suit and.
+
+136 "Izik" (4265501952)
+00:15:35.075 --> 00:15:36.931
+Yeah, of course.
+
+137 "shimu" (144983040)
+00:15:36.931 --> 00:15:41.355
+Yeah, that's like my 1st time like a professor required like business attired for present.
+
+138 "Izik" (4265501952)
+00:15:41.355 --> 00:15:44.571
+Yeah, it's my 1st time too, but it's like unexpected.
+
+139 "Collins, Joshua" (1546155008)
+00:15:44.571 --> 00:15:47.972
+That's crazy.
+
+140 "Izik" (4265501952)
+00:15:47.972 --> 00:15:51.392
+Yeah, I mean my client's gonna be there too, so.
+
+141 "shimu" (144983040)
+00:15:51.392 --> 00:15:54.914
+Oh, I forgot you guys, you guys are, you're basically doing unp.
+
+142 "Collins, Joshua" (1546155008)
+00:15:54.914 --> 00:15:55.595
+Internship.
+
+143 "shimu" (144983040)
+00:15:55.595 --> 00:16:01.151
+Yeah literally. Like the ITW.
+
+144 "Collins, Joshua" (1546155008)
+00:16:01.151 --> 00:16:05.253
+Us capstones, so don't we just have two classes basically an internship?
+
+145 "Izik" (4265501952)
+00:16:05.253 --> 00:16:19.426
+Yeah, pretty much. But like they give you, they give you a client and like the client is like it's an actual like real client, so one of my friends is working on United's like ro robotics program.
+
+146 "Hung, Louis" (2009880320)
+00:16:19.426 --> 00:16:24.031
+Oh, how.
+
+147 "Collins, Joshua" (1546155008)
+00:16:24.031 --> 00:16:25.128
+That's.
+
+148 "Izik" (4265501952)
+00:16:25.128 --> 00:16:29.794
+They're like automating scripts for cause they're using boston dynamic robots.
+
+149 "Collins, Joshua" (1546155008)
+00:16:29.794 --> 00:16:32.557
+And so.
+
+150 "Izik" (4265501952)
+00:16:32.557 --> 00:16:43.553
+Right now their their process is they're manually inputting each like program and logs on the robot and so they're automating it and making like a dashboard of it.
+
+151 "shimu" (144983040)
+00:16:43.553 --> 00:16:48.994
+Dude hopefully caption is less business related pro. MITRE is literally a basic business clas.
+
+152 "Izik" (4265501952)
+00:16:48.994 --> 00:16:52.654
+You don't like that though? I prefer that.
+
+153 "shimu" (144983040)
+00:16:52.654 --> 00:16:55.935
+Like I still don't know how to do like.
+
+154 "Izik" (4265501952)
+00:16:55.935 --> 00:16:58.484
+No.
+
+155 "Collins, Joshua" (1546155008)
+00:16:58.484 --> 00:17:05.726
+Bro, it can't be worse than ******* modern binary exploitation where we're just I'm reading assembly the entire.
+
+156 "Izik" (4265501952)
+00:17:05.726 --> 00:17:06.734
+Yeah, like.
+
+157 "shimu" (144983040)
+00:17:06.734 --> 00:17:11.970
+Okay cost benefit analysis than doing myths, right?
+
+158 "Collins, Joshua" (1546155008)
+00:17:11.970 --> 00:17:18.850
+No, NO NO, it's not even MIPS, it's assembly 86. It's a completely different assembly language than MIPS.
+
+159 "Izik" (4265501952)
+00:17:18.850 --> 00:17:20.653
+Even worse.
+
+160 "Collins, Joshua" (1546155008)
+00:17:20.653 --> 00:17:24.351
+Yeah, so all of comp work youthless.
+
+161 "shimu" (144983040)
+00:17:24.351 --> 00:17:29.455
+Oh ****. Really? Okay. But doesn't they have like a comp work though?
+
+162 "Collins, Joshua" (1546155008)
+00:17:29.455 --> 00:17:36.171
+Yeah how to actually like read assembly. It's just that this assembly looks different.
+
+163 "Hung, Louis" (2009880320)
+00:17:36.171 --> 00:17:40.879
+Yep.
+
+164 "Collins, Joshua" (1546155008)
+00:17:40.879 --> 00:17:59.216
+Yeah, but I I should get an A in the class if I, if my team and I flush up over, Thanksgiving. We have one guy who's playing on doing nothing but had the hacking stuff over Christmas or over Thanksgiving.
+
+165 "Hung, Louis" (2009880320)
+00:17:59.216 --> 00:18:04.355
+Man's just gonna roll in his in front of his computer and do his hackings.
+
+166 "Collins, Joshua" (1546155008)
+00:18:04.355 --> 00:18:06.632
+Stuff, basically.
+
+167 "shimu" (144983040)
+00:18:06.632 --> 00:18:08.351
+Yeah, sounds fun.
+
+168 "Collins, Joshua" (1546155008)
+00:18:08.351 --> 00:18:19.239
+Just kidding. Yeah, Sounds great. Yeah, how do your schedules looking for spring though?
+
+169 "shimu" (144983040)
+00:18:19.239 --> 00:18:25.268
+I'm not here during the spring. Oh yeah yeah you're right, you're right, you're not there.
+
+170 "Hung, Louis" (2009880320)
+00:18:25.268 --> 00:18:29.572
+I have a lot of, well all my classes started at the twelve, which is really good.
+
+171 "Collins, Joshua" (1546155008)
+00:18:29.572 --> 00:18:42.305
+Yeah, but I got opsys, info to AI, difficq, website systems, and then critical thinking baby cause I gotta think.
+
+172 "Izik" (4265501952)
+00:18:42.305 --> 00:18:53.613
+Yeah, that that's just rave. That's just that is that doesn't saying. I mean, you should throw throw in like a business course there or some of them, that is crew.
+
+173 "Collins, Joshua" (1546155008)
+00:18:53.613 --> 00:18:56.972
+Very easy. I can't I don't have room to benefit.
+
+174 "shimu" (144983040)
+00:18:56.972 --> 00:18:59.797
+And rose sounds like he's taking a hell of classes around.
+
+175 "Izik" (4265501952)
+00:18:59.797 --> 00:19:00.827
+Share.
+
+176 "Collins, Joshua" (1546155008)
+00:19:00.827 --> 00:19:03.113
+At 20 credit hours.
+
+177 "Hung, Louis" (2009880320)
+00:19:03.113 --> 00:19:07.114
+You not have, do you not have HCI into your.
+
+178 "Collins, Joshua" (1546155008)
+00:19:07.114 --> 00:19:09.472
+Thing. Oh, I I did that last, last.
+
+179 "Hung, Louis" (2009880320)
+00:19:09.472 --> 00:19:11.488
+Spring. Ah, ok.
+
+180 "Collins, Joshua" (1546155008)
+00:19:11.488 --> 00:19:14.696
+How can take it down?
+
+181 "Hung, Louis" (2009880320)
+00:19:14.696 --> 00:19:16.230
+And try to.
+
+182 "Izik" (4265501952)
+00:19:16.230 --> 00:19:18.220
+CI? Oh.
+
+183 "shimu" (144983040)
+00:19:18.220 --> 00:19:22.791
+They did last spring as well.
+
+184 "Collins, Joshua" (1546155008)
+00:19:22.791 --> 00:19:25.673
+I think the only prereq for HCI was in.
+
+185 "Hung, Louis" (2009880320)
+00:19:25.673 --> 00:19:28.195
+Trial. There is NO prereq actually.
+
+186 "Collins, Joshua" (1546155008)
+00:19:28.195 --> 00:19:30.195
+Oh, really? Yeah. Yeah, there was NO pre.
+
+187 "Izik" (4265501952)
+00:19:30.195 --> 00:19:46.144
+I just like I don't know I one based off the schedule, so I I took it whatever else took it, I guess. So I had doubtle.
+
+188 "Collins, Joshua" (1546155008)
+00:19:46.144 --> 00:19:51.715
+And he just for my *** up over, like, every little thing about like my presentation.
+
+189 "Izik" (4265501952)
+00:19:51.715 --> 00:19:53.633
+That's where that got hated me.
+
+190 "Collins, Joshua" (1546155008)
+00:19:53.633 --> 00:20:26.693
+Yeah, NO dude, I I did the extra I had like I did the math and I should have had like an A So I see my grade like a day before the grade, like two days before the grades are due, and it's a it's like a A minus. I'm like, what the ****? Why? So I emailed them like, hey, can I see this extra credit assignment it should be enough to get me up to like an A, right? He's like, Yeah, go ahead and do it. So I bust my *** all day and do it and send it to him. And that grade still, he never put my grade in and kept me at A minus. He completely cocked me on.
+
+191 "Hung, Louis" (2009880320)
+00:20:26.693 --> 00:20:29.894
+That's crazy.
+
+192 "Collins, Joshua" (1546155008)
+00:20:29.894 --> 00:20:41.236
+Yeah, and then Algo screwed me. Piece off wasn't bad though.
+
+193 "shimu" (144983040)
+00:20:41.236 --> 00:20:45.614
+Yeah, please help on that. Good to hear outside the tests.
+
+194 "Collins, Joshua" (1546155008)
+00:20:45.614 --> 00:20:49.552
+That's probably the most free CS class ever.
+
+195 "shimu" (144983040)
+00:20:49.552 --> 00:20:53.453
+And I, I think in terms of tests, it's only like just the last test and the.
+
+196 "Collins, Joshua" (1546155008)
+00:20:53.453 --> 00:20:59.874
+Well Yeah.
+
+197 "shimu" (144983040)
+00:20:59.874 --> 00:21:10.031
+The questions. Yeah, yeah. It's just the last, it's like I think it's the final probably like the final is just weird as ****, but like the 1st couple tests actually not that bad, it's basic Java stuff.
+
+198 "Collins, Joshua" (1546155008)
+00:21:10.031 --> 00:21:42.017
+Yeah, like, Lewis, like the 1st like four homeworks are like either math questions or like basic like coding and commenting. And then like you, you do a a graphing program for one homework, then you apply detress algorithm to it, then you optimize deetrust algorithms, and then you have like the extra credit assign then you have like a random last homework and then an extra credit assignment.
+
+199 "shimu" (144983040)
+00:21:42.017 --> 00:21:45.915
+I don't think.
+
+200 "Collins, Joshua" (1546155008)
+00:21:45.915 --> 00:21:51.634
+Which one was the precondition homework? Was that one bad?
+
+201 "shimu" (144983040)
+00:21:51.634 --> 00:21:57.594
+It's the one that you have to write a **** down.
+
+202 "Collins, Joshua" (1546155008)
+00:21:57.594 --> 00:22:05.914
+Oh yeah, you're right, you're right, you're right, that one yeah that one is I'm not Yeah, that was such a long.
+
+203 "Hung, Louis" (2009880320)
+00:22:05.914 --> 00:22:10.291
+Well, the comp worker's ******* me in the *** right now already, so.
+
+204 "shimu" (144983040)
+00:22:10.291 --> 00:22:15.250
+Yeah, is it.
+
+205 "Collins, Joshua" (1546155008)
+00:22:15.250 --> 00:22:24.869
+It's hard because there's like NO, like outside of MIPS there's nothing that really correlates to any other class you take here unless you're like going into like a hardware concentrat.
+
+206 "Hung, Louis" (2009880320)
+00:22:24.869 --> 00:22:29.007
+Not even bits. It's just like weird.
+
+207 "Collins, Joshua" (1546155008)
+00:22:29.007 --> 00:22:40.006
+No, NO NO. Cause, some places still use like if they use assembly, they probably use like mips or assembly 86. Like those are the two most popular.
+
+208 "Hung, Louis" (2009880320)
+00:22:40.006 --> 00:22:42.501
+So that's assembly languages I've.
+
+209 "Collins, Joshua" (1546155008)
+00:22:42.501 --> 00:22:46.442
+Seen personally or I've heard of. Okay, that makes sense.
+
+210 "Hung, Louis" (2009880320)
+00:22:46.442 --> 00:22:54.414
+Then the ******* circuits is just bullshit out. Why do I have to know like how to like the ******* counter works with and and or statement?
+
+211 "Collins, Joshua" (1546155008)
+00:22:54.414 --> 00:23:00.455
+Yeah, NO, like it it was cool to know, but it's like bro, I'm never gonna need to know this. I'd rather learn how a.
+
+212 "Hung, Louis" (2009880320)
+00:23:00.455 --> 00:23:04.145
+Exactly.
+
+213 "Collins, Joshua" (1546155008)
+00:23:04.145 --> 00:23:09.395
+Yeah, NO, it's it's crazy.
+
+214 "Hung, Louis" (2009880320)
+00:23:09.395 --> 00:23:14.924
+Yeah, I'm just ******* up the ******* Fox and comp org right now.
+
+215 "Collins, Joshua" (1546155008)
+00:23:14.924 --> 00:23:18.497
+Oh yeah.
+
+216 "Hung, Louis" (2009880320)
+00:23:18.497 --> 00:23:21.801
+Just hope for next semester will be better, I guess.
+
+217 "Collins, Joshua" (1546155008)
+00:23:21.801 --> 00:23:38.059
+Yeah, who who knows it yeah but I think we're all good here. With that, I beat you guys a farewell, see you guys on Friday for that test. Let's clush up.
+
+218 "shimu" (144983040)
+00:23:38.059 --> 00:23:42.724
+Yeah exactly. That's, that's how I'm feeling right now.
+
+219 "Collins, Joshua" (1546155008)
+00:23:42.724 --> 00:23:45.963
+Yeah.
+
+220 "shimu" (144983040)
+00:23:45.963 --> 00:23:47.676
+Had to do that one last.
+
+221 "Hung, Louis" (2009880320)
+00:23:47.676 --> 00:23:50.980
+Yeah bro I'm just trying to like not fail this.
+
+222 "Collins, Joshua" (1546155008)
+00:23:50.980 --> 00:23:56.304
+Test. Yeah let me let me end the recording real quick and we'll continue talking.
+
+223 "Hung, Louis" (2009880320)
+00:23:56.304 --> 00:23:58.884
+I'm gonna get like a.

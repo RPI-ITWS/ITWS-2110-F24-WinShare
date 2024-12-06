@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 completedGamesTomorrow,
                 completedGamesYesterday
             });
-
+            console.log(completedGamesYesterday);
             displayGames(upcomingGamesToday, 'Upcoming_Matches');
             displayGames(upcomingGamesTomorrow, 'Upcoming_Matches');
             displayGames(completedGamesTomorrow, 'Recent_Results');
@@ -1544,6 +1544,8 @@ function displayGames(games, containerId) {
    games.forEach((game) => {
       const gameElement = document.createElement('div');
       gameElement.className = 'game-card';
+      gameElement.dataset.gameId = game.id; // Store game ID in data attribute
+      gameElement.style.cursor = 'pointer'; // Add cursor style
       const startTime = new Date(game.scheduled);
       const now = new Date();
       const timeLeft = startTime - now;
@@ -1583,17 +1585,24 @@ function displayGames(games, containerId) {
             <div class="game-info">
                 <img class="small-logo" src="${homeTeamLogo}" alt="${game.home.name} logo">
                 <div class="team" onclick="navigateToTeamPage('${game.home.name}', '${game.home.id}')">${game.home.name}</div>
-                <div class="score">${game.home_points}</div>
+                <div class="score">xxx</div>
                 <div class="time">${timeAgoString}</div>
             </div>
             <div class="game-info">
             <img class="small-logo" src="${awayTeamLogo}" alt="${game.away.name} logo">
             <div class="team" onclick="navigateToTeamPage('${game.away.name}', '${game.away.id}')">${game.away.name}</div>
-            <div class="score">${game.away_points}</div>
+            <div class="score">xxx</div>
             <div class="time invisible">${timeAgoString}</div>
             </div>
             `;
          container.appendChild(gameElement);
       }
+
+      // Add event listener to navigate to game page
+      gameElement.addEventListener('click', function (event) {
+         if (!event.target.classList.contains('team')) {
+            window.location.href = `Game/game.php?game_id=${game.id}`;
+         }
+      });
    });
 }

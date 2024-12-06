@@ -1,20 +1,21 @@
 body {
     margin: 0;
-    background-color: #646060;
-    color: #fff;
-}
-
-#signup a {
-    font-weight: bold;
-    color: #fff;
+    background-color: #FFFFFF; /* White */
+    color: #000000; /* Black */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .form-container {
     width: 400px;
     padding: 2rem;
-    border: 2px solid #00aaff;
+    border: 2px solid #00ffc3; /* Cyan */
     border-radius: 8px;
-    background-color:rgb(86, 80, 80);;
+    background-color: #D3D3D3; /* Light grey */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-title {
@@ -22,5 +23,60 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     font-style: italic;
-    color: #fff;
+    color: #00ffc3; /* Cyan */
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000; /* Black */
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #00ffc3; /* Cyan */
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White */
+    font-size: 1rem;
+    color: #000000; /* Black */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #00b28e; /* Slightly darker cyan */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFFFFF; /* White */
+    background-color: #00ffc3; /* Cyan */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00b28e; /* Slightly darker cyan */
+}
+
+#signup a {
+    font-weight: bold;
+    color: #00ffc3; /* Cyan */
+    text-decoration: none;
+}
+
+#signup a:hover {
+    text-decoration: underline;
 }
