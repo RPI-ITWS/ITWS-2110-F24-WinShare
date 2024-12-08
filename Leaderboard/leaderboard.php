@@ -19,10 +19,11 @@ if (session_status() === PHP_SESSION_NONE) {
         
         <?php include '../php/header.php'; ?>
 
+        <div id="leaderBoardHeader">Leaderboard</div>
+
         <div id="Page" class="sticky-top">
             <div id="LeftCol"></div>
             <div id="MiddleCol" class ="flex-column flex-md-row align-items-center pt-3 pb-3">
-                <h1 id="leaderBoardTitle">Leaderboard</h1>
                 <div id="sortButtons" class="mb-3">
                     <button id="sortByScore" class="btn btn-primary active">Sort by Score</button>
                     <button id="sortByWinRate" class="btn btn-primary">Sort by Win Rate</button>

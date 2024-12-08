@@ -1,11 +1,20 @@
 body{
-    background-color: #6E7F82;
+    background-color: #ffff;
+}
+
+h1 {
+    padding-top: 50px;
+    font-family: Arial Black, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold; 
+    color: #333;
 }
 
 #body {
-    padding-top: 1px;
     padding-bottom: 12vh;
-    background-color: #6E7F82;
+    background-color: #ffff;
 }
 
 #Hotbar {
@@ -18,8 +27,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 5px solid #18E69E;
-    background-color: #2B3233;
+    border-bottom: 5px solid #00ffc3;
+    background-color: #333;
     position: absolute;
 }
 
@@ -41,14 +50,14 @@ body{
     align-content: center;
     text-align: center;
     text-decoration: none;
-    color: #18E69E;
+    color: #ffff;
     font-size: larger;
     font-weight: bold;
 }
 
 .tab a:hover {
-    background-color: #18E69E;
-    color: #6E7F82;
+    background-color: #d3d3d3;
+    color: #333;
 }
 
 #Filler {
@@ -71,12 +80,12 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: xx-large;
-    color: #18E69E;
+    color: #ffff;
 } 
 
 #MoreOptions:hover {
-    background-color: #18E69E;
-    color: #6E7F82;
+    background-color: #00ffc3;
+    color: #333;
     cursor: pointer;
 } 
 
@@ -84,11 +93,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: bold;
 }
 
 #data1-default {
-    color: #18E69E;
+    color: #d3d3d3;
     font-size: 20px; 
     display: block;
 }
@@ -109,7 +117,7 @@ body{
 }
 
 #playerTable th, #playerTable td {
-    border: 1px solid #18E69E;
+    border: 2px solid #00ffc3;
     padding: 16px;
     text-align: center;
     font-size: 20px; 
@@ -117,18 +125,18 @@ body{
 
 #playerTable th {
     background-color: #6E7F82;
-    color: #18E69E;
+    color: #fff;
 }
 
 #playerTable td {
     background-color: #6E7F82;
-    color: #18E69E;
+    color: #00ffc3;
 }
 
 #playerTable tr:hover td {
-    background-color: #18E69E;
+    background-color: #00ffc3;
     border: 1px solid #6E7F82;
-    color: #6E7F82;
+    color: #333;
     cursor: pointer;
 }
 
@@ -144,8 +152,9 @@ body{
     margin: 5% auto;
     height: 1050px;
     align-items: center;
-    background-color: #2B3233;
+    border: 4px solid #00ffc3;
     border-radius: 4%;
+    background-color: #333;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
 }
@@ -163,7 +172,9 @@ body{
 
 #statlabel {
     font-size: 28px;
-    color: #18E69E;
+    font-style: italic;
+    font-weight: bold;
+    color: #00ffc3;
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
@@ -176,19 +187,300 @@ body{
     padding: 1%;
     border: none;
     border-radius: 5px;
-    background-color: #18E69E;
+    background-color: #ffff;
     outline: none;
     flex-grow: 1;
-    color: #6E7F82;
+    color: #333;
 }
 
 #stat option {
-    background-color: #18E69E;
+    background-color: #fff;
 }
 
 #stat option:hover {
-    background-color: #7a7f86;
-}
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #d3d3d3;
+        color: #333; 
+    }
+    
+    .header {
+        font-family: Arial black, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #D3D3D3;
+        color: #333; 
+        font-weight: bold;
+    }
+    
+    .logo {
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .team-info h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: #333;    
+    }
+    
+    .team-info a {
+        color: #333; 
+        text-decoration: none;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .nav-tabs {
+        background-color: #D3D3D3; 
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .nav-tabs a {
+        color: #333; 
+        text-decoration: none;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0 15px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #00ffc3;
+    }
+    
+    .nav-tabs a:hover {
+        background-color: #00c194;
+        color: #FFFFFF; 
+    }
+    
+    .nav-tabs a.active {
+        background-color: #00ffc3; 
+        color: #FFFFFF; 
+    }
+    
+    .content {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffff; 
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 4px solid #00ffc3; 
+    }
+    
+    .upcoming-matches, .recent-results, .current-roster {
+        background-color: #D3D3D3; 
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .upcoming-matches h2,
+    .recent-results h2,
+    .current-roster h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-style: normal;
+        color: #333; 
+        margin-bottom: 20px;
+    }
+    
+    .match, .result, .player {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background: #FFFFFF; 
+        border: 1px solid #D3D3D3; 
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .match:hover, .result:hover, .player:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .match img, .result img, .player img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-right: 15px;
+    }
+    
+    .player-card, .coach-card {
+        display: inline-block;
+        width: 150px;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #D3D3D3; 
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #FFFFFF; 
+    }
+    
+    .player-card img, .coach-card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .player-card p, .coach-card p {
+        margin: 10px 0;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333; 
+    }body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffff;
+        color: #000000; 
+    }
+    
+    .header {
+        font-family: Arial black, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #D3D3D3;
+        color: #333; 
+        font-weight: bold;
+    }
+    
+    .logo {
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .team-info h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: #333;    
+    }
+    
+    .team-info a {
+        color: #333; 
+        text-decoration: none;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .nav-tabs {
+        background-color: #D3D3D3; 
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .nav-tabs a {
+        color: #333; 
+        text-decoration: none;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0 15px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #00ffc3;
+    }
+    
+    .nav-tabs a:hover {
+        background-color: #00c194;
+        color: #FFFFFF; 
+    }
+    
+    .nav-tabs a.active {
+        background-color: #00ffc3; 
+        color: #FFFFFF; 
+    }
+    
+    .content {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffff; 
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 4px solid #00ffc3; 
+    }
+    
+    .upcoming-matches, .recent-results, .current-roster {
+        background-color: #D3D3D3; 
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .upcoming-matches h2,
+    .recent-results h2,
+    .current-roster h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-style: normal;
+        color: #333; 
+        margin-bottom: 20px;
+    }
+    
+    .match, .result, .player {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background: #FFFFFF; 
+        border: 1px solid #D3D3D3; 
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .match:hover, .result:hover, .player:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .match img, .result img, .player img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-right: 15px;
+    }
+    
+    .player-card, .coach-card {
+        display: inline-block;
+        width: 150px;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #D3D3D3; 
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #FFFFFF; 
+    }
+    
+    .player-card img, .coach-card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .player-card p, .coach-card p {
+        margin: 10px 0;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333; 
+    };
+
 select#stat {
     position: relative;
     z-index: 1;
@@ -208,9 +500,8 @@ select#stat {
 #StatButton, #PlayerButton {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #2B3233;
-    color: #18E69E;
-    border: 2px solid #18E69E;
+    background-color: #00ffc3;
+    color: #333;
     cursor: pointer;
     transition: 0.3s ease;
     position: relative;
@@ -229,7 +520,8 @@ select#stat {
 }
 
 #StatButton:hover, #PlayerButton:hover {
-    background-color: #7a7f86;
+    background-color: #00c194;
+    color: #fff;
 }
 
 #search {
@@ -267,40 +559,41 @@ select#stat {
 #FindPlayer {
     width: 30%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #d3d3d3;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #6E7F82;
-    color: black;
+    background-color: #00ffc3;
+    color: #333;
     box-sizing: border-box;
 }
 
 #FindPlayer:hover {
+    background-color: #00ffc3;
     cursor: pointer;
-    color: #1d2122;
+    color: #ffff;
 }
 
 #PlayerOptions {
-    border: 1px solid #ccc;
     width: 30vw;
     position: absolute;
     z-index: 100;
     margin-top: 2px;
     border-radius: 4px; 
+    background-color: #d3d3d3;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .player {
     width: 96%;
     padding-left: 4%;
-    background-color: #2B3233;
-    color: #18E69E;
+    background-color: #ffff;
+    color: #333;
 }
 
 .player:hover {
     cursor: pointer;
-    background-color: #18E69E;
-    color: black;
+    background-color: #00ffc3;
+    color: #333;
 }
 
 .photo-container {
@@ -317,7 +610,7 @@ select#stat {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #18E69E;
+    border: 3px solid #00ffc3;
 }
 
 .player-container {
@@ -328,14 +621,15 @@ select#stat {
 
 #name {
     font-size: 28px;
-    color: #18E69E;
+    color: #00ffc3;
+    font-style: italic;
     margin: 0 0 8px 0;
     font-weight: bold;
     cursor: pointer;
 }
 
 #position {
-    color: #7a7f86;
+    color: #00ffc3;
     margin: 0;
     font-size: 18px;
 }
@@ -348,10 +642,10 @@ select#stat {
 }
 
 .stat-box {
-    background-color: #6E7F82;
+    background-color: #333;
     padding: 16px;
     border-radius: 5px;
-    border: 1px solid #18E69E;
+    border: 1px solid #00ffc3;
     transition: 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -363,17 +657,17 @@ select#stat {
 }
 
 .stat-box:hover {
-    background-color: #18E69E;
+    background-color: #00ffc3;
     cursor: pointer;
 }
 
 .stat-box:hover .stat-label,
 .stat-box:hover .stat-value {
-    color: #6E7F82;
+    color: #333;
 }
 
 .stat-label {
-    color: #18E69E;
+    color: #00ffc3;
     font-size: 18px;
     margin: 0 0 8px 0;
     transition: color 0.3s ease;
@@ -382,7 +676,7 @@ select#stat {
 }
 
 .stat-value {
-    color: #18E69E;
+    color: #00ffc3;
     font-size: 22px;
     font-weight: bold;
     margin: 0;
