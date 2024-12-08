@@ -1,3 +1,13 @@
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
+    min-height: 100vh;
+    width: 100%;
+}
+
 #frameWords {
     height: 100%;
     display: flex;
@@ -5,103 +15,66 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+    background-color: #d3d3d3;
 }
 
 #mainframe {
-    background-color: rgb(39, 36, 36);
+    background-color: #333333;
     border-radius: 10px;
     padding: 10px;
     width: 90%;
     max-width: 1700px;
-    height: 90vh;
-    max-height: 700px;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    border: 10px solid #000000;
+    border: 10px solid #333;
     margin: 5rem auto;
-    z-index: 1; 
+    z-index: 1;
     overflow-y: auto;
 }
 
-
-
-#game-card {
-    width: 100%;
-    min-height: 20vh;
-    margin-bottom: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    border: #00aaff solid 1px;
-}
-
-#mainframe > div:last-child {
-    margin-bottom: 0;
-}
-
-#mainframe > div img {
-    max-width: 20%;
-    max-height: 70%;
-    object-fit: contain;
-}
-
-#mainframe > div .content {
-    flex-grow: 1;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white
-}
-
-#mainframe > div .content h2,
-#mainframe > div .content p {
-    margin: 0;
-    padding: 10px 0;
-}
-
-#header1{
+#header1 {
     font-family: 'Orbitron', sans-serif;
     display: flex;
     font-size: 60px;
     position: absolute;
-    left: 35%;
-    color: #00aaff;
+    justify-content: center;
+    transform: translate(-50%, -10%);
+    left: 50%;
+    color: #00ffc3;
     align-items: center;
-}
-
-.game-card{
-    display: flex;
+    background: transparent;
 }
 
 #Recent_Results {
     width: 100%;
     padding: 15px;
+    background-color: transparent;
 }
 
 #Recent_Results h4 {
     color: white;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .game-card {
     width: 100%;
+    height: 150px;
     background-color: rgb(39, 36, 36);
-    border: 1px solid #00aaff;
+    border: 1px solid #00ffc3;
     border-radius: 8px;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
 }
 
 .game-card:hover {
@@ -112,161 +85,34 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 15px;
+    padding: 10px;
+    width: 100%;
 }
 
-.small-logo {
-    width: 40px;
-    height: 40px;
+.team-logo {
+    width: 100px;
+    height: 100px;
     object-fit: contain;
 }
 
-.team {
+.game-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.score-display {
     color: white;
-    margin: 0 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.time-display {
+    color: #888;
     font-size: 1rem;
-    cursor: pointer;
-    transition: color 0.2s ease;
-}
-
-.team:hover {
-    color: #00aaff;
-}
-
-.score {
-    color: white;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.time {
-    color: #888;
-    font-size: 0.9rem;
-    margin-left: auto;
-}
-
-.time.invisible {
-    visibility: hidden;
-}
-
-/* Flex utility */
-.flex {
-    display: flex;
-    align-items: center;
-}
-
-#Recent_Results {
-    width: 100%;
-    padding: 15px;
-}
-
-#Recent_Results h4 {
-    color: white;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.game-card {
-    width: 100%;
-    background-color: rgb(39, 36, 36);
-    border: 1px solid #00aaff;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    padding: 15px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.game-card:hover {
-    transform: translateY(-2px);
-}
-
-.game-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.team-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.game-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.score-display {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.time-display {
-    color: #888;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.game-card {
-    width: 100%;
-    height: 150px; /* Increased height */
-    background-color: rgb(39, 36, 36);
-    border: 1px solid #00aaff;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    padding: 15px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    display: flex; /* Added to ensure proper vertical centering */
-    align-items: center; /* Added to ensure proper vertical centering */
-}
-
-.game-card:hover {
-    transform: translateY(-2px);
-}
-
-.game-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    width: 100%; /* Added to ensure full width */
-}
-
-.team-logo {
-    width: 100px;  /* Increased logo size */
-    height: 100px; /* Increased logo size */
-    object-fit: contain;
-}
-
-.game-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px; /* Increased gap between score and time */
-}
-
-.score-display {
-    color: white;
-    font-size: 2rem; /* Increased font size for score */
-    font-weight: bold;
-    text-align: center;
-}
-
-.time-display {
-    color: #888;
-    font-size: 1rem; /* Slightly increased time font size */
     text-align: center;
 }
