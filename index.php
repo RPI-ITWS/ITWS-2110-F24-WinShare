@@ -59,6 +59,7 @@ include 'php/config.php';
         </div>
     </div>
 
+
     <script>
         function navigateToTeamPage(teamName, teamId) {
             window.location.href = `Team/Team.php?teamName=${teamName}&id=${teamId}`;
