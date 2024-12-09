@@ -441,7 +441,9 @@ if (isset($_SESSION['user_id'])) {
             </div>
         </div>
     </div>
-
+    <script>
+        const currentUserId = <?php echo isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 'null'; ?>;
+    </script>
     <script src="./src/profile.js"></script>
     </body>
     </html>
