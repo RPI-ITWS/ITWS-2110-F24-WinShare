@@ -55,7 +55,7 @@ function displayFriendsAndPredictions(friends) {
         // Add click event and cursor style to friend name
         friendNameElement.style.cursor = 'pointer';
         friendNameElement.addEventListener('click', () => {
-            window.location.href = `../profile/profile.php?id=${friend.id}`;
+            window.location.href = `../Auth/Profile/profile.php?id=${friend.id}`;
         });
 
         friendSection.querySelector('.total-points').textContent =
