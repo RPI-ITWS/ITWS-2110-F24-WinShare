@@ -51,8 +51,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                     </a>
                     <ul class="dropdown-menu" style="background-color: #1a1a1a; border-color: #00aaff;">
                         <?php if (isset($_SESSION['user_id'])): ?>
-                            <li><a class="dropdown-item" href="/ITWS-2110-F24-WinShare/Auth/Profile/profile.php?id=<?php echo $_SESSION['user_id']; ?>" style="color: #00aaff;">Profile</a></li>
-                            <li><a class="dropdown-item" href="#" style="color: #00aaff;">Settings</a></li>
+                            <li><a class="dropdown-item" href="/ITWS-2110-F24-WinShare/Auth/Profile/profile.php?id=<?php echo $_SESSION['user_id']; ?>" style="color: #00ffc3;">Profile</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: #00ffc3;">Settings</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <form method="POST" action="" style="display: inline;">

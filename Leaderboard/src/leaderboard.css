@@ -13,14 +13,14 @@ body, html {
 }
 
 #leaderboardTable th, #leaderboardTable td {
-    border: 1px solid #19D795;
+    border: 1px solid #00ffc3;
     padding: 10px;
     text-align: center;
 }
 
 #leaderboardTable th {
     background-color: #21946D;
-    color: #18e69e;
+    color: #00ffc3;
 }
 
 #leaderboardTable tr:nth-child(even) {
@@ -35,40 +35,34 @@ body, html {
     background-color: #374244;
 }
 
-#MiddleColumn h1 {
-    color: #18e69e;
-    text-align: center;
-    margin-top: 20px;
-}
 
 #leaderBoardTitle {
+    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 #LeftCol {
     width: 20%;
     height: 1046px;
-    background-color: #6e7f82;
+
 }
 
 #MiddleCol {
     padding: 20px;
     box-sizing: border-box;
-    
-    background-color: #2b3233;
+    background-color: #d3d3d3;
     border-radius: 8px;
-    border: 2px solid #19D795;
+    border: 2px solid #00ffc3;
     width: 70%;
     height: 1046px;
 }
 
-#leaderBoardTitle {
-    color: #18e69e;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
+
 
 #leaderboardTable {
     width: 90%;
@@ -80,24 +74,24 @@ body, html {
 }
 
 #leaderboardTable th, #leaderboardTable td {
-    border: 1px solid #19D795;
+    border: 1px solid #00ffc3;
     padding: 12px;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: #18e69e;
+    color: #00ffc3;
 }
 
 #leaderboardTable th {
     background-color: #21946D;
-    color: #18e69e;
+    color: #00ffc3;
     font-weight: bold;
 }
 
 #leaderboardTable td:first-child {
     font-weight: bold;
-    color: #18e69e;
+    color: #00ffc3;
 }
 
 #leaderboardTable #rankings {
@@ -111,7 +105,7 @@ body, html {
 
 #leaderboardTable .player-name {
     vertical-align: middle;
-    color: #18e69e;
+    color: #00ffc3;
 }
 
 #leaderboardTable #score {
@@ -126,7 +120,7 @@ body, html {
     object-fit: cover;
     vertical-align: middle;
     margin-right: 10px;
-    border: 2px solid #19D795;
+    border: 2px solid #00ffc3;
 }
 
 .score-container {
@@ -135,7 +129,7 @@ body, html {
     overflow: hidden;
     display: inline-block;
     position: relative;
-    background: linear-gradient(to bottom, #21946D 0%, #19D795 100%);
+    background: linear-gradient(to bottom, #21946D 0%, #00ffc3 100%);
     border-radius: 5px;
     padding: 5px 10px;
     min-width: 100px;
@@ -156,7 +150,7 @@ body, html {
     display: block;
     font-family: 'Digital-7', monospace;
     font-size: 1.5em;
-    color: #18e69e;
+    color: #00ffc3;
     text-shadow: 0 0 5px #18E59D;
     text-align: center;
 }
@@ -181,12 +175,12 @@ body, html {
 #sortButtons .btn {
     margin-right: 10px;
     background-color: #21946D;
-    border-color: #19D795;
-    color: #18e69e;
+    border-color: #00ffc3;
+    color: #00ffc3;
 }
 
 #sortButtons .btn.active {
-    background-color: #18E59D;
+    background-color: #00ffc3;
     color: #2b3233;
 }
 
@@ -201,7 +195,7 @@ body, html {
     overflow: hidden;
     display: inline-block;
     position: relative;
-    background: linear-gradient(to bottom, #21946D 0%, #19D795 100%);
+    background: linear-gradient(to bottom, #21946D 0%, #00ffc3 100%);
     border-radius: 5px;
     padding: 5px 15px;
     min-width: 100px;
@@ -229,13 +223,13 @@ body, html {
 }
 
 .rank-num {
-    color: #18e69e;
+    color: #00ffc3;
 }
 
 #RightCol {
     width: 20%;
     height: 1046px;
-    background-color: #6e7f82;
+
 }
 
 #viewButtons {
@@ -245,12 +239,12 @@ body, html {
 #viewButtons .btn {
     margin-right: 10px;
     background-color: #21946D;
-    border-color: #19D795;
-    color: #18e69e;
+    border-color: #00ffc3;
+    color: #00ffc3;
 }
 
 #viewButtons .btn.active {
-    background-color: #18E59D;
+    background-color: #00ffc3;
     color: #2b3233;
 }
 

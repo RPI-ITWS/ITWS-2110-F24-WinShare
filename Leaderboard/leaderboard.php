@@ -19,7 +19,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <body>
         
         <?php include '../php/header.php'; ?>
-<div><h1 id="leaderBoardTitle">Leaderboard</h1></div>
+<div id="leaderBoardTitle">Leaderboard</div>
         <div id="Page" class="sticky-top">
             <div id="LeftCol"></div>
             <div id="MiddleCol" class ="flex-column flex-md-row align-items-center pt-3 pb-3">
