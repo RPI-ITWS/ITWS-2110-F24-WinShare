@@ -19,30 +19,29 @@ body, html {
 }
 
 #mainframe {
-    background-color: #333333;
+    background-color: #d3d3d3;
     border-radius: 10px;
     padding: 10px;
     width: 90%;
     max-width: 1700px;
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    border: 10px solid #333;
+    border: 4px solid #00ffc3;
     margin: 5rem auto;
     z-index: 1;
     overflow-y: auto;
 }
 
 #header1 {
+    padding: 20px;
     font-family: Arial Black, Helvetica, sans-serif;
     font-style: italic;
     font-weight: bold;
     display: flex;
-    font-size: 60px;
+    font-size: 40px;
     position: absolute;
     justify-content: center;
     transform: translate(-50%, -10%);
@@ -68,7 +67,7 @@ body, html {
 .game-card {
     width: 100%;
     height: 150px;
-    background-color: rgb(39, 36, 36);
+    background-color: #ffff;
     border: 1px solid #00ffc3;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -107,7 +106,7 @@ body, html {
 }
 
 .score-display {
-    color: white;
+    color: #333;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
