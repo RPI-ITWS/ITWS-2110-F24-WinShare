@@ -64,7 +64,7 @@ try {
                 </tbody>
             </table>
             <div class="image-container-left">
-                <img src="./assets/Photos/harden.png" alt="Basketball Image Harden" class="background-image-left">
+                <img src="./assets/Photos/Harden.png" alt="Basketball Image Harden" class="background-image-left">
         </div>
     </div> 
         <div id="MiddleColumn">
