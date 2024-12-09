@@ -5,6 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 ?>
 
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -18,11 +19,10 @@ if (session_status() === PHP_SESSION_NONE) {
     <body>
         
         <?php include '../php/header.php'; ?>
-
+<div><h1 id="leaderBoardTitle">Leaderboard</h1></div>
         <div id="Page" class="sticky-top">
             <div id="LeftCol"></div>
             <div id="MiddleCol" class ="flex-column flex-md-row align-items-center pt-3 pb-3">
-                <h1 id="leaderBoardTitle">Leaderboard</h1>
                 <div id="sortButtons" class="mb-3">
                     <button id="sortByScore" class="btn btn-primary active">Sort by Score</button>
                     <button id="sortByWinRate" class="btn btn-primary">Sort by Win Rate</button>
