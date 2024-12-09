@@ -304,10 +304,7 @@ h1 {
         transition: transform 0.2s, box-shadow 0.2s;
     }
     
-    .match:hover, .result:hover, .player:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+
     
     .match img, .result img, .player img {
         width: 40px;
@@ -444,7 +441,7 @@ h1 {
         margin-bottom: 10px;
         transition: transform 0.2s, box-shadow 0.2s;
     }
-    
+
     .match:hover, .result:hover, .player:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -544,6 +541,8 @@ select#stat {
 #top {
     display: flex;
     align-items: center;
+    position: relative;
+    width: 100%;
 }
 
 #PlayerSearch {
@@ -577,17 +576,23 @@ select#stat {
     width: 30vw;
     position: absolute;
     z-index: 100;
-    margin-top: 2px;
-    border-radius: 4px; 
-    background-color: #d3d3d3;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #00ffc3;
+    padding: 0;
+    overflow: hidden;
 }
 
 .player {
-    width: 96%;
-    padding-left: 4%;
-    background-color: #ffff;
-    color: #333;
+    width: 100%;
+    padding: 12px 4%;
+    color: #00ffc3;
+    background-color: #333;
+    border: none;
+    transition: 0.3s ease;
+    box-sizing: border-box;
 }
 
 .player:hover {
