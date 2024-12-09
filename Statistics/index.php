@@ -15,7 +15,8 @@ session_start();
 <body>
 
 <?php include '../php/header.php'; ?>
-
+<div id = "body">
+<h1 id="SeasonStatsTitle">Statistics</h1>
 <div id = "body">
         <div id = "content">
             <div id = "tabs">

@@ -141,12 +141,12 @@ function animateValue(value, maxValue, containerSelector, wrapperSelector, index
         const progress = easeOutQuad(currentFrame / totalFrames);
         currentValue = value * progress;
 
-        wrapper.innerHTML = `<span>${formatValue(currentValue, isPercentage)}</span>`;
+        wrapper.innerHTML = `<span class="words">${formatValue(currentValue, isPercentage)}</span>`;
 
         if (currentFrame < totalFrames) {
             requestAnimationFrame(animateFrame);
         } else {
-            wrapper.innerHTML = `<span>${formatValue(value, isPercentage)}</span>`;
+            wrapper.innerHTML = `<span class="words">${formatValue(value, isPercentage)}</span>`;
         }
     }
 
