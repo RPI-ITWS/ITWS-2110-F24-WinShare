@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const init = () => {
         animateStats();
         initFriendSearch();
-
+        
         // Update the click handler for rows
         document.querySelectorAll('.clickable-row').forEach(row => {
             row.addEventListener('click', function(e) {
