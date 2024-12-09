@@ -255,3 +255,115 @@ function initPendingRequests() {
     // Initial visibility check
     updateSectionVisibility();
 }
+document.addEventListener('DOMContentLoaded', function() {
+    // Add overlay to profile picture
+    const profilePic = document.querySelector('.profile-pic');
+    const profilePicParent = profilePic.parentElement;
+
+    // Create select wrapper
+    const selectWrapper = document.createElement('div');
+    selectWrapper.className = 'profile-pic-select';
+    profilePicParent.insertBefore(selectWrapper, profilePic);
+    selectWrapper.appendChild(profilePic);
+
+    // Add overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'profile-pic-overlay';
+    overlay.innerHTML = '<span>Change Profile Picture</span>';
+    selectWrapper.appendChild(overlay);
+
+    // Create modal
+    const modal = document.createElement('div');
+    modal.className = 'profile-pic-modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <h3 class="modal-header">Select Profile Picture</h3>
+            <div class="profile-pics-grid">
+                ${Array.from({length: 6}, (_, i) => i + 1).map(num => `
+                    <div class="profile-pic-option" data-pic="pfp${num}.png">
+                        <img src="../../assets/Photos/pfp${num}.png" alt="Profile picture option ${num}">
+                    </div>
+                `).join('')}
+            </div>
+            <div class="modal-actions">
+                <button class="cancel">Cancel</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    // Add click handlers
+    selectWrapper.addEventListener('click', () => {
+        if (window.location.href.includes('id=') &&
+            !window.location.href.includes(`id=${currentUserId}`)) {
+            return; // Don't allow editing other users' profile pictures
+        }
+        modal.classList.add('active');
+    });
+
+    let selectedPic = null;
+    const options = modal.querySelectorAll('.profile-pic-option');
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            options.forEach(opt => opt.classList.remove('selected'));
+            option.classList.add('selected');
+            selectedPic = option.dataset.pic;
+        });
+    });
+
+    modal.querySelector('.cancel').addEventListener('click', () => {
+        modal.classList.remove('active');
+        selectedPic = null;
+        options.forEach(opt => opt.classList.remove('selected'));
+    });
+
+    modal.querySelector('.save').addEventListener('click', async () => {
+        if (!selectedPic) return;
+
+        try {
+            const response = await fetch('./src/update_profile_pic.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    profilePic: `../assets/Photos/${selectedPic}`
+                })
+            });
+
+            const data = await response.json();
+            if (data.success) {
+                profilePic.src = `../../assets/Photos/${selectedPic}`;
+                modal.classList.remove('active');
+                selectedPic = null;
+                options.forEach(opt => opt.classList.remove('selected'));
+
+                // Show success message
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'alert alert-success';
+                messageDiv.textContent = 'Profile picture updated successfully!';
+                document.querySelector('.container').insertBefore(messageDiv, document.querySelector('.container').firstChild);
+
+                setTimeout(() => {
+                    messageDiv.style.opacity = '0';
+                    setTimeout(() => messageDiv.remove(), 300);
+                }, 3000);
+            } else {
+                throw new Error(data.message || 'Failed to update profile picture');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to update profile picture. Please try again.');
+        }
+    });
+
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            selectedPic = null;
+            options.forEach(opt => opt.classList.remove('selected'));
+        }
+    });
+});

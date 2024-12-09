@@ -229,187 +229,186 @@ if (isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="profile-content">
+        <div class="profile-content">
 
-        <?php if (isset($_SESSION['message'])): ?>
-            <div class="alert alert-success" style="grid-column: 1 / -1;">
+            <?php if (isset($_SESSION['message'])): ?>
+                <div class="alert alert-success" style="grid-column: 1 / -1;">
+                    <?php
+                    echo htmlspecialchars($_SESSION['message']);
+                    unset($_SESSION['message']);
+                    ?>
+                </div>
+            <?php endif; ?>
+
+            <div class="profile-section">
+                <h2>About</h2>
+                <div class="profile-details">
+                    <p><strong>Email:</strong> <?php echo htmlspecialchars($userData['email']); ?></p>
+                    <p><strong>Total Rounds:</strong> <?php echo number_format($userData['RoundsCorrect'] + $userData['RoundsWrong']); ?></p>
+                    <p><strong>Correct Rounds:</strong> <?php echo number_format($userData['RoundsCorrect']); ?></p>
+                    <p><strong>Wrong Rounds:</strong> <?php echo number_format($userData['RoundsWrong']); ?></p>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Friends</h2>
+
+
                 <?php
-                echo htmlspecialchars($_SESSION['message']);
-                unset($_SESSION['message']);
+                if ($isOwnProfile && isset($_SESSION['user_id'])) {
+                    echo "<!-- Debug: User is viewing own profile -->\n";
+                    echo "<!-- Debug: Session user_id: " . $_SESSION['user_id'] . " -->\n";
+                }
                 ?>
-            </div>
-        <?php endif; ?>
 
-        <div class="profile-section">
-            <h2>About</h2>
-            <div class="profile-details">
-                <p><strong>Email:</strong> <?php echo htmlspecialchars($userData['email']); ?></p>
-                <p><strong>Total Rounds:</strong> <?php echo number_format($userData['RoundsCorrect'] + $userData['RoundsWrong']); ?></p>
-                <p><strong>Correct Rounds:</strong> <?php echo number_format($userData['RoundsCorrect']); ?></p>
-                <p><strong>Wrong Rounds:</strong> <?php echo number_format($userData['RoundsWrong']); ?></p>
-            </div>
-        </div>
-
-        <div class="profile-section">
-            <h2>Friends</h2>
-
-
-            <?php
-            if ($isOwnProfile && isset($_SESSION['user_id'])) {
-                echo "<!-- Debug: User is viewing own profile -->\n";
-                echo "<!-- Debug: Session user_id: " . $_SESSION['user_id'] . " -->\n";
-            }
-            ?>
-
-            <?php if ($isOwnProfile && isset($_SESSION['user_id'])): ?>
-                <?php
-                // Get pending requests
-                $pendingRequestsSql = "SELECT u.id, u.username, u.profilePic, f.status 
+                <?php if ($isOwnProfile && isset($_SESSION['user_id'])): ?>
+                    <?php
+                    // Get pending requests
+                    $pendingRequestsSql = "SELECT u.id, u.username, u.profilePic, f.status 
                           FROM users u 
                           JOIN friendships f ON u.id = f.user_id 
                           WHERE f.friend_id = ? AND f.status = 'pending'";
-                $stmt = $conn->prepare($pendingRequestsSql);
-                $stmt->bind_param("i", $_SESSION['user_id']);
-                $stmt->execute();
-                $pendingRequests = $stmt->get_result();
-                $hasPendingRequests = $pendingRequests->num_rows > 0;
-                ?>
+                    $stmt = $conn->prepare($pendingRequestsSql);
+                    $stmt->bind_param("i", $_SESSION['user_id']);
+                    $stmt->execute();
+                    $pendingRequests = $stmt->get_result();
+                    $hasPendingRequests = $pendingRequests->num_rows > 0;
+                    ?>
 
-                <div class="pending-requests-section <?php echo $hasPendingRequests ? 'has-requests' : ''; ?>"
-                     id="pendingRequestsSection">
-                    <h3>Pending Friend Requests</h3>
-                    <div class="pending-requests" id="pendingRequestsList">
-                        <?php if ($hasPendingRequests): ?>
-                            <?php while ($request = $pendingRequests->fetch_assoc()): ?>
-                                <div class="request-card" data-request-id="<?php echo $request['id']; ?>">
-                                    <div class="user-info">
-                                        <img src="../<?php echo htmlspecialchars($request['profilePic']); ?>"
-                                             alt="<?php echo htmlspecialchars($request['username']); ?>'s profile"
-                                             class="request-pic">
-                                        <span class="request-name">
+                    <div class="pending-requests-section <?php echo $hasPendingRequests ? 'has-requests' : ''; ?>"
+                         id="pendingRequestsSection">
+                        <h3>Pending Friend Requests</h3>
+                        <div class="pending-requests" id="pendingRequestsList">
+                            <?php if ($hasPendingRequests): ?>
+                                <?php while ($request = $pendingRequests->fetch_assoc()): ?>
+                                    <div class="request-card" data-request-id="<?php echo $request['id']; ?>">
+                                        <div class="user-info">
+                                            <img src="../<?php echo htmlspecialchars($request['profilePic']); ?>"
+                                                 alt="<?php echo htmlspecialchars($request['username']); ?>'s profile"
+                                                 class="request-pic">
+                                            <span class="request-name">
                                 <a href="profile.php?id=<?php echo $request['id']; ?>">
                                     <?php echo htmlspecialchars($request['username']); ?>
                                 </a>
                             </span>
+                                        </div>
+                                        <div class="request-actions">
+                                            <form method="POST" class="inline-form">
+                                                <input type="hidden" name="action" value="accept_request">
+                                                <input type="hidden" name="friend_id" value="<?php echo $request['id']; ?>">
+                                                <button type="submit" class="btn btn-success btn-sm">Accept</button>
+                                            </form>
+                                            <form method="POST" class="inline-form">
+                                                <input type="hidden" name="action" value="reject_request">
+                                                <input type="hidden" name="friend_id" value="<?php echo $request['id']; ?>">
+                                                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                                            </form>
+                                        </div>
                                     </div>
-                                    <div class="request-actions">
-                                        <form method="POST" class="inline-form">
-                                            <input type="hidden" name="action" value="accept_request">
-                                            <input type="hidden" name="friend_id" value="<?php echo $request['id']; ?>">
-                                            <button type="submit" class="btn btn-success btn-sm">Accept</button>
-                                        </form>
-                                        <form method="POST" class="inline-form">
-                                            <input type="hidden" name="action" value="reject_request">
-                                            <input type="hidden" name="friend_id" value="<?php echo $request['id']; ?>">
-                                            <button type="submit" class="btn btn-danger btn-sm">Reject</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            <?php endwhile; ?>
-                        <?php else: ?>
-                            <p class="no-requests">No pending friend requests</p>
+                                <?php endwhile; ?>
+                            <?php else: ?>
+                                <p class="no-requests">No pending friend requests</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <?php $stmt->close(); ?>
+                <?php endif; ?>
+
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <div class="friend-search-section">
+                        <h3>Find Friends</h3>
+                        <div class="search-container">
+                            <input type="text" id="friendSearch" class="friend-search-input"
+                                   placeholder="Search users by username..." autocomplete="off">
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+                <?php if (!$isOwnProfile && isset($_SESSION['user_id'])): ?>
+                    <div class="friendship-actions">
+                        <?php if ($friendshipStatus === null): ?>
+                            <form method="POST">
+                                <input type="hidden" name="action" value="send_request">
+                                <button type="submit" class="btn btn-primary">Add Friend</button>
+                            </form>
+                        <?php elseif ($friendshipStatus === 'pending'): ?>
+                            <?php if ($requestSentByMe): ?>
+                                <div class="pending-status">Friend Request Sent</div>
+                            <?php else: ?>
+                                <form method="POST" class="inline-form">
+                                    <input type="hidden" name="action" value="accept_request">
+                                    <button type="submit" class="btn btn-success">Accept Request</button>
+                                </form>
+                                <form method="POST" class="inline-form">
+                                    <input type="hidden" name="action" value="reject_request">
+                                    <button type="submit" class="btn btn-danger">Reject Request</button>
+                                </form>
+                            <?php endif; ?>
+                        <?php elseif ($friendshipStatus === 'accepted'): ?>
+                            <form method="POST">
+                                <input type="hidden" name="action" value="remove_friend">
+                                <button type="submit" class="btn btn-danger">Remove Friend</button>
+                            </form>
                         <?php endif; ?>
                     </div>
-                </div>
-                <?php $stmt->close(); ?>
-            <?php endif; ?>
-
-            <?php if (isset($_SESSION['user_id'])): ?>
-                <div class="friend-search-section">
-                    <h3>Find Friends</h3>
-                    <div class="search-container">
-                        <input type="text" id="friendSearch" class="friend-search-input"
-                               placeholder="Search users by username..." autocomplete="off">
-                        <div id="searchResults" class="search-results"></div>
-                    </div>
-                </div>
-            <?php endif; ?>
-
-            <?php if (!$isOwnProfile && isset($_SESSION['user_id'])): ?>
-                <div class="friendship-actions">
-                    <?php if ($friendshipStatus === null): ?>
-                        <form method="POST">
-                            <input type="hidden" name="action" value="send_request">
-                            <button type="submit" class="btn btn-primary">Add Friend</button>
-                        </form>
-                    <?php elseif ($friendshipStatus === 'pending'): ?>
-                        <?php if ($requestSentByMe): ?>
-                            <div class="pending-status">Friend Request Sent</div>
-                        <?php else: ?>
-                            <form method="POST" class="inline-form">
-                                <input type="hidden" name="action" value="accept_request">
-                                <button type="submit" class="btn btn-success">Accept Request</button>
-                            </form>
-                            <form method="POST" class="inline-form">
-                                <input type="hidden" name="action" value="reject_request">
-                                <button type="submit" class="btn btn-danger">Reject Request</button>
-                            </form>
-                        <?php endif; ?>
-                    <?php elseif ($friendshipStatus === 'accepted'): ?>
-                        <form method="POST">
-                            <input type="hidden" name="action" value="remove_friend">
-                            <button type="submit" class="btn btn-danger">Remove Friend</button>
-                        </form>
-                    <?php endif; ?>
-                </div>
-            <?php endif; ?>
+                <?php endif; ?>
 
 
-            <div class="friends-list">
-                <?php
-                $friendsSql = "SELECT u.id, u.username, u.profilePic, u.points 
+                <div class="friends-list">
+                    <?php
+                    $friendsSql = "SELECT u.id, u.username, u.profilePic, u.points 
                               FROM users u 
                               JOIN friendships f ON (u.id = f.friend_id OR u.id = f.user_id)
                               WHERE (f.user_id = ? OR f.friend_id = ?) 
                               AND f.status = 'accepted'
                               AND u.id != ?";
-                $stmt = $conn->prepare($friendsSql);
-                $stmt->bind_param("iii", $userId, $userId, $userId);
-                $stmt->execute();
-                $friends = $stmt->get_result();
+                    $stmt = $conn->prepare($friendsSql);
+                    $stmt->bind_param("iii", $userId, $userId, $userId);
+                    $stmt->execute();
+                    $friends = $stmt->get_result();
 
-                if ($friends->num_rows > 0):
-                    while ($friend = $friends->fetch_assoc()):
-                        ?>
-                        <div class="friend-card">
-                            <img src="../<?php echo htmlspecialchars($friend['profilePic']); ?>"
-                                 alt="<?php echo htmlspecialchars($friend['username']); ?>'s profile picture"
-                                 class="friend-pic">
-                            <div class="friend-info">
-                                <a href="profile.php?id=<?php echo $friend['id']; ?>"
-                                   class="friend-name"><?php echo htmlspecialchars($friend['username']); ?></a>
-                                <span class="friend-points">Points: <?php echo number_format($friend['points']); ?></span>
+                    if ($friends->num_rows > 0):
+                        while ($friend = $friends->fetch_assoc()):
+                            ?>
+                            <div class="friend-card">
+                                <img src="../<?php echo htmlspecialchars($friend['profilePic']); ?>"
+                                     alt="<?php echo htmlspecialchars($friend['username']); ?>'s profile picture"
+                                     class="friend-pic">
+                                <div class="friend-info">
+                                    <a href="profile.php?id=<?php echo $friend['id']; ?>"
+                                       class="friend-name"><?php echo htmlspecialchars($friend['username']); ?></a>
+                                    <span class="friend-points">Points: <?php echo number_format($friend['points']); ?></span>
+                                </div>
                             </div>
-                        </div>
+                        <?php
+                        endwhile;
+                    else:
+                        ?>
+                        <p class="no-friends">No friends yet</p>
                     <?php
-                    endwhile;
-                else:
+                    endif;
+                    $stmt->close();
                     ?>
-                    <p class="no-friends">No friends yet</p>
-                <?php
-                endif;
-                $stmt->close();
-                ?>
-            </div>
-        </div> <!-- End of friends section -->
+                </div>
+            </div> <!-- End of friends section -->
 
-        <div class="profile-section">
-            <h2>Predictions History</h2>
-            <div class="predictions-list">
-                <?php
-                // Get user predictions
-                $predictionsSql = "SELECT * FROM game_predictions WHERE user_id = ? ORDER BY prediction_time DESC";
-                $stmt = $conn->prepare($predictionsSql);
-                $stmt->bind_param("i", $userId);
-                $stmt->execute();
-                $predictions = $stmt->get_result();
+            <div class="profile-section">
+                <h2>Predictions History</h2>
+                <div class="predictions-list">
+                    <?php
+                    // Get user predictions
+                    $predictionsSql = "SELECT * FROM game_predictions WHERE user_id = ? ORDER BY prediction_time DESC";
+                    $stmt = $conn->prepare($predictionsSql);
+                    $stmt->bind_param("i", $userId);
+                    $stmt->execute();
+                    $predictions = $stmt->get_result();
 
-                if ($predictions->num_rows > 0):
-                    ?>
-                    <table class="table table-dark">
-                        <thead>
+                    if ($predictions->num_rows > 0):
+                        ?>
+                        <table class="table table-dark">
+                            <thead>
                             <tr>
                                 <th>Date</th>
                                 <th>Match-up</th>
@@ -417,10 +416,10 @@ if (isset($_SESSION['user_id'])) {
                                 <th>Points Wagered</th>
                                 <th>Points Earned</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                            </thead>
+                            <tbody>
                             <?php while ($pred = $predictions->fetch_assoc()): ?>
-                                <tr class="<?php echo $pred['points_earned'] >= 0 ? 'table-success' : 'table-danger'; ?> clickable-row" 
+                                <tr class="<?php echo $pred['points_earned'] >= 0 ? 'table-success' : 'table-danger'; ?> clickable-row"
                                     data-game-id="<?php echo $pred['game_id']; ?>"
                                     onclick="window.location.href='/ITWS-2110-F24-WinShare/Game/game.php?game_id=<?php echo $pred['game_id']; ?>'">
                                     <td><?php echo date('M j, Y', strtotime($pred['prediction_time'])); ?></td>
@@ -430,22 +429,22 @@ if (isset($_SESSION['user_id'])) {
                                     <td><?php echo ($pred['points_earned'] >= 0 ? '+' : '') . number_format($pred['points_earned']); ?></td>
                                 </tr>
                             <?php endwhile; ?>
-                        </tbody>
-                    </table>
-                <?php else: ?>
-                    <p class="no-predictions">No predictions made yet</p>
-                <?php 
-                endif;
-                $stmt->close();
-                ?>
+                            </tbody>
+                        </table>
+                    <?php else: ?>
+                        <p class="no-predictions">No predictions made yet</p>
+                    <?php
+                    endif;
+                    $stmt->close();
+                    ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="./src/profile.js"></script>
-</body>
-</html>
+    <script src="./src/profile.js"></script>
+    </body>
+    </html>
 
 <?php
 $conn->close();
