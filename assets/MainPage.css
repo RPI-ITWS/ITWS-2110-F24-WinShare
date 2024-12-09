@@ -1,9 +1,9 @@
-body, html {
+body, html { 
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #FFFFFF; 
 }
 
 #Page {
@@ -11,8 +11,43 @@ body, html {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
-    color: #fff;
+    color: #000000; 
     box-sizing: border-box;
+}
+
+.image-container-left {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.background-image-left {
+    width: 90%;
+    height: auto;
+    opacity: 0.3;
+    display: block;
+    padding: -100px;
+}
+
+#LeftColumn {
+    position: relative;
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #D3D3D3;
+    border-radius: 8px;
+    border: 2px solid #00ffc3;
+    min-height: 300px;
+}
+
+#LeftColumn h3 a {
+    color: #333; 
+}
+
+#LeftColumn h3 a:hover {
+    color: #00ffc3; 
 }
 
 #LeftColumn, #RightColumn {
@@ -20,55 +55,80 @@ body, html {
     padding: 20px;
     box-sizing: border-box;
     margin: 10px;
-    background-color: #1a1a1a;
+    background-color: #D3D3D3; 
     border-radius: 8px;
-    border: 2px solid #00aaff;
+    border: 2px solid #00ffc3; 
 }
 
 #MiddleColumn {
     width: 60%;
-    height: 1046px;
     padding: 20px;
     box-sizing: border-box;
     margin: 10px;
-    background-color: #1a1a1a;
-    border: 2px solid #00aaff;
+    background-color: #D3D3D3; 
+    border: 2px solid #00ffc3; 
     border-radius: 8px;
     overflow: auto;
     max-height: 100vh;
 }
 
-#RightColumn {
-    width: 20%; 
-    padding: 20px;
-    box-sizing: border-box; 
-    margin: 10px;
-    background-color: #1a1a1a;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
 h3 {
     font-weight: bold;
     font-style: italic;
-    color: #00aaff;
+    color: #333; 
+}
+
+#RightColumn ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#RightColumn {
+    position: relative;
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #D3D3D3;
+    border-radius: 8px;
+    border: 2px solid #00ffc3;
+    min-height: 300px;
+}
+
+#RightColumn ul li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#RightColumn ul li {
+    margin-bottom: 20px;
+    list-style: none;
+    text-decoration: underline;
 }
 
 #RightColumn ul li a {
+    font-size: 16px;
     text-decoration: none;
-    color: #00aaff;
-    font-weight: bold;
+    color: #333;
+}
+
+#RightColumn ul li p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
 }
 
 #RightColumn ul li a:hover {
-    color: #fff;
-    background-color: #00aaff;
-    padding: 2px;
+    color: #00ffc3;
     border-radius: 4px;
+    text-decoration: underline;
 }
 
 #Thumbnails .thumbnail {
-    border: 2px solid #00aaff;
+    border: 2px solid #00ffc3; 
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -76,68 +136,85 @@ h3 {
 
 .thumbnail:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #00aaff;
+    box-shadow: 0 0 10px #00ffc3;
 }
 
 .game-card {
-   border: 1px solid #ccc;
-   padding: 10px;
-   margin: 10px 0;
-   display: flex;
-   flex-direction: column;
-   background-color: #1a1a1a;
+    border: 1px solid #D3D3D3; 
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .game-info {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 5px;
-   gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 10px;
 }
 
 .team {
-   font-weight: bold;
-   flex: 1;
-   text-align: left;
-   cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+    cursor: pointer;
 }
 
 .score {
-   font-size: 1em;
-   font-weight: bold;
-   color: #fff;
-   text-align: center; 
-   flex: 0 0 400px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000000; 
+    text-align: center; 
+    flex: 0 0 400px;
 }
 
 .time {
-   font-size: 0.9em;
-   color: #666;
-   text-align: right;
-   flex: 0 0 100px;
+    font-size: 0.9em;
+    color: #666;
+    text-align: right;
+    flex: 0 0 100px;
 }
 
 .invisible {
-   visibility: hidden;
+    visibility: hidden;
 }
 
 .green-text {
-   color: #0bb302;
+    color: #0bb302;
 }
 
 .divider {
-   text-align: center;
-   margin: 20px 0;
-   font-size: 1.2em;
-   font-weight: bold;
-   color: #333;
-   border-top: 2px solid #ccc;
-   padding-top: 10px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
 }
 
 .small-logo {
     width: 50px;
     height: auto;
     vertical-align: middle;
+}
+
+.image-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.background-image {
+    width: 135%;
+    height: auto;
+    opacity: 0.3;
+    display: block;
+    padding-left: -40px;
 }
