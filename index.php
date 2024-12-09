@@ -1,6 +1,33 @@
 <?php
 session_start();
 include 'php/config.php';
+// Fetch NBA articles
+$apiHost = 'nba-latest-news.p.rapidapi.com';
+$apiKey = '049f002b9cmsh19ee321223a76dfp1a96e8jsn2efebdd5f8cf';
+$articles = [];
+
+try {
+    $curl = curl_init();
+    curl_setopt_array($curl, [
+        CURLOPT_URL => "https://$apiHost/articles",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HTTPHEADER => [
+            "x-rapidapi-host: $apiHost",
+            "x-rapidapi-key: $apiKey"
+        ],
+    ]);
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+    curl_close($curl);
+
+    if ($err) {
+        throw new Exception("cURL Error: $err");
+    }
+
+    $articles = json_decode($response, true);
+} catch (Exception $e) {
+    error_log($e->getMessage());
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,10 +63,12 @@ include 'php/config.php';
                 <tbody>
                 </tbody>
             </table>
+            <div class="image-container-left">
+                <img src="./assets/Photos/Harden.png" alt="Basketball Image Harden" class="background-image-left">
         </div>
-        
+    </div> 
         <div id="MiddleColumn">
-            <h3>Matches - <?php echo date('F j, Y'); ?></h3>
+            <h3>NBA Matches - <?php echo date('F j, Y'); ?></h3>
             <div id="Upcoming_Matches">
                 <h4>Upcoming/In Progress Matches</h4>
             </div>
@@ -50,14 +79,27 @@ include 'php/config.php';
         </div>
 
         <div id="RightColumn">
-            <h3>Recommended Articles</h3>
-            <ul>
-                <li><a href="#">Article 1</a></li>
-                <li><a href="#">Article 2</a></li>
-                <li><a href="#">Article 3</a></li>
-            </ul>
-        </div>
+    <h3>Latest News Articles</h3>
+    <?php if (!empty($articles)) : ?>
+        <ul id="newsList">
+            <?php foreach (array_slice($articles, 0, 3) as $article) : ?>
+                <li>
+                    <a href="<?= htmlspecialchars($article['url']) ?>" target="_blank">
+                        <?= htmlspecialchars($article['title']) ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php else : ?>
+        <p>No articles available at the moment.</p>
+    <?php endif; ?>
+    <div class="image-container">
+        <img src="./assets/Photos/MainPageBron.png" alt="Basketball Image" class="background-image">
     </div>
+</div>
+
+</body>
+</html>
 
     <script>
         function navigateToTeamPage(teamName, teamId) {
