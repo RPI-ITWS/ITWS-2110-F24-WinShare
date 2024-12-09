@@ -38,14 +38,16 @@ body, html {
 }
 
 #header1 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: Arial Black, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
     display: flex;
     font-size: 60px;
     position: absolute;
     justify-content: center;
     transform: translate(-50%, -10%);
     left: 50%;
-    color: #00ffc3;
+
     align-items: center;
     background: transparent;
 }

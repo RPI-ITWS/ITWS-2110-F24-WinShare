@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Teams.css">
-    <script src="./scripts/Team.js" defer></script>
+    <script src="./scripts/Teams.js" defer></script>
     <?php include "../php/include_header.php"?>
     <title>NBA Teams</title>
 </head>
